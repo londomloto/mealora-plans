@@ -1,5 +1,5 @@
 {
-  "version": "2.21",
+  "version": "2.22",
   "children": [
     {
       "type": "frame",
@@ -2859,11 +2859,11 @@
         {
           "type": "text",
           "id": "x90g3",
-          "x": 126,
+          "x": 121.5,
           "y": 420,
           "name": "Hero caption",
           "fill": "#203D2D",
-          "content": "Catat makanan sehatmu",
+          "content": "Diary makanan harianmu",
           "fontFamily": "Inter",
           "fontSize": 12,
           "fontWeight": "bold"
@@ -16113,7 +16113,7 @@
           "y": 42,
           "name": "Mealora brand promise",
           "fill": "#687D70",
-          "content": "catat makanan sehatmu",
+          "content": "Diary makanan harianmu",
           "fontFamily": "Inter",
           "fontSize": 10,
           "fontWeight": "medium",
@@ -16226,7 +16226,7 @@
           "type": "frame",
           "id": "rskzW",
           "x": 109,
-          "y": 255,
+          "y": 278,
           "name": "Splash app symbol tile",
           "width": 172,
           "height": 172,
@@ -16265,7 +16265,7 @@
         {
           "type": "text",
           "id": "wbEgj",
-          "x": 100,
+          "x": 116,
           "y": 483,
           "name": "Mealora splash wordmark",
           "fill": "#203D2D",
@@ -16278,11 +16278,11 @@
         {
           "type": "text",
           "id": "Hzh4J",
-          "x": 119,
+          "x": 112.5,
           "y": 544,
           "name": "Splash tagline",
           "fill": "#687D70",
-          "content": "catat makanan sehatmu",
+          "content": "Diary makanan harianmu",
           "fontFamily": "Inter",
           "fontSize": 14,
           "fontWeight": "normal"
