@@ -84,9 +84,31 @@ Ini keputusan produk, bukan kemalasan teknis: mendaftarkan seseorang ke program 
 
 Domain hanya melihat kontrak repositori dari change 003. Tipe Drift, kueri, dan transaksi tidak pernah bocor ke atas. Penyaringan record terhapus lunak terjadi di lapisan akses data bersama dari change 001, bukan diulang di setiap kueri.
 
+Catatan implementasi: kolom `input_snapshot_json` menyimpan JSON dengan dua kunci — `inputs` (salinan `ProgramProposalInputs`) dan `proposal` (bagian `ProgramTargetProposal` yang tidak punya kolom diskret sendiri: peringatan, pita toleransi, berat acuan, penanda tampilan, dan persentase makro). Kolom diskret (`daily_energy_target_kcal`, `protein_target_g`, dst.) tetap ada untuk kueri cepat tanpa membongkar JSON (sesuai niat §42); JSON-nya yang membuat `ProgramTargetProposal` dapat dipulihkan utuh untuk riwayat (D10), tanpa menambah kolom di luar yang sudah ditetapkan assessment. `pause_intervals` tidak disimpan sebagai kolom — dipulihkan dari pasangan peristiwa `paused`/`resumed` di `program_events` saat baris dibaca (konsisten dengan D1: tabel peristiwa adalah sumber kebenaran jejak jeda).
+
 ### D10 — Kueri riwayat membaca nilai tersimpan, bukan menghitung ulang
 
 Entri riwayat menampilkan masukan, target, asumsi, dan versi dari baris program pengguna apa adanya. Tidak ada perhitungan ulang saat membaca — itulah yang membuat target lama tetap dapat dijelaskan setelah kebijakan berganti versi.
+
+### D11 — `ProgramRepository` menjadi async (Future-based), bukan sinkron
+
+Kontrak `ProgramRepository` dari change 003 sinkron (`UserProgram? findRunning(...)`, dst.), dan seluruh command siklus hidup (`ActivateProgramCommand`, `ChangeProgramCommand`, perintah sederhana) memanggilnya sinkron. Ini dirumuskan sebelum ada implementasi penyimpanan sungguhan.
+
+Koneksi Drift aplikasi ini (`openMealoraConnection`, lewat `drift_flutter`) berjalan di isolate latar belakang pada native dan di web worker pada web (design D3, change 001) — bukan koneksi sinkron dalam proses. Drift DAO di atas koneksi ini SHALL TIDAK dapat diakses sinkron; membangun jalur sinkron terpisah berarti dua akses ke berkas basis data yang sama (berisiko lock/korupsi) dan tidak berjalan di web sama sekali.
+
+Keputusan: ubah `ProgramRepository` dan seluruh pemanggilnya (command change 003, tiruan dalam memori, dan uji yang memanggilnya) menjadi `Future`-based sebelum DAO Drift sungguhan ditulis. Ini bukan perubahan requirement domain — tidak ada SHALL di spec manapun yang menyatakan repositori sinkron — murni detail tipe Dart pada kontrak internal yang belum dipakai UI mana pun.
+
+*Trade-off:* seluruh test change 003 yang memanggil command (program_commands_test.dart, dll.) perlu disesuaikan memakai `async`/`await`, dan tiruan dalam memori (`InMemoryProgramRepository`) perlu membungkus method dengan `Future.value`/`async` meski tidak benar-benar melakukan I/O. Biaya ini dibayar sekali, sebelum DAO Drift ditulis, alih-alih memaksakan penyimpanan sungguhan jadi sinkron atau menambal celah async-dalam-sinkron yang getas.
+
+### D12 — `user_programs.profile_id` tanpa foreign key basis data untuk sekarang
+
+Assessment §42 menetapkan `profile_id TEXT FK NOT NULL`. Tabel `profiles` itu sendiri baru dibuat change 005 (onboarding profil) — dan change 005 menyatakan dirinya **bergantung pada** change ini (butuh `user_programs` untuk aktivasi program). Menulis FK sungguhan di sini berarti change ini balik bergantung pada tabel yang belum ada sampai change 005 selesai — dua arah ketergantungan yang tidak dapat dipenuhi sekaligus dengan urutan change 001→012 yang sudah ditetapkan di proposal 005/007/008.
+
+Keputusan: `profile_id` disimpan sebagai `TEXT` biasa, tanpa `.references()`. Domain (change 003) sudah memperlakukan `profileId` sebagai string buram, bukan entitas yang di-join — tidak ada perilaku domain yang hilang. Keutuhan rujukan ke `profiles` ditegakkan kode (change 005 memverifikasi profil ada sebelum memanggil aktivasi), bukan basis data, sampai migrasi lanjutan di change 005 menambahkan FK constraint sungguhan setelah tabel `profiles` ada. Dicatat sebagai utang teknis eksplisit, sama seperti keterbatasan trigger di D3.
+
+*Trade-off:* basis data tidak menolak baris `user_programs` yang menunjuk `profile_id` tidak valid sampai FK ditambahkan di change 005. Diterima karena satu-satunya pemanggil di MVP 1 adalah kode aplikasi sendiri (tidak ada input eksternal atau sinkronisasi), dan uji domain change 003 sudah menegakkan profil harus ada sebelum aktivasi dipanggil.
+
+Konsekuensi lanjutan untuk fixture migrasi (task 8.2): tabel `profiles`, catatan makanan, makanan buatan sendiri, favorit, dan riwayat berat yang disebut assessment §43 **belum ada di skema versi 1 repo ini** — baru dibuat change 005/007/008, yang semuanya menyatakan bergantung pada change ini. Fixture "basis data versi 1 berisi data" di task 8.2 memakai tabel yang benar-benar ada di v1 (`harness_records`/`harness_record_notes`, `ui_preferences`), bukan profil/makanan/berat; fixture migrasi dengan tabel-tabel itu ditambahkan di migrasi lanjutan change 005/007/008 saat tabelnya sudah ada.
 
 ## Risks / Trade-offs
 
