@@ -622,30 +622,6 @@
           "descendants": {
             "GJ4G6": {
               "fill": "#E1F2DC"
-            },
-            "u389jv": {
-              "fill": "#2F8F6B"
-            },
-            "W1ixf": {
-              "fill": "#183B32"
-            },
-            "s1sSr": {
-              "fill": "#667A70"
-            },
-            "DUs5q": {
-              "fill": "#667A70"
-            },
-            "blQgZ": {
-              "fill": "#667A70"
-            },
-            "oJz2m": {
-              "fill": "#667A70"
-            },
-            "Omzhm": {
-              "fill": "#667A70"
-            },
-            "dHCwp": {
-              "fill": "#667A70"
             }
           }
         },
@@ -2125,34 +2101,9 @@
           "height": 70,
           "descendants": {
             "GJ4G6": {
-              "x": 94,
-              "fill": "#DEF3DE"
-            },
-            "u389jv": {
-              "fill": "#687D70"
-            },
-            "W1ixf": {
-              "fill": "#687D70",
-              "fontWeight": "normal"
-            },
-            "s1sSr": {
-              "fill": "#258747"
-            },
-            "DUs5q": {
-              "fill": "#203D2D",
-              "fontWeight": "bold"
-            },
-            "blQgZ": {
-              "fill": "#687D70"
-            },
-            "oJz2m": {
-              "fill": "#687D70"
-            },
-            "Omzhm": {
-              "fill": "#687D70"
-            },
-            "dHCwp": {
-              "fill": "#687D70"
+              "x": 81,
+              "fill": "#DEF3DE",
+              "width": 70
             }
           }
         },
@@ -2171,1165 +2122,6 @@
             "mode": "contain"
           },
           "layout": "none"
-        }
-      ]
-    },
-    {
-      "type": "frame",
-      "id": "s3Iyde",
-      "x": 470,
-      "y": 0,
-      "name": "02 · Tambah makanan",
-      "clip": true,
-      "width": 390,
-      "height": 844,
-      "fill": "#F7FAF5",
-      "layout": "none",
-      "children": [
-        {
-          "type": "text",
-          "id": "ATLxX",
-          "x": 22,
-          "y": 19,
-          "name": "Status time",
-          "fill": "#203D2D",
-          "content": "9:41",
-          "fontFamily": "Inter",
-          "fontSize": 14,
-          "fontWeight": "bold"
-        },
-        {
-          "type": "icon",
-          "id": "Vk2pg",
-          "x": 304,
-          "y": 18,
-          "name": "Signal",
-          "width": 17,
-          "height": 17,
-          "icon": "signal",
-          "library": "lucide",
-          "fill": "#203D2D"
-        },
-        {
-          "type": "icon",
-          "id": "ApeLU",
-          "x": 327,
-          "y": 18,
-          "name": "Wifi",
-          "width": 17,
-          "height": 17,
-          "icon": "wifi",
-          "library": "lucide",
-          "fill": "#203D2D"
-        },
-        {
-          "type": "icon",
-          "id": "z3zNwV",
-          "x": 350,
-          "y": 18,
-          "name": "Battery",
-          "width": 19,
-          "height": 19,
-          "icon": "battery-full",
-          "library": "lucide",
-          "fill": "#203D2D"
-        },
-        {
-          "type": "text",
-          "id": "ftfrt",
-          "x": 22,
-          "y": 72,
-          "name": "Screen title",
-          "fill": "#203D2D",
-          "content": "Selamat pagi, Naya ☀",
-          "fontFamily": "Inter",
-          "fontSize": 29,
-          "fontWeight": "bold"
-        },
-        {
-          "type": "text",
-          "id": "NyHlS",
-          "x": 22,
-          "y": 110,
-          "name": "Screen subtitle",
-          "fill": "#687D70",
-          "content": "Sabtu, 8 November 2026",
-          "fontFamily": "Inter",
-          "fontSize": 13,
-          "fontWeight": "normal"
-        },
-        {
-          "type": "frame",
-          "id": "m6vUOF",
-          "x": 22,
-          "y": 146,
-          "name": "Current program chip",
-          "width": 346,
-          "height": 47,
-          "fill": "#DEF3DE",
-          "cornerRadius": 15,
-          "layout": "none",
-          "children": [
-            {
-              "type": "icon",
-              "id": "B09rUm",
-              "x": 14,
-              "y": 12,
-              "name": "Program sprout",
-              "width": 21,
-              "height": 21,
-              "icon": "target",
-              "library": "lucide",
-              "fill": "#258747"
-            },
-            {
-              "type": "text",
-              "id": "T6QbH",
-              "x": 45,
-              "y": 14,
-              "name": "Program name",
-              "fill": "#203D2D",
-              "content": "Makan Sehat",
-              "fontFamily": "Inter",
-              "fontSize": 14,
-              "fontWeight": "bold"
-            },
-            {
-              "type": "icon",
-              "id": "F154E",
-              "x": 316,
-              "y": 13,
-              "name": "Program chevron",
-              "width": 19,
-              "height": 19,
-              "icon": "chevron-right",
-              "library": "lucide",
-              "fill": "#258747"
-            }
-          ]
-        },
-        {
-          "type": "frame",
-          "id": "YX6aw",
-          "x": 22,
-          "y": 209,
-          "name": "Daily calorie summary",
-          "width": 346,
-          "height": 224,
-          "fill": "#258747",
-          "cornerRadius": 26,
-          "layout": "none",
-          "children": [
-            {
-              "type": "text",
-              "id": "SpI1H",
-              "x": 23,
-              "y": 22,
-              "name": "Calorie eyebrow",
-              "fill": "#FFFFFF",
-              "content": "PERKIRAAN HARI INI",
-              "fontFamily": "Inter",
-              "fontSize": 11,
-              "fontWeight": "bold"
-            },
-            {
-              "type": "text",
-              "id": "M7Q3KO",
-              "x": 22,
-              "y": 52,
-              "name": "Calories consumed",
-              "fill": "#FFFFFF",
-              "content": "1.420",
-              "fontFamily": "Inter",
-              "fontSize": 51,
-              "fontWeight": "bold"
-            },
-            {
-              "type": "text",
-              "id": "nQoOF",
-              "x": 185,
-              "y": 80,
-              "name": "Calories denominator",
-              "fill": "#FFFFFF",
-              "content": "/ 2.100 kkal",
-              "fontFamily": "Inter",
-              "fontSize": 16,
-              "fontWeight": "normal"
-            },
-            {
-              "type": "frame",
-              "id": "rTR4a",
-              "x": 23,
-              "y": 132,
-              "name": "Calorie progress track",
-              "width": 300,
-              "height": 10,
-              "fill": "#FFFFFF66",
-              "cornerRadius": 5,
-              "layout": "none"
-            },
-            {
-              "type": "frame",
-              "id": "LcrTv",
-              "x": 23,
-              "y": 132,
-              "name": "Calorie progress fill",
-              "width": 203,
-              "height": 10,
-              "fill": "#F5D35C",
-              "cornerRadius": 5,
-              "layout": "none"
-            },
-            {
-              "type": "text",
-              "id": "ktov8",
-              "x": 23,
-              "y": 165,
-              "name": "Calories remaining label",
-              "fill": "#FFFFFF",
-              "content": "Sisa perkiraan",
-              "fontFamily": "Inter",
-              "fontSize": 12,
-              "fontWeight": "normal"
-            },
-            {
-              "type": "text",
-              "id": "WPioK",
-              "x": 23,
-              "y": 183,
-              "name": "Calories remaining",
-              "fill": "#FFFFFF",
-              "content": "680 kkal",
-              "fontFamily": "Inter",
-              "fontSize": 20,
-              "fontWeight": "bold"
-            },
-            {
-              "type": "icon",
-              "id": "r6T9E",
-              "x": 274,
-              "y": 165,
-              "name": "Calorie decorative leaf",
-              "width": 43,
-              "height": 43,
-              "icon": "utensils",
-              "library": "lucide",
-              "fill": "#FFFFFF"
-            }
-          ]
-        },
-        {
-          "type": "frame",
-          "id": "ZyycE",
-          "x": 22,
-          "y": 449,
-          "name": "Macro indicators",
-          "width": 346,
-          "height": 107,
-          "fill": "#FFFFFF",
-          "cornerRadius": 21,
-          "stroke": "#DFE9DE",
-          "strokeWidth": 1,
-          "layout": "none",
-          "children": [
-            {
-              "type": "text",
-              "id": "kyDZ9",
-              "x": 15,
-              "y": 16,
-              "name": "Protein label",
-              "fill": "#687D70",
-              "content": "Protein",
-              "fontFamily": "Inter",
-              "fontSize": 11,
-              "fontWeight": "normal"
-            },
-            {
-              "type": "text",
-              "id": "vvlNG",
-              "x": 15,
-              "y": 39,
-              "name": "Protein amount",
-              "fill": "#203D2D",
-              "content": "72 / 110 g",
-              "fontFamily": "Inter",
-              "fontSize": 13,
-              "fontWeight": "bold"
-            },
-            {
-              "type": "frame",
-              "id": "wUPho",
-              "x": 15,
-              "y": 78,
-              "name": "Protein track",
-              "width": 94,
-              "height": 6,
-              "fill": "#ECF1E8",
-              "cornerRadius": 3,
-              "layout": "none"
-            },
-            {
-              "type": "frame",
-              "id": "UQ2zX",
-              "x": 15,
-              "y": 78,
-              "name": "Protein progress",
-              "width": 61,
-              "height": 6,
-              "fill": "#258747",
-              "cornerRadius": 3,
-              "layout": "none"
-            },
-            {
-              "type": "text",
-              "id": "dGuIR",
-              "x": 126,
-              "y": 16,
-              "name": "Karbo label",
-              "fill": "#687D70",
-              "content": "Karbo",
-              "fontFamily": "Inter",
-              "fontSize": 11,
-              "fontWeight": "normal"
-            },
-            {
-              "type": "text",
-              "id": "CZ2G9",
-              "x": 126,
-              "y": 39,
-              "name": "Karbo amount",
-              "fill": "#203D2D",
-              "content": "180 / 250 g",
-              "fontFamily": "Inter",
-              "fontSize": 13,
-              "fontWeight": "bold"
-            },
-            {
-              "type": "frame",
-              "id": "qOrlP",
-              "x": 126,
-              "y": 78,
-              "name": "Karbo track",
-              "width": 94,
-              "height": 6,
-              "fill": "#ECF1E8",
-              "cornerRadius": 3,
-              "layout": "none"
-            },
-            {
-              "type": "frame",
-              "id": "SVBV9",
-              "x": 126,
-              "y": 78,
-              "name": "Karbo progress",
-              "width": 68,
-              "height": 6,
-              "fill": "#C9A03B",
-              "cornerRadius": 3,
-              "layout": "none"
-            },
-            {
-              "type": "text",
-              "id": "dTPNW",
-              "x": 237,
-              "y": 16,
-              "name": "Lemak label",
-              "fill": "#687D70",
-              "content": "Lemak",
-              "fontFamily": "Inter",
-              "fontSize": 11,
-              "fontWeight": "normal"
-            },
-            {
-              "type": "text",
-              "id": "MWETT",
-              "x": 237,
-              "y": 39,
-              "name": "Lemak amount",
-              "fill": "#203D2D",
-              "content": "48 / 70 g",
-              "fontFamily": "Inter",
-              "fontSize": 13,
-              "fontWeight": "bold"
-            },
-            {
-              "type": "frame",
-              "id": "xXbnR",
-              "x": 237,
-              "y": 78,
-              "name": "Lemak track",
-              "width": 94,
-              "height": 6,
-              "fill": "#ECF1E8",
-              "cornerRadius": 3,
-              "layout": "none"
-            },
-            {
-              "type": "frame",
-              "id": "I8YN9J",
-              "x": 237,
-              "y": 78,
-              "name": "Lemak progress",
-              "width": 65,
-              "height": 6,
-              "fill": "#FF8A50",
-              "cornerRadius": 3,
-              "layout": "none"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "id": "V1dFw",
-          "x": 22,
-          "y": 577,
-          "name": "Diary heading",
-          "fill": "#203D2D",
-          "content": "Makanan hari ini",
-          "fontFamily": "Inter",
-          "fontSize": 19,
-          "fontWeight": "bold"
-        },
-        {
-          "type": "text",
-          "id": "HNF9n",
-          "x": 22,
-          "y": 605,
-          "name": "Diary detail",
-          "fill": "#687D70",
-          "content": "3 dari 4 waktu makan",
-          "fontFamily": "Inter",
-          "fontSize": 12,
-          "fontWeight": "normal"
-        },
-        {
-          "type": "frame",
-          "id": "KhX0L",
-          "x": 22,
-          "y": 631,
-          "name": "Meal list",
-          "width": 346,
-          "height": 109,
-          "fill": "#FFFFFF",
-          "cornerRadius": 21,
-          "stroke": "#DFE9DE",
-          "strokeWidth": 1,
-          "layout": "none",
-          "children": [
-            {
-              "type": "icon",
-              "id": "xz3P6",
-              "x": 16,
-              "y": 18,
-              "name": "Lunch icon",
-              "width": 21,
-              "height": 21,
-              "icon": "sun",
-              "library": "lucide",
-              "fill": "#258747"
-            },
-            {
-              "type": "text",
-              "id": "PLqtV",
-              "x": 48,
-              "y": 17,
-              "name": "Lunch label",
-              "fill": "#203D2D",
-              "content": "Makan siang",
-              "fontFamily": "Inter",
-              "fontSize": 14,
-              "fontWeight": "bold"
-            },
-            {
-              "type": "text",
-              "id": "DFHiq",
-              "x": 48,
-              "y": 40,
-              "name": "Lunch foods",
-              "fill": "#687D70",
-              "content": "Nasi, ayam bakar, tempe",
-              "fontFamily": "Inter",
-              "fontSize": 11,
-              "fontWeight": "normal"
-            },
-            {
-              "type": "text",
-              "id": "pyudn",
-              "x": 285,
-              "y": 20,
-              "name": "Lunch calories",
-              "fill": "#203D2D",
-              "content": "650",
-              "fontFamily": "Inter",
-              "fontSize": 14,
-              "fontWeight": "bold"
-            },
-            {
-              "type": "rectangle",
-              "id": "f5kJq",
-              "x": 16,
-              "y": 68,
-              "name": "Meal divider",
-              "fill": "#DFE9DE",
-              "width": 314,
-              "height": 1
-            },
-            {
-              "type": "icon",
-              "id": "isr6y",
-              "x": 16,
-              "y": 79,
-              "name": "Snack icon",
-              "width": 19,
-              "height": 19,
-              "icon": "coffee",
-              "library": "lucide",
-              "fill": "#258747"
-            },
-            {
-              "type": "text",
-              "id": "jE8BS",
-              "x": 48,
-              "y": 79,
-              "name": "Snack label",
-              "fill": "#203D2D",
-              "content": "Camilan",
-              "fontFamily": "Inter",
-              "fontSize": 13,
-              "fontWeight": "bold"
-            },
-            {
-              "type": "text",
-              "id": "aQmB7",
-              "x": 285,
-              "y": 79,
-              "name": "Snack calories",
-              "fill": "#203D2D",
-              "content": "150",
-              "fontFamily": "Inter",
-              "fontSize": 13,
-              "fontWeight": "bold"
-            }
-          ]
-        },
-        {
-          "type": "frame",
-          "id": "N00Krm",
-          "x": 20,
-          "y": 759,
-          "name": "Floating glass navigation",
-          "width": 350,
-          "height": 70,
-          "fill": "#FFFFFFE8",
-          "cornerRadius": 35,
-          "stroke": "#FFFFFF",
-          "strokeWidth": 1,
-          "effect": [
-            {
-              "type": "background_blur",
-              "radius": 22
-            },
-            {
-              "type": "shadow",
-              "shadowType": "outer",
-              "color": "#194B3222",
-              "offset": {
-                "x": 0,
-                "y": 8
-              },
-              "blur": 24
-            }
-          ],
-          "layout": "none",
-          "children": [
-            {
-              "type": "frame",
-              "id": "e27vnV",
-              "x": 8,
-              "y": 6,
-              "name": "Hari ini active highlight",
-              "width": 78,
-              "height": 58,
-              "fill": "#DEF3DE",
-              "cornerRadius": 29,
-              "layout": "none"
-            },
-            {
-              "type": "icon",
-              "id": "QUSye",
-              "x": 36,
-              "y": 13,
-              "name": "Hari ini icon",
-              "width": 22,
-              "height": 22,
-              "icon": "house",
-              "library": "lucide",
-              "fill": "#258747"
-            },
-            {
-              "type": "text",
-              "id": "wDlfN",
-              "x": 29,
-              "y": 39,
-              "name": "Hari ini label",
-              "fill": "#203D2D",
-              "content": "Hari ini",
-              "fontFamily": "Inter",
-              "fontSize": 10,
-              "fontWeight": "bold"
-            },
-            {
-              "type": "icon",
-              "id": "E3enl1",
-              "x": 122,
-              "y": 13,
-              "name": "Program icon",
-              "width": 22,
-              "height": 22,
-              "icon": "utensils",
-              "library": "lucide",
-              "fill": "#687D70"
-            },
-            {
-              "type": "text",
-              "id": "xfYuF",
-              "x": 116,
-              "y": 39,
-              "name": "Program label",
-              "fill": "#687D70",
-              "content": "Program",
-              "fontFamily": "Inter",
-              "fontSize": 10,
-              "fontWeight": "normal"
-            },
-            {
-              "type": "icon",
-              "id": "QXfS1",
-              "x": 208,
-              "y": 13,
-              "name": "Riwayat icon",
-              "width": 22,
-              "height": 22,
-              "icon": "calendar-days",
-              "library": "lucide",
-              "fill": "#687D70"
-            },
-            {
-              "type": "text",
-              "id": "h4CwY",
-              "x": 199,
-              "y": 39,
-              "name": "Riwayat label",
-              "fill": "#687D70",
-              "content": "Riwayat",
-              "fontFamily": "Inter",
-              "fontSize": 10,
-              "fontWeight": "normal"
-            },
-            {
-              "type": "icon",
-              "id": "t3dkQ",
-              "x": 294,
-              "y": 13,
-              "name": "Profil icon",
-              "width": 22,
-              "height": 22,
-              "icon": "user-round",
-              "library": "lucide",
-              "fill": "#687D70"
-            },
-            {
-              "type": "text",
-              "id": "aUrPG",
-              "x": 288,
-              "y": 39,
-              "name": "Profil label",
-              "fill": "#687D70",
-              "content": "Profil",
-              "fontFamily": "Inter",
-              "fontSize": 10,
-              "fontWeight": "normal"
-            }
-          ]
-        },
-        {
-          "type": "frame",
-          "id": "ZwNQ3",
-          "x": 307,
-          "y": 690,
-          "name": "Raised record food button",
-          "width": 61,
-          "height": 61,
-          "fill": "#258747",
-          "cornerRadius": 31,
-          "stroke": "#F7FAF5",
-          "strokeWidth": 4,
-          "effect": {
-            "type": "shadow",
-            "shadowType": "outer",
-            "color": "#183B3240",
-            "offset": {
-              "x": 0,
-              "y": 8
-            },
-            "blur": 16
-          },
-          "layout": "none",
-          "children": [
-            {
-              "type": "icon",
-              "id": "lANh8",
-              "x": 17,
-              "y": 17,
-              "name": "Add food plus",
-              "width": 27,
-              "height": 27,
-              "icon": "plus",
-              "library": "lucide",
-              "fill": "#FFFFFF"
-            }
-          ]
-        },
-        {
-          "type": "frame",
-          "id": "UZN2w",
-          "x": 0,
-          "y": 0,
-          "name": "Dimmed blurred dashboard overlay",
-          "width": 390,
-          "height": 844,
-          "fill": "#194B3266",
-          "effect": {
-            "type": "background_blur",
-            "radius": 13
-          },
-          "layout": "none"
-        },
-        {
-          "type": "frame",
-          "id": "M84zi",
-          "x": 0,
-          "y": 258,
-          "name": "Add food glass bottom sheet",
-          "width": 390,
-          "height": 586,
-          "fill": "#F9FBF6F5",
-          "cornerRadius": [
-            30,
-            30,
-            0,
-            0
-          ],
-          "stroke": "#FFFFFF",
-          "strokeWidth": 1,
-          "effect": [
-            {
-              "type": "background_blur",
-              "radius": 24
-            },
-            {
-              "type": "shadow",
-              "shadowType": "outer",
-              "color": "#183B322B",
-              "offset": {
-                "x": 0,
-                "y": -8
-              },
-              "blur": 30
-            }
-          ],
-          "layout": "none",
-          "children": [
-            {
-              "type": "frame",
-              "id": "V9IlZ",
-              "x": 170,
-              "y": 10,
-              "name": "Sheet grab handle",
-              "width": 50,
-              "height": 5,
-              "fill": "#BED9C2",
-              "cornerRadius": 3
-            },
-            {
-              "type": "text",
-              "id": "rsUhN",
-              "x": 22,
-              "y": 35,
-              "name": "Sheet title",
-              "fill": "#203D2D",
-              "content": "Catat makanan",
-              "fontFamily": "Inter",
-              "fontSize": 23,
-              "fontWeight": "bold"
-            },
-            {
-              "type": "text",
-              "id": "R2e3Sf",
-              "x": 22,
-              "y": 68,
-              "name": "Sheet subtitle",
-              "fill": "#687D70",
-              "content": "Pilih cara yang paling nyaman untukmu",
-              "fontFamily": "Inter",
-              "fontSize": 13,
-              "fontWeight": "normal"
-            },
-            {
-              "type": "frame",
-              "id": "RDHnB",
-              "x": 22,
-              "y": 107,
-              "name": "Cari / input manual action",
-              "width": 346,
-              "height": 77,
-              "fill": "#FFFFFF",
-              "cornerRadius": 19,
-              "stroke": "#DFE9DE",
-              "strokeWidth": 1,
-              "layout": "none",
-              "children": [
-                {
-                  "type": "frame",
-                  "id": "hBWwt",
-                  "x": 12,
-                  "y": 12,
-                  "name": "Cari / input manual icon field",
-                  "width": 53,
-                  "height": 53,
-                  "fill": "#F9F1D3",
-                  "cornerRadius": 16,
-                  "layout": "none"
-                },
-                {
-                  "type": "icon",
-                  "id": "gkwKd",
-                  "x": 27,
-                  "y": 26,
-                  "name": "Cari / input manual icon",
-                  "width": 23,
-                  "height": 23,
-                  "icon": "search",
-                  "library": "lucide",
-                  "fill": "#258747"
-                },
-                {
-                  "type": "text",
-                  "id": "LpMRY",
-                  "x": 79,
-                  "y": 18,
-                  "name": "Cari / input manual heading",
-                  "fill": "#203D2D",
-                  "content": "Cari / input manual",
-                  "fontFamily": "Inter",
-                  "fontSize": 16,
-                  "fontWeight": "bold"
-                },
-                {
-                  "type": "text",
-                  "id": "HiYL6",
-                  "x": 79,
-                  "y": 43,
-                  "name": "Cari / input manual description",
-                  "fill": "#687D70",
-                  "content": "Selalu bisa, bahkan tanpa internet",
-                  "fontFamily": "Inter",
-                  "fontSize": 11,
-                  "fontWeight": "normal"
-                },
-                {
-                  "type": "icon",
-                  "id": "hJa17",
-                  "x": 311,
-                  "y": 28,
-                  "name": "Cari / input manual chevron",
-                  "width": 18,
-                  "height": 18,
-                  "icon": "chevron-right",
-                  "library": "lucide",
-                  "fill": "#687D70"
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "XUQji",
-              "x": 22,
-              "y": 198,
-              "name": "Catat dengan suara action",
-              "width": 346,
-              "height": 77,
-              "fill": "#FFFFFF",
-              "cornerRadius": 19,
-              "stroke": "#258747",
-              "strokeWidth": 2,
-              "layout": "none",
-              "children": [
-                {
-                  "type": "frame",
-                  "id": "bx4my",
-                  "x": 12,
-                  "y": 12,
-                  "name": "Catat dengan suara icon field",
-                  "width": 53,
-                  "height": 53,
-                  "fill": "#D7EEE8",
-                  "cornerRadius": 16,
-                  "layout": "none"
-                },
-                {
-                  "type": "icon",
-                  "id": "QgsiJ",
-                  "x": 27,
-                  "y": 26,
-                  "name": "Catat dengan suara icon",
-                  "width": 23,
-                  "height": 23,
-                  "icon": "mic",
-                  "library": "lucide",
-                  "fill": "#258747"
-                },
-                {
-                  "type": "text",
-                  "id": "i0Elh",
-                  "x": 79,
-                  "y": 18,
-                  "name": "Catat dengan suara heading",
-                  "fill": "#203D2D",
-                  "content": "Catat dengan suara",
-                  "fontFamily": "Inter",
-                  "fontSize": 16,
-                  "fontWeight": "bold"
-                },
-                {
-                  "type": "text",
-                  "id": "v4iSR",
-                  "x": 79,
-                  "y": 43,
-                  "name": "Catat dengan suara description",
-                  "fill": "#687D70",
-                  "content": "Sebutkan saja yang kamu makan",
-                  "fontFamily": "Inter",
-                  "fontSize": 11,
-                  "fontWeight": "normal"
-                },
-                {
-                  "type": "icon",
-                  "id": "OKIr3",
-                  "x": 311,
-                  "y": 28,
-                  "name": "Catat dengan suara chevron",
-                  "width": 18,
-                  "height": 18,
-                  "icon": "chevron-right",
-                  "library": "lucide",
-                  "fill": "#687D70"
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "tbaPk",
-              "x": 22,
-              "y": 289,
-              "name": "Foto makanan action",
-              "width": 346,
-              "height": 77,
-              "fill": "#FFFFFF",
-              "cornerRadius": 19,
-              "stroke": "#DFE9DE",
-              "strokeWidth": 1,
-              "layout": "none",
-              "children": [
-                {
-                  "type": "frame",
-                  "id": "r9pmsk",
-                  "x": 12,
-                  "y": 12,
-                  "name": "Foto makanan icon field",
-                  "width": 53,
-                  "height": 53,
-                  "fill": "#DEF3DE",
-                  "cornerRadius": 16,
-                  "layout": "none"
-                },
-                {
-                  "type": "icon",
-                  "id": "n8XKi",
-                  "x": 27,
-                  "y": 26,
-                  "name": "Foto makanan icon",
-                  "width": 23,
-                  "height": 23,
-                  "icon": "camera",
-                  "library": "lucide",
-                  "fill": "#258747"
-                },
-                {
-                  "type": "text",
-                  "id": "hIzIz",
-                  "x": 79,
-                  "y": 18,
-                  "name": "Foto makanan heading",
-                  "fill": "#203D2D",
-                  "content": "Foto makanan",
-                  "fontFamily": "Inter",
-                  "fontSize": 16,
-                  "fontWeight": "bold"
-                },
-                {
-                  "type": "text",
-                  "id": "VsR8b",
-                  "x": 79,
-                  "y": 43,
-                  "name": "Foto makanan description",
-                  "fill": "#687D70",
-                  "content": "Dapatkan saran dari fotomu",
-                  "fontFamily": "Inter",
-                  "fontSize": 11,
-                  "fontWeight": "normal"
-                },
-                {
-                  "type": "icon",
-                  "id": "HYqPp",
-                  "x": 311,
-                  "y": 28,
-                  "name": "Foto makanan chevron",
-                  "width": 18,
-                  "height": 18,
-                  "icon": "chevron-right",
-                  "library": "lucide",
-                  "fill": "#687D70"
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "MpPhD",
-              "x": 22,
-              "y": 380,
-              "name": "Scan barcode action",
-              "width": 346,
-              "height": 77,
-              "fill": "#FFFFFF",
-              "cornerRadius": 19,
-              "stroke": "#DFE9DE",
-              "strokeWidth": 1,
-              "layout": "none",
-              "children": [
-                {
-                  "type": "frame",
-                  "id": "b6Dhj",
-                  "x": 12,
-                  "y": 12,
-                  "name": "Scan barcode icon field",
-                  "width": 53,
-                  "height": 53,
-                  "fill": "#FFF0E5",
-                  "cornerRadius": 16,
-                  "layout": "none"
-                },
-                {
-                  "type": "icon",
-                  "id": "aoGUq",
-                  "x": 27,
-                  "y": 26,
-                  "name": "Scan barcode icon",
-                  "width": 23,
-                  "height": 23,
-                  "icon": "scan-barcode",
-                  "library": "lucide",
-                  "fill": "#258747"
-                },
-                {
-                  "type": "text",
-                  "id": "ozzFL",
-                  "x": 79,
-                  "y": 18,
-                  "name": "Scan barcode heading",
-                  "fill": "#203D2D",
-                  "content": "Scan barcode",
-                  "fontFamily": "Inter",
-                  "fontSize": 16,
-                  "fontWeight": "bold"
-                },
-                {
-                  "type": "text",
-                  "id": "szQoz",
-                  "x": 79,
-                  "y": 43,
-                  "name": "Scan barcode description",
-                  "fill": "#687D70",
-                  "content": "Cari produk kemasan dengan cepat",
-                  "fontFamily": "Inter",
-                  "fontSize": 11,
-                  "fontWeight": "normal"
-                },
-                {
-                  "type": "icon",
-                  "id": "IObSU",
-                  "x": 311,
-                  "y": 28,
-                  "name": "Scan barcode chevron",
-                  "width": 18,
-                  "height": 18,
-                  "icon": "chevron-right",
-                  "library": "lucide",
-                  "fill": "#687D70"
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "Yb5NR",
-              "x": 22,
-              "y": 481,
-              "name": "Privacy and offline note",
-              "width": 346,
-              "height": 62,
-              "fill": "#DEF3DE",
-              "cornerRadius": 15,
-              "layout": "none",
-              "children": [
-                {
-                  "type": "icon",
-                  "id": "rlu5o",
-                  "x": 14,
-                  "y": 18,
-                  "name": "Privacy icon",
-                  "width": 21,
-                  "height": 21,
-                  "icon": "shield-check",
-                  "library": "lucide",
-                  "fill": "#258747"
-                },
-                {
-                  "type": "text",
-                  "id": "ZRff2",
-                  "x": 44,
-                  "y": 12,
-                  "name": "Privacy line 1",
-                  "fill": "#203D2D",
-                  "content": "Foto hanya diunggah dengan izinmu.",
-                  "fontFamily": "Inter",
-                  "fontSize": 12,
-                  "fontWeight": "medium"
-                },
-                {
-                  "type": "text",
-                  "id": "e1lBbH",
-                  "x": 44,
-                  "y": 32,
-                  "name": "Privacy line 2",
-                  "fill": "#687D70",
-                  "content": "Suara & input manual jalan tanpa internet.",
-                  "fontFamily": "Inter",
-                  "fontSize": 11,
-                  "fontWeight": "normal"
-                }
-              ]
-            }
-          ]
         }
       ]
     },
@@ -3367,110 +2159,192 @@
         {
           "type": "frame",
           "id": "GJ4G6",
-          "x": 8,
-          "y": 6,
+          "x": 6,
+          "y": 7,
           "name": "Hari ini active highlight",
-          "width": 78,
-          "height": 58,
+          "width": 70,
+          "height": 56,
           "fill": "#DEF3DE",
           "cornerRadius": 29,
           "layout": "none"
         },
         {
-          "type": "icon",
-          "id": "u389jv",
-          "x": 36,
-          "y": 13,
-          "name": "Hari ini icon",
-          "width": 22,
-          "height": 22,
-          "icon": "house",
-          "library": "lucide",
-          "fill": "#258747"
+          "type": "frame",
+          "id": "AjB6V",
+          "x": 145,
+          "y": -21,
+          "name": "Catat · raised center button",
+          "width": 60,
+          "height": 60,
+          "fill": "#258747",
+          "cornerRadius": 30,
+          "stroke": "#FFFFFF",
+          "strokeWidth": 4,
+          "effect": {
+            "type": "shadow",
+            "shadowType": "outer",
+            "color": "#194B3240",
+            "offset": {
+              "x": 0,
+              "y": 6
+            },
+            "blur": 16
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "icon",
+              "id": "WyAqL",
+              "x": 16,
+              "y": 16,
+              "name": "Catat plus icon",
+              "width": 28,
+              "height": 28,
+              "icon": "plus",
+              "library": "lucide",
+              "fill": "#FFFFFF"
+            }
+          ]
         },
         {
-          "type": "text",
-          "id": "W1ixf",
-          "x": 29,
-          "y": 39,
-          "name": "Hari ini label",
-          "fill": "#203D2D",
-          "content": "Hari ini",
-          "fontFamily": "Inter",
-          "fontSize": 10,
-          "fontWeight": "bold"
+          "type": "frame",
+          "id": "LzKWX",
+          "x": 6,
+          "y": 7,
+          "name": "Hari ini centered navigation slot",
+          "width": 70,
+          "height": 56,
+          "layout": "vertical",
+          "gap": 2,
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon",
+              "id": "u389jv",
+              "name": "Hari ini icon",
+              "width": 22,
+              "height": 22,
+              "icon": "house",
+              "library": "lucide",
+              "fill": "#258747"
+            },
+            {
+              "type": "text",
+              "id": "W1ixf",
+              "name": "Hari ini label",
+              "fill": "#203D2D",
+              "content": "Hari ini",
+              "fontFamily": "Inter",
+              "fontSize": 10,
+              "fontWeight": "bold"
+            }
+          ]
         },
         {
-          "type": "icon",
-          "id": "s1sSr",
-          "x": 122,
-          "y": 13,
-          "name": "Program icon",
-          "width": 22,
-          "height": 22,
-          "icon": "utensils",
-          "library": "lucide",
-          "fill": "#687D70"
+          "type": "frame",
+          "id": "o1ugIY",
+          "x": 81,
+          "y": 7,
+          "name": "Program centered navigation slot",
+          "width": 70,
+          "height": 56,
+          "layout": "vertical",
+          "gap": 2,
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon",
+              "id": "s1sSr",
+              "name": "Program icon",
+              "width": 22,
+              "height": 22,
+              "icon": "utensils",
+              "library": "lucide",
+              "fill": "#687D70"
+            },
+            {
+              "type": "text",
+              "id": "DUs5q",
+              "name": "Program label",
+              "fill": "#687D70",
+              "content": "Program",
+              "fontFamily": "Inter",
+              "fontSize": 10,
+              "fontWeight": "normal"
+            }
+          ]
         },
         {
-          "type": "text",
-          "id": "DUs5q",
-          "x": 116,
-          "y": 39,
-          "name": "Program label",
-          "fill": "#687D70",
-          "content": "Program",
-          "fontFamily": "Inter",
-          "fontSize": 10,
-          "fontWeight": "normal"
+          "type": "frame",
+          "id": "EFDhb",
+          "x": 210,
+          "y": 7,
+          "name": "Riwayat centered navigation slot",
+          "width": 70,
+          "height": 56,
+          "layout": "vertical",
+          "gap": 2,
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon",
+              "id": "blQgZ",
+              "name": "Riwayat icon",
+              "width": 22,
+              "height": 22,
+              "icon": "calendar-days",
+              "library": "lucide",
+              "fill": "#687D70"
+            },
+            {
+              "type": "text",
+              "id": "oJz2m",
+              "name": "Riwayat label",
+              "fill": "#687D70",
+              "content": "Riwayat",
+              "fontFamily": "Inter",
+              "fontSize": 10,
+              "fontWeight": "normal"
+            }
+          ]
         },
         {
-          "type": "icon",
-          "id": "blQgZ",
-          "x": 208,
-          "y": 13,
-          "name": "Riwayat icon",
-          "width": 22,
-          "height": 22,
-          "icon": "calendar-days",
-          "library": "lucide",
-          "fill": "#687D70"
-        },
-        {
-          "type": "text",
-          "id": "oJz2m",
-          "x": 199,
-          "y": 39,
-          "name": "Riwayat label",
-          "fill": "#687D70",
-          "content": "Riwayat",
-          "fontFamily": "Inter",
-          "fontSize": 10,
-          "fontWeight": "normal"
-        },
-        {
-          "type": "icon",
-          "id": "Omzhm",
-          "x": 294,
-          "y": 13,
-          "name": "Profil icon",
-          "width": 22,
-          "height": 22,
-          "icon": "user-round",
-          "library": "lucide",
-          "fill": "#687D70"
-        },
-        {
-          "type": "text",
-          "id": "dHCwp",
-          "x": 288,
-          "y": 39,
-          "name": "Profil label",
-          "fill": "#687D70",
-          "content": "Profil",
-          "fontFamily": "Inter",
-          "fontSize": 10,
-          "fontWeight": "normal"
+          "type": "frame",
+          "id": "y2BHij",
+          "x": 277,
+          "y": 7,
+          "name": "Profil centered navigation slot",
+          "width": 67,
+          "height": 56,
+          "layout": "vertical",
+          "gap": 2,
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon",
+              "id": "Omzhm",
+              "name": "Profil icon",
+              "width": 22,
+              "height": 22,
+              "icon": "user-round",
+              "library": "lucide",
+              "fill": "#687D70"
+            },
+            {
+              "type": "text",
+              "id": "dHCwp",
+              "name": "Profil label",
+              "fill": "#687D70",
+              "content": "Profil",
+              "fontFamily": "Inter",
+              "fontSize": 10,
+              "fontWeight": "normal"
+            }
+          ]
         }
       ]
     },
@@ -3797,7 +2671,7 @@
           "fill": "#687D70",
           "textGrowth": "fixed-width",
           "width": 420,
-          "content": "Kartu putih berbingkai lembut; dock kaca buram hanya untuk elemen melayang. Aksi utama hijau solid agar tetap terbaca.",
+          "content": "Dock kaca buram dengan + Catat terangkat di tengah. Empat tujuan tetap jelas, sementara daftar makanan memakai lebar penuh.",
           "fontFamily": "Inter",
           "fontSize": 12,
           "fontWeight": "normal"
@@ -7820,30 +6694,6 @@
           "descendants": {
             "GJ4G6": {
               "fill": "#DEF3DE"
-            },
-            "u389jv": {
-              "fill": "#258747"
-            },
-            "W1ixf": {
-              "fill": "#203D2D"
-            },
-            "s1sSr": {
-              "fill": "#687D70"
-            },
-            "DUs5q": {
-              "fill": "#687D70"
-            },
-            "blQgZ": {
-              "fill": "#687D70"
-            },
-            "oJz2m": {
-              "fill": "#687D70"
-            },
-            "Omzhm": {
-              "fill": "#687D70"
-            },
-            "dHCwp": {
-              "fill": "#687D70"
             }
           }
         }
@@ -8962,34 +7812,9 @@
           "height": 70,
           "descendants": {
             "GJ4G6": {
-              "x": 180,
-              "fill": "#DEF3DE"
-            },
-            "u389jv": {
-              "fill": "#687D70"
-            },
-            "W1ixf": {
-              "fill": "#687D70",
-              "fontWeight": "normal"
-            },
-            "s1sSr": {
-              "fill": "#687D70"
-            },
-            "DUs5q": {
-              "fill": "#687D70"
-            },
-            "blQgZ": {
-              "fill": "#258747"
-            },
-            "oJz2m": {
-              "fill": "#203D2D",
-              "fontWeight": "bold"
-            },
-            "Omzhm": {
-              "fill": "#687D70"
-            },
-            "dHCwp": {
-              "fill": "#687D70"
+              "x": 210,
+              "fill": "#DEF3DE",
+              "width": 70
             }
           }
         }
@@ -12475,34 +11300,9 @@
           "height": 70,
           "descendants": {
             "GJ4G6": {
-              "x": 94,
-              "fill": "#DEF3DE"
-            },
-            "u389jv": {
-              "fill": "#687D70"
-            },
-            "W1ixf": {
-              "fill": "#687D70",
-              "fontWeight": "normal"
-            },
-            "s1sSr": {
-              "fill": "#258747"
-            },
-            "DUs5q": {
-              "fill": "#203D2D",
-              "fontWeight": "bold"
-            },
-            "blQgZ": {
-              "fill": "#687D70"
-            },
-            "oJz2m": {
-              "fill": "#687D70"
-            },
-            "Omzhm": {
-              "fill": "#687D70"
-            },
-            "dHCwp": {
-              "fill": "#687D70"
+              "x": 81,
+              "fill": "#DEF3DE",
+              "width": 70
             }
           }
         }
@@ -13353,34 +12153,9 @@
           "height": 70,
           "descendants": {
             "GJ4G6": {
-              "x": 180,
-              "fill": "#DEF3DE"
-            },
-            "u389jv": {
-              "fill": "#687D70"
-            },
-            "W1ixf": {
-              "fill": "#687D70",
-              "fontWeight": "normal"
-            },
-            "s1sSr": {
-              "fill": "#687D70"
-            },
-            "DUs5q": {
-              "fill": "#687D70"
-            },
-            "blQgZ": {
-              "fill": "#258747"
-            },
-            "oJz2m": {
-              "fill": "#203D2D",
-              "fontWeight": "bold"
-            },
-            "Omzhm": {
-              "fill": "#687D70"
-            },
-            "dHCwp": {
-              "fill": "#687D70"
+              "x": 210,
+              "fill": "#DEF3DE",
+              "width": 70
             }
           }
         }
@@ -14205,34 +12980,9 @@
           "height": 70,
           "descendants": {
             "GJ4G6": {
-              "x": 266,
-              "fill": "#DEF3DE"
-            },
-            "u389jv": {
-              "fill": "#687D70"
-            },
-            "W1ixf": {
-              "fill": "#687D70",
-              "fontWeight": "normal"
-            },
-            "s1sSr": {
-              "fill": "#687D70"
-            },
-            "DUs5q": {
-              "fill": "#687D70"
-            },
-            "blQgZ": {
-              "fill": "#687D70"
-            },
-            "oJz2m": {
-              "fill": "#687D70"
-            },
-            "Omzhm": {
-              "fill": "#258747"
-            },
-            "dHCwp": {
-              "fill": "#203D2D",
-              "fontWeight": "bold"
+              "x": 277,
+              "fill": "#DEF3DE",
+              "width": 67
             }
           }
         }
@@ -14993,34 +13743,9 @@
           "height": 70,
           "descendants": {
             "GJ4G6": {
-              "x": 266,
-              "fill": "#DEF3DE"
-            },
-            "u389jv": {
-              "fill": "#687D70"
-            },
-            "W1ixf": {
-              "fill": "#687D70",
-              "fontWeight": "normal"
-            },
-            "s1sSr": {
-              "fill": "#687D70"
-            },
-            "DUs5q": {
-              "fill": "#687D70"
-            },
-            "blQgZ": {
-              "fill": "#687D70"
-            },
-            "oJz2m": {
-              "fill": "#687D70"
-            },
-            "Omzhm": {
-              "fill": "#258747"
-            },
-            "dHCwp": {
-              "fill": "#203D2D",
-              "fontWeight": "bold"
+              "x": 277,
+              "fill": "#DEF3DE",
+              "width": 67
             }
           }
         }
@@ -18431,8 +17156,8 @@
           "x": 22,
           "y": 627,
           "name": "Meal list",
-          "width": 273,
-          "height": 115,
+          "width": 346,
+          "height": 107,
           "fill": "#FFFFFF",
           "cornerRadius": 18,
           "stroke": "#DFE9DE",
@@ -18454,7 +17179,7 @@
             {
               "type": "text",
               "id": "WI7w3",
-              "x": 211,
+              "x": 283,
               "y": 7,
               "name": "Sarapan kcal",
               "fill": "#258747",
@@ -18469,7 +17194,7 @@
               "x": 14,
               "y": 30,
               "name": "Meal line 0",
-              "width": 242,
+              "width": 318,
               "height": 1,
               "fill": "#E7EDE6",
               "layout": "none"
@@ -18489,7 +17214,7 @@
             {
               "type": "text",
               "id": "OR3xA",
-              "x": 211,
+              "x": 283,
               "y": 34,
               "name": "Makan siang kcal",
               "fill": "#258747",
@@ -18504,7 +17229,7 @@
               "x": 14,
               "y": 57,
               "name": "Meal line 1",
-              "width": 242,
+              "width": 318,
               "height": 1,
               "fill": "#E7EDE6",
               "layout": "none"
@@ -18524,7 +17249,7 @@
             {
               "type": "text",
               "id": "T3dxO5",
-              "x": 211,
+              "x": 283,
               "y": 61,
               "name": "Camilan kcal",
               "fill": "#258747",
@@ -18539,7 +17264,7 @@
               "x": 14,
               "y": 84,
               "name": "Meal line 2",
-              "width": 242,
+              "width": 318,
               "height": 1,
               "fill": "#E7EDE6",
               "layout": "none"
@@ -18559,7 +17284,7 @@
             {
               "type": "text",
               "id": "QALnJ",
-              "x": 211,
+              "x": 283,
               "y": 88,
               "name": "Makan malam kcal",
               "fill": "#258747",
@@ -18571,182 +17296,14 @@
           ]
         },
         {
-          "type": "frame",
-          "id": "hTO7t",
-          "x": 307,
-          "y": 680,
-          "name": "Add food floating button",
-          "width": 61,
-          "height": 61,
-          "fill": "#258747",
-          "cornerRadius": 31,
-          "stroke": "#F7FAF5",
-          "strokeWidth": 4,
-          "effect": {
-            "type": "shadow",
-            "shadowType": "outer",
-            "color": "#194B3240",
-            "offset": {
-              "x": 0,
-              "y": 8
-            },
-            "blur": 18
-          },
-          "layout": "none",
-          "children": [
-            {
-              "type": "icon",
-              "id": "y9JDrG",
-              "x": 17,
-              "y": 17,
-              "name": "Add plus",
-              "width": 27,
-              "height": 27,
-              "icon": "plus",
-              "library": "lucide",
-              "fill": "#FFFFFF"
-            }
-          ]
-        },
-        {
-          "type": "frame",
-          "id": "u3sECk",
+          "id": "E867JD",
+          "type": "ref",
+          "ref": "zHoy6",
+          "name": "Navigation · Hari ini",
           "x": 20,
           "y": 759,
-          "name": "Floating capsule navigation",
           "width": 350,
-          "height": 70,
-          "fill": "#FFFFFFEB",
-          "cornerRadius": 35,
-          "stroke": "#FFFFFF",
-          "strokeWidth": 1,
-          "effect": [
-            {
-              "type": "background_blur",
-              "radius": 22
-            },
-            {
-              "type": "shadow",
-              "shadowType": "outer",
-              "color": "#194B3222",
-              "offset": {
-                "x": 0,
-                "y": 8
-              },
-              "blur": 24
-            }
-          ],
-          "layout": "none",
-          "children": [
-            {
-              "type": "frame",
-              "id": "O5PdU2",
-              "x": 8,
-              "y": 6,
-              "name": "Selected destination",
-              "width": 78,
-              "height": 58,
-              "fill": "#DEF3DE",
-              "cornerRadius": 29,
-              "layout": "none"
-            },
-            {
-              "type": "icon",
-              "id": "RkzUx",
-              "x": 36,
-              "y": 13,
-              "name": "Hari ini icon",
-              "width": 22,
-              "height": 22,
-              "icon": "house",
-              "library": "lucide",
-              "fill": "#258747"
-            },
-            {
-              "type": "text",
-              "id": "TccSm",
-              "x": 29,
-              "y": 39,
-              "name": "Hari ini label",
-              "fill": "#203D2D",
-              "content": "Hari ini",
-              "fontFamily": "Inter",
-              "fontSize": 10,
-              "fontWeight": "bold"
-            },
-            {
-              "type": "icon",
-              "id": "u5165R",
-              "x": 122,
-              "y": 13,
-              "name": "Program icon",
-              "width": 22,
-              "height": 22,
-              "icon": "utensils",
-              "library": "lucide",
-              "fill": "#687D70"
-            },
-            {
-              "type": "text",
-              "id": "pKZTj",
-              "x": 116,
-              "y": 39,
-              "name": "Program label",
-              "fill": "#687D70",
-              "content": "Program",
-              "fontFamily": "Inter",
-              "fontSize": 10,
-              "fontWeight": "normal"
-            },
-            {
-              "type": "icon",
-              "id": "nSdiJ",
-              "x": 208,
-              "y": 13,
-              "name": "Riwayat icon",
-              "width": 22,
-              "height": 22,
-              "icon": "calendar-days",
-              "library": "lucide",
-              "fill": "#687D70"
-            },
-            {
-              "type": "text",
-              "id": "uqakm",
-              "x": 199,
-              "y": 39,
-              "name": "Riwayat label",
-              "fill": "#687D70",
-              "content": "Riwayat",
-              "fontFamily": "Inter",
-              "fontSize": 10,
-              "fontWeight": "normal"
-            },
-            {
-              "type": "icon",
-              "id": "VAi7f",
-              "x": 294,
-              "y": 13,
-              "name": "Profil icon",
-              "width": 22,
-              "height": 22,
-              "icon": "user-round",
-              "library": "lucide",
-              "fill": "#687D70"
-            },
-            {
-              "type": "text",
-              "id": "VnEcs",
-              "x": 288,
-              "y": 39,
-              "name": "Profil label",
-              "fill": "#687D70",
-              "content": "Profil",
-              "fontFamily": "Inter",
-              "fontSize": 10,
-              "fontWeight": "normal"
-            }
-          ]
+          "height": 70
         }
       ]
     },
@@ -20474,6 +19031,1085 @@
               "icon": "arrow-right",
               "library": "lucide",
               "fill": "#FFFFFF"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "HHjXr",
+      "x": 470,
+      "y": 0,
+      "name": "02 · Tambah makanan",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "#F7FAF5",
+      "layout": "none",
+      "children": [
+        {
+          "type": "frame",
+          "id": "ruCN6",
+          "x": 0,
+          "y": 0,
+          "name": "Vivid green top field",
+          "width": 390,
+          "height": 364,
+          "fill": "#258747",
+          "cornerRadius": [
+            0,
+            0,
+            34,
+            34
+          ],
+          "layout": "none"
+        },
+        {
+          "type": "text",
+          "id": "IlIBG",
+          "x": 22,
+          "y": 19,
+          "name": "Status time",
+          "fill": "#FFFFFF",
+          "content": "9:41",
+          "fontFamily": "Inter",
+          "fontSize": 14,
+          "fontWeight": "bold"
+        },
+        {
+          "type": "icon",
+          "id": "tRf6K",
+          "x": 304,
+          "y": 18,
+          "name": "Signal",
+          "width": 17,
+          "height": 17,
+          "icon": "signal",
+          "library": "lucide",
+          "fill": "#FFFFFF"
+        },
+        {
+          "type": "icon",
+          "id": "q9RzC3",
+          "x": 327,
+          "y": 18,
+          "name": "Wi-Fi",
+          "width": 17,
+          "height": 17,
+          "icon": "wifi",
+          "library": "lucide",
+          "fill": "#FFFFFF"
+        },
+        {
+          "type": "icon",
+          "id": "DRYUO",
+          "x": 350,
+          "y": 18,
+          "name": "Battery",
+          "width": 19,
+          "height": 19,
+          "icon": "battery-full",
+          "library": "lucide",
+          "fill": "#FFFFFF"
+        },
+        {
+          "type": "text",
+          "id": "XEpBR",
+          "x": 22,
+          "y": 71,
+          "name": "Greeting",
+          "fill": "#FFFFFF",
+          "content": "Hai, Naya!",
+          "fontFamily": "Inter",
+          "fontSize": 31,
+          "fontWeight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "ZtAtO",
+          "x": 22,
+          "y": 115,
+          "name": "Date",
+          "fill": "#E2F2E6",
+          "content": "Sabtu, 8 November 2026",
+          "fontFamily": "Inter",
+          "fontSize": 13,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "svWzQ",
+          "x": 336,
+          "y": 72,
+          "name": "Small Mealora logo",
+          "width": 35,
+          "height": 35,
+          "fill": [
+            "#FFFFFF",
+            {
+              "type": "image",
+              "enabled": true,
+              "url": "brand-assets/mealora-open-bowl-symbol.png",
+              "mode": "contain"
+            }
+          ],
+          "cornerRadius": 18,
+          "layout": "none"
+        },
+        {
+          "type": "frame",
+          "id": "q1BHGB",
+          "x": 22,
+          "y": 153,
+          "name": "Active program chip",
+          "width": 346,
+          "height": 48,
+          "fill": "#FFFFFF29",
+          "cornerRadius": 16,
+          "stroke": "#FFFFFF88",
+          "strokeWidth": 1,
+          "effect": {
+            "type": "background_blur",
+            "radius": 14
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "icon",
+              "id": "Lfxge",
+              "x": 14,
+              "y": 13,
+              "name": "Program icon",
+              "width": 21,
+              "height": 21,
+              "icon": "utensils",
+              "library": "lucide",
+              "fill": "#FFFFFF"
+            },
+            {
+              "type": "text",
+              "id": "RgrKG",
+              "x": 47,
+              "y": 16,
+              "name": "Program label",
+              "fill": "#FFFFFF",
+              "content": "Program aktif · Makan Sehat",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "icon",
+              "id": "g3DTq",
+              "x": 308,
+              "y": 14,
+              "name": "Program next",
+              "width": 20,
+              "height": 20,
+              "icon": "chevron-right",
+              "library": "lucide",
+              "fill": "#FFFFFF"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "EmyAH",
+          "x": 22,
+          "y": 217,
+          "name": "Calorie highlight card",
+          "width": 346,
+          "height": 216,
+          "fill": "#FFFFFF",
+          "cornerRadius": 25,
+          "effect": {
+            "type": "shadow",
+            "shadowType": "outer",
+            "color": "#194B3222",
+            "offset": {
+              "x": 0,
+              "y": 11
+            },
+            "blur": 23
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "fTBfD",
+              "x": 21,
+              "y": 20,
+              "name": "Card eyebrow",
+              "fill": "#288D48",
+              "content": "PERKIRAAN HARI INI",
+              "fontFamily": "Inter",
+              "fontSize": 11,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "text",
+              "id": "N0lML",
+              "x": 20,
+              "y": 50,
+              "name": "Consumed value",
+              "fill": "#203D2D",
+              "content": "1.420",
+              "fontFamily": "Inter",
+              "fontSize": 50,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "text",
+              "id": "R67Kay",
+              "x": 184,
+              "y": 78,
+              "name": "Daily target",
+              "fill": "#687D70",
+              "content": "/ 2.100 kkal",
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "Wj045",
+              "x": 21,
+              "y": 128,
+              "name": "Calorie track",
+              "width": 304,
+              "height": 10,
+              "fill": "#E8F0E5",
+              "cornerRadius": 5,
+              "layout": "none"
+            },
+            {
+              "type": "frame",
+              "id": "v1xRO7",
+              "x": 21,
+              "y": 128,
+              "name": "Calorie filled",
+              "width": 205,
+              "height": 10,
+              "fill": "#FF8A50",
+              "cornerRadius": 5,
+              "layout": "none"
+            },
+            {
+              "type": "text",
+              "id": "C9Wafu",
+              "x": 21,
+              "y": 161,
+              "name": "Remaining label",
+              "fill": "#687D70",
+              "content": "Sisa perkiraan",
+              "fontFamily": "Inter",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "RGp3n",
+              "x": 21,
+              "y": 181,
+              "name": "Remaining number",
+              "fill": "#203D2D",
+              "content": "680 kkal",
+              "fontFamily": "Inter",
+              "fontSize": 21,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "icon",
+              "id": "mB2pA",
+              "x": 294,
+              "y": 168,
+              "name": "Calorie icon",
+              "width": 31,
+              "height": 31,
+              "icon": "utensils",
+              "library": "lucide",
+              "fill": "#288D48"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "wzym2",
+          "x": 22,
+          "y": 451,
+          "name": "Macro card",
+          "width": 346,
+          "height": 106,
+          "fill": "#FFFFFF",
+          "cornerRadius": 20,
+          "stroke": "#DFE9DE",
+          "strokeWidth": 1,
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "DzZMH",
+              "x": 15,
+              "y": 16,
+              "name": "Protein label",
+              "fill": "#687D70",
+              "content": "Protein",
+              "fontFamily": "Inter",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "gdMT9",
+              "x": 15,
+              "y": 39,
+              "name": "Protein value",
+              "fill": "#203D2D",
+              "content": "72 / 110 g",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "frame",
+              "id": "bqIjS",
+              "x": 15,
+              "y": 77,
+              "name": "Protein track",
+              "width": 94,
+              "height": 6,
+              "fill": "#ECF1E8",
+              "cornerRadius": 3,
+              "layout": "none"
+            },
+            {
+              "type": "frame",
+              "id": "GM7FH",
+              "x": 15,
+              "y": 77,
+              "name": "Protein fill",
+              "width": 61,
+              "height": 6,
+              "fill": "#288D48",
+              "cornerRadius": 3,
+              "layout": "none"
+            },
+            {
+              "type": "text",
+              "id": "k4i21v",
+              "x": 126,
+              "y": 16,
+              "name": "Karbo label",
+              "fill": "#687D70",
+              "content": "Karbo",
+              "fontFamily": "Inter",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "k8dZY",
+              "x": 126,
+              "y": 39,
+              "name": "Karbo value",
+              "fill": "#203D2D",
+              "content": "180 / 250 g",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "frame",
+              "id": "f6weya",
+              "x": 126,
+              "y": 77,
+              "name": "Karbo track",
+              "width": 94,
+              "height": 6,
+              "fill": "#ECF1E8",
+              "cornerRadius": 3,
+              "layout": "none"
+            },
+            {
+              "type": "frame",
+              "id": "Keywu",
+              "x": 126,
+              "y": 77,
+              "name": "Karbo fill",
+              "width": 68,
+              "height": 6,
+              "fill": "#F5D35C",
+              "cornerRadius": 3,
+              "layout": "none"
+            },
+            {
+              "type": "text",
+              "id": "S8Xxbt",
+              "x": 237,
+              "y": 16,
+              "name": "Lemak label",
+              "fill": "#687D70",
+              "content": "Lemak",
+              "fontFamily": "Inter",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "E9kybl",
+              "x": 237,
+              "y": 39,
+              "name": "Lemak value",
+              "fill": "#203D2D",
+              "content": "48 / 70 g",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "frame",
+              "id": "ex9O5",
+              "x": 237,
+              "y": 77,
+              "name": "Lemak track",
+              "width": 94,
+              "height": 6,
+              "fill": "#ECF1E8",
+              "cornerRadius": 3,
+              "layout": "none"
+            },
+            {
+              "type": "frame",
+              "id": "K2at7f",
+              "x": 237,
+              "y": 77,
+              "name": "Lemak fill",
+              "width": 65,
+              "height": 6,
+              "fill": "#FF8A50",
+              "cornerRadius": 3,
+              "layout": "none"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "XBxeE",
+          "x": 22,
+          "y": 575,
+          "name": "Meals heading",
+          "fill": "#203D2D",
+          "content": "Makanan hari ini",
+          "fontFamily": "Inter",
+          "fontSize": 19,
+          "fontWeight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "mXRUs",
+          "x": 22,
+          "y": 603,
+          "name": "Meals count",
+          "fill": "#687D70",
+          "content": "4 waktu makan tercatat",
+          "fontFamily": "Inter",
+          "fontSize": 12,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "ihWi9",
+          "x": 22,
+          "y": 627,
+          "name": "Meal list",
+          "width": 346,
+          "height": 107,
+          "fill": "#FFFFFF",
+          "cornerRadius": 18,
+          "stroke": "#DFE9DE",
+          "strokeWidth": 1,
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "qxhoI",
+              "x": 14,
+              "y": 7,
+              "name": "Sarapan name",
+              "fill": "#203D2D",
+              "content": "Sarapan",
+              "fontFamily": "Inter",
+              "fontSize": 12,
+              "fontWeight": "medium"
+            },
+            {
+              "type": "text",
+              "id": "yCRjW",
+              "x": 283,
+              "y": 7,
+              "name": "Sarapan kcal",
+              "fill": "#258747",
+              "content": "420 kkal",
+              "fontFamily": "Inter",
+              "fontSize": 11,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "frame",
+              "id": "c4irXo",
+              "x": 14,
+              "y": 30,
+              "name": "Meal line 0",
+              "width": 318,
+              "height": 1,
+              "fill": "#E7EDE6",
+              "layout": "none"
+            },
+            {
+              "type": "text",
+              "id": "P418qV",
+              "x": 14,
+              "y": 34,
+              "name": "Makan siang name",
+              "fill": "#203D2D",
+              "content": "Makan siang",
+              "fontFamily": "Inter",
+              "fontSize": 12,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "text",
+              "id": "qYahb",
+              "x": 283,
+              "y": 34,
+              "name": "Makan siang kcal",
+              "fill": "#258747",
+              "content": "650 kkal",
+              "fontFamily": "Inter",
+              "fontSize": 11,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "frame",
+              "id": "X3SVXL",
+              "x": 14,
+              "y": 57,
+              "name": "Meal line 1",
+              "width": 318,
+              "height": 1,
+              "fill": "#E7EDE6",
+              "layout": "none"
+            },
+            {
+              "type": "text",
+              "id": "BE2L6",
+              "x": 14,
+              "y": 61,
+              "name": "Camilan name",
+              "fill": "#203D2D",
+              "content": "Camilan",
+              "fontFamily": "Inter",
+              "fontSize": 12,
+              "fontWeight": "medium"
+            },
+            {
+              "type": "text",
+              "id": "o5Iw1",
+              "x": 283,
+              "y": 61,
+              "name": "Camilan kcal",
+              "fill": "#258747",
+              "content": "150 kkal",
+              "fontFamily": "Inter",
+              "fontSize": 11,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "frame",
+              "id": "vd2hY",
+              "x": 14,
+              "y": 84,
+              "name": "Meal line 2",
+              "width": 318,
+              "height": 1,
+              "fill": "#E7EDE6",
+              "layout": "none"
+            },
+            {
+              "type": "text",
+              "id": "O8v94",
+              "x": 14,
+              "y": 88,
+              "name": "Makan malam name",
+              "fill": "#203D2D",
+              "content": "Makan malam",
+              "fontFamily": "Inter",
+              "fontSize": 12,
+              "fontWeight": "medium"
+            },
+            {
+              "type": "text",
+              "id": "hmc7q",
+              "x": 283,
+              "y": 88,
+              "name": "Makan malam kcal",
+              "fill": "#258747",
+              "content": "200 kkal",
+              "fontFamily": "Inter",
+              "fontSize": 11,
+              "fontWeight": "bold"
+            }
+          ]
+        },
+        {
+          "id": "x8RYO",
+          "type": "ref",
+          "ref": "zHoy6",
+          "name": "Navigation · Hari ini",
+          "x": 20,
+          "y": 759,
+          "width": 350,
+          "height": 70
+        },
+        {
+          "type": "frame",
+          "id": "gqKEQ",
+          "x": 0,
+          "y": 0,
+          "name": "Dimmed dashboard overlay",
+          "width": 390,
+          "height": 844,
+          "fill": "#194B3266",
+          "effect": {
+            "type": "background_blur",
+            "radius": 13
+          },
+          "layout": "none"
+        },
+        {
+          "type": "frame",
+          "id": "v349CJ",
+          "x": 0,
+          "y": 258,
+          "name": "Add food bottom sheet",
+          "width": 390,
+          "height": 586,
+          "fill": "#F9FBF6F5",
+          "cornerRadius": [
+            30,
+            30,
+            0,
+            0
+          ],
+          "stroke": "#FFFFFF",
+          "strokeWidth": 1,
+          "effect": [
+            {
+              "type": "background_blur",
+              "radius": 24
+            },
+            {
+              "type": "shadow",
+              "shadowType": "outer",
+              "color": "#183B322B",
+              "offset": {
+                "x": 0,
+                "y": -8
+              },
+              "blur": 30
+            }
+          ],
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "L6zazx",
+              "x": 170,
+              "y": 10,
+              "name": "Sheet grab handle",
+              "width": 50,
+              "height": 5,
+              "fill": "#BED9C2",
+              "cornerRadius": 3
+            },
+            {
+              "type": "text",
+              "id": "R3mqJz",
+              "x": 22,
+              "y": 35,
+              "name": "Sheet title",
+              "fill": "#203D2D",
+              "content": "Catat makanan",
+              "fontFamily": "Inter",
+              "fontSize": 23,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "text",
+              "id": "L3ZpM",
+              "x": 22,
+              "y": 68,
+              "name": "Sheet subtitle",
+              "fill": "#687D70",
+              "content": "Pilih cara yang paling nyaman untukmu",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "q4EbT",
+              "x": 22,
+              "y": 107,
+              "name": "Cari / input manual action",
+              "width": 346,
+              "height": 77,
+              "fill": "#FFFFFF",
+              "cornerRadius": 19,
+              "stroke": "#DFE9DE",
+              "strokeWidth": 1,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "FpmFl",
+                  "x": 12,
+                  "y": 12,
+                  "name": "Cari / input manual icon field",
+                  "width": 53,
+                  "height": 53,
+                  "fill": "#F9F1D3",
+                  "cornerRadius": 16,
+                  "layout": "none"
+                },
+                {
+                  "type": "icon",
+                  "id": "fKZgW",
+                  "x": 27,
+                  "y": 26,
+                  "name": "Cari / input manual icon",
+                  "width": 23,
+                  "height": 23,
+                  "icon": "search",
+                  "library": "lucide",
+                  "fill": "#258747"
+                },
+                {
+                  "type": "text",
+                  "id": "SntQn",
+                  "x": 79,
+                  "y": 18,
+                  "name": "Cari / input manual heading",
+                  "fill": "#203D2D",
+                  "content": "Cari / input manual",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "N6CpJ",
+                  "x": 79,
+                  "y": 43,
+                  "name": "Cari / input manual description",
+                  "fill": "#687D70",
+                  "content": "Selalu bisa, bahkan tanpa internet",
+                  "fontFamily": "Inter",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "icon",
+                  "id": "a3fDN",
+                  "x": 311,
+                  "y": 28,
+                  "name": "Cari / input manual chevron",
+                  "width": 18,
+                  "height": 18,
+                  "icon": "chevron-right",
+                  "library": "lucide",
+                  "fill": "#687D70"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "I4JShR",
+              "x": 22,
+              "y": 198,
+              "name": "Catat dengan suara action",
+              "width": 346,
+              "height": 77,
+              "fill": "#FFFFFF",
+              "cornerRadius": 19,
+              "stroke": "#258747",
+              "strokeWidth": 2,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "JTl7W",
+                  "x": 12,
+                  "y": 12,
+                  "name": "Catat dengan suara icon field",
+                  "width": 53,
+                  "height": 53,
+                  "fill": "#D7EEE8",
+                  "cornerRadius": 16,
+                  "layout": "none"
+                },
+                {
+                  "type": "icon",
+                  "id": "x9COXC",
+                  "x": 27,
+                  "y": 26,
+                  "name": "Catat dengan suara icon",
+                  "width": 23,
+                  "height": 23,
+                  "icon": "mic",
+                  "library": "lucide",
+                  "fill": "#258747"
+                },
+                {
+                  "type": "text",
+                  "id": "LnAwa",
+                  "x": 79,
+                  "y": 18,
+                  "name": "Catat dengan suara heading",
+                  "fill": "#203D2D",
+                  "content": "Catat dengan suara",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "uczP7",
+                  "x": 79,
+                  "y": 43,
+                  "name": "Catat dengan suara description",
+                  "fill": "#687D70",
+                  "content": "Sebutkan saja yang kamu makan",
+                  "fontFamily": "Inter",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "icon",
+                  "id": "PsQtz",
+                  "x": 311,
+                  "y": 28,
+                  "name": "Catat dengan suara chevron",
+                  "width": 18,
+                  "height": 18,
+                  "icon": "chevron-right",
+                  "library": "lucide",
+                  "fill": "#687D70"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "a5hMD",
+              "x": 22,
+              "y": 289,
+              "name": "Foto makanan action",
+              "width": 346,
+              "height": 77,
+              "fill": "#FFFFFF",
+              "cornerRadius": 19,
+              "stroke": "#DFE9DE",
+              "strokeWidth": 1,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Bd8aq",
+                  "x": 12,
+                  "y": 12,
+                  "name": "Foto makanan icon field",
+                  "width": 53,
+                  "height": 53,
+                  "fill": "#DEF3DE",
+                  "cornerRadius": 16,
+                  "layout": "none"
+                },
+                {
+                  "type": "icon",
+                  "id": "woQ0P",
+                  "x": 27,
+                  "y": 26,
+                  "name": "Foto makanan icon",
+                  "width": 23,
+                  "height": 23,
+                  "icon": "camera",
+                  "library": "lucide",
+                  "fill": "#258747"
+                },
+                {
+                  "type": "text",
+                  "id": "W9xVSy",
+                  "x": 79,
+                  "y": 18,
+                  "name": "Foto makanan heading",
+                  "fill": "#203D2D",
+                  "content": "Foto makanan",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "IcKRO",
+                  "x": 79,
+                  "y": 43,
+                  "name": "Foto makanan description",
+                  "fill": "#687D70",
+                  "content": "Dapatkan saran dari fotomu",
+                  "fontFamily": "Inter",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "icon",
+                  "id": "N1Hot",
+                  "x": 311,
+                  "y": 28,
+                  "name": "Foto makanan chevron",
+                  "width": 18,
+                  "height": 18,
+                  "icon": "chevron-right",
+                  "library": "lucide",
+                  "fill": "#687D70"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "OUd26",
+              "x": 22,
+              "y": 380,
+              "name": "Scan barcode action",
+              "width": 346,
+              "height": 77,
+              "fill": "#FFFFFF",
+              "cornerRadius": 19,
+              "stroke": "#DFE9DE",
+              "strokeWidth": 1,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "NXENn",
+                  "x": 12,
+                  "y": 12,
+                  "name": "Scan barcode icon field",
+                  "width": 53,
+                  "height": 53,
+                  "fill": "#FFF0E5",
+                  "cornerRadius": 16,
+                  "layout": "none"
+                },
+                {
+                  "type": "icon",
+                  "id": "UeQwg",
+                  "x": 27,
+                  "y": 26,
+                  "name": "Scan barcode icon",
+                  "width": 23,
+                  "height": 23,
+                  "icon": "scan-barcode",
+                  "library": "lucide",
+                  "fill": "#258747"
+                },
+                {
+                  "type": "text",
+                  "id": "rsf6s",
+                  "x": 79,
+                  "y": 18,
+                  "name": "Scan barcode heading",
+                  "fill": "#203D2D",
+                  "content": "Scan barcode",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "H7mXeI",
+                  "x": 79,
+                  "y": 43,
+                  "name": "Scan barcode description",
+                  "fill": "#687D70",
+                  "content": "Cari produk kemasan dengan cepat",
+                  "fontFamily": "Inter",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "icon",
+                  "id": "oSFG9",
+                  "x": 311,
+                  "y": 28,
+                  "name": "Scan barcode chevron",
+                  "width": 18,
+                  "height": 18,
+                  "icon": "chevron-right",
+                  "library": "lucide",
+                  "fill": "#687D70"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "x38Ahj",
+              "x": 22,
+              "y": 481,
+              "name": "Privacy and offline note",
+              "width": 346,
+              "height": 62,
+              "fill": "#DEF3DE",
+              "cornerRadius": 15,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "ToEJY",
+                  "x": 14,
+                  "y": 18,
+                  "name": "Privacy icon",
+                  "width": 21,
+                  "height": 21,
+                  "icon": "shield-check",
+                  "library": "lucide",
+                  "fill": "#258747"
+                },
+                {
+                  "type": "text",
+                  "id": "AfSAo",
+                  "x": 44,
+                  "y": 12,
+                  "name": "Privacy line 1",
+                  "fill": "#203D2D",
+                  "content": "Foto hanya diunggah dengan izinmu.",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "medium"
+                },
+                {
+                  "type": "text",
+                  "id": "JSgT8",
+                  "x": 44,
+                  "y": 32,
+                  "name": "Privacy line 2",
+                  "fill": "#687D70",
+                  "content": "Suara & input manual jalan tanpa internet.",
+                  "fontFamily": "Inter",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                }
+              ]
             }
           ]
         }
