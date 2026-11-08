@@ -1,0 +1,3 @@
+version: 1
+id: mealora-plans
+remote: git@github.com:londomloto/mealora-plans.git
