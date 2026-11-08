@@ -4,16 +4,16 @@ Aturan gizi normatif Mealora: menentukan apakah sebuah profil berhak menerima ta
 
 ## ADDED Requirements
 
-### Requirement: Kebijakan berversi dan gagal tertutup
+### Requirement: Kebijakan berversi
 
 Sistem SHALL mengenali kebijakan gizi melalui pengenal versi. Kebijakan pertama SHALL bernama `np-1.0.0` dengan versi kalkulator energi `msj-1.0.0`. Setiap target yang disetujui pengguna SHALL menyimpan kedua versi tersebut beserta salinan masukan yang dipakai saat perhitungan.
 
-Ketika kebijakan yang diperlukan untuk sebuah profil atau program belum tersedia, belum disetujui peninjau gizi, atau tidak mencakup kasus tersebut, sistem SHALL mengembalikan keadaan tidak-disetujui dengan alasan `missing_validated_policy`, dan SHALL TIDAK menghasilkan angka target dalam bentuk apa pun.
+Ketika kebijakan tidak mencakup sebuah profil atau program, sistem SHALL mengembalikan `unsupported_profile` atau `needs_professional_review` dengan kode alasan yang sesuai, dan SHALL TIDAK menghasilkan angka target dalam bentuk apa pun. Sistem SHALL TIDAK menebak nilai untuk kasus yang tidak diatur kebijakan.
 
-#### Scenario: Kebijakan belum disetujui
+#### Scenario: Profil di luar cakupan kebijakan
 
-- **WHEN** pengguna meminta pratinjau target sementara kebijakan `np-1.0.0` belum berstatus disetujui
-- **THEN** sistem mengembalikan keadaan tidak-disetujui dengan alasan `missing_validated_policy`, menjelaskan bahwa tidak ada target yang dibuat, dan tidak menampilkan angka energi maupun makro
+- **WHEN** pengguna meminta pratinjau target untuk profil yang tidak dicakup `np-1.0.0`
+- **THEN** sistem mengembalikan keadaan tidak-disetujui dengan kode alasan yang sesuai, menjelaskan bahwa tidak ada target yang dibuat, dan tidak menampilkan angka energi maupun makro
 
 #### Scenario: Versi tercatat pada target yang disetujui
 
@@ -27,16 +27,17 @@ Ketika kebijakan yang diperlukan untuk sebuah profil atau program belum tersedia
 
 ### Requirement: Kelayakan profil untuk target otomatis
 
-Sistem SHALL menilai kelayakan sebelum menghitung target apa pun, dan SHALL mengembalikan salah satu keadaan: disetujui, `needs_user_correction`, `needs_professional_review`, `unsupported_profile`, atau `missing_validated_policy`.
+Sistem SHALL menilai kelayakan sebelum menghitung target apa pun, dan SHALL mengembalikan salah satu keadaan: disetujui, `needs_user_correction`, `needs_professional_review`, atau `unsupported_profile`.
 
 Kebijakan `np-1.0.0` berlaku untuk orang dewasa berusia **19 sampai 64 tahun**. Aturan kelayakan:
 
-- Usia di bawah 19 tahun: sistem SHALL mengembalikan `unsupported_profile` untuk seluruh program yang mengubah berat, dengan alasan `age_below_minimum`. Program Makan Sehat SHALL tetap tidak memberi target defisit atau surplus apa pun.
+- Usia di bawah 19 tahun: sistem SHALL mengembalikan `unsupported_profile` untuk seluruh program yang mengubah berat, dengan alasan `age_below_minimum`. Program Makan Sehat SHALL tetap dapat diaktifkan, tetapi SHALL berjalan tanpa target energi maupun target zat gizi makro — persamaan `msj-1.0.0` hanya berlaku untuk orang dewasa, dan kebutuhan remaja mengikuti kurva pertumbuhan yang tidak dicakup kebijakan ini.
 - Usia 65 tahun ke atas: sistem SHALL mengembalikan `needs_professional_review` untuk Turun Berat dan Naik Berat dengan alasan `age_above_supported`; Makan Sehat dan Pertahankan SHALL tetap tersedia.
 - Kehamilan atau menyusui: sistem SHALL mengembalikan `unsupported_profile` untuk Turun Berat dengan alasan `pregnancy_or_lactation`, dan `needs_professional_review` untuk Naik Berat dan Pertahankan.
 - Indeks massa tubuh di bawah 18,5: sistem SHALL menolak Turun Berat dengan alasan `underweight_bmi`.
-- Indeks massa tubuh 40 ke atas: sistem SHALL mengembalikan `needs_professional_review` untuk Turun Berat dan Naik Berat dengan alasan `declared_medical_condition`.
+- Indeks massa tubuh 37,5 ke atas: sistem SHALL mengembalikan `needs_professional_review` untuk Turun Berat dan Naik Berat dengan alasan `bmi_above_supported`. Ambang ini mengikuti titik aksi kesehatan masyarakat untuk populasi Asia, bukan ambang obesitas kelas III global.
 - Kondisi atau pengobatan yang dinyatakan pengguna — gangguan makan saat ini atau di masa lalu, diabetes, penyakit ginjal, penyakit hati, atau pengobatan yang memengaruhi berat badan maupun nafsu makan: sistem SHALL mengembalikan `needs_professional_review` dengan alasan `declared_medical_condition`.
+- Gangguan makan saat ini atau di masa lalu yang dinyatakan pengguna: program Makan Sehat SHALL tetap dapat diaktifkan, tetapi SHALL berjalan tanpa target energi maupun target zat gizi makro dan tanpa menampilkan angka kalori harian.
 - Perubahan berat tidak disengaja lebih dari 5 persen berat badan dalam 30 hari terakhir: sistem SHALL mengembalikan `needs_professional_review` dengan alasan `rapid_unintended_weight_change`.
 
 Masukan wajib yang belum lengkap SHALL menghasilkan `needs_user_correction` dengan alasan `missing_required_input`, dan sistem SHALL menyebut masukan mana yang kurang.
@@ -77,16 +78,18 @@ Sistem SHALL mengestimasi pengeluaran energi harian dengan mengalikan energi ist
 
 | Pilihan pengguna | Pengali |
 |---|---|
-| Lebih banyak duduk | 1,2 |
-| Cukup bergerak | 1,55 |
-| Sangat aktif | 1,725 |
+| Lebih banyak duduk | 1,40 |
+| Cukup bergerak | 1,60 |
+| Sangat aktif | 1,80 |
+
+Pengali ini mengikuti pita *physical activity level* FAO/WHO/UNU 2004 untuk orang dewasa yang hidup bebas: 1,40–1,69 untuk gaya hidup menetap atau ringan, dan 1,70–1,99 untuk aktif sedang. Sistem SHALL mengambil nilai di bagian bawah pita yang berlaku, karena persamaan `msj-1.0.0` mengestimasi energi istirahat yang sedikit lebih tinggi daripada energi basal yang menjadi dasar pita tersebut.
 
 Sistem SHALL menyajikan kedua nilai tersebut sebagai perkiraan, dan SHALL TIDAK menyebutnya sebagai hasil pengukuran, diagnosis, atau jaminan.
 
 #### Scenario: Perhitungan energi istirahat perempuan
 
 - **WHEN** profil perempuan berusia 29 tahun, tinggi 165 cm, berat 68,4 kg dihitung
-- **THEN** energi istirahat adalah 1.410 kkal setelah pembulatan (nilai sebelum pembulatan 1.409,25), dan pengeluaran energi harian pada tingkat "Cukup bergerak" adalah 2.180 kkal setelah pembulatan (nilai sebelum pembulatan 2.184,34)
+- **THEN** energi istirahat adalah 1.410 kkal setelah pembulatan (nilai sebelum pembulatan 1.409,25), dan pengeluaran energi harian pada tingkat "Cukup bergerak" adalah 2.250 kkal setelah pembulatan (nilai sebelum pembulatan 2.254,80)
 
 #### Scenario: Nilai disebut sebagai perkiraan
 
@@ -105,18 +108,18 @@ Sistem SHALL TIDAK menghasilkan target di bawah 800 kkal per hari dalam keadaan 
 
 #### Scenario: Defisit normal
 
-- **WHEN** profil dengan pengeluaran energi harian 2.184 kkal dan energi istirahat 1.409 kkal memilih Turun Berat
-- **THEN** defisit 20 persen bernilai 437 kkal, target energi harian menjadi 1.750 kkal setelah pembulatan, dan nilainya berada di atas energi istirahat maupun batas 1.200 kkal
+- **WHEN** profil dengan pengeluaran energi harian 2.255 kkal dan energi istirahat 1.409 kkal memilih Turun Berat
+- **THEN** defisit 20 persen bernilai 451 kkal, target energi harian menjadi 1.800 kkal setelah pembulatan, dan nilainya berada di atas energi istirahat maupun batas 1.200 kkal
 
-#### Scenario: Batas bawah energi istirahat menaikkan target
+#### Scenario: Batas bawah asupan menaikkan target
 
-- **WHEN** profil dengan masukan biologis laki-laki, energi istirahat 1.700 kkal, dan tingkat aktivitas "Lebih banyak duduk" memiliki pengeluaran energi harian 2.040 kkal
-- **THEN** perhitungan defisit menghasilkan 1.632 kkal yang berada di bawah energi istirahat, sehingga target dinaikkan menjadi 1.700 kkal, defisit yang tersisa 340 kkal, dan proposal disertai peringatan bahwa defisitnya lebih kecil daripada hasil perhitungan awal
+- **WHEN** profil dengan masukan biologis laki-laki, energi istirahat 1.163 kkal, dan pengeluaran energi harian 1.860 kkal memilih Turun Berat
+- **THEN** perhitungan defisit menghasilkan 1.488 kkal yang berada di bawah batas 1.500 kkal, sehingga target dinaikkan menjadi 1.500 kkal, defisit yang tersisa 360 kkal, dan proposal disertai peringatan bahwa defisitnya lebih kecil daripada hasil perhitungan awal
 
 #### Scenario: Defisit tersisa terlalu kecil
 
-- **WHEN** profil dengan masukan biologis perempuan, energi istirahat 1.210 kkal, dan pengeluaran energi harian 1.452 kkal memilih Turun Berat
-- **THEN** batas bawah 1.210 kkal menyisakan defisit 242 kkal per hari, sehingga sistem mengembalikan `needs_professional_review` dengan alasan `target_below_minimum_energy` dan tidak mengaktifkan target defisit
+- **WHEN** profil dengan masukan biologis perempuan, energi istirahat 1.068 kkal, dan pengeluaran energi harian 1.495 kkal memilih Turun Berat
+- **THEN** batas bawah 1.200 kkal menyisakan defisit 295 kkal per hari, sehingga sistem mengembalikan `needs_professional_review` dengan alasan `target_below_minimum_energy` dan tidak mengaktifkan target defisit
 
 ### Requirement: Target energi program Naik Berat
 
@@ -124,8 +127,8 @@ Untuk program Naik Berat, sistem SHALL menghitung target energi harian sebagai p
 
 #### Scenario: Surplus normal
 
-- **WHEN** profil dengan pengeluaran energi harian 2.184 kkal memilih Naik Berat
-- **THEN** surplus 10 persen bernilai 218 kkal sehingga dinaikkan ke batas bawah 250 kkal, dan target energi harian menjadi 2.430 kkal setelah pembulatan
+- **WHEN** profil dengan pengeluaran energi harian 2.255 kkal memilih Naik Berat
+- **THEN** surplus 10 persen bernilai 225 kkal sehingga dinaikkan ke batas bawah 250 kkal, dan target energi harian menjadi 2.500 kkal setelah pembulatan
 
 #### Scenario: Surplus dibatasi batas atas
 
@@ -140,7 +143,7 @@ Untuk program Makan Sehat, sistem SHALL menetapkan target energi harian sama den
 
 #### Scenario: Pita toleransi Pertahankan
 
-- **WHEN** target Pertahankan adalah 2.180 kkal, sehingga pita toleransi 5 persen membentang 2.071 sampai 2.289 kkal, dan konsumsi hari itu 2.100 kkal
+- **WHEN** target Pertahankan adalah 2.250 kkal, sehingga pita toleransi 5 persen membentang 2.140 sampai 2.360 kkal setelah pembulatan, dan konsumsi hari itu 2.200 kkal
 - **THEN** hari tersebut dinilai berada di dalam pita toleransi
 
 #### Scenario: Makan Sehat tanpa target berat
@@ -156,6 +159,8 @@ Sistem SHALL membatasi laju perubahan berat yang dijanjikan:
 - Naik Berat: **0,125 sampai 0,5 kg per minggu**.
 
 Bila kombinasi berat tujuan dan tanggal tujuan yang diminta pengguna memerlukan laju di luar batas tersebut, sistem SHALL mengembalikan `needs_user_correction` dengan alasan `requested_pace_too_fast` atau `requested_pace_too_slow`, SHALL menjelaskan konflik beserta tanggal paling awal yang memenuhi batas, dan SHALL meminta masukan yang lebih aman. Sistem SHALL TIDAK memotong target secara diam-diam agar sesuai tanggal yang diminta.
+
+Sistem SHALL menolak berat tujuan yang menghasilkan indeks massa tubuh di bawah **18,5** pada tinggi profil tersebut, dan berat tujuan yang arahnya berlawanan dengan program yang dipilih — berat tujuan lebih tinggi dari berat saat ini pada Turun Berat, atau lebih rendah pada Naik Berat. Keduanya SHALL mengembalikan `needs_user_correction` dengan alasan `target_weight_out_of_range`, dan SHALL menyebut rentang berat tujuan yang didukung.
 
 Tanggal tujuan SHALL bersifat opsional. Ketidakhadiran tanggal tujuan SHALL TIDAK menghalangi aktivasi program.
 
@@ -176,7 +181,7 @@ Tanggal tujuan SHALL bersifat opsional. Ketidakhadiran tanggal tujuan SHALL TIDA
 
 ### Requirement: Target protein, lemak, karbohidrat, dan serat
 
-Sistem SHALL menghitung target zat gizi makro dari target energi harian dan berat badan acuan. Berat badan acuan SHALL berupa berat badan saat ini, kecuali bila indeks massa tubuh di atas 30 — dalam hal itu berat badan acuan SHALL berupa berat badan yang setara dengan indeks massa tubuh 25 pada tinggi profil tersebut.
+Sistem SHALL menghitung target zat gizi makro dari target energi harian dan berat badan acuan. Berat badan acuan SHALL berupa nilai terkecil antara berat badan saat ini dan berat badan yang setara dengan indeks massa tubuh 23 pada tinggi profil tersebut. Ambang 23 mengikuti klasifikasi indeks massa tubuh Asia-Pasifik, dan bentuk "nilai terkecil" membuat batas ini berlaku tanpa lompatan nilai pada titik ambang.
 
 - **Protein**: 1,6 g per kg berat badan acuan untuk Turun Berat; 1,4 g per kg untuk Naik Berat, Pertahankan, dan Makan Sehat. Nilai akhir SHALL berada dalam rentang 10 sampai 35 persen energi dan SHALL TIDAK kurang dari 0,8 g per kg berat badan acuan.
 - **Lemak**: 25 persen energi, dalam rentang 20 sampai 35 persen energi.
@@ -189,8 +194,8 @@ Jumlah energi dari ketiga zat gizi makro SHALL konsisten dengan target energi ha
 
 #### Scenario: Target makro program Turun Berat
 
-- **WHEN** target energi harian 1.750 kkal dengan berat badan acuan 68,4 kg pada program Turun Berat
-- **THEN** target protein 109 g (24,9 persen energi), lemak 49 g (25,2 persen energi), karbohidrat 218 g (49,9 persen energi), dan serat 25 g, dan seluruh nilai berada dalam rentang distribusi yang berlaku
+- **WHEN** target energi harian 1.800 kkal dengan berat badan acuan 62,6 kg pada program Turun Berat
+- **THEN** target protein 100 g (22,2 persen energi), lemak 50 g (25,0 persen energi), karbohidrat 238 g (52,8 persen energi), dan serat 25 g, dan seluruh nilai berada dalam rentang distribusi yang berlaku
 
 #### Scenario: Penyesuaian saat karbohidrat terlalu rendah
 
@@ -200,7 +205,7 @@ Jumlah energi dari ketiga zat gizi makro SHALL konsisten dengan target energi ha
 #### Scenario: Berat badan acuan pada obesitas
 
 - **WHEN** profil setinggi 165 cm dengan berat 110 kg menghitung target protein
-- **THEN** berat badan acuan yang dipakai adalah berat yang setara indeks massa tubuh 25, bukan 110 kg
+- **THEN** berat badan acuan yang dipakai adalah 62,6 kg — berat yang setara indeks massa tubuh 23 pada tinggi tersebut — bukan 110 kg
 
 ### Requirement: Pembulatan dan penyajian nilai
 
@@ -208,8 +213,8 @@ Sistem SHALL membulatkan target energi ke kelipatan **10 kkal** terdekat, target
 
 #### Scenario: Pembulatan target energi
 
-- **WHEN** perhitungan menghasilkan 1.747,47 kkal
-- **THEN** target yang disajikan dan disimpan adalah 1.750 kkal
+- **WHEN** perhitungan menghasilkan 1.803,84 kkal
+- **THEN** target yang disajikan dan disimpan adalah 1.800 kkal
 
 ### Requirement: Hitung ulang target dan persetujuan revisi
 
@@ -229,7 +234,7 @@ Target hasil perhitungan ulang SHALL TIDAK berlaku sebelum pengguna meninjau dan
 
 ### Requirement: Kode alasan dan bahasa yang dilihat pengguna
 
-Setiap keadaan tidak-disetujui atau target yang dibatasi SHALL menyertakan kode alasan yang dapat dipetakan ke penjelasan berbahasa Indonesia yang aman bagi pengguna. Kode alasan yang berlaku pada `np-1.0.0`: `age_below_minimum`, `age_above_supported`, `pregnancy_or_lactation`, `underweight_bmi`, `declared_medical_condition`, `rapid_unintended_weight_change`, `target_below_minimum_energy`, `requested_pace_too_fast`, `requested_pace_too_slow`, `target_weight_out_of_range`, `missing_required_input`, dan `missing_validated_policy`.
+Setiap keadaan tidak-disetujui atau target yang dibatasi SHALL menyertakan kode alasan yang dapat dipetakan ke penjelasan berbahasa Indonesia yang aman bagi pengguna. Kode alasan yang berlaku pada `np-1.0.0`: `age_below_minimum`, `age_above_supported`, `pregnancy_or_lactation`, `underweight_bmi`, `bmi_above_supported`, `declared_medical_condition`, `rapid_unintended_weight_change`, `target_below_minimum_energy`, `requested_pace_too_fast`, `requested_pace_too_slow`, `target_weight_out_of_range`, dan `missing_required_input`.
 
 Penjelasan yang dilihat pengguna SHALL menyebut hasil sebagai perkiraan, SHALL TIDAK menjanjikan hasil penurunan atau penambahan berat, SHALL TIDAK menyampaikan diagnosis, dan SHALL TIDAK memberikan terapi gizi medis atau penanganan gejala.
 

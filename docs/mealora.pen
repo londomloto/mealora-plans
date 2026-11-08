@@ -4163,7 +4163,7 @@
           "fill": "#687D70",
           "textGrowth": "fixed-width",
           "width": 340,
-          "content": "Rekomendasi berat tertentu memerlukan kebijakan nutrisi tervalidasi.",
+          "content": "Program yang mengubah berat punya batas usia dan kondisi tertentu.",
           "fontFamily": "Inter",
           "fontSize": 12,
           "fontWeight": "normal"
@@ -4725,7 +4725,7 @@
               "y": 133,
               "name": "Target disclaimer",
               "fill": "#FFFFFF",
-              "content": "Contoh UI · angka final wajib ditinjau ahli",
+              "content": "Perkiraan dari rumus, bukan hasil pengukuran.",
               "fontFamily": "Inter",
               "fontSize": 11,
               "fontWeight": "normal"
@@ -4825,7 +4825,7 @@
               "y": 90,
               "name": "Persamaan value",
               "fill": "#203D2D",
-              "content": "Versi tervalidasi saat rilis",
+              "content": "Mifflin–St Jeor · msj-1.0.0",
               "fontFamily": "Inter",
               "fontSize": 12,
               "fontWeight": "medium"
@@ -4877,7 +4877,7 @@
               "fill": "#687D70",
               "textGrowth": "fixed-width",
               "width": 281,
-              "content": "Saat rilis, tampilkan versi kalkulator dan kebijakan yang disetujui, asumsi, serta alasan batasan.",
+              "content": "Mealora menampilkan versi kalkulator dan kebijakan, asumsi yang dipakai, serta alasan setiap batasan.",
               "fontFamily": "Inter",
               "fontSize": 11,
               "fontWeight": "normal"
@@ -9654,7 +9654,7 @@
           "fill": "#687D70",
           "textGrowth": "fixed-width",
           "width": 343,
-          "content": "Target dan laju harus lolos kebijakan tervalidasi.",
+          "content": "Laju perubahan berat dibatasi agar tetap aman.",
           "fontFamily": "Inter",
           "fontSize": 13,
           "fontWeight": "normal"
@@ -9898,7 +9898,7 @@
               "fill": "#203D2D",
               "textGrowth": "fixed-width",
               "width": 286,
-              "content": "Jika kebijakan belum disetujui, target otomatis tidak dapat diaktifkan.",
+              "content": "Sebagian kondisi membuat target otomatis tidak dibuat. Kamu akan diberi tahu alasannya.",
               "fontFamily": "Inter",
               "fontSize": 12,
               "fontWeight": "normal"
@@ -9950,7 +9950,7 @@
       "id": "XnnCt",
       "x": 470,
       "y": 5120,
-      "name": "26 · Kebijakan belum tersedia",
+      "name": "26 · Target tidak dibuat",
       "clip": true,
       "width": 390,
       "height": 844,
@@ -10012,7 +10012,7 @@
           "y": 68,
           "name": "Context",
           "fill": "#258747",
-          "content": "STATUS · BELUM DAPAT DISETUJUI",
+          "content": "STATUS · TARGET TIDAK DIBUAT",
           "fontFamily": "Inter",
           "fontSize": 11,
           "fontWeight": "bold"
@@ -10026,7 +10026,7 @@
           "fill": "#203D2D",
           "textGrowth": "fixed-width",
           "width": 346,
-          "content": "Target belum tersedia",
+          "content": "Target tidak dibuat",
           "fontFamily": "Inter",
           "fontSize": 27,
           "fontWeight": "bold"
@@ -10040,7 +10040,7 @@
           "fill": "#687D70",
           "textGrowth": "fixed-width",
           "width": 343,
-          "content": "Kami tidak akan menebak aturan nutrisi.",
+          "content": "Kami tidak membuat target untuk kondisi ini.",
           "fontFamily": "Inter",
           "fontSize": 13,
           "fontWeight": "normal"
@@ -10050,7 +10050,7 @@
           "id": "y4rLD",
           "x": 22,
           "y": 190,
-          "name": "Unavailable policy state",
+          "name": "Refusal state",
           "width": 346,
           "height": 306,
           "fill": "#FFF1E8",
@@ -10078,7 +10078,7 @@
               "fill": "#203D2D",
               "textGrowth": "fixed-width",
               "width": 285,
-              "content": "Belum bisa mengaktifkan\nprogram ini",
+              "content": "Program ini tidak bisa diaktifkan",
               "fontFamily": "Inter",
               "fontSize": 21,
               "fontWeight": "bold"
@@ -10092,7 +10092,7 @@
               "fill": "#687D70",
               "textGrowth": "fixed-width",
               "width": 280,
-              "content": "Kebijakan target otomatis untuk profil ini belum tervalidasi. Tidak ada target defisit atau surplus yang dibuat.",
+              "content": "Untuk kondisi atau pengobatan yang kamu sebutkan, target otomatis bukan hal yang pantas Mealora putuskan. Tidak ada target yang dibuat.",
               "fontFamily": "Inter",
               "fontSize": 13,
               "fontWeight": "normal"
@@ -11465,7 +11465,7 @@
               "y": 142,
               "name": "Version snapshot",
               "fill": "#FFFFFF",
-              "content": "Kalkulator v[disetujui] · Kebijakan v[disetujui]",
+              "content": "Kalkulator msj-1.0.0 · Kebijakan np-1.0.0",
               "fontFamily": "Inter",
               "fontSize": 11,
               "fontWeight": "normal"

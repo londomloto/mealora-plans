@@ -30,7 +30,7 @@
 - Panduan gizi untuk kondisi medis, kehamilan, menyusui, anak, dan remaja. Kelompok ini justru dikecualikan oleh dokumen ini.
 - Rekomendasi menu, resep, atau jadwal makan.
 
-**Catatan status:** seluruh angka dalam dokumen ini berstatus draf sampai disetujui peninjau gizi. Selama belum disetujui, Mealora tidak akan menghasilkan target apa pun dan akan menampilkan keadaan "target belum tersedia".
+**Catatan status:** seluruh angka dalam dokumen ini sudah melalui tinjauan teknis terhadap pedoman publik, tetapi **belum ditinjau ahli gizi berlisensi**. Itu memadai untuk pemakaian perorangan pada MVP 1; sebelum Mealora dilepas ke pengguna umum, peninjauan berlisensi diperlukan.
 
 ## 2. Kelayakan Menerima Target Otomatis
 
@@ -42,12 +42,12 @@ So that saya tidak mengikuti angka yang tidak pantas diberikan aplikasi kepada s
 
 ### 2.2 Functional Scope
 
-- Mealora memeriksa kelayakan sebelum menghitung angka apa pun. Hasilnya salah satu dari: target disetujui, perlu diperbaiki pengguna, perlu ditinjau tenaga kesehatan, profil di luar cakupan, atau kebijakan belum tersedia.
+- Mealora memeriksa kelayakan sebelum menghitung angka apa pun. Hasilnya salah satu dari: target disetujui, perlu diperbaiki pengguna, perlu ditinjau tenaga kesehatan, atau profil di luar cakupan.
 - Aturan ini berlaku untuk orang dewasa berusia 19 sampai 64 tahun.
 - Pengguna di bawah 19 tahun tidak menerima program yang mengubah berat badan dalam bentuk apa pun.
 - Pengguna 65 tahun ke atas tetap dapat memakai Makan Sehat dan Pertahankan; untuk Turun Berat dan Naik Berat, Mealora mengarahkan ke tenaga kesehatan.
 - Pengguna yang menyatakan sedang hamil tidak menerima program Turun Berat; untuk program lain diarahkan ke tenaga kesehatan. Hal yang sama berlaku untuk masa menyusui.
-- Pengguna dengan berat badan tergolong kurang tidak menerima program Turun Berat.
+- Pengguna dengan berat badan tergolong kurang tidak menerima program Turun Berat. Pengguna dengan berat badan jauh di atas rentang yang didukung diarahkan ke tenaga kesehatan untuk program yang mengubah berat; Makan Sehat dan Pertahankan tetap tersedia.
 - Pengguna yang menyatakan memiliki riwayat gangguan makan, diabetes, penyakit ginjal, penyakit hati, atau pengobatan yang memengaruhi berat badan dan nafsu makan diarahkan ke tenaga kesehatan.
 - Pengguna yang beratnya berubah lebih dari 5 persen dalam 30 hari terakhir tanpa disengaja diarahkan ke tenaga kesehatan.
 - Bila data yang dibutuhkan belum lengkap, Mealora menyebutkan data mana yang kurang, bukan sekadar menolak.
@@ -60,13 +60,17 @@ So that saya tidak mengikuti angka yang tidak pantas diberikan aplikasi kepada s
 
 2.3.2. The system shall return exactly one outcome per request: approved, needs user correction, needs professional review, unsupported profile, or missing validated policy.
 
-2.3.3. The system shall refuse every weight-changing program for a profile under 19 years of age.
+2.3.3. The system shall refuse every weight-changing program for a profile under 19 years of age, and shall run the healthy-eating program without energy or macronutrient targets for that profile.
+
+2.3.3a. The system shall run the healthy-eating program without energy or macronutrient targets for a profile that declares a current or past eating disorder.
 
 2.3.4. The system shall refer profiles aged 65 or over to a health professional for weight-loss and weight-gain programs, while keeping healthy-eating and maintenance programs available.
 
 2.3.5. The system shall refuse a weight-loss program for a profile that declares pregnancy or breastfeeding, and shall refer the remaining programs to a health professional.
 
 2.3.6. The system shall refuse a weight-loss program for a profile whose body mass index is below 18.5.
+
+2.3.6a. The system shall refer a profile whose body mass index is 37.5 or above to a health professional for weight-loss and weight-gain programs.
 
 2.3.7. The system shall refer a profile that declares an eating disorder, diabetes, kidney disease, liver disease, or weight-affecting medication to a health professional.
 
@@ -236,7 +240,7 @@ So that saya tetap memegang kendali atas program saya sendiri.
 - Angka kalori dibulatkan ke kelipatan 10 kkal, zat gizi ke gram terdekat, dan berat badan ke 0,1 kg terdekat.
 - Mealora mengusulkan perhitungan ulang ketika berat terbaru berbeda 2 kg atau lebih dari berat yang dipakai saat target dibuat, ketika data profil atau tingkat aktivitas berubah, atau ketika target sudah berumur 90 hari atau lebih.
 - Target hasil perhitungan ulang hanya berlaku setelah pengguna meninjau dan menyetujuinya. Bila pengguna tidak menyetujui, target lama tetap berlaku.
-- Selama kebijakan belum disetujui peninjau gizi, Mealora tidak membuat target apa pun dan menampilkan keadaan "target belum tersedia" tanpa menampilkan angka.
+- Bila aturan untuk sebuah profil memang tidak ada, Mealora tidak membuat target apa pun dan menjelaskan alasannya tanpa menampilkan angka — bukan menebak nilai pengganti.
 - **Tidak termasuk:** perubahan target otomatis tanpa persetujuan pengguna.
 
 ### 7.3 Acceptance Criteria
@@ -251,15 +255,15 @@ So that saya tetap memegang kendali atas program saya sendiri.
 
 7.3.5. The system shall keep the previous target in force until the user explicitly approves a recalculated target.
 
-7.3.6. The system shall produce no target values and shall present a "target not yet available" state while the applicable policy is not approved.
+7.3.6. The system shall produce no target values, and shall state the reason, whenever the applicable policy does not cover the profile.
 
 ---
 
 ## 8. High Level Test Scenarios
 
-8.1. **Kebijakan belum disetujui** — Status kebijakan masih draf → pengguna menyelesaikan profil dan meminta pratinjau target → Mealora menyatakan target belum tersedia, menjelaskan bahwa tidak ada target yang dibuat, dan tidak menampilkan satu pun angka kalori.
+8.1. **Profil di luar cakupan** — Pengguna 16 tahun menyelesaikan profil dan meminta pratinjau target → Mealora menyatakan tidak ada target yang dibuat, menjelaskan alasannya, dan tidak menampilkan satu pun angka kalori → Makan Sehat tetap dapat diaktifkan sebagai pencatatan tanpa angka target.
 
-8.2. **Pengguna dewasa yang tercakup** — Perempuan 29 tahun, 165 cm, 68,4 kg, cukup bergerak, memilih Turun Berat → Mealora menampilkan perkiraan kebutuhan harian 2.180 kkal dan target 1.750 kkal beserta dasar perhitungannya → pengguna dapat menyetujuinya.
+8.2. **Pengguna dewasa yang tercakup** — Perempuan 29 tahun, 165 cm, 68,4 kg, cukup bergerak, memilih Turun Berat → Mealora menampilkan perkiraan kebutuhan harian 2.250 kkal dan target 1.800 kkal beserta dasar perhitungannya → pengguna dapat menyetujuinya.
 
 8.3. **Pengguna di bawah umur** — Profil 17 tahun memilih Turun Berat → Mealora menolak, menyatakan program pengubah berat tidak tersedia untuk usia tersebut, dan tidak menampilkan angka target.
 

@@ -2,7 +2,7 @@
 
 ## Context
 
-Lihat `proposal.md` — Why. Keadaan saat ini: belum ada kebijakan gizi apa pun; change 001 baru membangun kerangka aplikasi dan penyimpanan lokal. Assessment §40 menetapkan bahwa dokumen teknis hanya boleh menentukan *batas rekayasa*, sedangkan nilai klinis harus disetujui dan diberi versi oleh peninjau gizi atau medis sebelum dipakai di rilis publik.
+Lihat `proposal.md` — Why. Keadaan saat ini: belum ada kebijakan gizi apa pun; change 001 baru membangun kerangka aplikasi dan penyimpanan lokal. Assessment §40 mensyaratkan persetujuan peninjau gizi atau medis **sebelum dipakai di produksi publik**. Mealora MVP 1 adalah aplikasi lokal untuk pemakaian perorangan dan belum masuk kategori itu, sehingga pemilik produk memutuskan kebijakan ini berlaku tanpa gerbang persetujuan — lihat D13. Yang tetap berlaku dari §40: nilai klinis diberi versi, dan kasus yang tidak diatur tidak pernah ditebak.
 
 Change ini berisi rancangan nilai beserta dasarnya, bukan kode. Sasarannya adalah dokumen yang cukup spesifik untuk diimplementasikan apa adanya dan cukup transparan untuk ditolak atau dikoreksi peninjau per baris.
 
@@ -32,11 +32,13 @@ Mifflin–St Jeor dipilih sesuai assessment §13 dan praktik dietetik arus utama
 
 ### D2 — Tiga tingkat aktivitas, bukan lima
 
-Desain `09 · Aktivitas harian` menyediakan tiga pilihan. Memakai lima pengali (1,2 / 1,375 / 1,55 / 1,725 / 1,9) memaksa pemetaan yang tidak jujur dari tiga pilihan, atau mengubah desain. Dipilih tiga pengali: **1,2**, **1,55**, dan **1,725**.
+Desain `09 · Aktivitas harian` menyediakan tiga pilihan. Dipilih tiga pengali: **1,40**, **1,60**, dan **1,80**, diambil dari pita *physical activity level* FAO/WHO/UNU 2004 untuk orang dewasa yang hidup bebas — 1,40–1,69 untuk gaya hidup menetap atau ringan, 1,70–1,99 untuk aktif sedang, 2,00–2,40 untuk sangat aktif.
 
-1,9 sengaja tidak dipakai: tingkat itu menggambarkan atlet atau pekerja fisik berat dua sesi per hari, populasi yang bukan sasaran MVP dan yang kesalahannya paling mahal (surplus atau defisit yang jauh meleset). Pengguna seperti itu akan dilayani lebih baik oleh koreksi manual target di kemudian hari.
+Rancangan awal memakai 1,2 / 1,55 / 1,725, skema yang beredar luas di kalkulator populer. Skema itu ditolak pada tinjauan teknis: **1,2 berada di bawah pita terendah FAO/WHO/UNU**, yang menggambarkan orang berbaring atau terikat kursi, bukan pekerja kantoran. Pemakaiannya juga menimbulkan akibat yang tidak diinginkan — pada pengali 1,2 target defisit 20 persen selalu jatuh di bawah energi istirahat (0,8 × 1,2 = 0,96), sehingga hampir setiap pengguna sedenter ditolak dengan `target_below_minimum_energy`.
 
-*Catatan kejujuran:* skema 1,2/1,375/1,55/1,725/1,9 beredar luas di kalkulator populer, tetapi penelusuran ke sumber primernya tidak sebersih yang diasumsikan orang — Academy of Nutrition and Dietetics sendiri memakai *rentang* kategori aktivitas, bukan lima nilai tunggal. Karena itu pengali di sini diperlakukan sebagai **pilihan produk yang harus disetujui peninjau**, bukan sebagai fakta ilmiah yang sudah final. Peninjau boleh menggantinya tanpa mengubah struktur kebijakan.
+Pita 2,00–2,40 sengaja tidak dipakai: tingkat itu menggambarkan atlet atau pekerja fisik berat dua sesi per hari, populasi yang bukan sasaran MVP dan yang kesalahannya paling mahal. Pengguna seperti itu akan dilayani lebih baik oleh koreksi manual target di kemudian hari.
+
+*Catatan ketelitian:* pita PAL disusun terhadap energi **basal**, sedangkan Mifflin–St Jeor mengestimasi energi **istirahat** yang lazimnya beberapa persen lebih tinggi. Karena itu nilai diambil di bagian bawah tiap pita, bukan di tengahnya.
 
 ### D3 — Defisit 20 persen dengan batas 300–750 kkal
 
@@ -46,7 +48,9 @@ Pedoman AHA/ACC/TOS 2013 menyebut defisit 500–750 kkal/hari sebagai salah satu
 
 Pedoman AHA/ACC/TOS 2013 menyebut asupan 1.200–1.500 kkal/hari untuk perempuan dan 1.500–1.800 kkal/hari untuk laki-laki sebagai cara lazim mencapai defisit ≥500 kkal, dan menyatakan diet sangat rendah kalori (<800 kkal) hanya untuk keadaan terbatas di bawah pengawasan. Mealora mengambil **batas bawah rentang itu** sebagai lantai mutlak, lalu menambahkan lantai kedua: target tidak pernah di bawah energi istirahat profil itu sendiri.
 
-Lantai energi istirahat penting untuk pengguna bertubuh besar dengan aktivitas rendah: pada pengali 1,2, defisit 20 persen bisa menembus energi istirahat. Dalam kasus itu target dinaikkan dan pengguna diberi tahu bahwa defisitnya lebih kecil dari perhitungan awal — bukan dibiarkan diam-diam.
+Lantai energi istirahat adalah jaring pengaman, bukan aturan yang rutin bekerja. Dengan pengali terendah 1,40, target defisit selalu bernilai 0,8 × 1,40 = **1,12 kali energi istirahat**, sehingga lantai itu tidak pernah mengikat pada aritmetika `np-1.0.0`. Ia dipertahankan agar perubahan nilai di kemudian hari — pengali yang lebih rendah, atau defisit yang lebih dalam — tidak diam-diam mendorong target ke bawah energi istirahat. Bila suatu saat lantai mengikat, target dinaikkan dan pengguna diberi tahu bahwa defisitnya lebih kecil dari perhitungan awal, bukan dibiarkan diam-diam.
+
+Lantai yang benar-benar bekerja adalah 1.200/1.500 kkal, dan itu pun hanya pada profil bertubuh sangat kecil.
 
 Bila lantai menyisakan defisit kurang dari 300 kkal, kebijakan menyerah secara eksplisit (`needs_professional_review`). Ini pilihan sadar: lebih baik mengaku tidak sanggup daripada menjual program yang nyaris tidak menghasilkan apa-apa.
 
@@ -60,7 +64,9 @@ Penambahan berat yang terlalu cepat sebagian besar menjadi massa lemak. Surplus 
 
 Protein 1,2–1,6 g/kg/hari didukung tinjauan Leidy dkk. (2015) dan Phillips dkk. untuk pengelolaan berat dan mempertahankan massa bebas lemak, jauh di atas RDA 0,8 g/kg yang merupakan kecukupan minimum, bukan nilai optimal. Dipilih **1,6 g/kg saat defisit** (kebutuhan mempertahankan massa otot paling tinggi justru ketika energi dikurangi) dan **1,4 g/kg** untuk program lain.
 
-Pada indeks massa tubuh di atas 30, berat badan acuan diturunkan ke berat setara IMT 25. Tanpa aturan ini, pengguna 140 kg akan menerima target protein 224 g/hari — tidak realistis dan tidak bermanfaat, karena jaringan lemak tidak menambah kebutuhan protein secara proporsional.
+Berat badan acuan adalah **nilai terkecil antara berat saat ini dan berat setara IMT 23**. Tanpa batas ini, pengguna 140 kg akan menerima target protein 224 g/hari — tidak realistis dan tidak bermanfaat, karena jaringan lemak tidak menambah kebutuhan protein secara proporsional.
+
+Dua hal diubah pada tinjauan teknis. Ambang IMT 25 diganti **23**, mengikuti klasifikasi Asia-Pasifik yang berlaku di Indonesia (normal 18,5–22,9; berat berlebih ≥23; obesitas ≥25) — memakai 25 sebagai "berat acuan sehat" bagi pengguna Indonesia berarti memakai angka yang pada skala itu sudah tergolong obesitas. Bentuk aturan juga diubah dari "bila IMT di atas 30" menjadi "nilai terkecil", karena bentuk ambang menimbulkan lompatan 17 persen pada target protein tepat di IMT 30; bentuk `min()` berlaku kontinu dan tidak punya titik patah.
 
 ### D7 — Lemak 25 persen, karbohidrat sebagai sisa, dengan urutan penyesuaian
 
@@ -96,12 +102,28 @@ Ambang hitung ulang (berat berubah ≥2 kg, profil atau aktivitas berubah, umur 
 
 Nilai kebijakan ditulis sebagai satu berkas data berversi yang dibaca mesin program, bukan konstanta yang berserak di kode. Dengan begitu, perbandingan antarversi kebijakan menjadi diff yang bisa ditinjau orang gizi tanpa membaca Dart, dan vektor uji emas bisa diikat ke versi tertentu.
 
+### D13 — Tanpa gerbang persetujuan; gagal tertutup tetap berlaku untuk cakupan
+
+Rancangan awal menahan seluruh kebijakan di status draf sampai ada tanda tangan peninjau gizi, dan memakai kode `missing_validated_policy` sebagai gerbangnya. Gerbang itu **dihapus** atas keputusan pemilik produk: Assessment §40 mensyaratkan persetujuan "before public production use", sedangkan MVP 1 adalah aplikasi lokal untuk pemakaian perorangan. Menahan seluruh program demi tanda tangan yang tidak akan ada hanya memblokir change 003 ke atas tanpa menambah keamanan.
+
+Yang **tidak** ikut dihapus adalah perilaku gagal tertutup untuk kasus yang tidak diatur. Profil di luar cakupan — usia di bawah 19, kehamilan, kondisi yang dinyatakan, IMT di luar rentang — tetap tidak menerima angka apa pun, kini lewat `unsupported_profile` dan `needs_professional_review`. Perbedaannya tegas: dulu aplikasi diam karena *belum ada izin*, sekarang aplikasi diam karena *aturannya memang tidak mencakup orang itu*. Yang kedua benar secara permanen; yang pertama hanya benar sampai seseorang menandatangani.
+
+Akibatnya kode `missing_validated_policy` dihapus dari daftar, dan layar `26` berubah dari "Kebijakan belum tersedia" menjadi layar penolakan umum yang isinya ditentukan kode alasan.
+
+### D14 — Profil berisiko mendapat pencatatan tanpa angka, bukan penolakan
+
+Dua kelompok menerima perlakuan khusus pada Makan Sehat: usia di bawah 19 tahun, dan pengguna yang menyatakan gangguan makan saat ini atau di masa lalu. Keduanya tetap dapat memakai Makan Sehat, tetapi **tanpa target energi dan tanpa target makro**.
+
+Alasannya berbeda untuk masing-masing. Untuk usia di bawah 19, Mifflin–St Jeor divalidasi pada orang dewasa dan kebutuhan remaja mengikuti kurva pertumbuhan — menampilkan "2.100 kkal" kepada anak 16 tahun berarti menampilkan angka yang tidak punya dasar. Untuk riwayat gangguan makan, masalahnya bukan ketepatan angkanya melainkan keberadaannya: paparan target kalori harian adalah hal yang justru perlu dihindari.
+
+Alternatif yang ditolak: menolak mereka sepenuhnya. Pencatatan makanan tanpa angka target tetap berguna dan jauh lebih baik daripada mendorong mereka ke aplikasi lain yang tidak sehati-hati ini.
+
 ## Dasar rujukan
 
 | Aturan | Nilai `np-1.0.0` | Dasar |
 |---|---|---|
 | Persamaan energi istirahat | Mifflin–St Jeor | Assessment §13; praktik dietetik untuk dewasa tanpa kalorimetri |
-| Pengali aktivitas | 1,2 / 1,55 / 1,725 | Konvensi luas; **keputusan produk**, menunggu persetujuan peninjau |
+| Pengali aktivitas | 1,40 / 1,60 / 1,80 | Pita PAL FAO/WHO/UNU 2004, diambil di batas bawah tiap pita |
 | Defisit | 20 % TDEE, batas 300–750 kkal | AHA/ACC/TOS 2013: defisit 500–750 kkal/hari |
 | Lantai energi | ≥ energi istirahat; ≥1.200 kkal (P) / 1.500 kkal (L); tidak pernah <800 kkal | AHA/ACC/TOS 2013: 1.200–1.500 (P), 1.500–1.800 (L); VLCD <800 hanya dengan pengawasan |
 | Laju turun berat | 0,25–0,75 kg/mgg; ≤0,75 %/mgg | Turunan dari defisit 300–750 kkal (±7.700 kkal per kg) |
@@ -111,12 +133,14 @@ Nilai kebijakan ditulis sebagai satu berkas data berversi yang dibaca mesin prog
 | Karbohidrat | sisa, sasaran 45–65 % | AMDR, IOM 2005 |
 | Serat | 14 g/1.000 kkal, 20–38 g | DRI Adequate Intake; pembanding AKG PMK 28/2019 |
 | Usia tercakup | 19–64 tahun | Batas populasi sasaran; di luar itu dirujuk |
+| Berat acuan makro | min(berat saat ini, berat setara IMT 23) | Klasifikasi IMT Asia-Pasifik yang berlaku di Indonesia |
+| Ambang rujukan IMT | ≥37,5 | Titik aksi kesehatan masyarakat WHO untuk populasi Asia (23 / 27,5 / 32,5 / 37,5) |
 
 Pranala rujukan lengkap dicatat di dokumen peninjauan (`docs/nutrition-policy-v1.md`) agar peninjau dapat membuka sumbernya langsung.
 
 ## Risks / Trade-offs
 
-- **Angka ini dirancang agen, bukan ahli gizi berlisensi** → risiko paling serius dalam change ini. Mitigasi: kebijakan berstatus draf dan aplikasi gagal tertutup sampai peninjau gizi menyetujui; setiap nilai disajikan dengan dasarnya agar bisa dikoreksi satu per satu.
+- **Angka ini tidak ditinjau ahli gizi berlisensi** → risiko paling serius dalam change ini, dan tidak hilang oleh D13. Mitigasi: setiap nilai dapat ditelusuri ke pedoman publik dan tercatat baris per baris di `docs/nutrition-policy-v1.md`; nilai yang merupakan keputusan produk ditandai eksplisit; seluruh aturan diuji lewat vektor uji emas sehingga akibat tiap nilai terlihat. Mitigasi ini cukup untuk pemakaian perorangan, **tidak** cukup untuk rilis publik — bila Mealora dilepas ke pengguna umum, §40 berlaku kembali menurut bunyinya sendiri.
 - **Pengali aktivitas paling lemah dasarnya** di antara seluruh nilai → mitigasi: ditandai eksplisit sebagai keputusan produk di tabel rujukan, dan dampaknya diuji lewat vektor emas sehingga penggantian nilai langsung terlihat akibatnya.
 - **Skrining mengandalkan pernyataan pengguna** → pengguna bisa melewatinya dengan tidak menyatakan kondisinya. Mitigasi: pertanyaan skrining dirumuskan netral dan tidak menghakimi; bahasa penolakan tidak membuat pengguna merasa dihukum sehingga tidak terdorong berbohong. Tidak ada klaim bahwa aplikasi mendeteksi kondisi medis.
 - **Pengguna dengan riwayat gangguan makan** dapat terpicu oleh target dan angka → mitigasi: `needs_professional_review` bila dinyatakan, Makan Sehat tanpa target berat sebagai jalur alternatif, bahasa yang menolak gagasan hari yang "gagal" (sudah tercermin di desain layar 18 dan 40).
@@ -127,14 +151,19 @@ Pranala rujukan lengkap dicatat di dokumen peninjauan (`docs/nutrition-policy-v1
 
 Tidak ada data pengguna yang terdampak — belum ada pengguna. Urutan:
 
-1. Dokumen peninjauan `docs/nutrition-policy-v1.md` disusun lengkap dengan pranala rujukan.
-2. Vektor uji emas disusun dan ditinjau bersama dokumen kebijakan.
-3. Peninjau gizi menyetujui atau mengoreksi; koreksi diterapkan sebelum status berubah menjadi disetujui.
-4. Status kebijakan `np-1.0.0` diubah menjadi disetujui, beserta tanggal dan identitas peninjau.
+1. Dokumen kebijakan `docs/nutrition-policy-v1.md` disusun lengkap dengan pranala rujukan.
+2. Vektor uji emas disusun dari aturan, lalu dihitung ulang secara independen.
+3. Tinjauan teknis dijalankan terhadap seluruh nilai; koreksinya diterapkan serempak ke `specs/`, `design.md`, `frs.md`, dokumen kebijakan, berkas data, dan fixture.
+4. Berkas data `np-1.0.0` dan fixture diturunkan ke `mealora-apps/mealora-mobile`.
 5. Change berikutnya mengimplementasikan `ProgramEngine` terhadap kebijakan ini.
 
-Rollback: selama belum disetujui, aplikasi tetap gagal tertutup, sehingga membatalkan change ini tidak berakibat apa pun pada pengguna. Setelah rilis, perubahan nilai wajib menjadi versi baru (`np-1.1.0` dan seterusnya) lewat change tersendiri — bukan suntingan di tempat.
+Rollback: belum ada pengguna dan belum ada mesin yang membaca berkas data, sehingga membatalkan change ini tidak berakibat apa pun. Setelah `ProgramEngine` dirilis, perubahan nilai wajib menjadi versi baru (`np-1.1.0` dan seterusnya) lewat change tersendiri — bukan suntingan di tempat.
 
 ## Open Questions
 
-Tidak ada pertanyaan yang ditunda. Seluruh nilai sudah ditetapkan; yang tersisa adalah **persetujuan peninjau gizi**, yang merupakan langkah proses dalam `tasks.md`, bukan ketidakpastian rancangan. Bila peninjau mengubah sebuah nilai, perubahannya masuk ke change ini selama masih draf, atau ke versi kebijakan baru bila sudah disetujui.
+Tidak ada pertanyaan yang ditunda. Seluruh nilai sudah ditetapkan dan ditinjau secara teknis (`docs/nutrition-policy-v1-technical-review.md`). Perubahan nilai setelah change ini ditutup wajib menjadi versi kebijakan baru lewat change tersendiri.
+
+Dua hal sengaja ditunda ke change berikutnya, bukan karena ragu melainkan karena di luar cakupan dokumen nilai:
+
+- **Skrining gangguan makan** masih bergantung pada pernyataan sukarela. Instrumen tervalidasi seperti SCOFF (lima pertanyaan) akan jauh lebih andal dan layak dipertimbangkan saat layar onboarding dibangun.
+- **Kecukupan mikronutrien** tidak dijamin kebijakan ini. Pada target mendekati lantai 1.200 kkal, kecukupan zat besi, kalsium, dan folat sulit tercapai — relevan khusus untuk pengguna perempuan usia subur di Indonesia. Kebijakan ini tidak boleh dibaca seolah menjamin hal itu.
