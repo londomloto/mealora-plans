@@ -7,7 +7,7 @@
 | Change | 002-nutrition-policy-v1 |
 | Versi | v0.1-draft |
 | Tanggal | 2026-11-08 |
-| Status | Draft — menunggu persetujuan peninjau gizi |
+| Status | Final untuk Mealora MVP 1 — lihat `docs/nutrition-policy-v1.md` |
 
 ## 1. Scope and Deferred Items
 
@@ -30,7 +30,7 @@
 - Panduan gizi untuk kondisi medis, kehamilan, menyusui, anak, dan remaja. Kelompok ini justru dikecualikan oleh dokumen ini.
 - Rekomendasi menu, resep, atau jadwal makan.
 
-**Catatan status:** seluruh angka dalam dokumen ini sudah melalui tinjauan teknis terhadap pedoman publik, tetapi **belum ditinjau ahli gizi berlisensi**. Itu memadai untuk pemakaian perorangan pada MVP 1; sebelum Mealora dilepas ke pengguna umum, peninjauan berlisensi diperlukan.
+**Catatan status:** seluruh angka dalam dokumen ini sudah melalui tinjauan teknis terhadap pedoman publik dan terhadap kesesuaiannya untuk populasi dewasa Indonesia, dengan hasil tercatat per baris di `docs/nutrition-policy-v1-technical-review.md`. Kebijakan ini final untuk Mealora MVP 1 (`design.md` D13).
 
 ## 2. Kelayakan Menerima Target Otomatis
 

@@ -26,7 +26,7 @@
 - Tampilan layar pemilihan program, pratinjau target, dan persetujuan. Dokumen ini menetapkan aturannya; layarnya dikirim pada change berikutnya.
 - Penyimpanan program di perangkat, termasuk riwayat yang bertahan setelah aplikasi ditutup.
 - Perhitungan kemajuan harian dari buku harian makanan, grafik berat, dan ringkasan mingguan.
-- Angka target itu sendiri — besaran kalori, protein, lemak, karbohidrat, dan serat — yang sudah ditetapkan pada change 002 dan masih menunggu persetujuan peninjau gizi.
+- Angka target itu sendiri — besaran kalori, protein, lemak, karbohidrat, dan serat — sudah ditetapkan final pada change 002 (`np-1.0.0`); mengubahnya adalah change tersendiri, bukan pekerjaan dokumen ini.
 - Pengingat, notifikasi, dan saran otomatis terkait program.
 
 ## 2. Pilihan Program

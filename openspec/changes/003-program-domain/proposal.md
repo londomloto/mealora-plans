@@ -37,7 +37,7 @@ Tidak ada. `nutrition-policy` dari change 002 dipakai apa adanya; `app-shell` da
 ## Impact
 
 - **Repo `mealora-apps/mealora-mobile`**: lapisan `domain/nutrition/` dan `domain/program/` berisi Dart murni — entitas, value object, mesin keadaan, antarmuka kalkulator dan mesin program, hasil bertipe — beserta ujinya. Tidak ada impor Flutter, Drift, jaringan, jam global, atau pembangkit ID langsung.
-- **Bergantung pada** change 002: kebijakan `np-1.0.0` beserta vektor uji emasnya dipakai sebagai sumber nilai dan sebagai uji regresi. Selama kebijakan belum disetujui, mesin tetap mengembalikan `missing_validated_policy` — dan itu justru salah satu perilaku yang diuji di sini.
+- **Bergantung pada** change 002: kebijakan `np-1.0.0` beserta vektor uji emasnya dipakai sebagai sumber nilai dan sebagai uji regresi. Mesin tetap gagal tertutup (mengembalikan `missing_validated_policy`) bila suatu saat menerima kebijakan berstatus draf — perilaku ini diuji eksplisit di sini sebagai jaring pengaman rekayasa, terlepas dari status `np-1.0.0` saat ini (final untuk MVP 1, `design.md` change 002 D13).
 - **Bergantung pada** change 001 untuk kerangka proyek, sumber waktu, dan pembangkit pengenal yang di-inject.
 - **Memblokir** change berikutnya: persistensi program (tabel, DAO, transaksi aktivasi), onboarding dan aktivasi di layar, serta progres dan riwayat program.
 - **Belum tersentuh**: penyimpanan program, antarmuka pengguna, perhitungan progres harian dari buku harian, dan katalog makanan.

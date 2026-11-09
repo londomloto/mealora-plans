@@ -1982,29 +1982,6 @@ missing_validated_policy
 
 Codex must not invent missing numeric values. A missing or unapproved rule fails closed with `missing_validated_policy`.
 
-# 40. Scientific Validation and Nutritional Guardrails
-
-This document defines engineering boundaries, not clinical values. Before public production use, a qualified nutrition/medical reviewer must approve and version:
-
-- target population and age eligibility;
-- equation and required input semantics;
-- activity multipliers/descriptions;
-- deficit/surplus ranges and maximum weight-change pace;
-- minimum/maximum energy guardrails;
-- protein, carbohydrate, fat, fiber, and other target logic;
-- BMI/screening use, if any;
-- rounding, tolerance bands, and recalculation cadence;
-- exclusions/referral for minors, pregnancy/breastfeeding, eating disorders, diabetes, kidney/liver disease, medications, rapid weight change, and other relevant conditions.
-
-Safety rules:
-
-1. Unsupported/excluded profiles cannot activate an automatic deficit/surplus.
-2. The UI must say “estimate,” not diagnosis, guarantee, or prescription.
-3. Every accepted target stores its input snapshot, `calculator_version`, and `policy_version`.
-4. Policy updates apply only after a user accepts a new target revision; they never alter history.
-5. A target that is refused/limited must expose a user-safe reason.
-6. Medical nutrition therapy and emergency/symptom guidance are outside MVP scope.
-
 # 41. Program Lifecycle and Invariants
 
 ```text

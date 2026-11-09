@@ -78,7 +78,7 @@ Fixture mengikuti §43: basis data kosong, pembuatan langsung pada versi 2, basi
 
 Migrasi tidak membuat program untuk siapa pun. Pengguna lama mendarat di keadaan "belum ada program" dengan seluruh catatan utuh.
 
-Ini keputusan produk, bukan kemalasan teknis: mendaftarkan seseorang ke program dengan target yang tidak pernah ia tinjau melanggar §40.3 dan §41.3, dan bertentangan dengan janji di layar `12 · Tinjau target` bahwa tidak ada program aktif sebelum pengguna menyetujui.
+Ini keputusan produk, bukan kemalasan teknis: mendaftarkan seseorang ke program dengan target yang tidak pernah ia tinjau melanggar §41.3 ("Activation requires an approved proposal and explicit confirmation"), dan bertentangan dengan janji di layar `12 · Tinjau target` bahwa tidak ada program aktif sebelum pengguna menyetujui.
 
 ### D9 — Repositori menyembunyikan Drift sepenuhnya
 

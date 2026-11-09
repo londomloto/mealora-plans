@@ -78,7 +78,7 @@ Jeda disimpan sebagai peristiwa mulai dan peristiwa lanjut, sehingga total hari 
 
 ### D9 — Program pengguna menyimpan salinan masukan, bukan rujukan ke profil
 
-Target yang disetujui menyimpan salinan nilai yang dipakai saat perhitungan. Merujuk ke profil hidup akan membuat target lama berubah makna setiap kali pengguna menyunting profilnya — persis yang dilarang §40.4. Ini konsekuensi yang sama dengan alasan meal item menyimpan snapshot gizi (§11).
+Target yang disetujui menyimpan salinan nilai yang dipakai saat perhitungan. Merujuk ke profil hidup akan membuat target lama berubah makna setiap kali pengguna menyunting profilnya — bertentangan dengan keputusan change 002 bahwa kebijakan dan pembaruannya tidak pernah mengubah riwayat yang sudah disetujui (design.md change 002, Risks). Ini konsekuensi yang sama dengan alasan meal item menyimpan snapshot gizi (§11).
 
 ### D10 — Katalog sebagai data acuan dalam kode domain
 
@@ -107,4 +107,4 @@ Rollback: murni penambahan kode baru; membuang commit tidak berdampak pada pengg
 
 ## Open Questions
 
-Tidak ada pertanyaan yang ditunda. Satu hal yang perlu ditegaskan, bukan ditanyakan: angka kebijakan datang dari change 002 dan bukan keputusan change ini. Bila peninjau gizi mengubah nilai, perubahan itu masuk ke change 002, dan change ini hanya memperbarui vektor hasil yang diharapkan.
+Tidak ada pertanyaan yang ditunda. Satu hal yang perlu ditegaskan, bukan ditanyakan: angka kebijakan datang dari change 002 dan bukan keputusan change ini. Bila nilai kebijakan berubah di kemudian hari, perubahan itu masuk ke change 002 sebagai versi baru, dan change ini hanya memperbarui vektor hasil yang diharapkan.

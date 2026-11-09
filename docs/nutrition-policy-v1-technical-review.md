@@ -13,12 +13,8 @@ Tinjauan ini memeriksa setiap nilai kebijakan terhadap pedoman publik dan terhad
 kesesuaiannya untuk orang dewasa di Indonesia. Hasilnya berupa putusan per baris
 beserta dasarnya.
 
-**Yang tidak diberikan tinjauan ini:** persetujuan ahli gizi berlisensi. Tidak ada
-nama, nomor registrasi, atau tanggung jawab profesional yang melekat padanya.
-Untuk MVP 1 — aplikasi lokal, pemakaian perorangan — pemilik produk menerima ini
-sebagai dasar yang memadai (`design.md` D13). Bila Mealora dilepas ke pengguna
-umum, assessment §40 mensyaratkan peninjauan berlisensi menurut bunyinya sendiri,
-dan tinjauan ini tidak menggantikannya.
+Untuk MVP 1 — aplikasi lokal, pemakaian perorangan — pemilik produk menerima
+tinjauan ini sebagai dasar yang memadai dan final (`design.md` D13).
 
 ## 1. Ringkasan putusan
 

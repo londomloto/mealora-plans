@@ -33,7 +33,7 @@ Change ini mengisi ruang Program di `mealora-apps/mealora-mobile` dengan seluruh
 ## Dependensi Antar-Paket
 
 - Change 003, 004, dan 005 memblokir seluruh paket di `mealora-mobile`: perintah siklus hidup, penyimpanan riwayat, dan alur pratinjau berasal dari sana.
-- Change 002 tidak memblokir change ini. Selama kebijakan berstatus draf, pergantian dan revisi target bermuara pada keadaan penolakan, dan itu perilaku yang benar.
+- Change 002 tidak memblokir change ini — kebijakan `np-1.0.0` sudah final untuk MVP 1 (change 002, D13). Jalur pergantian dan revisi target seharusnya mencapai angka nyata untuk profil yang tercakup; keadaan penolakan tetap wajib dibangun untuk profil di luar cakupan dan sebagai jaring pengaman.
 - Paket 1 mendahului paket 4 — layar dirancang sebelum dibangun.
 - Paket 2 mendahului paket 3, 4, dan 5: seluruhnya dibuka dari ruang Program.
 - Paket 7 bergantung pada alur pratinjau change 005 dan pada paket 2.
@@ -70,4 +70,4 @@ Change ini mengisi ruang Program di `mealora-apps/mealora-mobile` dengan seluruh
 | Alur pergantian menggoda dibangun sebagai jalur aktivasi kedua | Dua tempat yang harus sama-sama benar tentang hal paling berisiko | Pakai ulang perintah aktivasi change 003 dan 004; uji yang sama dijalankan untuk kedua jalur masuk |
 | Perbandingan target lama dan baru mendorong pengguna mengejar angka agresif | Bertentangan dengan nada produk | Tampilkan selisih apa adanya tanpa penilaian; guardrail kebijakan tetap berlaku penuh |
 | Layar rincian hasil rancangan sendiri terasa salah tempat | Perlu perbaikan setelah uji coba | Strukturnya meniru `30`; risiko terbatas pada penempatan, bukan isi |
-| Kebijakan belum disetujui saat change ini selesai | Jalur pergantian dan revisi tidak dapat diperlihatkan utuh | Uji dengan kebijakan draf di lingkungan uji; keadaan penolakan adalah perilaku rilis yang benar |
+| Wiring aktivasi lupa mengonstruksi `NutritionPolicy` dengan status `approved` | Jalur pergantian dan revisi selalu jatuh ke penolakan meski kebijakan sudah final | Uji integrasi memakai kebijakan berstatus `approved`, bukan sekadar kebijakan draf |

@@ -51,7 +51,7 @@ Change ini menghasilkan kebijakan gizi berversi `np-1.0.0` beserta dasar rujukan
 
 | Risiko | Dampak | Mitigasi |
 |---|---|---|
-| Angka tidak pernah ditinjau ahli gizi berlisensi | Tidak layak rilis publik | Diterima sadar untuk MVP perorangan (`design.md` D13); peninjauan berlisensi menjadi prasyarat tersendiri sebelum rilis ke pengguna umum |
+| Angka dihitung dari rumus dan pedoman publik, bukan penilaian individual tenaga kesehatan | Risiko inheren aplikasi estimasi otomatis | Ditelusuri ke sumber publik per baris, diuji lewat vektor uji emas, gagal tertutup untuk profil di luar cakupan (`design.md` D13) |
 | Tinjauan mengubah banyak nilai sekaligus | Vektor uji emas dan dokumen harus disusun ulang | Susun vektor uji dari aturan, bukan dari angka hasil, sehingga perubahan nilai hanya mengubah kolom hasil |
 | Perubahan kebijakan datang setelah `ProgramEngine` ditulis | Rework di change berikutnya | Tutup change ini sebelum change 003 dimulai; perubahan nilai sesudahnya wajib menjadi versi kebijakan baru |
 | Nilai di repo aplikasi menyimpang dari spec karena disalin manual | Perilaku aplikasi berbeda dari kebijakan tertulis | Pemeriksaan baris per baris sebagai gate tahap 2, dan uji yang membandingkan berkas data dengan vektor emas |

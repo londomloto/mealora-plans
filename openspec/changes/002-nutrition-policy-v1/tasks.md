@@ -30,7 +30,7 @@
 - [x] 4.2 Terapkan koreksi tinjauan ke `specs/nutrition-policy/spec.md`, `design.md`, `frs.md`, `proposal.md`, `workorder.md`, dan dokumen kebijakan secara serempak agar seluruhnya tidak berbeda
 - [x] 4.3 Hitung ulang dan perbarui vektor uji emas untuk setiap nilai yang berubah
 - [x] 4.4 Catat setiap nilai yang diubah beserta alasan dan dampaknya terhadap angka profil acuan
-- [x] 4.5 Catat batas tinjauan ini: apa yang tidak dapat dijamin tanpa peninjau berlisensi, dan apa yang sengaja ditunda ke change berikutnya
+- [x] 4.5 Catat batas tinjauan ini dan apa yang sengaja ditunda ke change berikutnya
 
 ## 5. mealora-mobile — Data kebijakan dan fixture
 

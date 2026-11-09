@@ -4,7 +4,7 @@
 
 Lihat `proposal.md` — Why. Keadaan saat ini: change 001 menyediakan tema, komponen dasar, lokalisasi, splash, dan navigasi empat ruang berkeadaan kosong; change 002 menyediakan kebijakan `np-1.0.0`; change 003 menyediakan domain program dengan perintah aktivasi; change 004 menyediakan penyimpanan program beserta transaksinya. Belum ada tabel profil dan belum ada satu pun layar fitur.
 
-Rancangan layar sudah tersedia di `docs/mealora.pen`: `07 · Selamat datang`, `08 · Profil awal`, `09 · Aktivitas harian`, `10 · Pilih program`, `11 · Detail program`, `12 · Tinjau target`, `25 · Target berat program`, `26 · Kebijakan belum tersedia`, dan `36 · Belum ada program`.
+Rancangan layar sudah tersedia di `docs/mealora.pen`: `07 · Selamat datang`, `08 · Profil awal`, `09 · Aktivitas harian`, `10 · Pilih program`, `11 · Detail program`, `12 · Tinjau target`, `25 · Target berat program`, `26 · Target tidak dibuat`, dan `36 · Belum ada program`.
 
 ## Goals / Non-Goals
 
@@ -60,7 +60,7 @@ Bahasa visualnya mengikuti `12 · Tinjau target` agar terasa sebagai kelanjutan,
 
 ### D6 — Keadaan tidak-disetujui memakai satu layar dengan isi yang berbeda
 
-Lima keadaan hasil dari domain dipetakan ke satu kerangka layar (`26 · Kebijakan belum tersedia`) dengan judul, penjelasan, dan tawaran langkah berikutnya yang berbeda menurut kode alasan — bukan lima layar terpisah.
+Lima keadaan hasil dari domain dipetakan ke satu kerangka layar (`26 · Target tidak dibuat`) dengan judul, penjelasan, dan tawaran langkah berikutnya yang berbeda menurut kode alasan — bukan lima layar terpisah.
 
 Alasannya bukan penghematan: lima layar terpisah akan menggoda orang menambahkan "sedikit detail" di salah satunya, dan detail itulah yang berubah menjadi diagnosis. Satu kerangka memaksa setiap kasus memakai struktur yang sama: apa yang terjadi, apa yang tidak dibuat, apa yang bisa dilakukan sekarang.
 
@@ -94,7 +94,7 @@ Ini keadaan sementara yang jujur dan sudah sesuai aturan: hari tanpa catatan dit
 
 ## Risks / Trade-offs
 
-- **Kebijakan `np-1.0.0` belum disetujui saat change ini dikerjakan** → seluruh onboarding bermuara di layar `26`, dan jalur bahagia tidak dapat diperlihatkan kepada pemangku kepentingan. Mitigasi: jalur bahagia tetap diuji penuh dengan kebijakan draf di lingkungan uji; keadaan `26` justru menjadi perilaku rilis yang benar sampai persetujuan turun.
+- **Kebijakan `np-1.0.0` final untuk MVP 1 sejak change 002** (`design.md` change 002, D13) → jalur bahagia (layar `12`, angka target nyata) adalah hasil yang diharapkan untuk profil yang tercakup kebijakan, bukan sesuatu yang hanya terlihat di lingkungan uji. Wiring aktivasi (task 5.3) SHALL mengonstruksi `NutritionPolicy` dengan `status: PolicyApprovalStatus.approved`. Layar `26` tetap dilalui, tapi hanya untuk profil yang benar-benar di luar cakupan kebijakan (usia, kehamilan, kondisi yang dinyatakan, IMT, laju yang diminta) — bukan untuk setiap pengguna.
 - **Masukan tersimpan bertahap membuat profil tidak lengkap bisa ada** → risiko perhitungan dijalankan atas data separuh. Mitigasi: penanda kelengkapan, dan jalur `missing_required_input` yang diuji.
 - **Pemetaan kode alasan ke kalimat bisa berubah menjadi diagnosis** seiring waktu → mitigasi: satu kerangka layar, pemeriksaan bahasa sebagai bagian gate, dan daftar larangan yang eksplisit.
 - **Layar baru yang saya rancang sendiri** (masukan berubah sejak pratinjau) belum pernah dilihat pengguna nyata → mitigasi: strukturnya meniru layar `12` yang sudah dirancang matang; bila terasa mengganggu saat dipakai, perbaikannya murah karena terisolasi.

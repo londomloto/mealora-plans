@@ -2,7 +2,7 @@
 
 ## Context
 
-Lihat `proposal.md` — Why. Keadaan saat ini: belum ada kebijakan gizi apa pun; change 001 baru membangun kerangka aplikasi dan penyimpanan lokal. Assessment §40 mensyaratkan persetujuan peninjau gizi atau medis **sebelum dipakai di produksi publik**. Mealora MVP 1 adalah aplikasi lokal untuk pemakaian perorangan dan belum masuk kategori itu, sehingga pemilik produk memutuskan kebijakan ini berlaku tanpa gerbang persetujuan — lihat D13. Yang tetap berlaku dari §40: nilai klinis diberi versi, dan kasus yang tidak diatur tidak pernah ditebak.
+Lihat `proposal.md` — Why. Keadaan saat ini: belum ada kebijakan gizi apa pun; change 001 baru membangun kerangka aplikasi dan penyimpanan lokal. Mealora MVP 1 adalah aplikasi lokal untuk pemakaian perorangan; pemilik produk memutuskan kebijakan ini berlaku penuh berdasarkan tinjauan teknis terhadap pedoman publik, tanpa menahan rilisnya di status draf — lihat D13. Yang tetap berlaku: nilai klinis diberi versi, dan kasus yang tidak diatur tidak pernah ditebak.
 
 Change ini berisi rancangan nilai beserta dasarnya, bukan kode. Sasarannya adalah dokumen yang cukup spesifik untuk diimplementasikan apa adanya dan cukup transparan untuk ditolak atau dikoreksi peninjau per baris.
 
@@ -102,9 +102,9 @@ Ambang hitung ulang (berat berubah ≥2 kg, profil atau aktivitas berubah, umur 
 
 Nilai kebijakan ditulis sebagai satu berkas data berversi yang dibaca mesin program, bukan konstanta yang berserak di kode. Dengan begitu, perbandingan antarversi kebijakan menjadi diff yang bisa ditinjau orang gizi tanpa membaca Dart, dan vektor uji emas bisa diikat ke versi tertentu.
 
-### D13 — Tanpa gerbang persetujuan; gagal tertutup tetap berlaku untuk cakupan
+### D13 — Tanpa status draf menahan seluruh kebijakan; gagal tertutup tetap berlaku untuk cakupan
 
-Rancangan awal menahan seluruh kebijakan di status draf sampai ada tanda tangan peninjau gizi, dan memakai kode `missing_validated_policy` sebagai gerbangnya. Gerbang itu **dihapus** atas keputusan pemilik produk: Assessment §40 mensyaratkan persetujuan "before public production use", sedangkan MVP 1 adalah aplikasi lokal untuk pemakaian perorangan. Menahan seluruh program demi tanda tangan yang tidak akan ada hanya memblokir change 003 ke atas tanpa menambah keamanan.
+Rancangan awal menahan seluruh kebijakan di status draf sampai pemilik produk menandainya final di kode, dan memakai kode `missing_validated_policy` sebagai gerbangnya. Gerbang itu **dihapus**: kebijakan `np-1.0.0` berlaku penuh untuk Mealora MVP 1 sejak change ini ditutup, berdasarkan tinjauan teknis yang tercatat di `docs/nutrition-policy-v1-technical-review.md`. Menahan seluruh program menunggu penandaan yang tidak akan datang hanya memblokir change 003 ke atas tanpa menambah keamanan.
 
 Yang **tidak** ikut dihapus adalah perilaku gagal tertutup untuk kasus yang tidak diatur. Profil di luar cakupan — usia di bawah 19, kehamilan, kondisi yang dinyatakan, IMT di luar rentang — tetap tidak menerima angka apa pun, kini lewat `unsupported_profile` dan `needs_professional_review`. Perbedaannya tegas: dulu aplikasi diam karena *belum ada izin*, sekarang aplikasi diam karena *aturannya memang tidak mencakup orang itu*. Yang kedua benar secara permanen; yang pertama hanya benar sampai seseorang menandatangani.
 
@@ -140,7 +140,7 @@ Pranala rujukan lengkap dicatat di dokumen peninjauan (`docs/nutrition-policy-v1
 
 ## Risks / Trade-offs
 
-- **Angka ini tidak ditinjau ahli gizi berlisensi** → risiko paling serius dalam change ini, dan tidak hilang oleh D13. Mitigasi: setiap nilai dapat ditelusuri ke pedoman publik dan tercatat baris per baris di `docs/nutrition-policy-v1.md`; nilai yang merupakan keputusan produk ditandai eksplisit; seluruh aturan diuji lewat vektor uji emas sehingga akibat tiap nilai terlihat. Mitigasi ini cukup untuk pemakaian perorangan, **tidak** cukup untuk rilis publik — bila Mealora dilepas ke pengguna umum, §40 berlaku kembali menurut bunyinya sendiri.
+- **Angka dihitung dari rumus dan pedoman publik, bukan penilaian individual oleh tenaga kesehatan** → risiko inheren aplikasi yang memberi estimasi otomatis. Mitigasi: setiap nilai dapat ditelusuri ke pedoman publik dan tercatat baris per baris di `docs/nutrition-policy-v1.md`; nilai yang merupakan keputusan produk ditandai eksplisit; seluruh aturan diuji lewat vektor uji emas sehingga akibat tiap nilai terlihat; profil di luar cakupan kebijakan tidak pernah menerima angka (gagal tertutup, D13).
 - **Pengali aktivitas paling lemah dasarnya** di antara seluruh nilai → mitigasi: ditandai eksplisit sebagai keputusan produk di tabel rujukan, dan dampaknya diuji lewat vektor emas sehingga penggantian nilai langsung terlihat akibatnya.
 - **Skrining mengandalkan pernyataan pengguna** → pengguna bisa melewatinya dengan tidak menyatakan kondisinya. Mitigasi: pertanyaan skrining dirumuskan netral dan tidak menghakimi; bahasa penolakan tidak membuat pengguna merasa dihukum sehingga tidak terdorong berbohong. Tidak ada klaim bahwa aplikasi mendeteksi kondisi medis.
 - **Pengguna dengan riwayat gangguan makan** dapat terpicu oleh target dan angka → mitigasi: `needs_professional_review` bila dinyatakan, Makan Sehat tanpa target berat sebagai jalur alternatif, bahasa yang menolak gagasan hari yang "gagal" (sudah tercermin di desain layar 18 dan 40).

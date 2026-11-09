@@ -38,7 +38,7 @@ Change ini membangun perjalanan pertama pengguna di dua repositori. Di `mealora-
 
 - Change 001 memblokir seluruh paket di `mealora-mobile`: tema, komponen dasar, lokalisasi, dan navigasi berasal dari sana.
 - Change 003 dan 004 memblokir paket 11 sampai 14: perintah aktivasi dan penyimpanan program berasal dari sana.
-- Change 002 **tidak** memblokir change ini. Selama kebijakan berstatus draf, seluruh alur bermuara di paket 13, dan itu memang perilaku rilis yang benar.
+- Change 002 **tidak** memblokir change ini — kebijakan `np-1.0.0` sudah final untuk MVP 1 (change 002, D13). Jalur bahagia (paket 10–12, angka target nyata) adalah hasil yang diharapkan untuk profil yang tercakup; paket 13 (keadaan tidak-disetujui) tetap wajib dibangun untuk profil di luar cakupan dan sebagai jaring pengaman bila kebijakan suatu saat kembali berstatus draf.
 - Paket 1 mendahului paket 12 — layar dirancang sebelum dibangun.
 - Paket 2 mendahului paket 13 — kalimat ditinjau sebelum ditanam di kode.
 - Paket 3 mendahului paket 5 sampai 10: tidak ada tempat menyimpan masukan sebelum tabel profil ada.
@@ -70,7 +70,7 @@ Change ini membangun perjalanan pertama pengguna di dua repositori. Di `mealora-
 
 | Risiko | Dampak | Mitigasi |
 |---|---|---|
-| Kebijakan gizi belum disetujui saat change ini selesai | Jalur bahagia tidak dapat diperlihatkan ke pemangku kepentingan | Uji dengan kebijakan draf di lingkungan uji; keadaan "target belum tersedia" adalah perilaku rilis yang benar sampai persetujuan turun |
+| Wiring aktivasi lupa mengonstruksi `NutritionPolicy` dengan status `approved` | Jalur bahagia tidak pernah tercapai meski kebijakan sudah final | Uji integrasi alur penuh (task 7.5) memakai kebijakan berstatus `approved`, bukan sekadar kebijakan draf; wiring yang salah akan langsung gagal di gate ini |
 | Migrasi v2 → v3 menemukan baris program tanpa profil pada perangkat uji | Tahap 1 tertahan | Fixture khusus dan keputusan perlakuan ditetapkan saat fixture dibuat, bukan saat migrasi gagal |
 | Jumlah layar membuat tahap 2 melar | Jadwal keseluruhan mundur | Layar memakai komponen dasar change 001; bila melar, paket 9 (target berat) dapat dipindah ke tahap 3 karena hanya dipakai dua program |
 | Angka bocor di keadaan penolakan lewat sisa state | Melanggar aturan keselamatan produk | Uji khusus yang membuka pratinjau lalu memicu penolakan, memeriksa tidak ada angka tersisa |

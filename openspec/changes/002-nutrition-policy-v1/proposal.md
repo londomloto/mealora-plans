@@ -2,7 +2,7 @@
 
 ## Why
 
-Assessment v1.1 melarang Mealora menebak aturan gizi: `ProgramEngine` harus gagal tertutup bila aturannya tidak ada (§39, §40), dan desain sudah menyiapkan layar untuk keadaan itu (`26 · Target tidak dibuat`). Artinya seluruh program Turun Berat, Naik Berat, Pertahankan, dan Makan Sehat tidak bisa diaktifkan sampai ada satu kebijakan berversi yang menetapkan angkanya — change ini adalah kebijakan tersebut.
+Assessment v1.1 melarang Mealora menebak aturan gizi: `ProgramEngine` harus gagal tertutup bila aturannya tidak ada (§39), dan desain sudah menyiapkan layar untuk keadaan itu (`26 · Target tidak dibuat`). Artinya seluruh program Turun Berat, Naik Berat, Pertahankan, dan Makan Sehat tidak bisa diaktifkan sampai ada satu kebijakan berversi yang menetapkan angkanya — change ini adalah kebijakan tersebut.
 
 Dikerjakan sekarang, sebelum `ProgramEngine` ditulis, karena kebijakan inilah yang menentukan bentuk masukan, hasil, dan kode alasan penolakan mesin itu. Menuliskannya belakangan berarti menulis mesin terhadap antarmuka kosong, lalu merombaknya begitu angka sebenarnya datang.
 
@@ -19,7 +19,7 @@ Change ini **tidak** menulis kode. Yang dihasilkan adalah kebijakan numerik berv
 - **Pembulatan, toleransi, dan jadwal hitung ulang**, termasuk keharusan pengguna menyetujui revisi target sebelum berlaku.
 - **Kode alasan** untuk setiap keadaan tidak-disetujui, dipetakan ke kalimat yang dilihat pengguna.
 - **Vektor uji emas**: kasus uji berisi masukan dan hasil yang diharapkan untuk setiap aturan dan setiap batas, dipakai sebagai uji regresi di aplikasi.
-- **Tinjauan teknis**: seluruh nilai ditinjau terhadap pedoman publik dan terhadap kesesuaiannya untuk populasi Indonesia, dengan hasil tercatat per baris. Tidak ada gerbang persetujuan berlisensi untuk MVP 1 — lihat `design.md` D13.
+- **Tinjauan teknis**: seluruh nilai ditinjau terhadap pedoman publik dan terhadap kesesuaiannya untuk populasi Indonesia, dengan hasil tercatat per baris — lihat `design.md` D13.
 
 **BREAKING** — tidak ada, belum ada kebijakan sebelumnya. Perubahan angka di kemudian hari wajib menjadi change tersendiri dengan versi baru, dan tidak boleh mengubah target yang sudah disetujui pengguna di masa lalu.
 
@@ -39,4 +39,4 @@ Tidak ada. `app-shell` dan `local-data-foundation` dari change 001 tidak tersent
 - **Repo `mealora-apps/mealora-mobile`**: berkas data kebijakan berversi dan fixture uji emas; belum ada mesin yang membacanya pada change ini.
 - **Memblokir** change berikutnya: `ProgramEngine` (domain program), pratinjau dan aktivasi target pada onboarding, serta seluruh layar yang menampilkan angka target.
 - **Keputusan terbuka yang ditutup** oleh change ini (assessment §33): pengali aktivitas, kebijakan defisit/surplus, batas usia minimum, dan penanganan kehamilan/menyusui.
-- **Risiko utama**: angka di sini adalah rancangan berbasis pedoman publik, bukan nasihat klinis untuk individu, dan belum ditinjau ahli gizi berlisensi. Cukup untuk MVP perorangan; sebelum rilis publik ke pengguna umum, §40 mensyaratkan peninjauan berlisensi.
+- **Risiko utama**: angka di sini adalah rancangan berbasis pedoman publik, bukan nasihat klinis untuk individu. Mitigasi: setiap nilai dapat ditelusuri ke sumbernya dan diuji lewat vektor uji emas; profil di luar cakupan tidak pernah menerima angka.

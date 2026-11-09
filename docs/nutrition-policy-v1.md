@@ -24,10 +24,6 @@ Yang tetap berlaku penuh: gagal tertutup untuk profil yang **tidak dicakup**
 kebijakan ini (usia di luar rentang, kehamilan, kondisi yang dinyatakan, berat
 tujuan di luar rentang aman). Profil itu tidak pernah menerima angka yang ditebak.
 
-Bila Mealora dilepas ke pengguna umum di luar pemakaian perorangan, assessment §40
-mensyaratkan peninjauan berlisensi menurut bunyinya sendiri — tinjauan teknis ini
-tidak menggantikannya.
-
 ## 0. Cara membaca dokumen ini
 
 Setiap baris di Bagian 2 adalah satu nilai atau satu aturan. Kolom **Jenis**

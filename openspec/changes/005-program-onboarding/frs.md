@@ -28,7 +28,7 @@
 - Pencatatan makanan, pencarian katalog, buku harian, dan pemantauan berat badan.
 - Pengaturan satuan, bahasa, privasi, dan penghapusan data; ruang Profil tetap kosong pada pengiriman ini.
 - Jalur foto makanan, pemindaian barcode, dan pembacaan label gizi.
-- Angka target itu sendiri, yang ditetapkan pada change 002 dan masih menunggu persetujuan peninjau gizi. Selama belum disetujui, onboarding berakhir pada keadaan "target belum tersedia".
+- Angka target itu sendiri, yang sudah ditetapkan final pada change 002 (`np-1.0.0`); mengubahnya adalah change tersendiri, bukan pekerjaan change ini.
 
 ## 2. Data Diri
 
@@ -211,7 +211,7 @@ So that saya tahu apa yang terjadi dan apa yang bisa saya lakukan, tanpa merasa 
 
 6.9. **Data berubah sejak pratinjau** — Pengguna melihat pratinjau, berat badan diperbarui di latar, lalu pengguna menekan setujui → Mealora membatalkan aktivasi, menyebut berat lama dan berat baru, dan menampilkan pratinjau yang diperbarui.
 
-6.10. **Kebijakan belum disetujui** — Aturan gizi masih berstatus draf → pengguna menyelesaikan seluruh masukan → Mealora menyatakan target belum tersedia, tidak menampilkan satu pun angka, dan menawarkan langkah berikutnya.
+6.10. **Jaring pengaman kebijakan berstatus draf** — Bila suatu saat kebijakan aktif berstatus draf (bukan keadaan `np-1.0.0` saat ini, yang final untuk MVP 1) → pengguna menyelesaikan seluruh masukan → Mealora menyatakan target belum tersedia, tidak menampilkan satu pun angka, dan menawarkan langkah berikutnya.
 
 6.11. **Profil di luar cakupan** — Profil berusia 17 tahun memilih Turun Berat → Mealora menolak tanpa diagnosis, menyatakan tidak ada target yang dibuat, dan menawarkan langkah lain.
 

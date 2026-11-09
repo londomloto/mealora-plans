@@ -37,6 +37,6 @@ Tidak ada. `program-catalog`, `program-lifecycle`, `nutrition-policy`, `program-
 
 - **Repo `mealora-apps/mealora-mobile`**: fitur onboarding dan program (layar, state, navigasi antar-langkah), tabel profil beserta migrasi skema versi 2 ke 3, repositori profil, dan penyambungan ruang Hari ini ke program aktif.
 - **Repo `mealora-plans`**: penambahan layar "masukan berubah sejak pratinjau" ke `docs/mealora.pen`, mengikuti bahasa visual yang sudah ada.
-- **Bergantung pada** change 001 (kerangka, tema, navigasi), 002 (kebijakan — selama belum disetujui, onboarding berakhir di keadaan `26`), 003 (domain), dan 004 (penyimpanan program).
+- **Bergantung pada** change 001 (kerangka, tema, navigasi), 002 (kebijakan `np-1.0.0`, final untuk MVP 1), 003 (domain), dan 004 (penyimpanan program).
 - **Memblokir** change berikutnya: siklus hidup program di layar (Program saya, jeda, ganti, riwayat, selesaikan), serta katalog makanan dan buku harian.
 - **Belum tersentuh**: pencatatan makanan, berat badan, riwayat harian, dan seluruh jalur foto, barcode, maupun label gizi. Ruang Program, Riwayat, dan Profil tetap pada keadaan kosong kecuali bagian yang disebut di sini.
