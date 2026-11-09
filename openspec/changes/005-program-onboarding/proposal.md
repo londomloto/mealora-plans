@@ -6,7 +6,7 @@ Setelah change 001–004, Mealora punya kerangka yang bisa dijalankan, kebijakan
 
 Change ini menyambungkan seluruhnya menjadi perjalanan pertama yang utuh: pengguna memasang aplikasi, memperkenalkan dirinya, memilih arah, meninjau perkiraan targetnya, lalu menyetujuinya. Inilah momen yang paling menentukan apakah produk ini terasa jujur atau tidak — di sinilah angka pertama muncul, dan di sinilah penolakan harus terasa membantu alih-alih menghukum.
 
-Rancangannya sudah ada dan rinci di `docs/mealora.pen` (layar `07`–`12`, `25`, `26`, `36`), termasuk keadaan yang biasanya dilupakan orang: kebijakan belum tersedia, dan pengguna yang belum punya program sama sekali.
+Rancangannya sudah ada dan rinci di `docs/mealora-v2.pen` (layar `07`–`12`, `25`, `26`, `36`), termasuk keadaan yang biasanya dilupakan orang: kebijakan belum tersedia, dan pengguna yang belum punya program sama sekali.
 
 ## What Changes
 
@@ -36,7 +36,7 @@ Tidak ada. `program-catalog`, `program-lifecycle`, `nutrition-policy`, `program-
 ## Impact
 
 - **Repo `mealora-apps/mealora-mobile`**: fitur onboarding dan program (layar, state, navigasi antar-langkah), tabel profil beserta migrasi skema versi 2 ke 3, repositori profil, dan penyambungan ruang Hari ini ke program aktif.
-- **Repo `mealora-plans`**: penambahan layar "masukan berubah sejak pratinjau" ke `docs/mealora.pen`, mengikuti bahasa visual yang sudah ada.
+- **Repo `mealora-plans`**: penambahan layar "masukan berubah sejak pratinjau" ke `docs/mealora-v2.pen`, mengikuti bahasa visual yang sudah ada.
 - **Bergantung pada** change 001 (kerangka, tema, navigasi), 002 (kebijakan `np-1.0.0`, final untuk MVP 1), 003 (domain), dan 004 (penyimpanan program).
 - **Memblokir** change berikutnya: siklus hidup program di layar (Program saya, jeda, ganti, riwayat, selesaikan), serta katalog makanan dan buku harian.
 - **Belum tersentuh**: pencatatan makanan, berat badan, riwayat harian, dan seluruh jalur foto, barcode, maupun label gizi. Ruang Program, Riwayat, dan Profil tetap pada keadaan kosong kecuali bagian yang disebut di sini.

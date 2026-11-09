@@ -89,6 +89,6 @@
 - [ ] 9.4 Ukur ukuran basis data pada data uji realistis — beberapa bulan pencatatan — dan catat hasilnya
 - [ ] 9.5 Uji integrasi alur penuh dalam mode pesawat: cari makanan → pilih takaran dan jumlah → simpan → ruang Hari ini menyesuaikan → sunting → pindahkan → hapus → total kembali seperti semula
 - [ ] 9.6 Uji: seluruh catatan dan total bertahan setelah aplikasi ditutup, perangkat dimatikan, lalu dinyalakan kembali
-- [ ] 9.7 Verifikasi di Chrome pada viewport 390×844 dan bandingkan seluruh layar dengan `docs/mealora.pen`
+- [ ] 9.7 Verifikasi di Chrome pada viewport 390×844 dan bandingkan seluruh layar dengan `docs/mealora-v2.pen`
 - [ ] 9.8 Verifikasi alur penuh di perangkat Android
 - [ ] 9.9 Gate verifikasi repo: jalankan `flutter analyze`, `dart format --set-exit-if-changed .`, dan `flutter test`; laporkan hasil beserta risiko yang tersisa

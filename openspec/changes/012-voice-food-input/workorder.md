@@ -10,7 +10,7 @@ Change ini menambahkan jalur pencatatan kelima: berbicara. Di `mealora-plans`, d
 
 | # | Paket pekerjaan | Effort (hari-orang) | Kepastian | Catatan |
 |---|---|---|---|---|
-| 1 | Rancang tiga layar di `docs/mealora.pen`: rekam suara (siap, merekam, selesai), tinjau transkrip, dan jalur suara pada lembar `02` | 1,0 | pasti | Penanda sedang merekam tidak boleh bergantung warna saja |
+| 1 | Rancang tiga layar di `docs/mealora-v2.pen`: rekam suara (siap, merekam, selesai), tinjau transkrip, dan jalur suara pada lembar `02` | 1,0 | pasti | Penanda sedang merekam tidak boleh bergantung warna saja |
 | 2 | Susun himpunan uji kalimat pencatatan berbahasa Indonesia: 50–80 kalimat nyata mencakup hidangan majemuk, jumlah yang tidak disebut, dan satuan tidak baku | 0,75 | pasti | Termasuk kalimat di luar cakupan untuk menguji penolakan |
 | 3 | Jalankan evaluasi penguraian pada penyedia yang sudah dipakai change 010 dan 011, dan verifikasi kuota pada akun proyek yang sebenarnya | 1,0 | spike (timebox 1 hari) | Masukan berupa teks; catat biaya nyata per kalimat |
 
@@ -48,7 +48,7 @@ Change ini menambahkan jalur pencatatan kelima: berbicara. Di `mealora-plans`, d
 
 **Isi:** paket 1, 2, 3.
 **Prasyarat:** change 011 selesai.
-**Gate verifikasi:** ketiga layar ada di `docs/mealora.pen` dan konsisten dengan bahasa visual yang berlaku; penanda sedang merekam dapat dikenali tanpa warna; himpunan uji memuat hidangan majemuk, jumlah yang tidak disebut, satuan tidak baku, dan kalimat di luar cakupan; hasil evaluasi penguraian tercatat beserta versi model, versi perintah, tanggal, dan kasus kegagalan; kuota dan biaya nyata per kalimat diverifikasi pada akun proyek, bukan dikutip dari dokumentasi.
+**Gate verifikasi:** ketiga layar ada di `docs/mealora-v2.pen` dan konsisten dengan bahasa visual yang berlaku; penanda sedang merekam dapat dikenali tanpa warna; himpunan uji memuat hidangan majemuk, jumlah yang tidak disebut, satuan tidak baku, dan kalimat di luar cakupan; hasil evaluasi penguraian tercatat beserta versi model, versi perintah, tanggal, dan kasus kegagalan; kuota dan biaya nyata per kalimat diverifikasi pada akun proyek, bukan dikutip dari dokumentasi.
 
 ### Tahap 2 — Rekaman, transkrip, dan penguraian
 

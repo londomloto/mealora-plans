@@ -86,7 +86,7 @@ Pada change ini katalog adalah data acuan dalam Dart murni, agar domain dapat di
 
 ## Risks / Trade-offs
 
-- **Domain menjadi abstraksi yang tidak pernah dipakai apa adanya** bila change 004 dan 005 ternyata butuh bentuk lain → mitigasi: bentuk masukan dan keluaran diturunkan dari use case di assessment §44 dan dari layar yang sudah ada di `docs/mealora.pen`, bukan dari imajinasi.
+- **Domain menjadi abstraksi yang tidak pernah dipakai apa adanya** bila change 004 dan 005 ternyata butuh bentuk lain → mitigasi: bentuk masukan dan keluaran diturunkan dari use case di assessment §44 dan dari layar yang sudah ada di `docs/mealora-v2.pen`, bukan dari imajinasi.
 - **Kebijakan belum disetujui saat change ini dikerjakan** → mesin tidak dapat diuji pada jalur "disetujui" dengan nilai final. Mitigasi: vektor uji emas change 002 dipakai sebagai sumber; bila nilainya berubah setelah peninjauan, yang berubah hanya berkas data dan kolom hasil vektor, bukan struktur mesin.
 - **Uji matriks perpindahan bisa membengkak** menjadi ratusan kasus → mitigasi: dihasilkan dari tabel, bukan ditulis tangan satu per satu.
 - **Pemisahan kalkulator dan mesin program terasa berlebihan** bagi implementer berikutnya dan tergoda digabung → mitigasi: uji arsitektur dari change 001 melarang domain mengimpor Flutter/Drift, dan uji khusus memastikan kalkulator tidak mengetahui kode program maupun status.

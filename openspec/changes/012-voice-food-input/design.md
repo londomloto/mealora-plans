@@ -4,7 +4,7 @@
 
 Lihat `proposal.md` — Why. Keadaan saat ini: change 007 menyediakan katalog dan buku harian; change 010 menyediakan antarmuka penyedia model, proksi inferensi, batas biaya, dan aturan persetujuan untuk gambar; change 011 menyediakan peninjauan komponen, koreksi komponen, dan pencatatan banyak komponen dalam satu transaksi.
 
-Belum ada satu pun layar suara di `docs/mealora.pen`, dan belum ada akses mikrofon.
+Belum ada satu pun layar suara di `docs/mealora-v2.pen`, dan belum ada akses mikrofon.
 
 Assessment §17 menempatkan masukan kalimat bebas sebagai Level 4, dan §50 menyatakannya tetap di luar MVP 1. Pemilik produk memutuskan mempromosikannya. Yang tidak ikut berubah: §23 tetap berlaku — hasil AI selalu berupa perkiraan yang dapat disunting sebelum dicatat, dan tidak pernah disimpan diam-diam sebagai nilai pasti.
 
@@ -87,7 +87,7 @@ Sama dengan pola izin kamera change 009: izin diminta ketika jalur suara dipilih
 
 ### D10 — Empat layar baru, sudah dirancang
 
-Rancangan sudah ditambahkan ke `docs/mealora.pen` sebagai **Section · 07 / Masukan suara**:
+Rancangan sudah ditambahkan ke `docs/mealora-v2.pen` sebagai **Section · 07 / Masukan suara**:
 
 - `42 · Rekam suara` — keadaan siap, memuat contoh ucapan, tombol mikrofon, pernyataan batas cakupan, dan jalur ketik kalimat.
 - `43 · Sedang merekam` — penanda perekaman, gelombang suara, transkrip sementara, dan penegasan bahwa suara diproses di perangkat.

@@ -1,6 +1,6 @@
 ## 1. mealora-mobile — Value object dan tipe hasil
 
-- [x] 1.1 Baca ulang `docs/mealora_product_assessment_v1.1.md` §37–§48, spec change 002, dan layar `10`–`12`, `25`–`28`, `36`, `39` di `docs/mealora.pen` sebelum menulis kode, agar bentuk masukan dan keluaran domain sesuai kebutuhan nyata
+- [x] 1.1 Baca ulang `docs/mealora_product_assessment_v1.1.md` §37–§48, spec change 002, dan layar `10`–`12`, `25`–`28`, `36`, `39` di `docs/mealora-v2.pen` sebelum menulis kode, agar bentuk masukan dan keluaran domain sesuai kebutuhan nyata
 - [x] 1.2 Buat value object bersatuan di `lib/domain/`: energi (kkal), massa (kg), panjang (cm), tanggal lokal, dan persentase — masing-masing menolak nilai bukan-angka, tak hingga, dan nilai di luar rentang yang masuk akal
 - [x] 1.3 Terapkan pembulatan kanonis di satu tempat per satuan: energi ke 10 kkal, zat gizi ke 1 g, massa ke 0,1 kg; pembulatan hanya pada nilai akhir, bukan nilai antara
 - [x] 1.4 Buat tipe hasil tertutup dengan lima keadaan: `approved`, `needs_user_correction`, `needs_professional_review`, `unsupported_profile`, `missing_validated_policy`

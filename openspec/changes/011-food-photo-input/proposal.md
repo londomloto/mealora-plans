@@ -8,7 +8,7 @@ Foto menutup celah itu: satu jepretan mengusulkan seluruh komponen di piring, da
 
 Change ini menutup MVP 1: setelah ini, pengguna dapat mencatat secara manual, lewat barcode, lewat label gizi, dan lewat foto makanan.
 
-Rancangannya sudah ada di `docs/mealora.pen`: `19 · Foto makanan & izin`, `20 · Foto offline / AI gagal`, `03 · Tinjau foto makanan`, dan `38 · Koreksi komponen foto`.
+Rancangannya sudah ada di `docs/mealora-v2.pen`: `19 · Foto makanan & izin`, `20 · Foto offline / AI gagal`, `03 · Tinjau foto makanan`, dan `38 · Koreksi komponen foto`.
 
 ## What Changes
 

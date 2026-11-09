@@ -1,6 +1,6 @@
 ## 1. mealora-mobile — Skema catatan berat
 
-- [ ] 1.1 Baca ulang assessment §6.10, §6.11, §11, spec change 004 dan 007, serta layar `18`, `31`, `32`, dan `40` di `docs/mealora.pen` sebelum menulis tabel
+- [ ] 1.1 Baca ulang assessment §6.10, §6.11, §11, spec change 004 dan 007, serta layar `18`, `31`, `32`, dan `40` di `docs/mealora-v2.pen` sebelum menulis tabel
 - [ ] 1.2 Buat tabel catatan berat sesuai §11: profil, waktu pencatatan, tanggal lokal, berat dalam kilogram, catatan bebas opsional, beserta konvensi record pengguna change 001
 - [ ] 1.3 Buat indeks catatan berat menurut profil dan tanggal lokal
 - [ ] 1.4 Naikkan `schemaVersion` dari 4 ke 5 satu kali untuk change ini; migrasi tidak menyentuh data versi 4
@@ -59,7 +59,7 @@
 - [ ] 6.4 Uji: ringkasan hari lampau tidak berubah setelah katalog makanan diperbarui, makanan buatan pengguna disunting, profil diubah, dan program diganti
 - [ ] 6.5 Uji: catatan lama tetap pada tanggal yang sama setelah zona waktu perangkat berubah
 - [ ] 6.6 Uji integrasi alur penuh dalam mode pesawat: catat berat → lihat tren → buka riwayat → pilih tanggal lampau → sunting catatan → ringkasan dan kemajuan menyesuaikan
-- [ ] 6.7 Verifikasi di Chrome pada viewport 390×844 dan bandingkan seluruh layar dengan `docs/mealora.pen`
+- [ ] 6.7 Verifikasi di Chrome pada viewport 390×844 dan bandingkan seluruh layar dengan `docs/mealora-v2.pen`
 - [ ] 6.8 Verifikasi alur penuh di perangkat Android, termasuk ketahanan data setelah perangkat dimatikan dan dinyalakan
 - [ ] 6.9 Jalankan pemeriksaan kriteria penerimaan MVP assessment §28 untuk jalur manual, dan catat butir mana yang masih menunggu change input berikutnya
 - [ ] 6.10 Gate verifikasi repo: jalankan `flutter analyze`, `dart format --set-exit-if-changed .`, dan `flutter test`; laporkan hasil beserta risiko yang tersisa

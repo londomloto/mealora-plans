@@ -4,7 +4,7 @@
 
 Lihat `proposal.md` — Why. Keadaan saat ini: change 003 menyediakan perintah siklus hidup yang teruji, change 004 menyediakan penyimpanan beserta riwayat dan potret kemajuan, change 005 menyediakan profil, pratinjau target, dan aktivasi. Ruang Program masih berupa keadaan kosong dari change 001.
 
-Rancangan tersedia di `docs/mealora.pen`: `05 · Program saya`, `27 · Program dijeda`, `28 · Pratinjau ganti program`, `29 · Riwayat program`, `30 · Detail program selesai`, `34 · Ubah profil & target`, dan `39 · Selesaikan program`. Satu layar yang diwajibkan §45 belum ada: rincian "Bagaimana dihitung" untuk program yang sedang berjalan.
+Rancangan tersedia di `docs/mealora-v2.pen`: `05 · Program saya`, `27 · Program dijeda`, `28 · Pratinjau ganti program`, `29 · Riwayat program`, `30 · Detail program selesai`, `34 · Ubah profil & target`, dan `39 · Selesaikan program`. Satu layar yang diwajibkan §45 belum ada: rincian "Bagaimana dihitung" untuk program yang sedang berjalan.
 
 ## Goals / Non-Goals
 

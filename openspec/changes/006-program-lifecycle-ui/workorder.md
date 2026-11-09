@@ -10,7 +10,7 @@ Change ini mengisi ruang Program di `mealora-apps/mealora-mobile` dengan seluruh
 
 | # | Paket pekerjaan | Effort (hari-orang) | Kepastian | Catatan |
 |---|---|---|---|---|
-| 1 | Rancang layar rincian "Bagaimana dihitung" untuk program berjalan di `docs/mealora.pen`, mengikuti struktur `30 · Detail program selesai` | 0,5 | pasti | Termasuk peringatan yang menyertai pembuatan target |
+| 1 | Rancang layar rincian "Bagaimana dihitung" untuk program berjalan di `docs/mealora-v2.pen`, mengikuti struktur `30 · Detail program selesai` | 0,5 | pasti | Termasuk peringatan yang menyertai pembuatan target |
 
 ### mealora-mobile
 
@@ -47,7 +47,7 @@ Change ini mengisi ruang Program di `mealora-apps/mealora-mobile` dengan seluruh
 
 **Isi:** paket 1, 2, 3, 4.
 **Prasyarat:** change 005 selesai.
-**Gate verifikasi:** layar rincian ada di `docs/mealora.pen` dan konsisten dengan `30`; `flutter analyze`, `dart format`, dan `flutter test` bersih; uji widget membuktikan keadaan berjalan dan dijeda memakai susunan yang sama dengan perbedaan yang disengaja; nilai tanpa data tampil sebagai belum diketahui di setiap bagian; keempat keadaan khusus tampil sesuai jalurnya; rincian asal-usul target menampilkan peringatan yang menyertai pembuatan target.
+**Gate verifikasi:** layar rincian ada di `docs/mealora-v2.pen` dan konsisten dengan `30`; `flutter analyze`, `dart format`, dan `flutter test` bersih; uji widget membuktikan keadaan berjalan dan dijeda memakai susunan yang sama dengan perbedaan yang disengaja; nilai tanpa data tampil sebagai belum diketahui di setiap bagian; keempat keadaan khusus tampil sesuai jalurnya; rincian asal-usul target menampilkan peringatan yang menyertai pembuatan target.
 
 ### Tahap 2 — Mengubah program
 
@@ -59,7 +59,7 @@ Change ini mengisi ruang Program di `mealora-apps/mealora-mobile` dengan seluruh
 
 **Isi:** paket 8, 9, 10, 11, 12.
 **Prasyarat:** tahap 2 selesai dan gate-nya lolos.
-**Gate verifikasi:** riwayat tampil berurutan dengan keadaan akhir dan rentang tanggal; entri lama tetap menampilkan nilai aslinya setelah versi kebijakan diganti di lingkungan uji; nilai yang tidak pernah tercatat dinyatakan apa adanya; revisi target yang tidak disetujui membiarkan target lama berlaku dan riwayat tidak berubah; pemeriksaan skala teks besar dan pembaca layar pada seluruh layar; verifikasi di Chrome pada viewport 390×844 dibandingkan dengan `docs/mealora.pen`; verifikasi alur penuh di perangkat Android.
+**Gate verifikasi:** riwayat tampil berurutan dengan keadaan akhir dan rentang tanggal; entri lama tetap menampilkan nilai aslinya setelah versi kebijakan diganti di lingkungan uji; nilai yang tidak pernah tercatat dinyatakan apa adanya; revisi target yang tidak disetujui membiarkan target lama berlaku dan riwayat tidak berubah; pemeriksaan skala teks besar dan pembaca layar pada seluruh layar; verifikasi di Chrome pada viewport 390×844 dibandingkan dengan `docs/mealora-v2.pen`; verifikasi alur penuh di perangkat Android.
 
 ## Risiko Jadwal
 

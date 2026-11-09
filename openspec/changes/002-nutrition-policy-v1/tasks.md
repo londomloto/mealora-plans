@@ -6,7 +6,7 @@
 - [x] 1.4 Tandai eksplisit nilai yang merupakan keputusan produk, bukan kutipan pedoman — terutama defisit proporsional 20 persen, surplus 10 persen, dan batas laju relatif 0,75 persen berat badan
 - [x] 1.5 Tambahkan kolom putusan per baris (setuju / ubah menjadi / tolak) beserta ruang catatan, agar tiap nilai dapat ditinjau ulang satu per satu di kemudian hari
 - [x] 1.6 Tulis bagian batas cakupan: kebijakan ini bukan terapi gizi medis, tidak mencakup anak dan remaja, kehamilan, menyusui, kondisi medis yang dinyatakan, serta tidak menjamin kecukupan mikronutrien
-- [x] 1.7 Selaraskan `docs/mealora.pen` dengan kebijakan final: layar `26` menjadi layar penolakan umum, dan seluruh teks yang menyebut gerbang persetujuan dihapus
+- [x] 1.7 Selaraskan `docs/mealora-v2.pen` dengan kebijakan final: layar `26` menjadi layar penolakan umum, dan seluruh teks yang menyebut gerbang persetujuan dihapus
 
 ## 2. mealora-plans — Vektor uji emas
 
@@ -21,7 +21,7 @@
 
 - [x] 3.1 Bandingkan target protein, lemak, karbohidrat, dan serat pada profil acuan terhadap AKG Indonesia (PMK 28/2019) kelompok usia yang sesuai; catat kesesuaian dan selisihnya sebagai pemeriksaan kewajaran
 - [x] 3.2 Tulis pemetaan setiap kode alasan ke kalimat berbahasa Indonesia yang dilihat pengguna
-- [x] 3.3 Periksa setiap kalimat terhadap tiga larangan: tidak mendiagnosis, tidak menjanjikan hasil, tidak menyalahkan pengguna; selaraskan nadanya dengan layar `26 · Target tidak dibuat` dan `36 · Belum ada program` di `docs/mealora.pen`
+- [x] 3.3 Periksa setiap kalimat terhadap tiga larangan: tidak mendiagnosis, tidak menjanjikan hasil, tidak menyalahkan pengguna; selaraskan nadanya dengan layar `26 · Target tidak dibuat` dan `36 · Belum ada program` di `docs/mealora-v2.pen`
 - [x] 3.4 Pastikan setiap penolakan menyebut bahwa tidak ada target yang dibuat dan menawarkan langkah berikutnya
 
 ## 4. mealora-plans — Tinjauan teknis kebijakan

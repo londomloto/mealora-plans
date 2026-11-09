@@ -12,7 +12,7 @@ Batasan yang mengikat dari `docs/mealora_product_assessment_v1.1.md`:
 - Record milik pengguna memakai UUID, jejak waktu, soft delete, dan metadata siap-sinkron (§12, §42).
 - Satuan kanonis disimpan apa adanya; konversi hanya di batas tampilan (§48.10).
 
-Sumber rancangan visual: `docs/mealora.pen` (±40 layar, variabel warna terdefinisi, komponen navigasi kapsul `Component · floating navigation`, splash `06 · Splash Mealora`), serta aset merek di `docs/brand-assets/`.
+Sumber rancangan visual: `docs/mealora-v2.pen` (±40 layar, variabel warna terdefinisi, komponen navigasi kapsul `Component · floating navigation`, splash `06 · Splash Mealora`), serta aset merek di `docs/brand-assets/`.
 
 Toolchain yang tersedia di mesin pengembang: Flutter SDK terpasang; device yang terdeteksi hanya Windows, Chrome, dan Edge — belum ada emulator Android atau `adb` di PATH.
 
@@ -80,7 +80,7 @@ Setiap tabel milik pengguna memuat `id`, `created_at`, `updated_at`, `deleted_at
 
 Pembacaan standar selalu menyaring `deleted_at IS NULL`. Agar tidak ada kueri yang lupa, penyaringan ini disediakan pada lapisan akses data bersama dan diuji; kueri yang sengaja membaca record terhapus harus menyatakannya eksplisit.
 
-### D8 — Token desain diturunkan dari `docs/mealora.pen`
+### D8 — Token desain diturunkan dari `docs/mealora-v2.pen`
 
 Nilai warna diambil persis dari variabel dokumen desain: `background #F7FAF5`, `primary #258747`, `accent #F5D35C`, `peach #FF8A50`, `ink #203D2D`, `muted #687D70`, `soft-green #DEF3DE`, `line #DFE9DE`. Token diekspresikan satu kali sebagai tema aplikasi; widget tidak boleh menulis nilai warna, ukuran font, atau radius secara harfiah — dilarang lewat aturan lint.
 
@@ -103,7 +103,7 @@ Operasi yang bisa gagal mengembalikan hasil bertipe dengan alasan yang dapat dip
 - **Drift di web butuh konfigurasi WASM** → risiko waktu terbuang di awal. Mitigasi: titik pembuka koneksi per platform dibuat dan diuji pada task tersendiri sebelum layar apa pun dibangun; bila WASM bermasalah, debug UI tetap bisa jalan dengan penyimpanan in-memory di web sementara Android memakai SQLite nyata.
 - **Preview web tidak membuktikan perilaku Android** (penyimpanan, izin, kamera, performa) → mitigasi: Android menjadi gate verifikasi wajib sebelum change ditutup, dan uji database dijalankan terhadap SQLite nyata, bukan hanya in-memory di browser.
 - **Emulator/`adb` belum tersedia di mesin** → menyiapkannya bisa memakan waktu di luar perkiraan. Mitigasi: dijadwalkan sebagai paket tersendiri di work order dengan timebox; bila gagal, verifikasi Android dilakukan di perangkat fisik.
-- **Token desain bisa menyimpang dari `mealora.pen`** seiring waktu → mitigasi: nilai disalin dari variabel dokumen desain dan dicatat sumbernya; perubahan merek mengubah token, bukan layar.
+- **Token desain bisa menyimpang dari `mealora-v2.pen`** seiring waktu → mitigasi: nilai disalin dari variabel dokumen desain dan dicatat sumbernya; perubahan merek mengubah token, bukan layar.
 - **Over-engineering lapisan untuk aplikasi satu orang** → mitigasi: tidak ada paket terpisah, tidak ada abstraksi repositori ganda, tidak ada dependency injection manual yang rumit; hanya aturan impor dan satu wadah penyedia.
 - **Kolom siap-sinkron yang belum dipakai** bisa dianggap beban mati oleh implementer berikutnya dan diam-diam dihapus → mitigasi: uji yang menegaskan keberadaan kolom pada setiap tabel pengguna.
 
@@ -122,4 +122,4 @@ Rollback: karena belum ada pengguna dan belum ada data, pemulihan cukup dengan m
 ## Open Questions
 
 - Paket pembangkit UUID v7 mana yang dipakai (assessment §33 menandai ini sebagai keputusan terbuka). Tidak mengubah spesifikasi maupun pemecahan task — hanya satu kelas di balik antarmuka — jadi aman diputuskan saat implementasi, dengan v4 sebagai cadangan.
-- Nilai persis skala tipografi (ukuran dan tinggi baris) perlu diambil dari `docs/mealora.pen` saat implementasi; token warna sudah pasti, angka tipografi dibaca dari dokumen desain, bukan ditebak.
+- Nilai persis skala tipografi (ukuran dan tinggi baris) perlu diambil dari `docs/mealora-v2.pen` saat implementasi; token warna sudah pasti, angka tipografi dibaca dari dokumen desain, bukan ditebak.

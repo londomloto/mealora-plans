@@ -2,7 +2,7 @@
 
 - [ ] 1.1 Telusuri sumber data produk kemasan yang mungkin dipakai — Open Food Facts dan alternatif lain — dan catat kewajiban lisensinya, termasuk ODbL dan lisensi gambar (timebox satu hari)
 - [ ] 1.2 Tulis `docs/packaged-food-sources.md`: syarat atribusi, batasan pemakaian gambar, status rekaman komunitas, dan kesimpulan apakah pencarian daring dapat diaktifkan pada rilis pertama
-- [ ] 1.3 Rancang layar masukan barcode manual di `docs/mealora.pen` lewat MCP pen.dev, mengikuti bahasa visual `21 · Pindai barcode`: kolom nomor, validasi, dan jalur lanjutan yang sama setelahnya
+- [ ] 1.3 Rancang layar masukan barcode manual di `docs/mealora-v2.pen` lewat MCP pen.dev, mengikuti bahasa visual `21 · Pindai barcode`: kolom nomor, validasi, dan jalur lanjutan yang sama setelahnya
 - [ ] 1.4 Pastikan rancangan itu menegaskan bahwa jalur ini tersedia tanpa kamera dan tanpa koneksi
 
 ## 2. mealora-mobile — Skema produk kemasan

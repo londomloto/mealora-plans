@@ -4,7 +4,7 @@
 
 Lihat `proposal.md` — Why. Keadaan saat ini: change 001 menyediakan tema, komponen dasar, lokalisasi, splash, dan navigasi empat ruang berkeadaan kosong; change 002 menyediakan kebijakan `np-1.0.0`; change 003 menyediakan domain program dengan perintah aktivasi; change 004 menyediakan penyimpanan program beserta transaksinya. Belum ada tabel profil dan belum ada satu pun layar fitur.
 
-Rancangan layar sudah tersedia di `docs/mealora.pen`: `07 · Selamat datang`, `08 · Profil awal`, `09 · Aktivitas harian`, `10 · Pilih program`, `11 · Detail program`, `12 · Tinjau target`, `25 · Target berat program`, `26 · Target tidak dibuat`, dan `36 · Belum ada program`.
+Rancangan layar sudah tersedia di `docs/mealora-v2.pen`: `07 · Selamat datang`, `08 · Profil awal`, `09 · Aktivitas harian`, `10 · Pilih program`, `11 · Detail program`, `12 · Tinjau target`, `25 · Target berat program`, `26 · Target tidak dibuat`, dan `36 · Belum ada program`.
 
 ## Goals / Non-Goals
 
@@ -56,7 +56,7 @@ Rancangan belum memuat layar untuk keadaan ini, padahal domain mewajibkannya. Ra
 
 Isinya: pernyataan singkat bahwa masukan berubah sejak pratinjau, daftar nilai yang berubah beserta nilai lama dan nilai baru, pratinjau target yang sudah diperbarui, dan tombol untuk meninjau serta menyetujui ulang. Nadanya netral — perubahan data bukan kesalahan pengguna.
 
-Bahasa visualnya mengikuti `12 · Tinjau target` agar terasa sebagai kelanjutan, bukan sebagai gangguan. Layar ini ditambahkan ke `docs/mealora.pen` sebagai bagian change ini, sehingga rancangan dan implementasi tidak berbeda.
+Bahasa visualnya mengikuti `12 · Tinjau target` agar terasa sebagai kelanjutan, bukan sebagai gangguan. Layar ini ditambahkan ke `docs/mealora-v2.pen` sebagai bagian change ini, sehingga rancangan dan implementasi tidak berbeda.
 
 ### D6 — Keadaan tidak-disetujui memakai satu layar dengan isi yang berbeda
 

@@ -20,7 +20,7 @@ Catatan penting soal cakupan: assessment §50 menyatakan masukan kalimat bebas t
 - **Izin mikrofon** diminta saat jalur ini dipilih, disertai penjelasan, dan penolakannya tidak pernah menjadi jalan buntu.
 - **Rekaman suara tidak disimpan** setelah transkrip jadi, kecuali pengguna menetapkan sebaliknya; bawaannya menghapus.
 - **Jalur ketik kalimat** tersedia untuk pengguna yang tidak dapat atau tidak ingin berbicara, dan untuk perangkat tanpa pengenalan ucapan.
-- **Rancangan layar baru**: belum ada satu pun layar suara di `docs/mealora.pen`. Change ini merancang rekam suara, tinjau transkrip, dan penambahan jalur suara pada lembar pilihan pencatatan.
+- **Rancangan layar baru**: belum ada satu pun layar suara di `docs/mealora-v2.pen`. Change ini merancang rekam suara, tinjau transkrip, dan penambahan jalur suara pada lembar pilihan pencatatan.
 
 ## Capabilities
 

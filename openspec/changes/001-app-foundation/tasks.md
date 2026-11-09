@@ -44,12 +44,12 @@
 
 ## 5. mealora-mobile — Token desain dan tema
 
-- [x] 5.1 Baca nilai tipografi, jarak, dan radius langsung dari `docs/mealora.pen` (MCP pen.dev) — jangan menebak dari tangkapan layar
+- [x] 5.1 Baca nilai tipografi, jarak, dan radius langsung dari `docs/mealora-v2.pen` (MCP pen.dev) — jangan menebak dari tangkapan layar
 - [x] 5.2 Definisikan token warna sebagai satu sumber: `background #F7FAF5`, `primary #258747`, `accent #F5D35C`, `peach #FF8A50`, `ink #203D2D`, `muted #687D70`, `soft-green #DEF3DE`, `line #DFE9DE`
 - [x] 5.3 Definisikan skala tipografi, jarak, radius, dan elevasi sebagai token; susun tema aplikasi yang membacanya
 - [x] 5.4 Uji kontras otomatis untuk setiap pasangan teks/latar yang dipakai, khususnya `muted` di atas `background`
 
-> Catatan 5.2/5.4: `muted` dari dokumen desain (`#687D70`) hanya mencapai 4,19:1 di atas `background` dan 4,42:1 di atas permukaan putih — di bawah ambang 4,5:1 untuk teks biasa. Token digelapkan 5% menjadi `#63776A` (4,56:1 dan 4,80:1). Perlu keputusan apakah `docs/mealora.pen` ikut disesuaikan.
+> Catatan 5.2/5.4: `muted` dari dokumen desain (`#687D70`) hanya mencapai 4,19:1 di atas `background` dan 4,42:1 di atas permukaan putih — di bawah ambang 4,5:1 untuk teks biasa. Token digelapkan 5% menjadi `#63776A` (4,56:1 dan 4,80:1). Perlu keputusan apakah `docs/mealora-v2.pen` ikut disesuaikan.
 - [x] 5.5 Uji bahwa perubahan satu nilai token berlaku ke seluruh komponen yang memakainya
 
 ## 6. mealora-mobile — Lokalisasi dan komponen dasar
@@ -77,7 +77,7 @@
 
 - [x] 8.1 Tambahkan label pembaca layar yang bermakna pada setiap tujuan navigasi, kontrol, dan ikon bermakna, termasuk keadaan terpilih
 - [x] 8.2 Uji seluruh layar pada skala teks besar: tidak ada teks terpotong, tertindih, atau kontrol yang tidak terjangkau
-- [x] 8.3 Jalankan `flutter run -d chrome` dan verifikasi kelima layar pada viewport 390×844; bandingkan dengan `docs/mealora.pen`
+- [x] 8.3 Jalankan `flutter run -d chrome` dan verifikasi kelima layar pada viewport 390×844; bandingkan dengan `docs/mealora-v2.pen`
 
 > Catatan 8.3: penyimpanan web yang bertahan tidak dapat dibuka di lingkungan browser pratinjau (worker bersama gagal mengambil `sqlite3.wasm`). Sesuai mitigasi design D3, build debug web jatuh ke basis data in-memory supaya iterasi antarmuka tetap jalan; data pratinjau web tidak bertahan. Android tidak memakai jalur ini.
 - [x] 8.4 Verifikasi tidak ada permintaan jaringan yang keluar selama peluncuran dan navigasi

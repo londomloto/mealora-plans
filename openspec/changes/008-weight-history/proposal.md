@@ -6,7 +6,7 @@ Setelah change 007, pengguna dapat mencatat makanan dan melihat hari ini — tet
 
 Berat badan juga bukan sekadar fitur tambahan: program Turun Berat dan Naik Berat memakai berat terbaru untuk kemajuan dan untuk ambang hitung ulang target (change 002), dan ruang Program (change 006) sudah menyiapkan tempat menampilkannya. Tanpa change ini, keduanya selamanya menampilkan "belum ada catatan".
 
-Rancangannya sudah ada di `docs/mealora.pen`: `18 · Riwayat harian`, `31 · Pantau berat`, dan `32 · Tambah berat`.
+Rancangannya sudah ada di `docs/mealora-v2.pen`: `18 · Riwayat harian`, `31 · Pantau berat`, dan `32 · Tambah berat`.
 
 ## What Changes
 

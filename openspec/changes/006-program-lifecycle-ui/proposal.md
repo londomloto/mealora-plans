@@ -6,7 +6,7 @@ Setelah change 005, pengguna bisa memulai program — tetapi tidak bisa melihat,
 
 Ini bukan sekadar melengkapi tombol. Janji inti produk ada di sini: pengguna memegang kendali atas programnya sendiri, dan target lama tetap dapat dijelaskan berbulan-bulan kemudian. Assessment §45 menetapkan apa yang wajib tampil di ruang Program — termasuk tanggal perhitungan terakhir dan rincian "Bagaimana dihitung" — dan §46.14 menjadikan keterjelasan sebagai kriteria penerimaan, bukan nilai tambah.
 
-Rancangannya sebagian besar sudah ada di `docs/mealora.pen`: `05`, `27`, `28`, `29`, `30`, `34`, dan `39`.
+Rancangannya sebagian besar sudah ada di `docs/mealora-v2.pen`: `05`, `27`, `28`, `29`, `30`, `34`, dan `39`.
 
 ## What Changes
 
@@ -32,7 +32,7 @@ Tidak ada. Aturan siklus hidup (`program-lifecycle`), penyimpanan (`program-prog
 ## Impact
 
 - **Repo `mealora-apps/mealora-mobile`**: ruang Program beserta seluruh layarnya, layar riwayat dan detail program, alur ubah profil dan revisi target, serta penyambungan butir menu pada ruang Profil. Tidak ada perubahan skema basis data.
-- **Repo `mealora-plans`**: penambahan layar "Bagaimana dihitung" untuk program berjalan ke `docs/mealora.pen`.
+- **Repo `mealora-plans`**: penambahan layar "Bagaimana dihitung" untuk program berjalan ke `docs/mealora-v2.pen`.
 - **Bergantung pada** change 003 (aturan siklus hidup), 004 (penyimpanan, riwayat, potret kemajuan), dan 005 (profil, pratinjau target, aktivasi).
 - **Tidak memblokir** katalog makanan dan buku harian — keduanya dapat dikerjakan paralel setelah change 005.
 - **Belum tersentuh**: pencatatan makanan, berat badan, riwayat harian, dan jalur foto, barcode, maupun label gizi. Angka kemajuan yang bersumber dari buku harian tetap ditampilkan sebagai belum diketahui sampai change buku harian selesai.

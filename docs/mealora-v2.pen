@@ -30476,6 +30476,795 @@
           "fontWeight": "normal"
         }
       ]
+    },
+    {
+      "type": "frame",
+      "id": "wJAce",
+      "x": 2906,
+      "y": 6400,
+      "name": "46 · Bagaimana dihitung (berjalan)",
+      "clip": true,
+      "width": 390,
+      "height": 1070,
+      "fill": "$bg",
+      "layout": "none",
+      "children": [
+        {
+          "type": "ellipse",
+          "id": "coOST",
+          "x": 230,
+          "y": -120,
+          "name": "Blob lime",
+          "opacity": 0.3,
+          "fill": "#B6ED6A",
+          "width": 300,
+          "height": 300,
+          "effect": {
+            "type": "blur",
+            "radius": 80
+          }
+        },
+        {
+          "type": "ellipse",
+          "id": "gFrB4",
+          "x": -130,
+          "y": 420,
+          "name": "Blob mint",
+          "opacity": 0.2,
+          "fill": "#3FD5A0",
+          "width": 300,
+          "height": 300,
+          "effect": {
+            "type": "blur",
+            "radius": 90
+          }
+        },
+        {
+          "type": "ellipse",
+          "id": "COB4p",
+          "x": 180,
+          "y": 640,
+          "name": "Blob berry",
+          "opacity": 0.14,
+          "fill": "#6E8BFF",
+          "width": 320,
+          "height": 300,
+          "effect": {
+            "type": "blur",
+            "radius": 90
+          }
+        },
+        {
+          "type": "text",
+          "id": "idU3n",
+          "x": 24,
+          "y": 18,
+          "name": "Status time",
+          "fill": "$ink",
+          "content": "9:41",
+          "fontFamily": "$font",
+          "fontSize": 14,
+          "fontWeight": "bold"
+        },
+        {
+          "type": "icon",
+          "id": "aH59n",
+          "x": 306,
+          "y": 18,
+          "name": "signal",
+          "width": 18,
+          "height": 18,
+          "icon": "signal",
+          "library": "lucide",
+          "fill": "$ink"
+        },
+        {
+          "type": "icon",
+          "id": "qKVZ3",
+          "x": 329,
+          "y": 18,
+          "name": "wifi",
+          "width": 18,
+          "height": 18,
+          "icon": "wifi",
+          "library": "lucide",
+          "fill": "$ink"
+        },
+        {
+          "type": "icon",
+          "id": "KSqKk",
+          "x": 351,
+          "y": 18,
+          "name": "battery-full",
+          "width": 18,
+          "height": 18,
+          "icon": "battery-full",
+          "library": "lucide",
+          "fill": "$ink"
+        },
+        {
+          "type": "text",
+          "id": "Elfvz",
+          "x": 24,
+          "y": 64,
+          "name": "Step / context",
+          "fill": "$primary-deep",
+          "content": "PROGRAM SAYA · BAGAIMANA DIHITUNG",
+          "fontFamily": "$font",
+          "fontSize": 10,
+          "fontWeight": "bold",
+          "letterSpacing": 1.4
+        },
+        {
+          "type": "text",
+          "id": "UK4KQ",
+          "x": 24,
+          "y": 82,
+          "name": "Page title",
+          "fill": "$ink",
+          "textGrowth": "fixed-width",
+          "width": 342,
+          "content": "Bagaimana target dihitung",
+          "fontFamily": "$font",
+          "fontSize": 27,
+          "fontWeight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "wOWkM",
+          "x": 24,
+          "y": 120,
+          "name": "Page subtitle",
+          "fill": "$muted",
+          "textGrowth": "fixed-width",
+          "width": 342,
+          "content": "Dihitung terakhir 6 Nov 2026",
+          "fontFamily": "$font",
+          "fontSize": 13,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "VlJjg",
+          "x": 22,
+          "y": 160,
+          "name": "Historical target snapshot",
+          "width": 346,
+          "height": 158,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 200,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#0A6B4C",
+                "position": 0
+              },
+              {
+                "color": "#12A05C",
+                "position": 0.6
+              },
+              {
+                "color": "#35C97E",
+                "position": 1
+              }
+            ]
+          },
+          "cornerRadius": 28,
+          "effect": {
+            "type": "shadow",
+            "shadowType": "outer",
+            "color": "#0C8B5540",
+            "offset": {
+              "x": 0,
+              "y": 16
+            },
+            "blur": 36
+          },
+          "layout": "vertical",
+          "gap": 4,
+          "padding": [
+            0,
+            22
+          ],
+          "justifyContent": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "keNSM",
+              "name": "Eyebrow",
+              "fill": "#CFF3DD",
+              "content": "TARGET YANG BERLAKU · PERKIRAAN",
+              "fontFamily": "$font",
+              "fontSize": 10,
+              "fontWeight": "bold",
+              "letterSpacing": 1.2
+            },
+            {
+              "type": "text",
+              "id": "zyIyV",
+              "name": "Value",
+              "fill": "#FFFFFF",
+              "content": "2.100 kkal / hari",
+              "fontFamily": "$font",
+              "fontSize": 29,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "text",
+              "id": "m1Dm6",
+              "name": "Caption",
+              "fill": "#DFF3E6",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Perkiraan dari rumus; berubah hanya saat revisi disetujui",
+              "fontFamily": "$font",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "nlwOz",
+              "name": "Versions",
+              "fill": "#C9EEDB",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Kalkulator msj-1.0.0 · Kebijakan np-1.0.0",
+              "fontFamily": "$font",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "vGzk9",
+          "x": 24,
+          "y": 340,
+          "name": "Facts heading",
+          "fill": "$ink",
+          "content": "Masukan yang dipakai",
+          "fontFamily": "$font",
+          "fontSize": 17,
+          "fontWeight": "bold"
+        },
+        {
+          "type": "frame",
+          "id": "rELkB",
+          "x": 22,
+          "y": 370,
+          "name": "Historical program facts",
+          "width": 346,
+          "height": 252,
+          "fill": "$glass",
+          "cornerRadius": 24,
+          "stroke": "#FFFFFFCC",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "effect": [
+            {
+              "type": "background_blur",
+              "radius": 20
+            },
+            {
+              "type": "shadow",
+              "shadowType": "outer",
+              "color": "#0B3A281A",
+              "offset": {
+                "x": 0,
+                "y": 14
+              },
+              "blur": 34
+            }
+          ],
+          "layout": "vertical",
+          "padding": [
+            8,
+            18
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "hsgbL",
+              "name": "Status",
+              "width": "fill_container",
+              "height": 44,
+              "gap": 10,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "IuAn9",
+                  "name": "Label",
+                  "fill": "$muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Tinggi badan",
+                  "fontFamily": "$font",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "y08xSb",
+                  "name": "Value",
+                  "fill": "$ink",
+                  "content": "165 cm",
+                  "fontFamily": "$font",
+                  "fontSize": 12,
+                  "fontWeight": "bold"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "zhROx",
+              "name": "Divider",
+              "width": "fill_container",
+              "height": 1,
+              "fill": "#E6EFE7"
+            },
+            {
+              "type": "frame",
+              "id": "rh4lB",
+              "name": "Berat awal",
+              "width": "fill_container",
+              "height": 44,
+              "gap": 10,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "NY4sL",
+                  "name": "Label",
+                  "fill": "$muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Berat saat dihitung",
+                  "fontFamily": "$font",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "GQttY",
+                  "name": "Value",
+                  "fill": "$ink",
+                  "content": "68,4 kg",
+                  "fontFamily": "$font",
+                  "fontSize": 12,
+                  "fontWeight": "bold"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "j3pXrG",
+              "name": "Divider",
+              "width": "fill_container",
+              "height": 1,
+              "fill": "#E6EFE7"
+            },
+            {
+              "type": "frame",
+              "id": "kCl9k",
+              "name": "Berat terbaru",
+              "width": "fill_container",
+              "height": 44,
+              "gap": 10,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "FDQpu",
+                  "name": "Label",
+                  "fill": "$muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Tingkat aktivitas",
+                  "fontFamily": "$font",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "Z1ZkjD",
+                  "name": "Value",
+                  "fill": "$ink",
+                  "content": "Cukup bergerak",
+                  "fontFamily": "$font",
+                  "fontSize": 11,
+                  "fontWeight": "bold"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "cUARj",
+              "name": "Divider",
+              "width": "fill_container",
+              "height": 1,
+              "fill": "#E6EFE7"
+            },
+            {
+              "type": "frame",
+              "id": "gOfTp",
+              "name": "Target berat",
+              "width": "fill_container",
+              "height": 44,
+              "gap": 10,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "h4DX74",
+                  "name": "Label",
+                  "fill": "$muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Persamaan",
+                  "fontFamily": "$font",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "I7KQ6W",
+                  "name": "Value",
+                  "fill": "$ink",
+                  "content": "Mifflin–St Jeor · msj-1.0.0",
+                  "fontFamily": "$font",
+                  "fontSize": 12,
+                  "fontWeight": "bold"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "B5llwG",
+              "name": "Divider",
+              "width": "fill_container",
+              "height": 1,
+              "fill": "#E6EFE7"
+            },
+            {
+              "type": "frame",
+              "id": "EuCo0",
+              "name": "Alasan selesai",
+              "width": "fill_container",
+              "height": 44,
+              "gap": 10,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "qPGvs",
+                  "name": "Label",
+                  "fill": "$muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Tanggal perhitungan terakhir",
+                  "fontFamily": "$font",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "xo82Y",
+                  "name": "Value",
+                  "fill": "$ink",
+                  "content": "6 Nov 2026",
+                  "fontFamily": "$font",
+                  "fontSize": 12,
+                  "fontWeight": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "S2I5Y",
+          "x": 22,
+          "y": 970,
+          "name": "Note",
+          "width": 346,
+          "height": 80,
+          "fill": "#FFFFFFB8",
+          "cornerRadius": 20,
+          "stroke": "#FFFFFFB8",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "gap": 12,
+          "padding": [
+            0,
+            16
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon",
+              "id": "TjweP",
+              "name": "Icon",
+              "width": 20,
+              "height": 20,
+              "icon": "file-clock",
+              "library": "lucide",
+              "fill": "$primary-deep"
+            },
+            {
+              "type": "frame",
+              "id": "UjtlJ",
+              "name": "Lines",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 3,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "HoQ2Q",
+                  "name": "Body",
+                  "fill": "$muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Nilai di layar ini dibaca dari target yang tersimpan, bukan dihitung ulang.",
+                  "lineHeight": 1.45,
+                  "fontFamily": "$font",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "l8L0y",
+          "x": 22,
+          "y": 662,
+          "name": "Historical program facts",
+          "width": 346,
+          "height": 158,
+          "fill": "$glass",
+          "cornerRadius": 24,
+          "stroke": "#FFFFFFCC",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "effect": [
+            {
+              "type": "background_blur",
+              "radius": 20
+            },
+            {
+              "type": "shadow",
+              "shadowType": "outer",
+              "color": "#0B3A281A",
+              "offset": {
+                "x": 0,
+                "y": 14
+              },
+              "blur": 34
+            }
+          ],
+          "layout": "vertical",
+          "padding": [
+            8,
+            18
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "o98ALV",
+              "name": "Status",
+              "width": "fill_container",
+              "height": 44,
+              "gap": 10,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "UJHxN",
+                  "name": "Label",
+                  "fill": "$muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Dasar perhitungan",
+                  "fontFamily": "$font",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "L6bGH",
+                  "name": "Value",
+                  "fill": "$ink",
+                  "content": "Mifflin–St Jeor · msj-1.0.0",
+                  "fontFamily": "$font",
+                  "fontSize": 12,
+                  "fontWeight": "bold"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "A1b3Oq",
+              "name": "Divider",
+              "width": "fill_container",
+              "height": 1,
+              "fill": "#E6EFE7"
+            },
+            {
+              "type": "frame",
+              "id": "H8R6Ze",
+              "name": "Berat awal",
+              "width": "fill_container",
+              "height": 44,
+              "gap": 10,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "EDqE4",
+                  "name": "Label",
+                  "fill": "$muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Faktor aktivitas",
+                  "fontFamily": "$font",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "Ro0pn",
+                  "name": "Value",
+                  "fill": "$ink",
+                  "content": "Cukup bergerak × 1.375",
+                  "fontFamily": "$font",
+                  "fontSize": 12,
+                  "fontWeight": "bold"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "A4bysN",
+              "name": "Divider",
+              "width": "fill_container",
+              "height": 1,
+              "fill": "#E6EFE7"
+            },
+            {
+              "type": "frame",
+              "id": "PI57u",
+              "name": "Berat terbaru",
+              "width": "fill_container",
+              "height": 44,
+              "gap": 10,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "qB8fl",
+                  "name": "Label",
+                  "fill": "$muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Pembulatan",
+                  "fontFamily": "$font",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "jXRJj",
+                  "name": "Value",
+                  "fill": "$ink",
+                  "content": "Ke 50 kkal terdekat",
+                  "fontFamily": "$font",
+                  "fontSize": 11,
+                  "fontWeight": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "SygaG",
+          "x": 22,
+          "y": 860,
+          "name": "Note",
+          "width": 346,
+          "height": 100,
+          "fill": "#FFFFFFB8",
+          "cornerRadius": 20,
+          "stroke": "#FFFFFFB8",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "gap": 12,
+          "padding": [
+            0,
+            16
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon",
+              "id": "dsxiI",
+              "name": "Icon",
+              "width": 20,
+              "height": 20,
+              "icon": "file-clock",
+              "library": "lucide",
+              "fill": "$primary-deep"
+            },
+            {
+              "type": "frame",
+              "id": "OhvH4",
+              "name": "Lines",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 3,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "QX6we",
+                  "name": "Title",
+                  "fill": "#FFFFFF",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Batas bawah energi diterapkan",
+                  "fontFamily": "$font",
+                  "fontSize": 14,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "hYrK6",
+                  "name": "Body",
+                  "fill": "$muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Batas bawah energi aman menaikkan target Anda menjadi 1.200 kkal/hari agar tetap di batas yang disetujui kebijakan.",
+                  "lineHeight": 1.45,
+                  "fontFamily": "$font",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "CyhZ9",
+          "x": 24,
+          "y": 632,
+          "name": "Facts heading",
+          "fill": "$ink",
+          "content": "Asumsi",
+          "fontFamily": "$font",
+          "fontSize": 17,
+          "fontWeight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "Ys30S",
+          "x": 24,
+          "y": 830,
+          "name": "Facts heading",
+          "fill": "$ink",
+          "content": "Peringatan",
+          "fontFamily": "$font",
+          "fontSize": 17,
+          "fontWeight": "bold"
+        }
+      ]
     }
   ],
   "variables": {

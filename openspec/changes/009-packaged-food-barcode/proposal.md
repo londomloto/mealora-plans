@@ -6,7 +6,7 @@ Mencatat makanan kemasan lewat pencarian nama adalah pekerjaan yang melelahkan: 
 
 Assessment §50 menaikkan barcode dari pekerjaan masa depan menjadi **jalur masukan wajib MVP 1**, dengan satu syarat yang tidak boleh dilanggar: barcode adalah pengenal produk, bukan sumber nilai gizi. Nilai tetap harus berasal dari sumber yang dapat ditelusuri, dan pengguna tetap mengonfirmasi sebelum apa pun masuk ke buku harian.
 
-Rancangannya sudah ada di `docs/mealora.pen`: `21 · Pindai barcode`, `22 · Barcode tidak ditemukan`, dan `04 · Tinjau produk kemasan`.
+Rancangannya sudah ada di `docs/mealora-v2.pen`: `21 · Pindai barcode`, `22 · Barcode tidak ditemukan`, dan `04 · Tinjau produk kemasan`.
 
 ## What Changes
 

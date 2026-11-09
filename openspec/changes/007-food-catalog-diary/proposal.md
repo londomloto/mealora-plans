@@ -6,7 +6,7 @@ Setelah change 001–006, Mealora dapat menghitung target dan mengelola program 
 
 Ini adalah inti produk. Pertanyaan kedua dan ketiga dari visi produk — "apa yang sudah saya makan hari ini?" dan "bagaimana kemajuan saya?" — baru terjawab di sini. Assessment §6.4–§6.8 dan §14 menetapkan katalog, pencarian, makanan buatan sendiri, buku harian, potret nilai gizi, dan agregasi harian sebagai MUST HAVE MVP 1.
 
-Rancangannya sudah ada di `docs/mealora.pen`: `01`, `02`, `13`, `14`, `15`, `16`, `17`, dan `40`.
+Rancangannya sudah ada di `docs/mealora-v2.pen`: `01`, `02`, `13`, `14`, `15`, `16`, `17`, dan `40`.
 
 ## What Changes
 

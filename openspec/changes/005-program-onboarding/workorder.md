@@ -10,7 +10,7 @@ Change ini membangun perjalanan pertama pengguna di dua repositori. Di `mealora-
 
 | # | Paket pekerjaan | Effort (hari-orang) | Kepastian | Catatan |
 |---|---|---|---|---|
-| 1 | Rancang layar "masukan berubah sejak pratinjau" di `docs/mealora.pen`, mengikuti bahasa visual `12 · Tinjau target` | 0,5 | pasti | Daftar nilai yang berubah, nilai lama dan baru, pratinjau diperbarui, nada netral |
+| 1 | Rancang layar "masukan berubah sejak pratinjau" di `docs/mealora-v2.pen`, mengikuti bahasa visual `12 · Tinjau target` | 0,5 | pasti | Daftar nilai yang berubah, nilai lama dan baru, pratinjau diperbarui, nada netral |
 | 2 | Pemetaan kode alasan penolakan ke kalimat Indonesia pada kerangka layar `26`, ditinjau terhadap tiga larangan bahasa | 0,5 | pasti | Melanjutkan task 3.2 change 002; hasil akhirnya dipakai implementasi |
 
 ### mealora-mobile
@@ -52,7 +52,7 @@ Change ini membangun perjalanan pertama pengguna di dua repositori. Di `mealora-
 
 **Isi:** paket 1, 2, 3, 4, 5.
 **Prasyarat:** change 001 dan 004 selesai.
-**Gate verifikasi:** layar baru ada di `docs/mealora.pen` dan konsisten dengan bahasa visual yang berlaku; seluruh kalimat penolakan lolos pemeriksaan tiga larangan bahasa; `flutter analyze`, `dart format`, dan `flutter test` bersih; seluruh fixture migrasi lolos termasuk basis data v2 berisi program; pemeriksaan foreign key bersih setelah migrasi; tidak ada profil yang dibuat otomatis.
+**Gate verifikasi:** layar baru ada di `docs/mealora-v2.pen` dan konsisten dengan bahasa visual yang berlaku; seluruh kalimat penolakan lolos pemeriksaan tiga larangan bahasa; `flutter analyze`, `dart format`, dan `flutter test` bersih; seluruh fixture migrasi lolos termasuk basis data v2 berisi program; pemeriksaan foreign key bersih setelah migrasi; tidak ada profil yang dibuat otomatis.
 
 ### Tahap 2 — Alur pengumpulan masukan
 

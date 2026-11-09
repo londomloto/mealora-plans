@@ -60,7 +60,7 @@ Keduanya bukan rilis ke pengguna — tidak ada yang terlihat di aplikasi pada ch
 |---|---|---|
 | Kebijakan `np-1.0.0` berubah setelah peninjauan gizi | Paket 7 dan 8 perlu dihitung ulang | Vektor uji disusun dari aturan, bukan dari angka hasil; yang berubah hanya berkas data dan kolom hasil yang diharapkan |
 | Kebijakan belum disetujui saat change ini dikerjakan | Jalur "disetujui" tidak dapat diuji dengan nilai final | Kerjakan dengan nilai draf dan jalankan ulang seluruh vektor setelah persetujuan; jalur fail-closed justru diuji penuh sejak awal |
-| Bentuk masukan dan keluaran domain ternyata tidak cocok dengan kebutuhan layar | Rework di change onboarding | Turunkan bentuknya dari use case assessment §44 dan dari layar `10`–`12`, `25`–`28`, `36`, `39` di `docs/mealora.pen` sebelum menulis kode |
+| Bentuk masukan dan keluaran domain ternyata tidak cocok dengan kebutuhan layar | Rework di change onboarding | Turunkan bentuknya dari use case assessment §44 dan dari layar `10`–`12`, `25`–`28`, `36`, `39` di `docs/mealora-v2.pen` sebelum menulis kode |
 | Uji matriks membengkak dan lambat | Siklus umpan balik melambat | Hasilkan kasus dari tabel perpindahan, bukan tulis tangan |
 | Paket 7 lebih padat dari perkiraan karena interaksi antar-aturan (lantai energi memotong defisit, lalu makro ikut berubah) | Tahap 1 melar | Kerjakan berurutan mengikuti urutan aturan di spec dan uji setiap aturan sebelum menyambungkannya |
 | Godaan menggabungkan kalkulator dan mesin program karena terasa berlebihan | Melanggar §39 dan menyulitkan penggantian kebijakan | Uji khusus yang memastikan pemisahan, dijalankan sebagai bagian gate |

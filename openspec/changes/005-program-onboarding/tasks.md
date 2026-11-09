@@ -1,6 +1,6 @@
 ## 1. mealora-plans — Rancangan layar dan bahasa
 
-- [x] 1.1 Rancang layar "masukan berubah sejak pratinjau" di `docs/mealora.pen` lewat MCP pen.dev, mengikuti bahasa visual `12 · Tinjau target`: pernyataan singkat, daftar nilai yang berubah beserta nilai lama dan baru, pratinjau target yang diperbarui, dan tindakan untuk meninjau serta menyetujui ulang
+- [x] 1.1 Rancang layar "masukan berubah sejak pratinjau" di `docs/mealora-v2.pen` lewat MCP pen.dev, mengikuti bahasa visual `12 · Tinjau target`: pernyataan singkat, daftar nilai yang berubah beserta nilai lama dan baru, pratinjau target yang diperbarui, dan tindakan untuk meninjau serta menyetujui ulang
 - [x] 1.2 Pastikan nada layar itu netral — perubahan data bukan kesalahan pengguna — dan tidak memakai gaya dialog kesalahan
 - [x] 1.3 Tulis pemetaan setiap kode alasan penolakan ke kalimat Indonesia untuk kerangka layar `26`, melanjutkan hasil change 002
 - [x] 1.4 Periksa setiap kalimat terhadap tiga larangan: tidak mendiagnosis, tidak menjanjikan hasil, tidak menyalahkan pengguna; pastikan setiap kalimat menyebut bahwa tidak ada target yang dibuat dan tidak ada data yang berubah
@@ -65,6 +65,6 @@
 - [x] 7.3 Lengkapi label pembaca layar pada seluruh isian, pilihan, tombol, dan pesan kesalahan di alur onboarding
 - [x] 7.4 Pastikan pesan kesalahan dapat dikenali tanpa bergantung pada warna
 - [x] 7.5 Uji integrasi alur penuh dalam mode pesawat: pemasangan baru → onboarding → aktivasi → ruang Hari ini → tutup aplikasi → buka kembali → program masih aktif
-- [ ] 7.6 Verifikasi di Chrome pada viewport 390×844 dan bandingkan seluruh layar dengan `docs/mealora.pen`
+- [ ] 7.6 Verifikasi di Chrome pada viewport 390×844 dan bandingkan seluruh layar dengan `docs/mealora-v2.pen`
 - [ ] 7.7 Verifikasi alur penuh di perangkat Android
 - [x] 7.8 Gate verifikasi repo: jalankan `flutter analyze`, `dart format --set-exit-if-changed .`, dan `flutter test`; laporkan hasil beserta risiko yang tersisa

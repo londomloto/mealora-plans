@@ -1,6 +1,6 @@
 ## 1. mealora-plans — Rancangan layar suara
 
-- [x] 1.1 Rancang layar rekam suara di `docs/mealora.pen` lewat MCP pen.dev — dikerjakan sebagai `42 · Rekam suara` (siap) dan `43 · Sedang merekam`
+- [x] 1.1 Rancang layar rekam suara di `docs/mealora-v2.pen` lewat MCP pen.dev — dikerjakan sebagai `42 · Rekam suara` (siap) dan `43 · Sedang merekam`
 - [x] 1.2 Pastikan keadaan sedang merekam dapat dikenali tanpa bergantung pada warna saja, dan cara menghentikannya selalu terjangkau — ditandai lewat label "Merekam · 0:04", titik, bingkai, ikon mikrofon, dan gelombang suara
 - [x] 1.3 Rancang layar tinjau transkrip — dikerjakan sebagai `44 · Tinjau transkrip` beserta tindakan urai, rekam ulang, dan jalur katalog
 - [x] 1.4 Tambahkan jalur suara pada lembar pilihan pencatatan (`02`) yang semula memuat tiga jalur — lembar ditinggikan menjadi 586, urutan kartu ditetapkan pemilik produk: Cari / input manual, Catat dengan suara, Foto makanan, Scan barcode
@@ -78,5 +78,5 @@
 - [ ] 8.4 Periksa bahasa seluruh layar: hasil pengenalan dan penguraian disebut perkiraan yang perlu diperiksa
 - [ ] 8.5 Amati lalu lintas jaringan: tidak ada rekaman suara yang keluar dari perangkat, dan penguraian hanya mengirim teks
 - [ ] 8.6 Verifikasi di perangkat Android: izin mikrofon, pengenalan ucapan bahasa Indonesia, penolakan izin, dan kegagalan penguraian
-- [ ] 8.7 Verifikasi layar yang tidak memerlukan mikrofon di Chrome pada viewport 390×844 dan bandingkan dengan `docs/mealora.pen`
+- [ ] 8.7 Verifikasi layar yang tidak memerlukan mikrofon di Chrome pada viewport 390×844 dan bandingkan dengan `docs/mealora-v2.pen`
 - [ ] 8.8 Gate verifikasi repo: jalankan `flutter analyze`, `dart format --set-exit-if-changed .`, dan `flutter test`; laporkan hasil beserta risiko yang tersisa

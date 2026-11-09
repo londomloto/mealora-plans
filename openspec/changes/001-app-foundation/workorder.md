@@ -2,7 +2,7 @@
 
 ## Ringkasan
 
-Change ini membangun fondasi aplikasi Mealora dari nol di satu repositori, `mealora-apps/mealora-mobile`: proyek Flutter dengan arsitektur berlapis, fondasi penyimpanan lokal (Drift/SQLite versi skema 1 beserta harness migrasi, sumber waktu dan pengenal yang dapat diuji, metadata siap-sinkron), design system yang diturunkan dari `docs/mealora.pen`, splash bermerek, dan kerangka navigasi empat ruang berbahasa Indonesia. Tidak ada perilaku produk yang dikirim. Pekerjaan dibagi menjadi tiga tahap yang masing-masing dapat dijalankan dan diverifikasi sendiri; estimasi total 9–13 hari-orang, dengan penyiapan perangkat Android sebagai satu-satunya paket spike.
+Change ini membangun fondasi aplikasi Mealora dari nol di satu repositori, `mealora-apps/mealora-mobile`: proyek Flutter dengan arsitektur berlapis, fondasi penyimpanan lokal (Drift/SQLite versi skema 1 beserta harness migrasi, sumber waktu dan pengenal yang dapat diuji, metadata siap-sinkron), design system yang diturunkan dari `docs/mealora-v2.pen`, splash bermerek, dan kerangka navigasi empat ruang berbahasa Indonesia. Tidak ada perilaku produk yang dikirim. Pekerjaan dibagi menjadi tiga tahap yang masing-masing dapat dijalankan dan diverifikasi sendiri; estimasi total 9–13 hari-orang, dengan penyiapan perangkat Android sebagai satu-satunya paket spike.
 
 ## Breakdown per Repository
 
@@ -15,7 +15,7 @@ Change ini membangun fondasi aplikasi Mealora dari nol di satu repositori, `meal
 | 3 | Fondasi penyimpanan: koneksi Drift per platform (SQLite native + WASM web), skema versi 1 | 1,5 | pasti | Konfigurasi WASM web adalah bagian paling tidak pasti dalam paket ini |
 | 4 | Konvensi record pengguna: mixin metadata siap-sinkron, soft delete, validasi nilai, kesalahan bertipe | 1,0 | pasti | Diuji lewat tabel harness, bukan tabel produk |
 | 5 | Harness migrasi dan fixture (database kosong, pembuatan langsung v1, migrasi terputus, pemeriksaan foreign key) | 1,0 | pasti | Dipakai ulang oleh seluruh change berikutnya |
-| 6 | Token desain dan tema dari `docs/mealora.pen` (warna, tipografi, jarak, radius) + uji kontras | 1,0 | pasti | Nilai warna sudah pasti; angka tipografi dibaca dari dokumen desain |
+| 6 | Token desain dan tema dari `docs/mealora-v2.pen` (warna, tipografi, jarak, radius) + uji kontras | 1,0 | pasti | Nilai warna sudah pasti; angka tipografi dibaca dari dokumen desain |
 | 7 | Komponen dasar: tombol primer, chip, kartu, kolom isian, keadaan kosong, keadaan kesalahan | 1,0 | pasti | Hanya komponen yang dipakai kerangka; sisanya menyusul per fitur |
 | 8 | Lokalisasi Indonesia, format angka/tanggal `id-ID`, satuan metrik | 0,5 | pasti | Semua string lewat lapisan lokalisasi sejak awal |
 | 9 | Splash bermerek dengan aset dari `docs/brand-assets/`, termasuk keadaan gagal inisialisasi | 0,5 | pasti | |
@@ -50,7 +50,7 @@ Change ini membangun fondasi aplikasi Mealora dari nol di satu repositori, `meal
 
 **Isi:** paket 6, 7, 8, 9, 10, 11.
 **Prasyarat:** tahap 1 selesai dan gate-nya lolos.
-**Gate verifikasi:** `flutter analyze` dan `flutter test` hijau, termasuk uji widget untuk splash, perpindahan antar empat ruang, keadaan kosong, rute tidak dikenal, dan uji kontras token; pemeriksaan manual di Chrome pada viewport 390×844 untuk kelima layar; pemeriksaan skala teks besar dan pembaca layar; perbandingan visual terhadap `docs/mealora.pen` (`06 · Splash Mealora` dan `Component · floating navigation`).
+**Gate verifikasi:** `flutter analyze` dan `flutter test` hijau, termasuk uji widget untuk splash, perpindahan antar empat ruang, keadaan kosong, rute tidak dikenal, dan uji kontras token; pemeriksaan manual di Chrome pada viewport 390×844 untuk kelima layar; pemeriksaan skala teks besar dan pembaca layar; perbandingan visual terhadap `docs/mealora-v2.pen` (`06 · Splash Mealora` dan `Component · floating navigation`).
 
 ### Tahap 3 — Verifikasi Android dan penutupan
 
@@ -64,7 +64,7 @@ Change ini membangun fondasi aplikasi Mealora dari nol di satu repositori, `meal
 |---|---|---|
 | Konfigurasi Drift/`sqlite3.wasm` di web memakan waktu lebih lama dari perkiraan | Paket 3 membengkak, tahap 1 tertunda | Timebox setengah hari; bila belum beres, web memakai penyimpanan in-memory untuk debug UI sementara Android memakai SQLite nyata, dan WASM diselesaikan terpisah |
 | Emulator/`adb` belum ada di mesin dan penyiapannya bermasalah | Tahap 3 tertunda, verifikasi Android tertahan | Timebox satu hari; alternatif perangkat Android fisik; tahap 1 dan 2 tetap bisa diverifikasi di Chrome |
-| Angka tipografi dan jarak harus dibaca manual dari dokumen desain | Paket 6 dan 7 melar, hasil visual meleset dari rancangan | Baca nilai langsung dari `docs/mealora.pen` lewat MCP pen.dev saat implementasi, bukan menebak dari tangkapan layar |
+| Angka tipografi dan jarak harus dibaca manual dari dokumen desain | Paket 6 dan 7 melar, hasil visual meleset dari rancangan | Baca nilai langsung dari `docs/mealora-v2.pen` lewat MCP pen.dev saat implementasi, bukan menebak dari tangkapan layar |
 | Aturan lint impor antar-lapisan tidak menjangkau semua pola pelanggaran | Batas arsitektur bocor diam-diam dan baru ketahuan di change berikutnya | Tambahkan uji arsitektur yang memindai impor terlarang sebagai jaring kedua |
 | Scope merembet ke fitur produk karena kerangka terasa "kosong" | Change tidak selesai-selesai, review membengkak | Keempat layar sengaja hanya berkeadaan kosong; permintaan fitur dialihkan ke change berikutnya |
 | Preview web dianggap cukup sebagai bukti kelayakan | Masalah khusus Android baru muncul jauh di belakang | Tahap 3 bersifat wajib sebelum change ditutup |

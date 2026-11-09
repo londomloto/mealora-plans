@@ -11,7 +11,7 @@ Change ini membangun jalur pencatatan produk kemasan lewat barcode di dua reposi
 | # | Paket pekerjaan | Effort (hari-orang) | Kepastian | Catatan |
 |---|---|---|---|---|
 | 1 | Telusuri sumber data produk kemasan dan kewajiban lisensinya; dokumentasikan syarat atribusi dan pemakaian gambar | 1,0 | spike (timebox 1 hari) | Open Food Facts kandidat; ODbL dan lisensi gambar wajib dipenuhi |
-| 2 | Rancang layar masukan barcode manual di `docs/mealora.pen`, mengikuti bahasa visual `21` | 0,5 | pasti | Satu-satunya jalur barcode saat izin kamera ditolak |
+| 2 | Rancang layar masukan barcode manual di `docs/mealora-v2.pen`, mengikuti bahasa visual `21` | 0,5 | pasti | Satu-satunya jalur barcode saat izin kamera ditolak |
 
 ### mealora-mobile
 
@@ -50,7 +50,7 @@ Change ini membangun jalur pencatatan produk kemasan lewat barcode di dua reposi
 
 **Isi:** paket 1, 2, 3, 4, 5, 6, 7.
 **Prasyarat:** change 007 selesai.
-**Gate verifikasi:** dokumen sumber data produk menyatakan kewajiban lisensinya dan apakah pencarian daring dapat diaktifkan pada rilis pertama; layar masukan manual ada di `docs/mealora.pen`; seluruh fixture migrasi lolos dan pemeriksaan foreign key bersih; aritmetika basis takaran lolos seluruh kombinasi dengan nilai yang berbeda per basis — per sajian, beberapa sajian, satu kemasan, dan per 100 g; klien sumber data hanya mengirim nomor barcode, diuji dengan pengamatan permintaan; koreksi pengguna tidak tertimpa oleh hasil dari sumber daring.
+**Gate verifikasi:** dokumen sumber data produk menyatakan kewajiban lisensinya dan apakah pencarian daring dapat diaktifkan pada rilis pertama; layar masukan manual ada di `docs/mealora-v2.pen`; seluruh fixture migrasi lolos dan pemeriksaan foreign key bersih; aritmetika basis takaran lolos seluruh kombinasi dengan nilai yang berbeda per basis — per sajian, beberapa sajian, satu kemasan, dan per 100 g; klien sumber data hanya mengirim nomor barcode, diuji dengan pengamatan permintaan; koreksi pengguna tidak tertimpa oleh hasil dari sumber daring.
 
 ### Tahap 2 — Pemindai dan layar
 

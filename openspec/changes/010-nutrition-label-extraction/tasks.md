@@ -82,5 +82,5 @@
 - [ ] 9.4 Periksa paket aplikasi yang didistribusikan dan pastikan tidak ada kunci API maupun kredensial penyedia di dalamnya
 - [ ] 9.5 Jalankan alur inti penuh dalam mode pesawat dan pastikan seluruhnya bekerja
 - [ ] 9.6 Verifikasi jalur kamera dan unggah di perangkat Android, termasuk penolakan izin dan kegagalan layanan
-- [ ] 9.7 Verifikasi layar yang tidak memerlukan kamera di Chrome pada viewport 390×844 dan bandingkan dengan `docs/mealora.pen`
+- [ ] 9.7 Verifikasi layar yang tidak memerlukan kamera di Chrome pada viewport 390×844 dan bandingkan dengan `docs/mealora-v2.pen`
 - [ ] 9.8 Gate verifikasi repo: jalankan `flutter analyze`, `dart format --set-exit-if-changed .`, dan `flutter test`; laporkan hasil beserta risiko yang tersisa

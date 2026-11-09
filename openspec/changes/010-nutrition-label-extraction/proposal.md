@@ -8,7 +8,7 @@ Assessment §50.1 menjadikan pemotretan label sebagai jalur masukan MVP 1, denga
 
 Change ini juga menetapkan fondasi yang dipakai bersama change foto makanan: bagaimana gambar diperlakukan, bagaimana izin unggah diminta, bagaimana penyedia model diakses, dan apa yang terjadi ketika layanan tidak tersedia.
 
-Rancangannya sudah ada di `docs/mealora.pen`: `23 · Foto label gizi`, `24 · Tinjau ekstraksi label`, dan `37 · Isi label manual offline`.
+Rancangannya sudah ada di `docs/mealora-v2.pen`: `23 · Foto label gizi`, `24 · Tinjau ekstraksi label`, dan `37 · Isi label manual offline`.
 
 ## What Changes
 

@@ -1,6 +1,6 @@
 ## 1. mealora-mobile — Tabel dan skema
 
-- [x] 1.1 Baca ulang assessment §42–§44, spec change 003, dan layar `05`, `16`, `18`, `29`, `30`, `36`, `40` di `docs/mealora.pen` sebelum menulis tabel, agar kolom yang dibuat memang yang ditampilkan
+- [x] 1.1 Baca ulang assessment §42–§44, spec change 003, dan layar `05`, `16`, `18`, `29`, `30`, `36`, `40` di `docs/mealora-v2.pen` sebelum menulis tabel, agar kolom yang dibuat memang yang ditampilkan
 - [x] 1.2 Buat tabel katalog program: kode unik, nama, deskripsi, penanda perlu target berat, penanda ketersediaan, urutan tampil, versi definisi, dan jejak waktu
 - [x] 1.3 Buat tabel program pengguna sesuai §42: profil (TEXT tanpa FK sungguhan — Design D12, tabel `profiles` belum ada), program, status, waktu mulai/jeda/berakhir, berat awal, berat tujuan, tanggal tujuan, target energi dan makro, salinan masukan, `calculator_version`, `policy_version`, alasan jeda, alasan selesai, tautan program pendahulu dan pengganti, serta konvensi record pengguna dari change 001
 - [x] 1.4 Buat tabel potret kemajuan: program pengguna, tanggal lokal, waktu pencatatan, berat, perubahan berat, rasio kemajuan, energi tercatat, rasio kesesuaian, makro, jumlah waktu makan, penanda kelengkapan buku harian, nomor hari aktif, kolom ukuran tambahan, dan versi perhitungan
