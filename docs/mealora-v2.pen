@@ -20821,7 +20821,7 @@
                   "id": "SyEjs",
                   "name": "Range",
                   "fill": "$muted",
-                  "content": "4 minggu terakhir",
+                  "content": "7 catatan terakhir",
                   "fontFamily": "$font",
                   "fontSize": 11,
                   "fontWeight": "normal"

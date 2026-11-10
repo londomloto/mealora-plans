@@ -188,7 +188,7 @@ So that saya bisa memahami kebiasaan saya tanpa merasa dinilai atas hari yang ko
 
 6.4. **Menghapus catatan terakhir** — Pengguna menghapus catatan berat terbarunya → berat terbaru kembali menunjuk catatan sebelumnya; bila tidak ada, dinyatakan belum ada catatan.
 
-6.5. **Celah pada tren** — Pengguna tidak mencatat berat selama dua minggu di tengah rentang → bagian itu tampak sebagai ketiadaan data, bukan garis yang diteruskan.
+6.5. **Tren memakai tujuh catatan terakhir** — Pengguna mencatat berat tidak setiap hari, dengan jarak berhari-hari antar catatan → grafik tren tetap menampilkan tujuh catatan terakhirnya berurutan rapat (bukan jendela kalender dengan jalur kosong di tengah).
 
 6.6. **Satu catatan saja** — Baru ada satu catatan berat → Mealora menampilkan catatan itu dan menyatakan tren belum dapat ditampilkan.
 

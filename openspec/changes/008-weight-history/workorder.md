@@ -16,7 +16,7 @@ Change ini mengisi dua ruang terakhir yang masih kosong di `mealora-apps/mealora
 | 4 | Penyambungan catatan berat ke pembangunan ulang potret kemajuan program | 0,5 | pasti | Idempoten, aman dipicu berlebih |
 | 5 | Pemeriksaan ambang hitung ulang dan pemunculan usulan peninjauan target di ruang Program | 0,75 | pasti | Usulan saja; target baru tetap butuh persetujuan |
 | 6 | Layar tambah berat (`32`): nilai, tanggal, catatan bebas, validasi, penegasan tersimpan lokal | 0,75 | pasti | Tanggal masa depan ditolak |
-| 7 | Layar pantau berat (`31`): berat terbaru, perbandingan terhadap berat awal program, tren empat minggu, daftar catatan terakhir | 1,25 | pasti | Celah pada tren tampil sebagai celah |
+| 7 | Layar pantau berat (`31`): berat terbaru, perbandingan terhadap berat awal program, tren tujuh catatan terakhir, daftar catatan terakhir | 1,25 | pasti | Setiap titik tren adalah catatan asli |
 | 8 | Penyuntingan dan penghapusan catatan berat dari daftar | 0,5 | pasti | Salah ketik harus murah diperbaiki |
 | 9 | Keadaan khusus berat: belum ada catatan, satu catatan saja, program tanpa berat awal | 0,5 | pasti | Tidak ada 0 kg dan tidak ada tren dari satu titik |
 | 10 | Ruang Riwayat (`18`): kalender bulanan, penandaan hari bercatatan, pemilihan tanggal | 1,25 | pasti | Tanggal masa depan tidak dapat dipilih |

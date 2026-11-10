@@ -24,12 +24,14 @@
 - [x] 3.4 Pastikan target lama tetap berlaku sampai pengguna meninjau dan menyetujui target baru
 - [x] 3.5 Uji: perubahan berat tercermin pada potret kemajuan tanpa penggandaan nilai
 - [x] 3.6 Uji: usulan muncul hanya ketika ambang terlewati, dan tidak muncul ketika kebijakan belum disetujui
+- [x] 3.7 Lengkapi pembangunan ulang potret kemajuan: hitung `weightChangeKg` dan `targetProgressRatio` (sebelumnya tidak pernah diisi, hanya `weightKg`), `null` untuk program tanpa berat tujuan
+- [x] 3.8 Hapus `WeightProgressPlaceholderCard` (placeholder change 006 yang tekstualnya sudah salah); ruang Program menampilkan "Kebiasaan minggu ini" seragam untuk semua program, bukan kartu persentase berat terpisah (design D5b)
 
 ## 4. mealora-mobile — Layar berat
 
 - [x] 4.1 Bangun layar tambah berat (`32`): nilai berat, tanggal catatan, catatan bebas opsional, dan penegasan bahwa data hanya tersimpan di perangkat
 - [x] 4.2 Implementasikan penolakan nilai mustahil dan tanggal masa depan dengan penjelasan yang dapat dibaca pengguna
-- [x] 4.3 Bangun layar pantau berat (`31`): berat terbaru beserta tanggal, perbandingan terhadap berat awal program bila berlaku, tren empat minggu terakhir, dan daftar catatan terakhir
+- [x] 4.3 Bangun layar pantau berat (`31`): berat terbaru beserta tanggal, perbandingan terhadap berat awal program bila berlaku, tren tujuh catatan terakhir, dan daftar catatan terakhir
 - [x] 4.4 Tampilkan rentang tanpa catatan sebagai ketiadaan data; jangan menyambung garis dari nilai terakhir dan jangan mengisi nol
 - [x] 4.5 Tampilkan keadaan satu catatan saja sebagai catatan tunggal dengan pernyataan bahwa tren belum dapat ditampilkan
 - [x] 4.6 Tampilkan keadaan belum ada catatan beserta tindakan menambahkan; jangan menampilkan 0 kg atau grafik kosong tanpa keterangan
@@ -37,6 +39,9 @@
 - [x] 4.8 Implementasikan penyuntingan dan penghapusan catatan berat dari daftar catatan terakhir
 - [x] 4.9 Periksa kalimat per kalimat: tidak ada pujian atas penurunan, teguran atas kenaikan, atau istilah yang menilai tubuh pengguna
 - [x] 4.10 Uji widget kedua layar pada ukuran teks normal dan besar
+- [x] 4.11 Gambar tiap titik tren sebagai jalur (track) kapsul berwarna netral berisi batang gradasi, sesuai rancangan `31`
+- [x] 4.12 Ganti jendela tren dari rentang kalender (sempat empat minggu, lalu tujuh hari) menjadi selalu tujuh jalur diisi dari kiri (terlama ke terbaru), berjarak sama tanpa memperhitungkan selisih hari sebenarnya, ukuran 16×72 px sesuai rancangan `31`; jalur di sisi kanan tetap kosong/netral bila catatan belum sampai tujuh; tambahkan label indeks urutan di bawah tiap jalur, dengan label pembaca layar memakai tanggal dan berat catatan sebenarnya untuk jalur berisi, atau menyatakan belum ada catatan untuk jalur kosong
+- [x] 4.13 Tampilkan jam pencatatan (bukan cuma tanggal) pada daftar "Catatan terakhir", supaya beberapa catatan di tanggal yang sama tetap bisa dibedakan
 
 ## 5. mealora-mobile — Ruang Riwayat
 
@@ -59,7 +64,7 @@
 - [x] 6.4 Uji: ringkasan hari lampau tidak berubah setelah katalog makanan diperbarui, makanan buatan pengguna disunting, profil diubah, dan program diganti
 - [x] 6.5 Uji: catatan lama tetap pada tanggal yang sama setelah zona waktu perangkat berubah
 - [x] 6.6 Uji integrasi alur penuh dalam mode pesawat: catat berat → lihat tren → buka riwayat → pilih tanggal lampau → sunting catatan → ringkasan dan kemajuan menyesuaikan
-- [ ] 6.7 Verifikasi di Chrome pada viewport 390×844 dan bandingkan seluruh layar dengan `docs/mealora-v2.pen`
+- [x] 6.7 Verifikasi di Chrome pada viewport 390×844 dan bandingkan seluruh layar dengan `docs/mealora-v2.pen`
 - [ ] 6.8 Verifikasi alur penuh di perangkat Android, termasuk ketahanan data setelah perangkat dimatikan dan dinyalakan
 - [x] 6.9 Jalankan pemeriksaan kriteria penerimaan MVP assessment §28 untuk jalur manual, dan catat butir mana yang masih menunggu change input berikutnya
 - [x] 6.10 Gate verifikasi repo: jalankan `flutter analyze`, `dart format --set-exit-if-changed .`, dan `flutter test`; laporkan hasil beserta risiko yang tersisa

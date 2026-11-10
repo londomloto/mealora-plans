@@ -33,13 +33,19 @@ Alasannya: profil yang menyimpan satu nilai berat akan kehilangan riwayat setiap
 
 Konsekuensi yang ditangani: berat pada salinan masukan target (change 003) tetap berupa potret nilai saat itu, bukan rujukan ke catatan terbaru.
 
-### D2 — Celah pada tren ditampilkan sebagai celah
+### D2 — Tidak pernah mengarang nilai; grafik `31` memilih kepadatan di atas kesetiaan waktu
 
-Rentang tanpa catatan tidak disambung dengan garis dari nilai terakhir dan tidak diisi nol. Pengguna yang tidak menimbang selama dua minggu melihat ketiadaan data, bukan garis datar yang menyiratkan beratnya tidak berubah.
+Prinsip umum di seluruh aplikasi: rentang tanpa catatan tidak disambung dengan garis dari nilai terakhir dan tidak diisi nol. Ruang Riwayat (`18`) menyatakan hari tanpa catatan secara eksplisit sebagai ketiadaan data, bukan garis datar yang menyiratkan beratnya tidak berubah.
 
-Ini bukan kemurnian data demi dirinya sendiri: garis yang disambung akan terbaca sebagai fakta, dan pada angka kesehatan, fakta palsu lebih berbahaya daripada ketiadaan informasi.
+Ini bukan kemurnian data demi dirinya sendiri: garis yang disambung atau nilai yang dikarang akan terbaca sebagai fakta, dan pada angka kesehatan, fakta palsu lebih berbahaya daripada ketiadaan informasi.
 
-Rancangan `31 · Pantau berat` menampilkan tren empat minggu terakhir; bentuk itu dipertahankan, dengan celah yang terlihat.
+Untuk grafik tren di `31 · Pantau berat` secara khusus, dua pendekatan berbasis kalender dicoba lebih dulu (empat minggu, lalu tujuh hari) dan keduanya menyisakan terlalu banyak jalur kosong untuk pengguna yang tidak mencatat setiap hari — secara visual ramai tapi nyaris hampa, dan pada rentang tujuh hari jalur yang sempit membuat bentuk kapsul berubah jadi bulatan (lebar hampir sama dengan tinggi). Rancangan direvisi sekali lagi: grafik selalu menggambar **tujuh jalur**, diisi dari kiri secara berurutan dari catatan terlama ke terbaru — bukan jendela kalender, dan jarak antar jalur TIDAK proporsional terhadap selisih hari sebenarnya. Bila catatan belum sampai tujuh, jalur di sisi kanan dibiarkan kosong/netral (bukan batang nol) sampai catatan baru menambahnya — jumlah jalur tetap tujuh sejak awal, tidak menyusut mengikuti jumlah catatan. Setiap jalur berlabel visual indeks urutan (1, 2, 3, …); label pembaca layar memakai tanggal dan berat catatan sebenarnya untuk jalur berisi, atau menyatakan belum ada catatan untuk jalur kosong — bukan angka indeks lepas (lihat requirement aksesibilitas §9 / task 6.3).
+
+Ukuran persis diambil langsung dari rancangan `31`: jalur (track) 16×72 px, radius sudut 8 (setengah lebar, membentuk kapsul penuh — batang isian punya radius yang sama di keempat sudutnya, bukan sekadar mengikuti potongan jalur), berjarak tetap 30 px per slot (bukan melebar mengikuti lebar kartu), jarak jalur ke label angka 6 px, dan kartu pembungkus berradius 26. Gradien batang: biru aksen (`info`, `#6E8BFF`) di atas ke hijau terang (`primaryBright`, `#12A05C`) di bawah.
+
+Tinggi batang dihitung dari posisi nilai dalam skala tampilan minimum 10 kg yang dipusatkan di sekitar rentang nyata catatan yang ditampilkan — bukan skala min–maks ketat dari nilai-nilai itu sendiri. Alasannya: dengan hanya beberapa catatan, rentang nyata sering kecil (1-5 kg), dan skala min–maks ketat memaksa selisih sekecil itu memenuhi 0%–100% tinggi jalur sehingga terlihat seperti perubahan drastis padahal fluktuasi wajar. Skala tetap melebar mengikuti rentang nyata bila perubahannya memang besar (melebihi 10 kg).
+
+Konsekuensi yang disadari dan diterima: karena setiap titik selalu berupa catatan asli, selisih waktu antara dua catatan yang berjauhan tidak lagi tampak sebagai celah pada grafik ini — prinsip "tidak mengarang nilai" tetap dipegang (tidak ada titik palsu), tapi "celah terlihat sebagai celah" sengaja tidak berlaku untuk grafik tren `31` secara khusus. Keputusan ini mengutamakan grafik yang selalu bermakna (bukan mayoritas kosong) di atas kesetiaan representasi waktu pada tampilan ringkas ini; ruang Riwayat tetap menjadi tempat yang jujur soal hari mana yang kosong.
 
 ### D3 — Satu catatan tidak digambar sebagai tren
 
@@ -56,6 +62,14 @@ Karena itu penyuntingan dan penghapusan ada sejak change ini, bukan ditunda, dan
 Setiap penambahan, penyuntingan, dan penghapusan catatan berat memicu pembangunan ulang potret kemajuan untuk tanggal terkait (change 004 D5, idempoten), lalu pemeriksaan terhadap ambang hitung ulang kebijakan.
 
 Pemeriksaan ambang hanya **mengusulkan** peninjauan target. Target baru tidak pernah berlaku tanpa persetujuan pengguna (change 002, change 006 D5). Usulan ditampilkan di ruang Program, bukan sebagai gangguan di tengah pencatatan berat — pengguna yang baru menimbang sedang melakukan hal lain.
+
+`ProgramProgressSnapshot.weightChangeKg` dan `.targetProgressRatio` (skema change 004) sebelumnya tidak pernah diisi oleh pembangunan ulang potret — hanya `weightKg` yang ditulis. Keduanya sekarang dihitung sesuai definisi skema: `weightChangeKg` = berat tercatat dikurangi berat awal program (`inputSnapshot.currentWeight`), `targetProgressRatio` = posisi berat tercatat di antara berat awal dan berat tujuan (`inputSnapshot.specific.targetWeight`), dijepit ke [0, 1] — tetap `null` untuk program tanpa berat tujuan (Pertahankan, Makan Sehat), bukan nilai yang dikarang.
+
+### D5b — Ruang Program tidak mendapat kartu persentase kemajuan berat terpisah
+
+Placeholder "Kemajuan belum diketahui" yang disiapkan change 006 untuk program berbasis berat (Turun Berat/Naik Berat/Pertahankan) **tidak** diganti kartu persentase baru. Sebagai gantinya, seluruh program — termasuk yang berbasis berat — menampilkan kartu "Kebiasaan minggu ini" yang sama seperti Makan Sehat (kelengkapan pencatatan makan, bukan persentase kemajuan berat). Pemantauan berat sepenuhnya ada di layar tersendiri (`31 · Pantau berat`, change 008), diakses lewat kartu "Catatan berat" yang sudah ada di ruang Program — bukan diduplikasi sebagai kartu kedua di ruang yang sama.
+
+Alasannya: ruang Program sudah punya satu sumber kebenaran untuk berat (kartu "Catatan berat" → layar `31`); kartu persentase kedua di layar yang sama hanya mengulang informasi itu dengan bentuk berbeda, berisiko tidak sinkron. Placeholder lama dihapus (bukan ditinggal) karena teksnya sudah salah secara faktual — ia bilang "pemantauan berat badan menyusul pada tahap berikutnya", padahal pemantauan berat sudah ada sejak change ini.
 
 ### D6 — Riwayat memakai ulang komponen ringkasan dari change 007
 
@@ -102,4 +116,4 @@ Rollback: penurunan versi tidak didukung, konsisten dengan change sebelumnya.
 
 ## Open Questions
 
-Tidak ada pertanyaan yang ditunda. Satu hal yang ditetapkan sekarang agar tidak menggantung: rentang tren yang ditampilkan adalah empat minggu terakhir, mengikuti rancangan `31`. Bila kemudian terbukti terlalu pendek untuk program jangka panjang, penambahan pilihan rentang menjadi perbaikan tersendiri dan tidak mengubah bentuk data.
+Tidak ada pertanyaan yang ditunda. Satu hal yang ditetapkan sekarang agar tidak menggantung, setelah dua kali revisi: grafik tren menampilkan **tujuh catatan terakhir** (bukan jendela kalender — sempat dicoba empat minggu lalu tujuh hari, keduanya menyisakan terlalu banyak jalur kosong untuk pengguna yang tidak mencatat tiap hari). Konsekuensinya: selisih waktu antar catatan yang berjauhan tidak tampak sebagai celah pada grafik ini (lihat D2). Bila kemudian terbukti kurang representatif untuk pola pencatatan jangka panjang, penambahan pilihan tampilan (mis. beralih ke rentang kalender) menjadi perbaikan tersendiri dan tidak mengubah bentuk data.

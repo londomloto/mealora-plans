@@ -82,21 +82,31 @@ Perubahan SHALL disajikan sebagai arah dan besaran apa adanya, tanpa penilaian a
 - **WHEN** program yang berjalan tidak memakai berat awal, misalnya Makan Sehat
 - **THEN** sistem menampilkan berat terbaru tanpa perbandingan terhadap berat awal program
 
-### Requirement: Tren berat ditampilkan apa adanya
+### Requirement: Tren berat menampilkan tujuh jalur, diisi dari catatan terakhir apa adanya
 
-Sistem SHALL menampilkan tren berat untuk rentang waktu terakhir berdasarkan catatan yang ada. Rentang tanpa catatan SHALL tampak sebagai ketiadaan data, dan sistem SHALL TIDAK mengisi celah dengan nilai yang dikarang, nilai sebelumnya, maupun nol.
+Sistem SHALL menampilkan tren berat sebagai tujuh jalur (track) tetap, berjarak sama tanpa memperhitungkan selisih hari sebenarnya antar catatan — bukan rentang kalender. Jalur diisi dari kiri, berurutan dari catatan terlama ke terbaru. Bila catatan yang ada belum sampai tujuh, jalur di sisi kanan (mewakili catatan yang belum ada) SHALL tampak kosong/netral — tidak diisi nilai yang dikarang, nilai sebelumnya, maupun nol. Setiap jalur yang terisi SHALL mewakili satu catatan asli.
+
+Konsekuensi yang disadari: selisih waktu antara dua catatan yang berjauhan (tapi sama-sama sudah tercatat) SHALL TIDAK tampak sebagai celah pada grafik ini — hanya kekosongan di sisi kanan (karena catatan belum sebanyak tujuh) yang tampak kosong. Ini berbeda dari ruang Riwayat (lihat spec `daily-history`), yang tetap menyatakan hari tanpa catatan secara eksplisit sebagai ketiadaan data.
 
 Sistem SHALL TIDAK menampilkan proyeksi kapan berat tertentu akan tercapai.
-
-#### Scenario: Celah pada tren
-
-- **WHEN** pengguna tidak mencatat berat selama dua minggu di tengah rentang yang ditampilkan
-- **THEN** rentang itu tampak sebagai ketiadaan data, bukan garis yang diteruskan dari nilai terakhir
 
 #### Scenario: Catatan terlalu sedikit untuk tren
 
 - **WHEN** hanya ada satu catatan berat
 - **THEN** sistem menampilkan catatan itu dan menyatakan tren belum dapat ditampilkan, bukan menggambar tren dari satu titik
+
+#### Scenario: Kurang dari tujuh catatan
+
+- **WHEN** pengguna punya antara dua sampai enam catatan berat
+- **THEN** grafik tetap menampilkan tujuh jalur; jalur di sisi kanan yang belum ada catatannya tampak kosong/netral, dan jalur sisanya (dari kiri) berisi catatan yang ada apa adanya
+
+#### Scenario: Label indeks jalur tren dibacakan bermakna
+
+- **WHEN** pembaca layar mengumumkan sebuah jalur tren berisi catatan, yang berlabel visual indeks urutan
+- **THEN** yang diumumkan adalah tanggal dan berat catatan sebenarnya pada jalur itu, bukan angka indeks lepas
+
+- **WHEN** pembaca layar mengumumkan sebuah jalur tren yang masih kosong
+- **THEN** yang diumumkan menyatakan belum ada catatan, bukan angka indeks lepas maupun nilai yang dikarang
 
 ### Requirement: Catatan berat memperbarui kemajuan program
 
