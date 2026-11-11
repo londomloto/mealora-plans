@@ -42,6 +42,13 @@ Konsekuensi yang diterima: pengguna akan lebih sering memakai makanan buatan sen
 
 Penelusuran hak pakai sumber adalah paket kerja tersendiri di `mealora-plans`, dan hasilnya menentukan seberapa besar katalog bisa tumbuh pada change berikutnya.
 
+**Revisi 2026-11-11:** keputusan "kurasi kecil, bukan impor besar tanpa hak" di atas
+**dibatalkan** oleh pemilik produk untuk katalog bawaan — lihat
+`mealora-plans/docs/food-data-sources.md` §5. Katalog sekarang memakai data TKPI
+(1.346 item, via dataset Kaggle turunan panganku.org) yang hak pakainya **masih belum
+dipastikan**, bukan karena analisis di atas berubah kesimpulan. Ini dicatat di sini
+supaya pembaca dokumen ini tidak mengira D2 masih berlaku seperti semula.
+
 ### D3 — Pencarian memakai pencocokan sederhana lebih dulu
 
 Pencarian memakai pencocokan substring tanpa memperhatikan huruf besar-kecil pada nama makanan, diurutkan dengan mendahulukan kecocokan di awal nama. Tidak ada pencarian fonetik, tidak ada toleransi salah ketik, tidak ada indeks teks penuh.

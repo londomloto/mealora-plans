@@ -2,11 +2,16 @@
 
 | | |
 |---|---|
-| Versi | v0.1 |
-| Status | **Diterima untuk MVP 1** — himpunan kecil, hak pakai sudah dipastikan |
-| Tanggal | 2026-11-10 |
+| Versi | v0.2 — **lihat §5, revisi keputusan 2026-11-11** |
+| Status | v0.1 (§1–4) diterima untuk MVP 1 dengan hak pakai USDA dipastikan; **v0.2 (§5) mengganti katalog dengan data TKPI yang hak pakainya BELUM dipastikan — keputusan sadar pemilik produk, bukan karena haknya sudah clear** |
+| Tanggal | 2026-11-10 (v0.1), 2026-11-11 (v0.2) |
 | Change asal | `007-food-catalog-diary` |
-| Keputusan desain | `openspec/changes/007-food-catalog-diary/design.md`, D2 |
+| Keputusan desain | `openspec/changes/007-food-catalog-diary/design.md`, D2 (direvisi, lihat §5) |
+
+> **Catatan pembaca:** §1–4 di bawah ini adalah analisis asli (v0.1) yang menyimpulkan TKPI
+> *tidak boleh* dipakai karena hak pakainya belum dipastikan. §5 mencatat bahwa pemilik
+> produk memutuskan tetap memakai TKPI meski analisis itu tidak berubah — dibiarkan utuh
+> supaya alasan aslinya tidak hilang dari riwayat.
 
 ## 0. Keputusan
 
@@ -132,3 +137,65 @@ cari pernyataan lisensi eksplisit yang mengizinkan redistribusi dalam
 aplikasi (bukan sekadar "dapat diakses publik" — dapat diakses tidak sama
 dengan boleh didistribusikan ulang). Dokumentasikan hasilnya di Bagian 1
 sebelum sumber itu dipakai untuk satu nilai pun.
+
+## 5. Revisi 2026-11-11 — katalog diganti total dengan data TKPI
+
+**Ini adalah catatan keputusan, bukan pembenaran hukum.** Analisis di §1–4
+di atas tidak berubah: TKPI (Kementerian Kesehatan RI, dipublikasikan di
+`panganku.org` dan `repository.kemkes.go.id`) tetap **tidak punya
+pernyataan lisensi eksplisit** yang mengizinkan redistribusi dalam produk
+komersial. Tiga turunan pihak ketiga yang ditelusuri (GitHub
+`intanypurbasari/food-nutrition`, HuggingFace
+`ichsanulamal/panganku-indonesian-food-nutrition`, Kaggle
+`anasfikrihanif/indonesian-food-and-drink-nutrition-dataset`) semuanya
+berasal dari TKPI yang sama; label lisensi yang mereka cantumkan sendiri
+(CC0/CC-BY-4.0) adalah klaim sepihak uploader, bukan pernyataan dari
+Kemenkes selaku pemegang hak.
+
+**Keputusan:** pemilik produk memutuskan tetap memakai TKPI (via dataset
+Kaggle di atas) sebagai sumber katalog bawaan, menggantikan seluruh 34
+item berbasis USDA — risiko hak pakai yang belum dipastikan **diterima
+sadar**, bukan dianggap sudah aman. Alasan yang diberikan: cakupan
+masakan khas Indonesia dianggap penting untuk produk, dan MVP 1 belum
+dikomersialkan secara aktif (belum ada iklan/monetisasi) — meski status
+komersial proyek secara keseluruhan sendiri masih perlu diklarifikasi
+(lihat catatan di `CLAUDE.md`). Rencana mitigasi yang disebutkan:
+mengajukan izin tertulis ke Kemenkes jika/ketika produk dikomersialkan.
+
+**Sumber data yang dipakai:** Kaggle
+`anasfikrihanif/indonesian-food-and-drink-nutrition-dataset`
+(1.346 baris; kolom `id, calories, proteins, fat, carbohydrate, name,
+image`; dataset ini sendiri menyatakan "obtained from Tabel Komposisi
+Pangan Indonesia (TKPI) ... published by the Ministry of Health").
+
+**Keterbatasan yang diketahui, di luar soal hak pakai:**
+
+- **Takaran saji default 100 g untuk seluruh 1.346 item** — dataset
+  sumber tidak menyertakan takaran ala Indonesia ("1 centong", "1
+  potong", dst.) per item. Spec "Takaran saji yang bermakna" terpenuhi
+  secara teknis (satu takaran bawaan dengan label & gram) tapi belum
+  memenuhi semangat aslinya (istilah sehari-hari Indonesia). Perlu
+  dikurasi manual bertahap untuk item yang paling sering dipakai.
+- **Kategori (`FoodCategory`) ditentukan heuristik kata kunci pada nama**,
+  bukan diverifikasi manual satu-per-satu seperti proses §4 untuk USDA.
+  Sekitar 30% (407/1.346) jatuh ke kategori `other` karena nama tidak
+  cocok kata kunci mana pun. Lihat skrip pembangkit di riwayat commit
+  untuk daftar kata kunci yang dipakai.
+- **Tidak ada verifikasi manual per item** terhadap angka sumber
+  (berbeda dari proses §4 yang mengharuskan membuka halaman FDC
+  langsung) — `verifiedAt` pada baris katalog ini mencatat tanggal
+  *impor*, bukan tanggal *verifikasi* nilai terhadap sumber aslinya.
+- Beberapa nilai `carbohydrate = 0` pada dataset sumber mungkin hasil
+  proses "cleaning" yang mengisi nilai kosong dengan 0, bukan nilai nol
+  yang sebenarnya diukur — belum dipisahkan mana yang asli mana yang
+  kemungkinan diisi (bertentangan dengan prinsip "jangan isi 0 kalau
+  tidak pasti" di §2, tapi diterima untuk revisi ini).
+- Kolom `image` pada dataset sumber (tautan ke berbagai situs pihak
+  ketiga) **tidak dipakai** — selain di luar kebutuhan, gambar-gambar itu
+  sendiri punya status hak cipta terpisah yang tidak ditelusuri.
+- Provenans katalog dicatat dengan `sourceType = 'tkpi'`,
+  `sourceRef = <id baris Kaggle>`, `sourceVersion = 'kaggle-indo-nutrition-v1'`.
+
+**Tindak lanjut yang disarankan (belum dikerjakan):** ajukan izin
+tertulis ke Kemenkes/Balitbangkes; sambil menunggu, kurasi takaran saji
+untuk item yang paling sering dicari, dan audit ulang kategori `other`.
