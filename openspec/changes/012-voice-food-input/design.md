@@ -14,7 +14,7 @@ Assessment §17 menempatkan masukan kalimat bebas sebagai Level 4, dan §50 meny
 
 - Mencatat makan lengkap dalam satu kalimat, tanpa mengetik.
 - Biaya layanan sekecil mungkin, dan nol pada jalur yang paling sering dipakai.
-- Tidak ada rekaman suara yang meninggalkan perangkat tanpa pengguna tahu.
+- Rekaman suara tidak disimpan maupun dikirim oleh aplikasi; audio hanya mengalir ke layanan pengenalan ucapan sistem Android (lihat D2).
 - Memakai ulang peninjauan komponen change 011 apa adanya, bukan membuat alur peninjauan kedua.
 
 **Non-Goals**
@@ -40,6 +40,10 @@ Android menyediakan pengenalan ucapan di perangkat, termasuk untuk bahasa Indone
 Ini juga jawaban paling langsung atas permintaan "pakai kuota gratis": jalur yang paling sering dipakai tidak memanggil layanan berbayar sama sekali.
 
 Ketika perangkat tidak mendukungnya, sistem menyatakannya dan menawarkan pengetikan kalimat. Mengirim rekaman suara ke layanan luar sebagai cadangan **tidak** dilakukan diam-diam — itu memerlukan persetujuan eksplisit untuk pengiriman tersebut, dan pada change ini tidak dibangun sama sekali.
+
+*Revisi setelah uji di perangkat nyata (2026-11-11):* mode wajib-di-perangkat (`onDevice: true`) gagal dengan `error_language_unavailable` di HP Samsung (SM-A155F) maupun emulator, karena model offline bahasa Indonesia tidak terpasang secara bawaan. Meminta pengguna awam mengunduh paket bahasa offline lewat pengaturan sistem dinilai terlalu sulit, sehingga keputusan pemilik produk adalah memakai `onDevice: false`: layanan pengenalan ucapan sistem (mis. Speech Services by Google) memakai model di perangkat bila tersedia dan servernya bila tidak. Aplikasi sendiri tetap tidak menyimpan maupun mengirim audio — yang diterima aplikasi hanya teks — tetapi audio dapat diproses di server penyedia layanan pengenalan sistem. Konsekuensinya, pengenalan suara membutuhkan koneksi pada perangkat tanpa model offline.
+
+Pada mode ini pengenal online teramati mengirim status selesai tanpa pernah mengirim hasil final; transkrip sementara terakhir dipakai sebagai hasil akhir agar ucapan yang sudah dikenali tidak dibuang.
 
 *Alternatif:* langsung mengirim audio ke penyedia model yang mendukung masukan suara. Ditolak sebagai jalur utama: audio adalah jenis masukan termahal di hampir semua penyedia, kuota gratisnya paling mudah berubah, dan rekaman suara adalah data pribadi yang lebih sensitif daripada teks.
 
