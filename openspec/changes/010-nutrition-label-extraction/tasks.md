@@ -25,10 +25,10 @@
 - [x] 3.6 Implementasikan pengaturan dan penerapan retensi gambar sumber dengan bawaan hapus setelah dicatat
 - [ ] 3.7 Pastikan gambar yang disimpan berada di perangkat dan ikut terhapus saat penghapusan seluruh data lokal — **BLOCKED**: tidak ada fitur "hapus semua data lokal" di aplikasi manapun (007–009), jadi tidak ada titik untuk menyambungkan penghapusan foto. Bagian "gambar yang disimpan berada di perangkat" sendiri terpenuhi (lihat `ImageRetentionPreference`/implementasi penyimpanan foto); yang belum adalah sambungannya ke penghapusan data lokal, karena fitur induknya belum ada di change manapun. Perlu change/keputusan terpisah sebelum task ini bisa ditutup.
 - [x] 3.8 Uji: tidak ada gambar terkirim tanpa persetujuan, dibuktikan dengan pengamatan panggilan provider (`test/widget/nutrition_label_photo_screen_test.dart`)
-- [ ] 3.9 Tambahkan dependency pengenalan teks di perangkat (ML Kit Text Recognition) dan implementasikan `NutritionLabelProvider` kedua yang membaca teks lalu memetakannya ke `LabelExtraction` lewat pencocokan kata kunci (Energi/Protein/Karbohidrat/Lemak) dan angka/satuan terdekat, dengan keyakinan dipatok konservatif sesuai design D11
-- [ ] 3.10 Implementasikan composite `NutritionLabelProvider` yang mencoba penyedia cloud lebih dulu, lalu OCR lokal ketika cloud gagal (offline/timeout/quota/refused), tanpa mengubah kontrak antarmuka maupun layar
-- [ ] 3.11 Pastikan langkah OCR tidak memicu panel persetujuan unggah maupun pemanggilan proksi inferensi — tidak ada gambar yang meninggalkan perangkat pada langkah ini
-- [ ] 3.12 Uji unit parser OCR: pemetaan kata kunci ke field, penandaan keyakinan konservatif, dan penanganan baris ambigu (mis. "Energi dari Lemak" vs "Energi Total") sebagai perlu diperiksa, bukan tertukar diam-diam
+- [x] 3.9 Tambahkan dependency pengenalan teks di perangkat (ML Kit Text Recognition) dan implementasikan `NutritionLabelProvider` kedua yang membaca teks lalu memetakannya ke `LabelExtraction` lewat pencocokan kata kunci (Energi/Protein/Karbohidrat/Lemak) dan angka/satuan terdekat, dengan keyakinan dipatok konservatif sesuai design D11 — `google_mlkit_text_recognition: ^0.16.0` (pubspec.yaml); parser murni di `lib/domain/image_ai_access/label_text_parser.dart`, pembungkus ML Kit (temp file + `TextRecognizer`, seam `recognizeText` untuk pengujian) di `lib/data/ocr/ocr_nutrition_label_provider.dart`
+- [x] 3.10 Implementasikan composite `NutritionLabelProvider` yang mencoba penyedia cloud lebih dulu, lalu OCR lokal ketika cloud gagal (offline/timeout/quota/refused), tanpa mengubah kontrak antarmuka maupun layar — `FallbackNutritionLabelProvider` (`lib/domain/image_ai_access/fallback_nutrition_label_provider.dart`), dibind di `lib/app/providers.dart` (`nutritionLabelProviderAppOverride`)
+- [x] 3.11 Pastikan langkah OCR tidak memicu panel persetujuan unggah maupun pemanggilan proksi inferensi — tidak ada gambar yang meninggalkan perangkat pada langkah ini — `OcrNutritionLabelProvider` tidak mengimpor `package:http` maupun klien proksi; ditegakkan `layer_rules_test.dart` (grup "kemandirian dari jaringan", daftar `allowedNetworkClientPaths` tidak mencakup berkas OCR)
+- [x] 3.12 Uji unit parser OCR: pemetaan kata kunci ke field, penandaan keyakinan konservatif, dan penanganan baris ambigu (mis. "Energi dari Lemak" vs "Energi Total") sebagai perlu diperiksa, bukan tertukar diam-diam — `test/unit/domain/image_ai_access/label_text_parser_test.dart` (parser) dan `test/unit/data/ocr/ocr_nutrition_label_provider_test.dart` (penanganan teks kosong/kanal platform gagal). Dua perbaikan menyusul dari pengujian perangkat sungguhan: (1) baris catatan AKG ("*Persen AKG berdasarkan kebutuhan energi 2150 kkal") sempat terbaca sebagai energi produk — kini dibuang sebelum parsing nilai apa pun; (2) tata letak tabel sering membuat ML Kit memisahkan kata kunci dan angkanya ke baris berbeda (sajian per kemasan/energi/protein/karbohidrat/lemak sering kosong) — ditambah jalur lintas-baris (tier 3, selalu `needsCheck`) yang mengambil angka berdiri sendiri pada baris setelah kata kunci, dengan satuan dibatasi ke satuan gizi dikenal supaya kolom %AKG tidak ikut terambil. Temuan lanjutan di perangkat (log teks mentah): pada label dua-kolom tertentu ML Kit tidak memisah per-baris berdekatan, melainkan mengelompokkan SEMUA label jadi satu blok lalu SEMUA angka jadi blok terpisah jauh di bawahnya (reading order per-kolom, bukan per-baris) — tier 3 tidak menjangkau ini, dan mencocokkan lewat urutan indeks berisiko memasangkan angka ke nilai gizi yang salah dengan percaya diri. Diputuskan bersama pengguna untuk TIDAK mengejar heuristik tambahan sekarang (ditunda) — jalur yang ada tetap aman: nilai yang tidak terjangkau tetap `unread`, bukan tebakan, dan jalur manual tetap tersedia penuh.
 
 ## 4. mealora-mobile — Penanganan kegagalan layanan
 
@@ -38,9 +38,9 @@
 - [x] 4.4 Tawarkan jalur manual yang setara pada setiap keadaan kegagalan
 - [ ] 4.5 Pastikan alur inti — buku harian, program, berat, riwayat — tetap bekerja penuh tanpa koneksi — sudah berlaku secara arsitektural (domain-domain itu tidak pernah menyentuh jaringan); verifikasi eksplisit menyusul di gate akhir (task 9.5)
 - [x] 4.6 Uji seluruh keadaan kegagalan dengan penyedia tiruan yang disetel gagal
-- [ ] 4.7 Sambungkan composite OCR ke alur kegagalan layar foto label: setiap keadaan offline/timeout/quota/refused dari penyedia cloud memicu percobaan OCR lokal sebelum jalur manual ditawarkan
-- [ ] 4.8 Uji: OCR lokal dicoba otomatis pada seluruh keadaan kegagalan cloud (penyedia cloud tiruan disetel gagal, penyedia OCR tiruan disetel berhasil/gagal), dengan draf dan gambar tetap ada di setiap tahap
-- [ ] 4.9 Uji: ketika OCR lokal juga gagal (tidak menemukan teks berguna), sistem menyatakan keadaannya dan menawarkan jalur manual seperti kegagalan cloud murni
+- [x] 4.7 Sambungkan composite OCR ke alur kegagalan layar foto label: setiap keadaan offline/timeout/quota/refused dari penyedia cloud memicu percobaan OCR lokal sebelum jalur manual ditawarkan — layar tidak diubah sama sekali (hanya melihat satu `NutritionLabelProvider`, sesuai D2/D11); composite dibind menggantikan `VisionProxyLabelProvider` tunggal di `lib/app/providers.dart`
+- [x] 4.8 Uji: OCR lokal dicoba otomatis pada seluruh keadaan kegagalan cloud (penyedia cloud tiruan disetel gagal, penyedia OCR tiruan disetel berhasil/gagal), dengan draf dan gambar tetap ada di setiap tahap — `test/unit/domain/image_ai_access/fallback_nutrition_label_provider_test.dart` (seluruh `LabelServiceFailureReason`, plus pengamatan `capturedImages` kedua provider)
+- [x] 4.9 Uji: ketika OCR lokal juga gagal (tidak menemukan teks berguna), sistem menyatakan keadaannya dan menawarkan jalur manual seperti kegagalan cloud murni — idem, kasus "cloud gagal DAN OCR juga gagal"; alur layar sendiri sudah teruji generik di `nutrition_label_photo_screen_test.dart` (task 4.6) karena composite mengembalikan `LabelExtractionServiceUnavailable` yang sama persis
 
 ## 5. mealora-mobile — Penyimpanan hasil dan migrasi
 
@@ -110,9 +110,13 @@ Dua keputusan produk yang muncul saat meninjau implementasi terhadap
   (migrasi 7→8), dengan fixture dan uji migrasi yang sama ketatnya dengan
   migrasi 6→7. Produk tanpa barcode hanya ditemukan lewat pencarian nama,
   tidak lewat pemindaian (konsekuensi yang disengaja, bukan celah).
-- [ ] 10.3 OCR lokal (ML Kit Text Recognition) ditambahkan sebagai langkah
+- [x] 10.3 OCR lokal (ML Kit Text Recognition) ditambahkan sebagai langkah
   fallback otomatis ketika penyedia cloud gagal (offline/timeout/kuota/
   ditolak), sebelum jalur manual ditawarkan — tanpa unggah gambar, tanpa
   proksi, dan tanpa mengubah layar maupun kontrak `NutritionLabelProvider`
   (lihat design.md D11). Tidak ada perubahan skema. Rincian task di
-  bagian 3 (3.9–3.12) dan 4 (4.7–4.9).
+  bagian 3 (3.9–3.12) dan 4 (4.7–4.9). Ditambahkan juga flag khusus
+  pengujian `--dart-define=MEALORA_FORCE_LOCAL_OCR=true` (hanya aktif di
+  build debug) supaya pengujian manual OCR di perangkat tidak memakai
+  kuota Gemini sama sekali — lihat komentar `_forceLocalOcrForTesting` di
+  `lib/app/providers.dart`; bukan task openspec, murni alat bantu dev.
