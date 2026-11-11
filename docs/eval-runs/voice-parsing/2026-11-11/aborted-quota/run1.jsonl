@@ -1,0 +1,68 @@
+{"id":"S01","run":1,"status":200,"ms":1496,"inTok":640,"outTok":63,"output":{"items":[{"foodName":"nasi putih","unitStatus":"standard","quantity":1,"unit":"piring"}],"nonFoodRequests":[]}}
+{"id":"S02","run":1,"status":200,"ms":1129,"inTok":644,"outTok":41,"output":{"items":[{"foodName":"roti tawar","unitStatus":"standard","quantity":2,"unit":"lembar"}],"nonFoodRequests":[]}}
+{"id":"S03","run":1,"status":200,"ms":1470,"inTok":640,"outTok":30,"output":{"items":[{"foodName":"susu sapi","unitStatus":"standard","quantity":1,"unit":"gelas"}],"nonFoodRequests":[]}}
+{"id":"S04","run":1,"status":200,"ms":5199,"inTok":638,"outTok":61,"output":{"items":[{"foodName":"pisang","unitStatus":"standard","quantity":2,"unit":"buah"}],"nonFoodRequests":[]}}
+{"id":"S05","run":1,"status":200,"ms":1148,"inTok":641,"outTok":63,"output":{"items":[{"foodName":"telur rebus","unitStatus":"standard","quantity":1,"unit":"butir"}],"nonFoodRequests":[]}}
+{"id":"S06","run":1,"status":200,"ms":1575,"inTok":642,"outTok":65,"output":{"items":[{"foodName":"gado-gado","unitStatus":"standard","quantity":0.5,"unit":"porsi"}],"nonFoodRequests":[]}}
+{"id":"S07","run":1,"status":200,"ms":1433,"inTok":640,"outTok":63,"output":{"items":[{"foodName":"oatmeal","unitStatus":"standard","quantity":50,"unit":"gram"}],"nonFoodRequests":[]}}
+{"id":"S08","run":1,"status":502,"ms":1275,"inTok":null,"outTok":null,"output":{"error":"PROVIDER_ERROR"}}
+{"id":"M01","run":1,"status":200,"ms":6262,"inTok":649,"outTok":143,"output":{"items":[{"foodName":"nasi","unitStatus":"standard","quantity":1,"unit":"piring"},{"foodName":"ayam bakar","unitStatus":"standard","quantity":1,"unit":"potong"},{"foodName":"tempe","unitStatus":"missing","quantity":2,"unit":null}],"nonFoodRequests":[]}}
+{"id":"M02","run":1,"status":200,"ms":1325,"inTok":650,"outTok":109,"output":{"items":[{"foodName":"nasi","unitStatus":"standard","quantity":0.5,"unit":"piring"},{"foodName":"sayur bayam","unitStatus":"standard","quantity":1,"unit":"mangkuk"}],"nonFoodRequests":[]}}
+{"id":"M03","run":1,"status":200,"ms":1469,"inTok":653,"outTok":150,"output":{"items":[{"foodName":"roti","unitStatus":"standard","quantity":2,"unit":"lembar"},{"foodName":"selai kacang","unitStatus":"standard","quantity":1,"unit":"sendok makan"},{"foodName":"teh manis","unitStatus":"standard","quantity":1,"unit":"gelas"}],"nonFoodRequests":[]}}
+{"id":"M04","run":1,"status":200,"ms":1358,"inTok":650,"outTok":146,"output":{"items":[{"foodName":"telur dadar","unitStatus":"missing","quantity":1,"unit":null},{"foodName":"tahu goreng","unitStatus":"standard","quantity":2,"unit":"potong"},{"foodName":"nasi","unitStatus":"standard","quantity":1,"unit":"centong"}],"nonFoodRequests":[]}}
+{"id":"M05","run":1,"status":200,"ms":1840,"inTok":641,"outTok":102,"output":{"items":[{"foodName":"apel","unitStatus":"standard","quantity":1,"unit":"buah"},{"foodName":"yogurt","unitStatus":"standard","quantity":1,"unit":"cup"}],"nonFoodRequests":[]}}
+{"id":"M06","run":1,"status":502,"ms":5693,"inTok":null,"outTok":null,"output":{"error":"PROVIDER_ERROR"}}
+{"id":"M07","run":1,"status":502,"ms":5638,"inTok":null,"outTok":null,"output":{"error":"PROVIDER_ERROR"}}
+{"id":"M08","run":1,"status":200,"ms":1562,"inTok":650,"outTok":146,"output":{"items":[{"foodName":"sate ayam","unitStatus":"standard","quantity":10,"unit":"tusuk"},{"foodName":"lontong","unitStatus":"missing","quantity":1,"unit":null},{"foodName":"es teh","unitStatus":"standard","quantity":1,"unit":"gelas"}],"nonFoodRequests":[]}}
+{"id":"M09","run":1,"status":200,"ms":5360,"inTok":654,"outTok":152,"output":{"items":[{"foodName":"kentang rebus","unitStatus":"standard","quantity":200,"unit":"gram"},{"foodName":"dada ayam","unitStatus":"standard","quantity":150,"unit":"gram"},{"foodName":"brokoli","unitStatus":"standard","quantity":100,"unit":"gram"}],"nonFoodRequests":[]}}
+{"id":"M10","run":1,"status":200,"ms":1404,"inTok":645,"outTok":106,"output":{"items":[{"foodName":"mie instan","unitStatus":"standard","quantity":1,"unit":"bungkus"},{"foodName":"telur","unitStatus":"standard","quantity":1,"unit":"butir"}],"nonFoodRequests":[]}}
+{"id":"M11","run":1,"status":200,"ms":1481,"inTok":651,"outTok":146,"output":{"items":[{"foodName":"jeruk","unitStatus":"standard","quantity":2,"unit":"buah"},{"foodName":"semangka","unitStatus":"standard","quantity":1,"unit":"potong"},{"foodName":"anggur","unitStatus":"standard","quantity":10,"unit":"biji"}],"nonFoodRequests":[]}}
+{"id":"M12","run":1,"status":200,"ms":1661,"inTok":650,"outTok":142,"output":{"items":[{"foodName":"nasi merah","unitStatus":"standard","quantity":1,"unit":"mangkuk"},{"foodName":"pepes ikan","unitStatus":"missing","quantity":1,"unit":null},{"foodName":"lalapan","unitStatus":"missing","quantity":null,"unit":null}],"nonFoodRequests":[]}}
+{"id":"M13","run":1,"status":200,"ms":1363,"inTok":645,"outTok":106,"output":{"items":[{"foodName":"air putih","unitStatus":"standard","quantity":2,"unit":"gelas"},{"foodName":"biskuit","unitStatus":"standard","quantity":1,"unit":"bungkus"}],"nonFoodRequests":[]}}
+{"id":"M14","run":1,"status":502,"ms":1362,"inTok":null,"outTok":null,"output":{"error":"PROVIDER_ERROR"}}
+{"id":"C01","run":1,"status":200,"ms":1313,"inTok":640,"outTok":63,"output":{"items":[{"foodName":"nasi goreng","unitStatus":"standard","quantity":1,"unit":"piring"}],"nonFoodRequests":[]}}
+{"id":"C02","run":1,"status":200,"ms":1344,"inTok":642,"outTok":65,"output":{"items":[{"foodName":"soto ayam","unitStatus":"standard","quantity":1,"unit":"mangkuk"},{"foodName":"nasi","unitStatus":"missing","quantity":null,"unit":null}],"nonFoodRequests":[]}}
+{"id":"C03","run":1,"status":502,"ms":1072,"inTok":null,"outTok":null,"output":{"error":"PROVIDER_ERROR"}}
+{"id":"C04","run":1,"status":200,"ms":1335,"inTok":641,"outTok":64,"output":{"items":[{"foodName":"nasi uduk","unitStatus":"standard","quantity":1,"unit":"bungkus"}],"nonFoodRequests":[]}}
+{"id":"C05","run":1,"status":200,"ms":1359,"inTok":645,"outTok":106,"output":{"items":[{"foodName":"ketoprak","unitStatus":"standard","quantity":1,"unit":"porsi"},{"foodName":"es jeruk","unitStatus":"standard","quantity":1,"unit":"gelas"}],"nonFoodRequests":[]}}
+{"id":"C06","run":1,"status":502,"ms":5882,"inTok":null,"outTok":null,"output":{"error":"PROVIDER_ERROR"}}
+{"id":"C07","run":1,"status":502,"ms":308,"inTok":null,"outTok":null,"output":{"error":"PROVIDER_ERROR"}}
+{"id":"C08","run":1,"status":200,"ms":5305,"inTok":641,"outTok":64,"output":{"items":[{"foodName":"martabak manis","unitStatus":"standard","quantity":2,"unit":"potong"}],"nonFoodRequests":[]}}
+{"id":"C09","run":1,"status":502,"ms":239,"inTok":null,"outTok":null,"output":{"error":"PROVIDER_ERROR"}}
+{"id":"C10","run":1,"status":502,"ms":299,"inTok":null,"outTok":null,"output":{"error":"PROVIDER_ERROR"}}
+{"id":"Q01","run":1,"status":200,"ms":5082,"inTok":639,"outTok":58,"output":{"items":[{"foodName":"tempe","unitStatus":"missing","quantity":null,"unit":null}],"nonFoodRequests":[]}}
+{"id":"Q02","run":1,"status":200,"ms":1525,"inTok":641,"outTok":97,"output":{"items":[{"foodName":"nasi","unitStatus":"missing","quantity":null,"unit":null},{"foodName":"rendang","unitStatus":"missing","quantity":null,"unit":null}],"nonFoodRequests":[]}}
+{"id":"Q03","run":1,"status":502,"ms":298,"inTok":null,"outTok":null,"output":{"error":"PROVIDER_ERROR"}}
+{"id":"Q04","run":1,"status":200,"ms":5554,"inTok":639,"outTok":59,"output":{"items":[{"foodName":"jus alpukat","unitStatus":"missing","quantity":null,"unit":null}],"nonFoodRequests":[]}}
+{"id":"Q05","run":1,"status":502,"ms":297,"inTok":null,"outTok":null,"output":{"error":"PROVIDER_ERROR"}}
+{"id":"Q06","run":1,"status":502,"ms":286,"inTok":null,"outTok":null,"output":{"error":"PROVIDER_ERROR"}}
+{"id":"Q07","run":1,"status":200,"ms":1977,"inTok":644,"outTok":137,"output":{"items":[{"foodName":"telur ceplok","unitStatus":"missing","quantity":null,"unit":null},{"foodName":"nasi","unitStatus":"missing","quantity":null,"unit":null},{"foodName":"kecap","unitStatus":"missing","quantity":null,"unit":null}],"nonFoodRequests":[]}}
+{"id":"Q08","run":1,"status":200,"ms":5810,"inTok":638,"outTok":63,"output":{"items":[{"foodName":"tahu isi","unitStatus":"nonstandard","quantity":null,"unit":"beberapa"}],"nonFoodRequests":[]}}
+{"id":"U01","run":1,"status":200,"ms":1437,"inTok":640,"outTok":64,"output":{"items":[{"foodName":"ayam goreng","unitStatus":"nonstandard","quantity":1,"unit":"potong besar"}],"nonFoodRequests":[]}}
+{"id":"U02","run":1,"status":200,"ms":1897,"inTok":641,"outTok":66,"output":{"items":[{"foodName":"kacang tanah","unitStatus":"nonstandard","quantity":1,"unit":"genggam"}],"nonFoodRequests":[]}}
+{"id":"U03","run":1,"status":200,"ms":1382,"inTok":643,"outTok":108,"output":{"items":[{"foodName":"nasi","unitStatus":"nonstandard","quantity":1,"unit":"piring penuh"},{"foodName":"sayur","unitStatus":"nonstandard","quantity":null,"unit":"sedikit"}],"nonFoodRequests":[]}}
+{"id":"U04","run":1,"status":200,"ms":1613,"inTok":641,"outTok":62,"output":{"items":[{"foodName":"gula","unitStatus":"standard","quantity":2,"unit":"sendok"}],"nonFoodRequests":[]}}
+{"id":"U05","run":1,"status":200,"ms":5099,"inTok":640,"outTok":64,"output":{"items":[{"foodName":"rendang","unitStatus":"nonstandard","quantity":1,"unit":"piring kecil"}],"nonFoodRequests":[]}}
+{"id":"U06","run":1,"status":200,"ms":4817,"inTok":640,"outTok":65,"output":{"items":[{"foodName":"es kopi susu","unitStatus":"nonstandard","quantity":1,"unit":"gelas jumbo"}],"nonFoodRequests":[]}}
+{"id":"U07","run":1,"status":200,"ms":1228,"inTok":640,"outTok":64,"output":{"items":[{"foodName":"kue lapis","unitStatus":"nonstandard","quantity":null,"unit":"secuil"}],"nonFoodRequests":[]}}
+{"id":"U08","run":1,"status":200,"ms":1330,"inTok":647,"outTok":108,"output":{"items":[{"foodName":"pempek","unitStatus":"nonstandard","quantity":1,"unit":"porsi kecil"},{"foodName":"cuko","unitStatus":"nonstandard","quantity":null,"unit":"semangkuk kecil"}],"nonFoodRequests":[]}}
+{"id":"N01","run":1,"status":200,"ms":1347,"inTok":651,"outTok":104,"output":{"items":[{"foodName":"nasi","unitStatus":"standard","quantity":1,"unit":"piring"},{"foodName":"ayam goreng","unitStatus":"standard","quantity":1,"unit":"potong"}],"nonFoodRequests":[]}}
+{"id":"N02","run":1,"status":502,"ms":4461,"inTok":null,"outTok":null,"output":{"error":"PROVIDER_ERROR"}}
+{"id":"N03","run":1,"status":200,"ms":1275,"inTok":645,"outTok":63,"output":{"items":[{"foodName":"indomie goreng","unitStatus":"standard","quantity":2,"unit":"bungkus"}],"nonFoodRequests":[]}}
+{"id":"N04","run":1,"status":200,"ms":2275,"inTok":650,"outTok":142,"output":{"items":[{"foodName":"nasi","unitStatus":"standard","quantity":1,"unit":"piring"},{"foodName":"ayam","unitStatus":"standard","quantity":1,"unit":null},{"foodName":"sambal","unitStatus":"nonstandard","quantity":null,"unit":"dikit"}],"nonFoodRequests":[]}}
+{"id":"N05","run":1,"status":502,"ms":268,"inTok":null,"outTok":null,"output":{"error":"PROVIDER_ERROR"}}
+{"id":"N06","run":1,"status":200,"ms":1295,"inTok":645,"outTok":60,"output":{"items":[{"foodName":"kentang rebus","unitStatus":"standard","quantity":1,"unit":null}],"nonFoodRequests":[]}}
+{"id":"O01","run":1,"status":502,"ms":243,"inTok":null,"outTok":null,"output":{"error":"PROVIDER_ERROR"}}
+{"id":"O02","run":1,"status":200,"ms":5920,"inTok":642,"outTok":25,"output":{"items":[],"nonFoodRequests":["program"]}}
+{"id":"O03","run":1,"status":200,"ms":5157,"inTok":637,"outTok":26,"output":{"items":[],"nonFoodRequests":["pengaturan"]}}
+{"id":"O04","run":1,"status":502,"ms":225,"inTok":null,"outTok":null,"output":{"error":"PROVIDER_ERROR"}}
+{"id":"O05","run":1,"status":502,"ms":291,"inTok":null,"outTok":null,"output":{"error":"PROVIDER_ERROR"}}
+{"id":"O06","run":1,"status":200,"ms":1131,"inTok":642,"outTok":25,"output":{"items":[],"nonFoodRequests":["profil"]}}
+{"id":"O07","run":1,"status":502,"ms":267,"inTok":null,"outTok":null,"output":{"error":"PROVIDER_ERROR"}}
+{"id":"O08","run":1,"status":502,"ms":288,"inTok":null,"outTok":null,"output":{"error":"PROVIDER_ERROR"}}
+{"id":"X01","run":1,"status":502,"ms":224,"inTok":null,"outTok":null,"output":{"error":"PROVIDER_ERROR"}}
+{"id":"X02","run":1,"status":502,"ms":287,"inTok":null,"outTok":null,"output":{"error":"PROVIDER_ERROR"}}
+{"id":"X03","run":1,"status":502,"ms":244,"inTok":null,"outTok":null,"output":{"error":"PROVIDER_ERROR"}}
+{"id":"X04","run":1,"status":200,"ms":5680,"inTok":643,"outTok":71,"output":{"items":[{"foodName":"pisang","unitStatus":"standard","quantity":1,"unit":"buah"}],"nonFoodRequests":["hari_ini"]}}
+{"id":"X05","run":1,"status":200,"ms":5854,"inTok":659,"outTok":117,"output":{"items":[{"foodName":"telur rebus","unitStatus":"standard","quantity":2,"unit":"butir"},{"foodName":"nasi merah","unitStatus":"standard","quantity":1,"unit":"mangkuk"}],"nonFoodRequests":["hari_ini"]}}
+{"id":"X06","run":1,"status":200,"ms":4945,"inTok":647,"outTok":71,"output":{"items":[{"foodName":"jus jeruk","unitStatus":"standard","quantity":1,"unit":"gelas"}],"nonFoodRequests":["pengaturan"]}}

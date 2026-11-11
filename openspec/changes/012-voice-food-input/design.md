@@ -112,6 +112,30 @@ Pengunciannya ditegakkan di dua tempat: perintah penguraian hanya meminta daftar
 
 Komponen hasil suara masuk ke buku harian lewat jalur yang sama dengan jalur foto, dengan potret nilai gizi yang sama. Transkrip tidak disimpan sebagai catatan tersendiri setelah pencatatan selesai.
 
+### D13 — Model teks terpisah dari model vision
+
+Evaluasi awal (2026-11-11) menemukan bahwa model vision `gemini-3.8-flash` tidak menjawab penguraian teks dalam 45–120 detik pada pengaturan bawaan. Karena itu endpoint teks memakai model sendiri (`GEMINI_TEXT_MODEL`, saat ini `gemini-3.5-flash-lite`, ±2 detik). Jalur gambar change 010 dan 011 tetap memakai `GEMINI_MODEL` tanpa perubahan. Penyedianya tetap Gemini, sesuai D3.
+
+Kuota Gemini akun proyek sempat habis di tengah evaluasi (429), disertai sebagian penolakan 503. Penyedia cadangan OpenAI sempat dibangun lalu dibatalkan pada hari yang sama: akun API OpenAI memerlukan saldo tersendiri, terpisah dari langganan ChatGPT. Bila cadangan diperlukan nanti, ia diusulkan sebagai change tersendiri, karena mengirim teks ke penyedia kedua menyentuh kebijakan privasi.
+
+### D14 — Pengurai kalimat di perangkat sebagai cadangan
+
+Ketika penguraian lewat proksi tidak tersedia — luring, kuota habis, waktu tunggu lewat, atau layanan menolak — sistem mengurai kalimat di perangkat dengan aturan sederhana sebelum menawarkan pencarian katalog. Ini pola yang sama dengan change 010 D7/D11 (`LabelTextParser` di belakang OCR ML Kit): cadangan berakurasi rendah yang tetap diperiksa pengguna, bukan penyedia kedua yang mengklaim akurasi setara.
+
+Cara kerjanya:
+
+- Kalimat dipecah di koma dan kata sambung ("sama", "terus", "dan", "pakai", "ditambah").
+- Jumlah diambil dari angka atau kata bilangan ("satu", "setengah", "dua puluh", awalan "se-"). Kata samar ("beberapa", "sedikit") tidak menjadi angka.
+- Satuan diambil dari daftar satuan baku yang sama dengan protokol evaluasi; satuan di luar daftar ditandai perlu ditetapkan.
+- Sisanya menjadi nama makanan, dicocokkan ke katalog seperti hasil model. Hidangan majemuk tetap utuh bila namanya ada di katalog.
+- Bagian yang memuat kata kunci di luar pencatatan makanan (berat badan, program, pengaturan, hapus) dibuang, tidak dijalankan.
+
+Hasilnya mengisi bentuk usulan komponen yang sama dengan hasil model, sehingga peninjauan komponen (D7), penahanan jumlah yang belum ditentukan (D5), dan nilai gizi dari katalog (D6) berlaku tanpa perubahan. Keyakinannya dipatok konservatif: setiap komponen dari pengurai ini ditandai perlu diperiksa, dan layar menyatakan bahwa kalimat diurai tanpa koneksi.
+
+Secara arsitektur, pengurai ini adalah implementasi kedua dari antarmuka penyedia penguraian, dirangkai lewat satu komposit yang mencoba proksi lebih dulu — satu titik ganti yang tidak mengubah layar, sama seperti change 010. Murni Dart, tanpa plugin, sehingga diuji terpisah dengan himpunan uji yang sama.
+
+Bila pengurai ini pun tidak menghasilkan satu komponen, sistem mempertahankan transkrip dan menawarkan pencarian katalog — jalur yang selalu bekerja.
+
 ## Risks / Trade-offs
 
 - **Pengenalan ucapan di perangkat tidak tersedia atau buruk untuk bahasa Indonesia pada sebagian perangkat** → jalur utama tidak bekerja merata. Mitigasi: pengetikan kalimat sebagai jalur setara yang selalu ada; keadaan "tidak tersedia di perangkat ini" dirancang sejak awal, bukan ditambal.

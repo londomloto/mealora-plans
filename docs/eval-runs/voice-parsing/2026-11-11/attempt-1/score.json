@@ -1,0 +1,62 @@
+[
+  {
+    "run": "run1.jsonl",
+    "M1": 0.9949748743718593,
+    "M2": [
+      10,
+      10
+    ],
+    "M3": 0.9733333333333334,
+    "M4": [
+      18,
+      19
+    ],
+    "M5": 0.8333333333333334,
+    "M6": [
+      8,
+      8
+    ],
+    "M7": [
+      6,
+      6
+    ],
+    "M8": 1,
+    "nutriLeaks": 0,
+    "p50": 1746,
+    "p95": 6580,
+    "inTok": 644.1911764705883,
+    "outTok": 80.70588235294117,
+    "fails": [
+      [
+        "U04",
+        "M1",
+        "missing \"teh\""
+      ],
+      [
+        "U04",
+        "M5",
+        "\"gula\" unit \"sendok teh\" marked standard"
+      ],
+      [
+        "N01",
+        "M3",
+        "\"ayam goreng\" got 1 potong (standard), want 1 null (missing)"
+      ],
+      [
+        "N05",
+        "M3",
+        "\"teh manis\" got 2 gelas (standard), want null gelas (nonstandard)"
+      ],
+      [
+        "N05",
+        "M4",
+        "\"teh manis\" invented qty 2"
+      ],
+      [
+        "N05",
+        "M5",
+        "\"teh manis\" unit \"gelas\" marked standard"
+      ]
+    ]
+  }
+]

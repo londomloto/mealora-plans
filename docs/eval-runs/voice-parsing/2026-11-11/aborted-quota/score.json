@@ -1,0 +1,1037 @@
+[
+  {
+    "run": "run1.jsonl",
+    "M1": 0.8421052631578948,
+    "M2": [
+      5,
+      10
+    ],
+    "M3": 0.9814814814814815,
+    "M4": [
+      13,
+      13
+    ],
+    "M5": 0.9090909090909091,
+    "M6": [
+      3,
+      8
+    ],
+    "M7": [
+      3,
+      6
+    ],
+    "M8": 0.6764705882352942,
+    "nutriLeaks": 0,
+    "p50": 1404,
+    "p95": 5854,
+    "inTok": 644.0434782608696,
+    "outTok": 85.1086956521739,
+    "fails": [
+      [
+        "S08",
+        "M8",
+        "status 502"
+      ],
+      [
+        "S08",
+        "M1",
+        "missing \"kopi susu\""
+      ],
+      [
+        "M06",
+        "M8",
+        "status 502"
+      ],
+      [
+        "M06",
+        "M1",
+        "missing \"ikan goreng\""
+      ],
+      [
+        "M06",
+        "M1",
+        "missing \"nasi\""
+      ],
+      [
+        "M06",
+        "M1",
+        "missing \"sambal\""
+      ],
+      [
+        "M07",
+        "M8",
+        "status 502"
+      ],
+      [
+        "M07",
+        "M1",
+        "missing \"kopi hitam\""
+      ],
+      [
+        "M07",
+        "M1",
+        "missing \"pisang goreng\""
+      ],
+      [
+        "M14",
+        "M8",
+        "status 502"
+      ],
+      [
+        "M14",
+        "M1",
+        "missing \"bubur ayam\""
+      ],
+      [
+        "M14",
+        "M1",
+        "missing \"kerupuk\""
+      ],
+      [
+        "M14",
+        "M1",
+        "missing \"teh tawar\""
+      ],
+      [
+        "M14",
+        "M1",
+        "missing \"telur asin\""
+      ],
+      [
+        "C03",
+        "M8",
+        "status 502"
+      ],
+      [
+        "C03",
+        "M1",
+        "missing \"mie ayam bakso\""
+      ],
+      [
+        "C03",
+        "M2",
+        "got []"
+      ],
+      [
+        "C06",
+        "M8",
+        "status 502"
+      ],
+      [
+        "C06",
+        "M1",
+        "missing \"ayam geprek\""
+      ],
+      [
+        "C06",
+        "M2",
+        "got []"
+      ],
+      [
+        "C07",
+        "M8",
+        "status 502"
+      ],
+      [
+        "C07",
+        "M1",
+        "missing \"sayur asem\""
+      ],
+      [
+        "C07",
+        "M1",
+        "missing \"ikan asin\""
+      ],
+      [
+        "C07",
+        "M2",
+        "got []"
+      ],
+      [
+        "C09",
+        "M8",
+        "status 502"
+      ],
+      [
+        "C09",
+        "M1",
+        "missing \"nasi padang rendang\""
+      ],
+      [
+        "C09",
+        "M2",
+        "got []"
+      ],
+      [
+        "C10",
+        "M8",
+        "status 502"
+      ],
+      [
+        "C10",
+        "M1",
+        "missing \"es campur\""
+      ],
+      [
+        "C10",
+        "M2",
+        "got []"
+      ],
+      [
+        "Q03",
+        "M8",
+        "status 502"
+      ],
+      [
+        "Q03",
+        "M1",
+        "missing \"keripik singkong\""
+      ],
+      [
+        "Q05",
+        "M8",
+        "status 502"
+      ],
+      [
+        "Q05",
+        "M1",
+        "missing \"bakso\""
+      ],
+      [
+        "Q06",
+        "M8",
+        "status 502"
+      ],
+      [
+        "Q06",
+        "M1",
+        "missing \"lontong sayur\""
+      ],
+      [
+        "Q06",
+        "M1",
+        "missing \"kerupuk\""
+      ],
+      [
+        "U04",
+        "M1",
+        "missing \"teh\""
+      ],
+      [
+        "U04",
+        "M5",
+        "\"gula\" unit \"sendok\" marked standard"
+      ],
+      [
+        "N01",
+        "M3",
+        "\"ayam goreng\" got 1 potong (standard), want 1 null (missing)"
+      ],
+      [
+        "N02",
+        "M8",
+        "status 502"
+      ],
+      [
+        "N02",
+        "M1",
+        "missing \"tempe\""
+      ],
+      [
+        "N05",
+        "M8",
+        "status 502"
+      ],
+      [
+        "N05",
+        "M1",
+        "missing \"teh manis\""
+      ],
+      [
+        "O01",
+        "M8",
+        "status 502"
+      ],
+      [
+        "O01",
+        "M6",
+        "items []"
+      ],
+      [
+        "O04",
+        "M8",
+        "status 502"
+      ],
+      [
+        "O04",
+        "M6",
+        "items []"
+      ],
+      [
+        "O05",
+        "M8",
+        "status 502"
+      ],
+      [
+        "O05",
+        "M6",
+        "items []"
+      ],
+      [
+        "O07",
+        "M8",
+        "status 502"
+      ],
+      [
+        "O07",
+        "M6",
+        "items []"
+      ],
+      [
+        "O08",
+        "M8",
+        "status 502"
+      ],
+      [
+        "O08",
+        "M6",
+        "items []"
+      ],
+      [
+        "X01",
+        "M8",
+        "status 502"
+      ],
+      [
+        "X01",
+        "M1",
+        "missing \"nasi\""
+      ],
+      [
+        "X01",
+        "M1",
+        "missing \"ayam bakar\""
+      ],
+      [
+        "X01",
+        "M7",
+        "extra []"
+      ],
+      [
+        "X02",
+        "M8",
+        "status 502"
+      ],
+      [
+        "X02",
+        "M1",
+        "missing \"soto\""
+      ],
+      [
+        "X02",
+        "M7",
+        "extra []"
+      ],
+      [
+        "X03",
+        "M8",
+        "status 502"
+      ],
+      [
+        "X03",
+        "M1",
+        "missing \"roti\""
+      ],
+      [
+        "X03",
+        "M7",
+        "extra []"
+      ]
+    ]
+  },
+  {
+    "run": "run2.jsonl",
+    "M1": 0.6842105263157895,
+    "M2": [
+      9,
+      10
+    ],
+    "M3": 1,
+    "M4": [
+      10,
+      10
+    ],
+    "M5": null,
+    "M6": [
+      0,
+      8
+    ],
+    "M7": [
+      0,
+      6
+    ],
+    "M8": 0.4411764705882353,
+    "nutriLeaks": 0,
+    "p50": 335,
+    "p95": 4484,
+    "inTok": 643.7666666666667,
+    "outTok": 88.8,
+    "fails": [
+      [
+        "M06",
+        "M8",
+        "status 502"
+      ],
+      [
+        "M06",
+        "M1",
+        "missing \"ikan goreng\""
+      ],
+      [
+        "M06",
+        "M1",
+        "missing \"nasi\""
+      ],
+      [
+        "M06",
+        "M1",
+        "missing \"sambal\""
+      ],
+      [
+        "M07",
+        "M8",
+        "status 502"
+      ],
+      [
+        "M07",
+        "M1",
+        "missing \"kopi hitam\""
+      ],
+      [
+        "M07",
+        "M1",
+        "missing \"pisang goreng\""
+      ],
+      [
+        "M08",
+        "M8",
+        "status 502"
+      ],
+      [
+        "M08",
+        "M1",
+        "missing \"sate ayam\""
+      ],
+      [
+        "M08",
+        "M1",
+        "missing \"lontong\""
+      ],
+      [
+        "M08",
+        "M1",
+        "missing \"es teh\""
+      ],
+      [
+        "M10",
+        "M8",
+        "status 502"
+      ],
+      [
+        "M10",
+        "M1",
+        "missing \"mie instan\""
+      ],
+      [
+        "M10",
+        "M1",
+        "missing \"telur\""
+      ],
+      [
+        "M11",
+        "M8",
+        "status 502"
+      ],
+      [
+        "M11",
+        "M1",
+        "missing \"jeruk\""
+      ],
+      [
+        "M11",
+        "M1",
+        "missing \"semangka\""
+      ],
+      [
+        "M11",
+        "M1",
+        "missing \"anggur\""
+      ],
+      [
+        "M12",
+        "M8",
+        "status 502"
+      ],
+      [
+        "M12",
+        "M1",
+        "missing \"nasi merah\""
+      ],
+      [
+        "M12",
+        "M1",
+        "missing \"pepes ikan\""
+      ],
+      [
+        "M12",
+        "M1",
+        "missing \"lalapan\""
+      ],
+      [
+        "C01",
+        "M8",
+        "status 502"
+      ],
+      [
+        "C01",
+        "M1",
+        "missing \"nasi goreng\""
+      ],
+      [
+        "C01",
+        "M2",
+        "got []"
+      ],
+      [
+        "Q03",
+        "M8",
+        "status 502"
+      ],
+      [
+        "Q03",
+        "M1",
+        "missing \"keripik singkong\""
+      ],
+      [
+        "Q04",
+        "M8",
+        "status 502"
+      ],
+      [
+        "Q04",
+        "M1",
+        "missing \"jus alpukat\""
+      ],
+      [
+        "Q05",
+        "M8",
+        "status 502"
+      ],
+      [
+        "Q05",
+        "M1",
+        "missing \"bakso\""
+      ],
+      [
+        "U01",
+        "M8",
+        "status 502"
+      ],
+      [
+        "U01",
+        "M1",
+        "missing \"ayam goreng\""
+      ],
+      [
+        "U02",
+        "M8",
+        "status 502"
+      ],
+      [
+        "U02",
+        "M1",
+        "missing \"kacang tanah\""
+      ],
+      [
+        "U03",
+        "M8",
+        "status 502"
+      ],
+      [
+        "U03",
+        "M1",
+        "missing \"nasi\""
+      ],
+      [
+        "U03",
+        "M1",
+        "missing \"sayur\""
+      ],
+      [
+        "U04",
+        "M8",
+        "status 502"
+      ],
+      [
+        "U04",
+        "M1",
+        "missing \"gula\""
+      ],
+      [
+        "U04",
+        "M1",
+        "missing \"teh\""
+      ],
+      [
+        "U05",
+        "M8",
+        "status 502"
+      ],
+      [
+        "U05",
+        "M1",
+        "missing \"rendang\""
+      ],
+      [
+        "U06",
+        "M8",
+        "status 502"
+      ],
+      [
+        "U06",
+        "M1",
+        "missing \"es kopi susu\""
+      ],
+      [
+        "U07",
+        "M8",
+        "status 502"
+      ],
+      [
+        "U07",
+        "M1",
+        "missing \"kue lapis\""
+      ],
+      [
+        "U08",
+        "M8",
+        "status 502"
+      ],
+      [
+        "U08",
+        "M1",
+        "missing \"pempek\""
+      ],
+      [
+        "U08",
+        "M1",
+        "missing \"cuko\""
+      ],
+      [
+        "N01",
+        "M8",
+        "status 502"
+      ],
+      [
+        "N01",
+        "M1",
+        "missing \"nasi\""
+      ],
+      [
+        "N01",
+        "M1",
+        "missing \"ayam goreng\""
+      ],
+      [
+        "N02",
+        "M8",
+        "status 502"
+      ],
+      [
+        "N02",
+        "M1",
+        "missing \"tempe\""
+      ],
+      [
+        "N03",
+        "M8",
+        "status 502"
+      ],
+      [
+        "N03",
+        "M1",
+        "missing \"indomie goreng\""
+      ],
+      [
+        "N04",
+        "M8",
+        "status 502"
+      ],
+      [
+        "N04",
+        "M1",
+        "missing \"nasi\""
+      ],
+      [
+        "N04",
+        "M1",
+        "missing \"ayam\""
+      ],
+      [
+        "N04",
+        "M1",
+        "missing \"sambal\""
+      ],
+      [
+        "N05",
+        "M8",
+        "status 502"
+      ],
+      [
+        "N05",
+        "M1",
+        "missing \"teh manis\""
+      ],
+      [
+        "N06",
+        "M8",
+        "status 502"
+      ],
+      [
+        "N06",
+        "M1",
+        "missing \"kentang rebus\""
+      ],
+      [
+        "O01",
+        "M8",
+        "status 502"
+      ],
+      [
+        "O01",
+        "M6",
+        "items []"
+      ],
+      [
+        "O02",
+        "M8",
+        "status 502"
+      ],
+      [
+        "O02",
+        "M6",
+        "items []"
+      ],
+      [
+        "O03",
+        "M8",
+        "status 502"
+      ],
+      [
+        "O03",
+        "M6",
+        "items []"
+      ],
+      [
+        "O04",
+        "M8",
+        "status 502"
+      ],
+      [
+        "O04",
+        "M6",
+        "items []"
+      ],
+      [
+        "O05",
+        "M8",
+        "status 502"
+      ],
+      [
+        "O05",
+        "M6",
+        "items []"
+      ],
+      [
+        "O06",
+        "M8",
+        "status 502"
+      ],
+      [
+        "O06",
+        "M6",
+        "items []"
+      ],
+      [
+        "O07",
+        "M8",
+        "status 502"
+      ],
+      [
+        "O07",
+        "M6",
+        "items []"
+      ],
+      [
+        "O08",
+        "M8",
+        "status 502"
+      ],
+      [
+        "O08",
+        "M6",
+        "items []"
+      ],
+      [
+        "X01",
+        "M8",
+        "status 502"
+      ],
+      [
+        "X01",
+        "M1",
+        "missing \"nasi\""
+      ],
+      [
+        "X01",
+        "M1",
+        "missing \"ayam bakar\""
+      ],
+      [
+        "X01",
+        "M7",
+        "extra []"
+      ],
+      [
+        "X02",
+        "M8",
+        "status 502"
+      ],
+      [
+        "X02",
+        "M1",
+        "missing \"soto\""
+      ],
+      [
+        "X02",
+        "M7",
+        "extra []"
+      ],
+      [
+        "X03",
+        "M8",
+        "status 502"
+      ],
+      [
+        "X03",
+        "M1",
+        "missing \"roti\""
+      ],
+      [
+        "X03",
+        "M7",
+        "extra []"
+      ],
+      [
+        "X04",
+        "M8",
+        "status 502"
+      ],
+      [
+        "X04",
+        "M1",
+        "missing \"pisang\""
+      ],
+      [
+        "X04",
+        "M7",
+        "extra []"
+      ],
+      [
+        "X05",
+        "M8",
+        "status 502"
+      ],
+      [
+        "X05",
+        "M1",
+        "missing \"telur rebus\""
+      ],
+      [
+        "X05",
+        "M1",
+        "missing \"nasi merah\""
+      ],
+      [
+        "X05",
+        "M7",
+        "extra []"
+      ],
+      [
+        "X06",
+        "M8",
+        "status 502"
+      ],
+      [
+        "X06",
+        "M1",
+        "missing \"jus jeruk\""
+      ],
+      [
+        "X06",
+        "M7",
+        "extra []"
+      ]
+    ]
+  },
+  {
+    "run": "run3.jsonl",
+    "M1": 0.7948717948717948,
+    "M2": [
+      0,
+      1
+    ],
+    "M3": 0.967741935483871,
+    "M4": [
+      0,
+      0
+    ],
+    "M5": null,
+    "M6": [
+      0,
+      0
+    ],
+    "M7": [
+      0,
+      0
+    ],
+    "M8": 0.7391304347826086,
+    "nutriLeaks": 0,
+    "p50": 1415,
+    "p95": 6240,
+    "inTok": 645,
+    "outTok": 96.6470588235294,
+    "fails": [
+      [
+        "M06",
+        "M8",
+        "status 502"
+      ],
+      [
+        "M06",
+        "M1",
+        "missing \"ikan goreng\""
+      ],
+      [
+        "M06",
+        "M1",
+        "missing \"nasi\""
+      ],
+      [
+        "M06",
+        "M1",
+        "missing \"sambal\""
+      ],
+      [
+        "M07",
+        "M3",
+        "\"pisang goreng\" got 3 buah (standard), want 3 null (missing)"
+      ],
+      [
+        "M10",
+        "M8",
+        "status 502"
+      ],
+      [
+        "M10",
+        "M1",
+        "missing \"mie instan\""
+      ],
+      [
+        "M10",
+        "M1",
+        "missing \"telur\""
+      ],
+      [
+        "M11",
+        "M8",
+        "status 502"
+      ],
+      [
+        "M11",
+        "M1",
+        "missing \"jeruk\""
+      ],
+      [
+        "M11",
+        "M1",
+        "missing \"semangka\""
+      ],
+      [
+        "M11",
+        "M1",
+        "missing \"anggur\""
+      ],
+      [
+        "M12",
+        "M8",
+        "status 502"
+      ],
+      [
+        "M12",
+        "M1",
+        "missing \"nasi merah\""
+      ],
+      [
+        "M12",
+        "M1",
+        "missing \"pepes ikan\""
+      ],
+      [
+        "M12",
+        "M1",
+        "missing \"lalapan\""
+      ],
+      [
+        "M14",
+        "M8",
+        "status 502"
+      ],
+      [
+        "M14",
+        "M1",
+        "missing \"bubur ayam\""
+      ],
+      [
+        "M14",
+        "M1",
+        "missing \"kerupuk\""
+      ],
+      [
+        "M14",
+        "M1",
+        "missing \"teh tawar\""
+      ],
+      [
+        "M14",
+        "M1",
+        "missing \"telur asin\""
+      ],
+      [
+        "C01",
+        "M8",
+        "status 502"
+      ],
+      [
+        "C01",
+        "M1",
+        "missing \"nasi goreng\""
+      ],
+      [
+        "C01",
+        "M2",
+        "got []"
+      ]
+    ]
+  }
+]

@@ -10,13 +10,14 @@
 
 ## 2. mealora-plans — Himpunan uji dan evaluasi penguraian
 
-- [ ] 2.1 Susun 50–80 kalimat pencatatan berbahasa Indonesia yang nyata, mencakup beberapa makanan dalam satu kalimat, hidangan majemuk seperti nasi goreng dan soto ayam, jumlah yang tidak disebut, dan satuan tidak baku
-- [ ] 2.2 Sertakan kalimat di luar cakupan — permintaan mencatat berat, mengganti program, membuka pengaturan — untuk menguji penolakan
-- [ ] 2.3 Catat kunci jawaban tiap kalimat: daftar makanan, jumlah, dan satuan yang benar
-- [ ] 2.4 Tulis protokol evaluasi di `docs/voice-parsing-evaluation.md` beserta ambang kelulusan, ditetapkan sebelum evaluasi dijalankan
-- [ ] 2.5 Jalankan evaluasi pada penyedia yang sudah dipakai change 010 dan 011 dengan masukan teks; ukur ketepatan pemisahan makanan, ketepatan jumlah dan satuan, serta perilaku pada kalimat di luar cakupan
+- [x] 2.1 Susun 50–80 kalimat pencatatan berbahasa Indonesia yang nyata, mencakup beberapa makanan dalam satu kalimat, hidangan majemuk seperti nasi goreng dan soto ayam, jumlah yang tidak disebut, dan satuan tidak baku
+- [x] 2.2 Sertakan kalimat di luar cakupan — permintaan mencatat berat, mengganti program, membuka pengaturan — untuk menguji penolakan
+- [x] 2.3 Catat kunci jawaban tiap kalimat: daftar makanan, jumlah, dan satuan yang benar
+- [x] 2.4 Tulis protokol evaluasi di `docs/voice-parsing-evaluation.md` beserta ambang kelulusan, ditetapkan sebelum evaluasi dijalankan
+- [x] 2.5 Jalankan evaluasi pada penyedia yang sudah dipakai change 010 dan 011 dengan masukan teks; ukur ketepatan pemisahan makanan, ketepatan jumlah dan satuan, serta perilaku pada kalimat di luar cakupan
 - [ ] 2.6 Verifikasi kuota dan biaya nyata per kalimat pada akun proyek yang sebenarnya; jangan mengutip angka kuota dari dokumentasi atau sumber pihak ketiga
-- [ ] 2.7 Catat versi model, versi perintah dan skema keluaran, tanggal uji, wilayah penyedia, dan kasus kegagalan
+- [x] 2.7 Catat versi model, versi perintah dan skema keluaran, tanggal uji, wilayah penyedia, dan kasus kegagalan
+- [x] 2.8 Tambahkan endpoint `/parse-food-text` di `mealora-model-proxy` dengan model teks terpisah (`GEMINI_TEXT_MODEL`), tanpa mengubah jalur gambar (design D13)
 
 ## 3. mealora-mobile — Perekam dan pengenalan ucapan
 
@@ -49,6 +50,10 @@
 - [ ] 5.5 Sediakan implementasi tiruan penyedia untuk pengujian tanpa jaringan, termasuk mode gagal
 - [ ] 5.6 Tangani keadaan penguraian tidak tersedia — luring, kuota habis, waktu tunggu lewat, penolakan — dengan bahasa yang dapat dimengerti, mempertahankan teks yang sudah ada, dan menawarkan pencarian katalog
 - [ ] 5.7 Uji: keluaran model yang memuat angka gizi tidak pernah masuk ke nilai komponen
+- [ ] 5.8 Implementasikan pengurai kalimat di perangkat (murni Dart, berbasis aturan) sebagai cadangan, mengikuti pola `LabelTextParser` change 010: pemecahan kalimat, kata bilangan, satuan baku, dan pembuangan bagian di luar pencatatan makanan (design D14)
+- [ ] 5.9 Rangkai proksi dan pengurai di perangkat lewat satu penyedia komposit yang mencoba proksi lebih dulu, tanpa mengubah layar
+- [ ] 5.10 Tandai setiap komponen dari pengurai di perangkat perlu diperiksa, dan nyatakan di layar bahwa kalimat diurai tanpa koneksi
+- [ ] 5.11 Uji pengurai di perangkat dengan himpunan `docs/voice-parsing-eval-set.jsonl`: jumlah tidak pernah dikarang (M4) dan tidak ada komponen dari kalimat di luar cakupan (M6) wajib 100%; metrik lain dicatat sebagai pembanding terhadap model
 
 ## 6. mealora-mobile — Batas cakupan
 

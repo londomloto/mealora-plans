@@ -1,0 +1,97 @@
+[
+  {
+    "run": "run1.jsonl",
+    "M1": 0.9797979797979798,
+    "M2": [
+      9,
+      10
+    ],
+    "M3": 0.9166666666666666,
+    "M4": [
+      20,
+      20
+    ],
+    "M5": 0.9166666666666666,
+    "M6": [
+      8,
+      8
+    ],
+    "M7": [
+      6,
+      6
+    ],
+    "M8": 0.9852941176470589,
+    "nutriLeaks": 0,
+    "p50": 1954,
+    "p95": 6287,
+    "inTok": 797.2388059701492,
+    "outTok": 79.80597014925372,
+    "fails": [
+      [
+        "M04",
+        "M3",
+        "\"telur dadar\" got 1 butir (standard), want 1 null (missing)"
+      ],
+      [
+        "M05",
+        "M8",
+        "status 502"
+      ],
+      [
+        "M05",
+        "M1",
+        "missing \"apel\""
+      ],
+      [
+        "M05",
+        "M1",
+        "missing \"yogurt\""
+      ],
+      [
+        "M07",
+        "M3",
+        "\"pisang goreng\" got 3 buah (standard), want 3 null (missing)"
+      ],
+      [
+        "C06",
+        "M1",
+        "missing \"ayam geprek\""
+      ],
+      [
+        "C06",
+        "M1",
+        "extra \"ayam geprek level tiga\""
+      ],
+      [
+        "C06",
+        "M2",
+        "got [ayam geprek level tiga]"
+      ],
+      [
+        "N01",
+        "M3",
+        "\"ayam goreng\" got 1 potong (standard), want 1 null (missing)"
+      ],
+      [
+        "N05",
+        "M3",
+        "\"teh manis\" got null gelas (standard), want null gelas (nonstandard)"
+      ],
+      [
+        "N05",
+        "M5",
+        "\"teh manis\" unit \"gelas\" marked standard"
+      ],
+      [
+        "N06",
+        "M3",
+        "\"kentang rebus\" got 1 buah (standard), want 1 null (missing)"
+      ],
+      [
+        "X01",
+        "M3",
+        "\"ayam bakar\" got 1 potong (standard), want 1 null (missing)"
+      ]
+    ]
+  }
+]

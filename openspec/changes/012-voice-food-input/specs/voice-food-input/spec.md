@@ -183,6 +183,11 @@ Sistem SHALL menyatakan dengan jelas bila penguraian memerlukan koneksi, dan SHA
 #### Scenario: Penguraian tidak tersedia
 
 - **WHEN** penguraian tidak tersedia karena luring, kuota habis, waktu tunggu lewat, atau layanan menolak
+- **THEN** sistem mengurai kalimat di perangkat dengan aturan sederhana, menandai setiap komponen hasilnya perlu diperiksa, dan menyatakan bahwa kalimat diurai tanpa koneksi
+
+#### Scenario: Penguraian di perangkat tidak menemukan makanan
+
+- **WHEN** penguraian lewat layanan tidak tersedia dan penguraian di perangkat tidak menghasilkan satu komponen pun
 - **THEN** sistem menyatakan keadaannya dalam bahasa yang dapat dimengerti, mempertahankan transkrip yang sudah ada, dan menawarkan pencarian katalog
 
 ### Requirement: Bahasa menyatakan hasil sebagai perkiraan

@@ -2838,7 +2838,7 @@
                       "fill": "$muted",
                       "textGrowth": "fixed-width",
                       "width": "fill_container",
-                      "content": "Suara & input manual jalan tanpa internet.",
+                      "content": "Input manual jalan tanpa internet. Suara dikenali di perangkat; teksnya diurai online.",
                       "fontFamily": "$font",
                       "fontSize": 11,
                       "fontWeight": "normal"
