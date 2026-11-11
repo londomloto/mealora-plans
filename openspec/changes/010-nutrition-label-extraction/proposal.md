@@ -17,12 +17,13 @@ Rancangannya sudah ada di `docs/mealora-v2.pen`: `23 · Foto label gizi`, `24 ·
 - **Antarmuka penyedia model yang dapat diganti**, dengan evaluasi penyedia sebagai gerbang sebelum rilis — bukan pilihan yang ditanam di kode.
 - **Kunci API tidak pernah berada di aplikasi**: akses ke penyedia model berjalan lewat proksi minimal yang hanya melayani inferensi, tanpa mengubah SQLite sebagai sumber kebenaran dan tanpa mewajibkan akun.
 - **Batas biaya dan permintaan** yang ditetapkan tegas pada proksi.
+- **OCR lokal sebagai langkah antara**: ketika penyedia cloud gagal — offline, waktu tunggu lewat, kuota habis, atau ditolak — sistem mencoba membaca gambar yang sama lewat pengenalan teks di perangkat sebelum menawarkan jalur manual. Langkah ini tidak mengunggah gambar maupun memanggil proksi, dan hasilnya tunduk pada aturan tinjau yang sama persis seperti hasil cloud.
 - **Tinjau hasil ekstraksi** (`24`): foto asli berdampingan dengan nilai yang terbaca, penanda tingkat keyakinan per nilai, basis label yang terbaca, dan kewajiban memeriksa sebelum melanjutkan.
 - **Nilai yang tidak terbaca tetap "belum diketahui"**, tidak pernah menjadi nol, dan konfirmasi tidak dapat dilakukan selama nilai penting belum terisi atau belum diperiksa.
 - **Isi label manual luring** (`37`): jalur penuh tanpa koneksi, dengan pemilihan basis nilai dan pengingat aritmetika kemasan.
 - **Penyimpanan hasil**: produk yang dikonfirmasi tersimpan beserta barcode bila ada, varian kemasan, asal-usul sebagai hasil ekstraksi yang dikonfirmasi pengguna, dan tanggal verifikasi.
 - **Retensi gambar** mengikuti pengaturan privasi pengguna: simpan atau hapus setelah dicatat.
-- **Kegagalan layanan tidak menghilangkan draf**: koneksi putus, kuota habis, atau waktu tunggu lewat selalu bermuara pada jalur manual.
+- **Kegagalan layanan tidak menghilangkan draf**: koneksi putus, kuota habis, waktu tunggu lewat, atau penolakan penyedia selalu bermuara pada percobaan OCR lokal lalu jalur manual, tanpa kehilangan foto maupun nilai yang sudah diisi.
 
 ## Capabilities
 
@@ -37,7 +38,7 @@ Tidak ada. `packaged-food-barcode` dari change 009 dipakai apa adanya; jalur "pr
 
 ## Impact
 
-- **Repo `mealora-apps/mealora-mobile`**: layar foto label, tinjau ekstraksi, dan isi label manual; klien penyedia model di balik antarmuka; pengaturan izin dan retensi gambar; penyimpanan hasil ekstraksi pada tabel produk change 009. Perubahan skema terbatas pada penandaan asal-usul hasil ekstraksi.
+- **Repo `mealora-apps/mealora-mobile`**: layar foto label, tinjau ekstraksi, dan isi label manual; klien penyedia model di balik antarmuka, termasuk penyedia OCR lokal dan composite yang mencoba cloud lalu OCR; pengaturan izin dan retensi gambar; penyimpanan hasil ekstraksi pada tabel produk change 009. Perubahan skema terbatas pada penandaan asal-usul hasil ekstraksi.
 - **Repo `mealora-plans`**: dokumen evaluasi penyedia model beserta hasilnya, dan dokumen rancangan proksi inferensi beserta batas biayanya.
 - **Infrastruktur baru**: proksi inferensi minimal. Ini satu-satunya komponen sisi server dalam MVP 1, dan cakupannya dibatasi tegas pada inferensi — bukan akun, bukan sinkronisasi, bukan penyimpanan data pengguna.
 - **Bergantung pada** change 007 (buku harian, potret nilai gizi) dan 009 (tabel produk kemasan, jalur produk tidak ditemukan).

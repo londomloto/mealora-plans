@@ -80,6 +80,18 @@ Rancangan `35 · Privasi & data lokal` sudah memuat "Simpan foto sumber: Hapus s
 
 Hasil ekstraksi disimpan pada tabel produk kemasan change 009. Yang ditambahkan hanyalah nilai asal-usul baru yang menyatakan "ekstraksi label yang dikonfirmasi pengguna" dan rujukan opsional ke gambar sumber bila retensi mengizinkan. `schemaVersion` naik dari 6 ke 7 satu kali.
 
+### D11 — OCR lokal sebagai langkah antara, bukan penyedia kedua yang melewati gerbang evaluasi
+
+Ketika penyedia cloud gagal — offline, waktu tunggu, kuota habis, atau ditolak — sistem mencoba pembacaan OCR di perangkat (pengenalan teks lewat ML Kit) dilengkapi pencocokan kata kunci sederhana ("Energi"/"Protein"/"Karbohidrat"/"Lemak" beserta angka dan satuan terdekat) sebelum menawarkan jalur manual. Hasilnya mengisi `LabelExtraction` yang sama seperti hasil cloud — basis dan tiap nilai dengan `ReadingConfidence` — sehingga layar tinjau (24), penandaan keyakinan (D4), dan penahanan konfirmasi (D5) berlaku tanpa perubahan apa pun. Karena parser OCR tidak memahami struktur tabel seperti model vision, keyakinannya dipatok konservatif: `confident` hanya untuk kecocokan kata kunci yang tidak ambigu, selainnya `needsCheck`/`unread` — tidak pernah ditebak, mengikuti D6.
+
+Ini sengaja bukan "penyedia kedua" yang melewati gerbang evaluasi D8: OCR tidak dipilih lewat perbandingan akurasi terhadap kandidat lain, karena perannya memang fallback berakurasi rendah yang tetap diperiksa pengguna, bukan jalur utama yang mengklaim akurasi setara. Secara arsitektur, ini `NutritionLabelProvider` kedua, dirangkai lewat satu composite yang mencoba penyedia cloud lebih dulu lalu OCR, tetap diekspos sebagai satu `NutritionLabelProvider` ke layar — selaras dengan D2 soal satu titik ganti yang tidak mengubah layar.
+
+OCR tidak menyentuh aturan `image-ai-access` soal persetujuan unggah (D3) maupun kerahasiaan kredensial dan batas biaya (D2): tidak ada gambar yang meninggalkan perangkat pada langkah ini, tidak ada proksi yang dipanggil. Yang tetap berlaku tanpa perubahan adalah retensi gambar (D9) dan aturan "hasil model tidak pernah menjadi data terverifikasi" — keduanya sudah generik terhadap penyedia.
+
+*Catatan tentang jaminan luring:* pengenalan teks ML Kit di Android dapat memerlukan unduhan komponen lewat Google Play Services pada pemakaian pertama di perangkat. OCR karena itu diperlakukan sebagai upaya terbaik saat offline, bukan jaminan mutlak — bila komponen itu belum pernah terunduh dan pengguna offline, OCR pun gagal dan jatuh ke jalur manual yang sama, dinyatakan jujur sebagai bagian dari D7, bukan disembunyikan sebagai kegagalan teknis.
+
+*Alternatif:* OCR yang bundel penuh model di aplikasi (mis. Tesseract) memberi jaminan luring mutlak sejak pemasangan pertama, tetapi menambah ukuran APK signifikan (model bahasa + pustaka native per ABI) untuk akurasi yang umumnya lebih rendah pada foto natural dibanding dokumen pindaian. Tidak dipilih karena produk ini menyasar foto kemasan di dapur/minimarket, bukan dokumen rapi.
+
 ## Risks / Trade-offs
 
 - **Proksi adalah komponen operasional pertama** — perlu di-deploy, dipantau, dan dibayar. Mitigasi: cakupan dibatasi keras pada inferensi; batas biaya ditetapkan tegas; seluruh produk tetap berfungsi penuh tanpanya.
@@ -88,6 +100,8 @@ Hasil ekstraksi disimpan pada tabel produk kemasan change 009. Yang ditambahkan 
 - **Pengguna menyetujui apa pun yang ditampilkan** tanpa benar-benar memeriksa → mitigasi: foto berdampingan, penanda keyakinan per nilai, konfirmasi tertahan untuk nilai yang belum diperiksa. Ini mengurangi risiko, tidak menghapusnya.
 - **Foto label memuat hal lain di sekitarnya** → mitigasi: persetujuan per gambar, panduan pemotretan, retensi bawaan menghapus.
 - **Himpunan uji berizin sulit dikumpulkan** → mitigasi: paket kerja tersendiri dengan timebox; bila belum cukup, rilis berjalan tanpa jalur ekstraksi sementara jalur manual tetap tersedia.
+- **Parser OCR bisa salah memetakan baris label** (mis. tertukar antara "Energi Total" dan "Energi dari Lemak") → mitigasi: keyakinan dipatok konservatif (D11), nilai ambigu ditandai perlu diperiksa bukan ditebak, dan foto asli tetap berdampingan untuk verifikasi (D4).
+- **Komponen ML Kit bisa memerlukan unduhan sekali di awal** sehingga OCR tidak selalu tersedia murni luring → mitigasi: OCR diperlakukan upaya terbaik (D11), kegagalannya bermuara ke jalur manual yang tanpa syarat tetap tersedia (D7).
 
 ## Migration Plan
 

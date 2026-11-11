@@ -61,21 +61,35 @@ Pemilihan penyedia untuk rilis SHALL didasarkan pada evaluasi terdokumentasi ter
 - **WHEN** penyedia model diganti dengan penyedia lain
 - **THEN** layar, aturan peninjauan, dan perilaku jalur manual tidak berubah
 
-### Requirement: Kegagalan layanan selalu bermuara ke jalur manual
+### Requirement: Kegagalan layanan cloud dicoba lewat OCR lokal sebelum jalur manual
 
-Ketika layanan model tidak tersedia — karena tidak ada koneksi, waktu tunggu terlampaui, kuota habis, atau penyedia menolak permintaan — sistem SHALL menyatakan keadaannya dalam bahasa yang dapat dimengerti pengguna dan SHALL menawarkan jalur manual yang setara.
+Ketika layanan model cloud tidak tersedia — karena tidak ada koneksi, waktu tunggu terlampaui, kuota habis, atau penyedia menolak permintaan — sistem SHALL mencoba membaca gambar yang sama lewat pengenalan teks di perangkat (OCR lokal) sebelum menawarkan jalur manual. Langkah OCR ini SHALL TIDAK mengunggah gambar maupun memanggil perantara inferensi, dan SHALL TIDAK tunduk pada persetujuan unggah maupun batas biaya yang berlaku untuk layanan cloud.
 
-Draf yang sudah dibuat pengguna, termasuk gambar yang diambil dan nilai yang sudah diisi, SHALL TIDAK hilang akibat kegagalan itu.
+Hasil OCR SHALL diperlakukan dengan aturan yang sama seperti hasil cloud: nilai yang tidak terbaca atau meragukan SHALL ditandai belum diketahui atau perlu diperiksa, tidak pernah ditebak, dan konfirmasi tetap tertahan sesuai aturan nilai penting.
 
-#### Scenario: Koneksi terputus saat pengiriman
+Jika OCR lokal sendiri gagal membaca apa pun yang berguna, sistem SHALL menyatakan keadaannya dalam bahasa yang dapat dimengerti pengguna dan SHALL menawarkan jalur manual yang setara.
+
+Draf yang sudah dibuat pengguna, termasuk gambar yang diambil dan nilai yang sudah diisi, SHALL TIDAK hilang akibat kegagalan pada tahap mana pun.
+
+#### Scenario: Koneksi terputus saat pengiriman ke cloud
 
 - **WHEN** koneksi terputus setelah pengguna menyetujui pengunggahan
-- **THEN** sistem menyatakan analisis belum tersedia, draf dan gambar tetap ada, dan jalur manual ditawarkan
+- **THEN** sistem mencoba OCR lokal pada gambar yang sama tanpa persetujuan unggah tambahan, dan draf serta gambar tetap ada
 
-#### Scenario: Penyedia menolak permintaan
+#### Scenario: Penyedia cloud menolak permintaan
 
-- **WHEN** penyedia model mengembalikan kegagalan atau melampaui waktu tunggu
-- **THEN** sistem menyatakan keadaannya tanpa istilah teknis dan menawarkan jalur manual
+- **WHEN** penyedia model cloud mengembalikan kegagalan atau melampaui waktu tunggu
+- **THEN** sistem mencoba OCR lokal sebelum menyatakan jalur manual, tanpa istilah teknis dalam pernyataannya
+
+#### Scenario: OCR lokal tidak menemukan teks yang berguna
+
+- **WHEN** OCR lokal tidak dapat membaca nilai apa pun dari gambar
+- **THEN** sistem menyatakan keadaannya dan menawarkan jalur manual yang setara, dan draf tidak hilang
+
+#### Scenario: OCR membaca sebagian nilai
+
+- **WHEN** OCR lokal membaca sebagian nilai dengan keyakinan rendah
+- **THEN** nilai yang terbaca ditandai perlu diperiksa, nilai yang tidak terbaca ditandai belum diketahui, dan konfirmasi tertahan sesuai aturan nilai penting
 
 ### Requirement: Jalur tanpa koneksi selalu tersedia
 
@@ -83,10 +97,17 @@ Setiap kemampuan yang memakai layanan model SHALL memiliki jalur setara yang bek
 
 Alur inti — buku harian, program, berat, dan riwayat — SHALL tetap bekerja sepenuhnya luring.
 
+OCR lokal SHALL TIDAK dianggap sebagai jaminan jalur luring: ia SHALL diperlakukan sebagai upaya terbaik yang dapat gagal karena alasan teknis platform (mis. komponen pengenalan teks belum siap di perangkat), dan kegagalannya SHALL bermuara ke jalur manual yang sama seperti kegagalan lainnya.
+
 #### Scenario: Pengguna luring membuka jalur yang memerlukan koneksi
 
 - **WHEN** pengguna membuka jalur yang memerlukan layanan model tanpa koneksi
 - **THEN** sistem menyatakan kebutuhan koneksi dan menawarkan jalur manual yang setara
+
+#### Scenario: OCR lokal belum siap di perangkat
+
+- **WHEN** pengguna offline dan komponen OCR lokal belum siap dipakai
+- **THEN** sistem menyatakan jalur otomatis tidak tersedia dan menawarkan jalur manual, tanpa menganggap ini kegagalan tak terduga
 
 ### Requirement: Retensi gambar mengikuti pilihan pengguna
 

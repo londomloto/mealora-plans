@@ -15616,7 +15616,29 @@
               "name": "Scan window",
               "width": 250,
               "height": 120,
-              "fill": "#B6ED6A14",
+              "fill": {
+                "type": "gradient",
+                "gradientType": "linear",
+                "enabled": true,
+                "rotation": 180,
+                "size": {
+                  "height": 1
+                },
+                "colors": [
+                  {
+                    "color": "#B6ED6A00",
+                    "position": 0
+                  },
+                  {
+                    "color": "#B6ED6A1F",
+                    "position": 0.5
+                  },
+                  {
+                    "color": "#B6ED6A00",
+                    "position": 1
+                  }
+                ]
+              },
               "cornerRadius": 18,
               "stroke": "#B6ED6A",
               "strokeWidth": 3,
@@ -15628,10 +15650,31 @@
                   "type": "frame",
                   "id": "KQ3dt",
                   "name": "Scan line",
-                  "width": 226,
-                  "height": 3,
-                  "fill": "#FF8A50",
-                  "cornerRadius": 2
+                  "width": "fill_container",
+                  "height": 44,
+                  "fill": {
+                    "type": "gradient",
+                    "gradientType": "linear",
+                    "enabled": true,
+                    "rotation": 180,
+                    "size": {
+                      "height": 1
+                    },
+                    "colors": [
+                      {
+                        "color": "#B6ED6A00",
+                        "position": 0
+                      },
+                      {
+                        "color": "#C9F48A4D",
+                        "position": 0.5
+                      },
+                      {
+                        "color": "#B6ED6A00",
+                        "position": 1
+                      }
+                    ]
+                  }
                 }
               ]
             },
@@ -15652,9 +15695,76 @@
         },
         {
           "type": "frame",
+          "id": "YdZN3",
+          "x": 22,
+          "y": 440,
+          "name": "Main action",
+          "width": 346,
+          "height": 58,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 135,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#2BC46B",
+                "position": 0
+              },
+              {
+                "color": "#0C8B55",
+                "position": 1
+              }
+            ]
+          },
+          "cornerRadius": 20,
+          "stroke": "#00000000",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "effect": {
+            "type": "shadow",
+            "shadowType": "outer",
+            "color": "#0C8B5547",
+            "offset": {
+              "x": 0,
+              "y": 10
+            },
+            "blur": 24
+          },
+          "gap": 10,
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "gbIrO",
+              "name": "Label",
+              "fill": "#FFFFFF",
+              "content": "Gunakan kamera",
+              "fontFamily": "$font",
+              "fontSize": 16,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "icon",
+              "id": "J28Uq",
+              "name": "Arrow",
+              "width": 18,
+              "height": 18,
+              "icon": "arrow-right",
+              "library": "lucide",
+              "fill": "#FFFFFF"
+            }
+          ]
+        },
+        {
+          "type": "frame",
           "id": "TjE7y",
           "x": 22,
-          "y": 444,
+          "y": 514,
           "name": "Note",
           "width": 346,
           "height": 84,
@@ -15719,80 +15829,221 @@
         },
         {
           "type": "text",
-          "id": "ZAhLC",
+          "id": "PLjDg",
           "x": 24,
-          "y": 554,
-          "name": "Manual link",
-          "fill": "$primary-deep",
-          "content": "Masukkan nomor barcode secara manual →",
+          "y": 620,
+          "name": "Fallback heading",
+          "fill": "$ink",
+          "content": "Tidak bisa memindai?",
           "fontFamily": "$font",
           "fontSize": 13,
-          "fontWeight": "600"
+          "fontWeight": "bold"
         },
         {
           "type": "frame",
-          "id": "YdZN3",
+          "id": "O3Zxc",
           "x": 22,
-          "y": 600,
-          "name": "Main action",
+          "y": 644,
+          "name": "Fallback actions",
           "width": 346,
-          "height": 58,
-          "fill": {
-            "type": "gradient",
-            "gradientType": "linear",
-            "enabled": true,
-            "rotation": 135,
-            "size": {
-              "height": 1
-            },
-            "colors": [
-              {
-                "color": "#2BC46B",
-                "position": 0
-              },
-              {
-                "color": "#0C8B55",
-                "position": 1
-              }
-            ]
-          },
-          "cornerRadius": 20,
-          "stroke": "#00000000",
-          "strokeWidth": 1,
-          "strokeAlignment": "inner",
-          "effect": {
-            "type": "shadow",
-            "shadowType": "outer",
-            "color": "#0C8B5547",
-            "offset": {
-              "x": 0,
-              "y": 10
-            },
-            "blur": 24
-          },
+          "layout": "vertical",
           "gap": 10,
-          "justifyContent": "center",
-          "alignItems": "center",
           "children": [
             {
-              "type": "text",
-              "id": "gbIrO",
-              "name": "Label",
-              "fill": "#FFFFFF",
-              "content": "Gunakan kamera",
-              "fontFamily": "$font",
-              "fontSize": 16,
-              "fontWeight": "bold"
+              "type": "frame",
+              "id": "x4yli",
+              "name": "Manual barcode card",
+              "width": "fill_container",
+              "height": 76,
+              "fill": "#FFFFFFCC",
+              "cornerRadius": 20,
+              "stroke": "#FFFFFFB8",
+              "strokeWidth": 1,
+              "strokeAlignment": "inner",
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#14321F1F",
+                "offset": {
+                  "x": 0,
+                  "y": 6
+                },
+                "blur": 18
+              },
+              "gap": 12,
+              "padding": [
+                0,
+                16
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "w4ZpF",
+                  "name": "Icon badge",
+                  "width": 40,
+                  "height": 40,
+                  "fill": "#B6ED6A3D",
+                  "cornerRadius": 14,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "UtlyP",
+                      "name": "Icon",
+                      "width": 20,
+                      "height": 20,
+                      "icon": "keyboard",
+                      "library": "lucide",
+                      "fill": "$primary-deep"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "nFCuO",
+                  "name": "Lines",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 3,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "S5ZbLy",
+                      "name": "Title",
+                      "fill": "$ink",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Masukkan barcode manual",
+                      "fontFamily": "$font",
+                      "fontSize": 13,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "yKjif",
+                      "name": "Body",
+                      "fill": "$muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Ketik nomor yang tertera di kemasan",
+                      "lineHeight": 1.45,
+                      "fontFamily": "$font",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "icon",
+                  "id": "oLXtQ",
+                  "name": "Chevron",
+                  "width": 18,
+                  "height": 18,
+                  "icon": "chevron-right",
+                  "library": "lucide",
+                  "fill": "$muted"
+                }
+              ]
             },
             {
-              "type": "icon",
-              "id": "J28Uq",
-              "name": "Arrow",
-              "width": 18,
-              "height": 18,
-              "icon": "arrow-right",
-              "library": "lucide",
-              "fill": "#FFFFFF"
+              "type": "frame",
+              "id": "J9J9p",
+              "name": "Label photo card",
+              "width": "fill_container",
+              "height": 76,
+              "fill": "#FFFFFFCC",
+              "cornerRadius": 20,
+              "stroke": "#FFFFFFB8",
+              "strokeWidth": 1,
+              "strokeAlignment": "inner",
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#14321F1F",
+                "offset": {
+                  "x": 0,
+                  "y": 6
+                },
+                "blur": 18
+              },
+              "gap": 12,
+              "padding": [
+                0,
+                16
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "SsNyY",
+                  "name": "Icon badge",
+                  "width": 40,
+                  "height": 40,
+                  "fill": "#B6ED6A3D",
+                  "cornerRadius": 14,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "CeEsL",
+                      "name": "Icon",
+                      "width": 20,
+                      "height": 20,
+                      "icon": "camera",
+                      "library": "lucide",
+                      "fill": "$primary-deep"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "urcGe",
+                  "name": "Lines",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 3,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "HqhAy",
+                      "name": "Title",
+                      "fill": "$ink",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Foto Info Gizi",
+                      "fontFamily": "$font",
+                      "fontSize": 13,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "T8ibr",
+                      "name": "Body",
+                      "fill": "$muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Baca nilai nutrisi dari foto label",
+                      "lineHeight": 1.45,
+                      "fontFamily": "$font",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "icon",
+                  "id": "I0Y2z4",
+                  "name": "Chevron",
+                  "width": 18,
+                  "height": 18,
+                  "icon": "chevron-right",
+                  "library": "lucide",
+                  "fill": "$muted"
+                }
+              ]
             }
           ]
         }
@@ -31320,7 +31571,8 @@
               "content": "Berat terbaru beda cukup jauh dari yang dipakai menghitung target sekarang. Target lama tetap berlaku sampai kamu meninjau dan menyetujui yang baru.",
               "lineHeight": 1.4,
               "fontFamily": "$font",
-              "fontSize": 13
+              "fontSize": 13,
+              "fontWeight": "normal"
             }
           ]
         },
@@ -31333,6 +31585,433 @@
           "icon": "chevron_right",
           "library": "Material Symbols Rounded",
           "fill": "$muted"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "oHsfM",
+      "x": 2820,
+      "y": 3840,
+      "name": "21b · Masukkan barcode manual",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "$bg",
+      "layout": "none",
+      "children": [
+        {
+          "type": "ellipse",
+          "id": "cxLGq",
+          "x": 230,
+          "y": -120,
+          "name": "Blob lime",
+          "opacity": 0.3,
+          "fill": "#B6ED6A",
+          "width": 300,
+          "height": 300,
+          "effect": {
+            "type": "blur",
+            "radius": 80
+          }
+        },
+        {
+          "type": "ellipse",
+          "id": "eAJ6y",
+          "x": -130,
+          "y": 420,
+          "name": "Blob mint",
+          "opacity": 0.2,
+          "fill": "#3FD5A0",
+          "width": 300,
+          "height": 300,
+          "effect": {
+            "type": "blur",
+            "radius": 90
+          }
+        },
+        {
+          "type": "ellipse",
+          "id": "SPyww",
+          "x": 180,
+          "y": 640,
+          "name": "Blob berry",
+          "opacity": 0.14,
+          "fill": "#6E8BFF",
+          "width": 320,
+          "height": 300,
+          "effect": {
+            "type": "blur",
+            "radius": 90
+          }
+        },
+        {
+          "type": "text",
+          "id": "uSzJg",
+          "x": 24,
+          "y": 18,
+          "name": "Status time",
+          "fill": "$ink",
+          "content": "9:41",
+          "fontFamily": "$font",
+          "fontSize": 14,
+          "fontWeight": "bold"
+        },
+        {
+          "type": "icon",
+          "id": "XQT1v",
+          "x": 306,
+          "y": 18,
+          "name": "signal",
+          "width": 18,
+          "height": 18,
+          "icon": "signal",
+          "library": "lucide",
+          "fill": "$ink"
+        },
+        {
+          "type": "icon",
+          "id": "wyOPr",
+          "x": 329,
+          "y": 18,
+          "name": "wifi",
+          "width": 18,
+          "height": 18,
+          "icon": "wifi",
+          "library": "lucide",
+          "fill": "$ink"
+        },
+        {
+          "type": "icon",
+          "id": "h8aoW",
+          "x": 351,
+          "y": 18,
+          "name": "battery-full",
+          "width": 18,
+          "height": 18,
+          "icon": "battery-full",
+          "library": "lucide",
+          "fill": "$ink"
+        },
+        {
+          "type": "text",
+          "id": "JHmfb",
+          "x": 24,
+          "y": 64,
+          "name": "Step / context",
+          "fill": "$primary-deep",
+          "content": "MASUKKAN MANUAL",
+          "fontFamily": "$font",
+          "fontSize": 10,
+          "fontWeight": "bold",
+          "letterSpacing": 1.4
+        },
+        {
+          "type": "text",
+          "id": "m6Ewy",
+          "x": 24,
+          "y": 82,
+          "name": "Page title",
+          "fill": "$ink",
+          "textGrowth": "fixed-width",
+          "width": 342,
+          "content": "Masukkan nomor barcode",
+          "fontFamily": "$font",
+          "fontSize": 27,
+          "fontWeight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "L2SPO",
+          "x": 24,
+          "y": 120,
+          "name": "Page subtitle",
+          "fill": "$muted",
+          "textGrowth": "fixed-width",
+          "width": 342,
+          "content": "Ketik nomor yang tertera di kemasan.",
+          "fontFamily": "$font",
+          "fontSize": 13,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "CQRBf",
+          "x": 22,
+          "y": 371,
+          "name": "Note",
+          "width": 346,
+          "height": 84,
+          "fill": "#DDF4E6CC",
+          "cornerRadius": 20,
+          "stroke": "#FFFFFFB8",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "gap": 12,
+          "padding": [
+            0,
+            16
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon",
+              "id": "yeT6P",
+              "name": "Icon",
+              "width": 20,
+              "height": 20,
+              "icon": "circle-check",
+              "library": "lucide",
+              "fill": "$primary-deep"
+            },
+            {
+              "type": "frame",
+              "id": "t75Ip",
+              "name": "Lines",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 3,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "JAaAD",
+                  "name": "Title",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Tersedia tanpa kamera dan tanpa koneksi",
+                  "fontFamily": "$font",
+                  "fontSize": 13,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "y581H",
+                  "name": "Body",
+                  "fill": "$muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Pencarian produk tersimpan tetap bekerja di mode pesawat.",
+                  "lineHeight": 1.45,
+                  "fontFamily": "$font",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "BS5Xg",
+          "x": 22,
+          "y": 483,
+          "name": "Main action",
+          "width": 346,
+          "height": 58,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 135,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#2BC46B",
+                "position": 0
+              },
+              {
+                "color": "#0C8B55",
+                "position": 1
+              }
+            ]
+          },
+          "cornerRadius": 20,
+          "stroke": "#00000000",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "effect": {
+            "type": "shadow",
+            "shadowType": "outer",
+            "color": "#0C8B5547",
+            "offset": {
+              "x": 0,
+              "y": 10
+            },
+            "blur": 24
+          },
+          "gap": 10,
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "n3Mei",
+              "name": "Label",
+              "fill": "#FFFFFF",
+              "content": "Cari produk",
+              "fontFamily": "$font",
+              "fontSize": 16,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "icon",
+              "id": "HQQ6M",
+              "name": "Arrow",
+              "width": 18,
+              "height": 18,
+              "icon": "arrow-right",
+              "library": "lucide",
+              "fill": "#FFFFFF"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "rdJoN",
+          "x": 22,
+          "y": 164,
+          "name": "Barcode number field",
+          "width": 346,
+          "fill": "$glass",
+          "cornerRadius": 24,
+          "stroke": "#FFFFFFCC",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "effect": [
+            {
+              "type": "background_blur",
+              "radius": 20
+            },
+            {
+              "type": "shadow",
+              "shadowType": "outer",
+              "color": "#0B3A281A",
+              "offset": {
+                "x": 0,
+                "y": 14
+              },
+              "blur": 34
+            }
+          ],
+          "layout": "vertical",
+          "gap": 10,
+          "padding": [
+            18,
+            20
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "ZUJZv",
+              "name": "Label",
+              "fill": "$muted",
+              "content": "NOMOR BARCODE",
+              "fontFamily": "$font",
+              "fontSize": 10,
+              "fontWeight": "bold",
+              "letterSpacing": 1.2
+            },
+            {
+              "type": "text",
+              "id": "o8fN2N",
+              "name": "Value",
+              "fill": "$ink",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "8991234567890",
+              "fontFamily": "$font",
+              "fontSize": 26,
+              "fontWeight": "bold",
+              "letterSpacing": 2
+            },
+            {
+              "type": "frame",
+              "id": "ZrdKC",
+              "name": "Divider",
+              "width": "fill_container",
+              "height": 1,
+              "fill": "#E6EFE7"
+            },
+            {
+              "type": "frame",
+              "id": "idI9s",
+              "name": "Helper row",
+              "width": "fill_container",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "DO47i",
+                  "name": "Icon",
+                  "width": 14,
+                  "height": 14,
+                  "icon": "keyboard",
+                  "library": "lucide",
+                  "fill": "#9FB3A6"
+                },
+                {
+                  "type": "text",
+                  "id": "zRdkL",
+                  "name": "Helper",
+                  "fill": "$muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "8–14 digit, sesuai EAN/UPC pada kemasan",
+                  "fontFamily": "$font",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "nvN7Q",
+          "x": 22,
+          "y": 305,
+          "name": "Validation error",
+          "width": 346,
+          "fill": "#FDEBE6",
+          "cornerRadius": 16,
+          "stroke": "#F4B9A6",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "gap": 10,
+          "padding": [
+            10,
+            16
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon",
+              "id": "UK2Pj",
+              "name": "Icon",
+              "width": 16,
+              "height": 16,
+              "icon": "circle-alert",
+              "library": "lucide",
+              "fill": "$coral"
+            },
+            {
+              "type": "text",
+              "id": "pZzC6",
+              "name": "Message",
+              "fill": "#A14A2E",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Nomor harus 8–14 digit angka — periksa kembali kemasan.",
+              "lineHeight": 1.35,
+              "fontFamily": "$font",
+              "fontSize": 11,
+              "fontWeight": "bold"
+            }
+          ]
         }
       ]
     }
