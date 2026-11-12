@@ -14,6 +14,8 @@ Masukan gram SHALL hanya ditawarkan untuk bahan yang padanan beratnya diketahui.
 
 Jumlah setiap bahan SHALL lebih besar dari nol.
 
+Pengguna SHALL dapat menghapus bahan dari resep secara langsung tanpa dialog konfirmasi. Total gizi SHALL langsung dihitung ulang tanpa bahan tersebut, termasuk mencabut penanda tidak lengkap yang hanya disebabkan oleh bahan itu. Penghapusan baru tersimpan saat pengguna menyimpan makanan.
+
 #### Scenario: Menjumlahkan bahan
 
 - **WHEN** pengguna menambahkan bahan A sebanyak 150 g dengan energi 180 kkal per 100 g dan bahan B sebanyak 55 g dengan energi 160 kkal per 100 g
@@ -28,6 +30,16 @@ Jumlah setiap bahan SHALL lebih besar dari nol.
 
 - **WHEN** pengguna memasukkan jumlah bahan 0 g
 - **THEN** sistem menolak dengan penjelasan dan tidak menambahkan bahan itu
+
+#### Scenario: Menghapus bahan
+
+- **WHEN** resep berisi bahan A 150 g (270 kkal) dan bahan B 55 g (88 kkal), lalu pengguna menghapus bahan B
+- **THEN** bahan B langsung hilang dari daftar tanpa konfirmasi dan total energi resep menjadi 270 kkal
+
+#### Scenario: Menghapus satu-satunya bahan tanpa data
+
+- **WHEN** total resep ditandai tidak lengkap hanya karena "bumbu racik" lalu pengguna menghapus "bumbu racik"
+- **THEN** penanda tidak lengkap hilang dari total
 
 ### Requirement: Gizi per sajian dari jumlah porsi atau berat jadi
 

@@ -88,6 +88,8 @@ So that aplikasi menghitungkan gizi per porsi untuk saya.
 
 3.3.8. The system shall remind the user to add absorbed frying oil as an ingredient.
 
+3.3.9. The system shall let the user remove an ingredient immediately, without a confirmation dialog, and recalculate the totals without it.
+
 ---
 
 ## 4. Bahan yang Belum Ada di Katalog
