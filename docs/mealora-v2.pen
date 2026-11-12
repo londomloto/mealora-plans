@@ -64068,6 +64068,2197 @@
           ]
         }
       ]
+    },
+    {
+      "type": "frame",
+      "id": "gW4zn",
+      "x": 2840,
+      "y": 5120,
+      "name": "26b · Target terlalu cepat · saran",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "$bg",
+      "layout": "none",
+      "children": [
+        {
+          "type": "ellipse",
+          "id": "dP9Hp",
+          "x": 230,
+          "y": -120,
+          "name": "Blob lime",
+          "opacity": 0.3,
+          "fill": "#B6ED6A",
+          "width": 300,
+          "height": 300,
+          "effect": {
+            "type": "blur",
+            "radius": 80
+          }
+        },
+        {
+          "type": "ellipse",
+          "id": "YyUv2",
+          "x": -130,
+          "y": 420,
+          "name": "Blob mint",
+          "opacity": 0.2,
+          "fill": "#3FD5A0",
+          "width": 300,
+          "height": 300,
+          "effect": {
+            "type": "blur",
+            "radius": 90
+          }
+        },
+        {
+          "type": "ellipse",
+          "id": "dXa4A",
+          "x": 180,
+          "y": 640,
+          "name": "Blob berry",
+          "opacity": 0.14,
+          "fill": "#6E8BFF",
+          "width": 320,
+          "height": 300,
+          "effect": {
+            "type": "blur",
+            "radius": 90
+          }
+        },
+        {
+          "type": "text",
+          "id": "S9F6HX",
+          "x": 24,
+          "y": 18,
+          "name": "Status time",
+          "fill": "$ink",
+          "content": "9:41",
+          "fontFamily": "$font",
+          "fontSize": 14,
+          "fontWeight": "bold"
+        },
+        {
+          "type": "icon",
+          "id": "d8jD5",
+          "x": 306,
+          "y": 18,
+          "name": "signal",
+          "width": 18,
+          "height": 18,
+          "icon": "signal",
+          "library": "lucide",
+          "fill": "$ink"
+        },
+        {
+          "type": "icon",
+          "id": "LRlYH",
+          "x": 329,
+          "y": 18,
+          "name": "wifi",
+          "width": 18,
+          "height": 18,
+          "icon": "wifi",
+          "library": "lucide",
+          "fill": "$ink"
+        },
+        {
+          "type": "icon",
+          "id": "rJGmp",
+          "x": 351,
+          "y": 18,
+          "name": "battery-full",
+          "width": 18,
+          "height": 18,
+          "icon": "battery-full",
+          "library": "lucide",
+          "fill": "$ink"
+        },
+        {
+          "type": "text",
+          "id": "a5GM8",
+          "x": 24,
+          "y": 64,
+          "name": "Step / context",
+          "fill": "$primary-deep",
+          "content": "STATUS · TARGET TIDAK DIBUAT",
+          "fontFamily": "$font",
+          "fontSize": 10,
+          "fontWeight": "bold",
+          "letterSpacing": 1.4
+        },
+        {
+          "type": "text",
+          "id": "in3A6",
+          "x": 24,
+          "y": 82,
+          "name": "Page title",
+          "fill": "$ink",
+          "textGrowth": "fixed-width",
+          "width": 342,
+          "content": "Target tidak dibuat",
+          "fontFamily": "$font",
+          "fontSize": 27,
+          "fontWeight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "AqEnn",
+          "x": 24,
+          "y": 120,
+          "name": "Page subtitle",
+          "fill": "$muted",
+          "textGrowth": "fixed-width",
+          "width": 342,
+          "content": "Kami tidak membuat target untuk kondisi ini.",
+          "fontFamily": "$font",
+          "fontSize": 13,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "X810m",
+          "x": 22,
+          "y": 164,
+          "name": "Refusal state",
+          "width": 346,
+          "fill": "#FFF1EBD1",
+          "cornerRadius": 28,
+          "stroke": "#FFFFFFCC",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "effect": [
+            {
+              "type": "background_blur",
+              "radius": 20
+            },
+            {
+              "type": "shadow",
+              "shadowType": "outer",
+              "color": "#5A1F0F1A",
+              "offset": {
+                "x": 0,
+                "y": 14
+              },
+              "blur": 34
+            }
+          ],
+          "layout": "vertical",
+          "gap": 10,
+          "padding": 22,
+          "children": [
+            {
+              "type": "frame",
+              "id": "sOfWD",
+              "x": 22,
+              "y": 22,
+              "name": "Icon field",
+              "enabled": false,
+              "width": 48,
+              "height": 48,
+              "fill": "#FFE0D4",
+              "cornerRadius": 18,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "QUbhJ",
+                  "x": 14,
+                  "y": 14,
+                  "name": "Icon",
+                  "width": 20,
+                  "height": 20,
+                  "icon": "gauge",
+                  "library": "lucide",
+                  "fill": "#B4452B"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "luIOE",
+              "name": "Heading",
+              "fill": "$ink",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Target ini terlalu cepat untuk dicapai dengan aman",
+              "lineHeight": 1.25,
+              "fontFamily": "$font",
+              "fontSize": 21,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "text",
+              "id": "ilZBv",
+              "name": "Body",
+              "fill": "$muted",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Turun 10 kg sampai 4 Feb 2027 berarti ±0,83 kg per minggu. Batas aman untuk berat badanmu 0,52 kg per minggu. Pilih salah satu penyesuaian di bawah, atau atur sendiri.",
+              "lineHeight": 1.5,
+              "fontFamily": "$font",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Srt81",
+          "x": 22,
+          "y": 400,
+          "name": "Safe alternative",
+          "enabled": false,
+          "width": 346,
+          "height": 96,
+          "fill": "$glass",
+          "cornerRadius": 24,
+          "stroke": "#FFFFFFCC",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "effect": [
+            {
+              "type": "background_blur",
+              "radius": 20
+            },
+            {
+              "type": "shadow",
+              "shadowType": "outer",
+              "color": "#0B3A281A",
+              "offset": {
+                "x": 0,
+                "y": 14
+              },
+              "blur": 34
+            }
+          ],
+          "gap": 14,
+          "padding": [
+            0,
+            18
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "ThjEt",
+              "name": "Icon field",
+              "width": 46,
+              "height": 46,
+              "fill": "#DDF4E6",
+              "cornerRadius": 16,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "XIzSG",
+                  "x": 13,
+                  "y": 13,
+                  "name": "Icon",
+                  "width": 20,
+                  "height": 20,
+                  "icon": "utensils",
+                  "library": "lucide",
+                  "fill": "$primary"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "B4LJsf",
+              "name": "Text",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 3,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "H4l58a",
+                  "name": "Title",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Coba Makan Sehat",
+                  "fontFamily": "$font",
+                  "fontSize": 16,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "v15gL",
+                  "name": "Desc",
+                  "fill": "$muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Catat makanan dan pahami kebiasaan tanpa target perubahan berat.",
+                  "fontFamily": "$font",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "icon",
+              "id": "YIUfI",
+              "name": "Chevron",
+              "width": 18,
+              "height": 18,
+              "icon": "chevron-right",
+              "library": "lucide",
+              "fill": "#9FB3A6"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "UrxcX",
+          "x": 24,
+          "y": 691,
+          "name": "Footnote",
+          "fill": "$muted",
+          "textGrowth": "fixed-width",
+          "width": 342,
+          "content": "Pilihanmu diperiksa ulang sebelum target dibuat. Data dan program sebelumnya tidak berubah.",
+          "fontFamily": "$font",
+          "fontSize": 12,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "HubCW",
+          "x": 22,
+          "y": 762,
+          "name": "Main action",
+          "width": 346,
+          "height": 58,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 135,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#2BC46B",
+                "position": 0
+              },
+              {
+                "color": "#0C8B55",
+                "position": 1
+              }
+            ]
+          },
+          "cornerRadius": 20,
+          "effect": {
+            "type": "shadow",
+            "shadowType": "outer",
+            "color": "#0C8B5547",
+            "offset": {
+              "x": 0,
+              "y": 10
+            },
+            "blur": 24
+          },
+          "gap": 10,
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "jvqyu",
+              "name": "Label",
+              "fill": "#FFFFFF",
+              "content": "Terapkan dan tinjau ulang",
+              "fontFamily": "$font",
+              "fontSize": 16,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "icon",
+              "id": "ZmpjJ",
+              "name": "Arrow",
+              "width": 18,
+              "height": 18,
+              "icon": "arrow-right",
+              "library": "lucide",
+              "fill": "#FFFFFF"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "BOUlk",
+          "x": 24,
+          "y": 370,
+          "name": "Suggestion label",
+          "fill": "$muted",
+          "content": "PILIH PENYESUAIAN",
+          "fontFamily": "$font",
+          "fontSize": 11,
+          "fontWeight": "bold",
+          "letterSpacing": 1
+        },
+        {
+          "type": "frame",
+          "id": "qodSO",
+          "x": 22,
+          "y": 392,
+          "name": "Option · Tetap 60 kg, mundurkan tanggal",
+          "width": 346,
+          "fill": "$glass",
+          "cornerRadius": 24,
+          "stroke": "#077A50",
+          "strokeWidth": 2,
+          "strokeAlignment": "inner",
+          "effect": [
+            {
+              "type": "background_blur",
+              "radius": 20
+            },
+            {
+              "type": "shadow",
+              "shadowType": "outer",
+              "color": "#0B3A281A",
+              "offset": {
+                "x": 0,
+                "y": 14
+              },
+              "blur": 34
+            }
+          ],
+          "gap": 14,
+          "padding": [
+            16,
+            18
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "m4jo5U",
+              "name": "Icon field",
+              "width": 46,
+              "height": 46,
+              "fill": "#DDF4E6",
+              "cornerRadius": 16,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "F3Jis",
+                  "x": 13,
+                  "y": 13,
+                  "name": "Icon",
+                  "width": 20,
+                  "height": 20,
+                  "icon": "calendar-clock",
+                  "library": "lucide",
+                  "fill": "$primary"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "c9npN",
+              "name": "Text",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 3,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "qp3t2",
+                  "name": "Title",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Tetap 60 kg, mulai 26 Mar 2027",
+                  "fontFamily": "$font",
+                  "fontSize": 16,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "fDrBe",
+                  "name": "Desc",
+                  "fill": "$muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Tanggal paling awal yang aman (±19 minggu).",
+                  "fontFamily": "$font",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "O6t3mF",
+                  "name": "Badge",
+                  "fill": "#DDF4E6",
+                  "cornerRadius": 8,
+                  "padding": [
+                    3,
+                    8
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "tVP5T",
+                      "name": "Badge label",
+                      "fill": "#0A6B4C",
+                      "content": "Disarankan",
+                      "fontFamily": "$font",
+                      "fontSize": 11,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "icon",
+              "id": "l1C8VQ",
+              "name": "Chevron",
+              "width": 22,
+              "height": 22,
+              "icon": "circle-check",
+              "library": "lucide",
+              "fill": "#077A50"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "tDCV0",
+          "x": 22,
+          "y": 530,
+          "name": "Option · Tetap 4 Feb 2027, target 63,7 kg",
+          "width": 346,
+          "fill": "$glass",
+          "cornerRadius": 24,
+          "stroke": "#FFFFFFCC",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "effect": [
+            {
+              "type": "background_blur",
+              "radius": 20
+            },
+            {
+              "type": "shadow",
+              "shadowType": "outer",
+              "color": "#0B3A281A",
+              "offset": {
+                "x": 0,
+                "y": 14
+              },
+              "blur": 34
+            }
+          ],
+          "gap": 14,
+          "padding": [
+            16,
+            18
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "qBB7Q",
+              "name": "Icon field",
+              "width": 46,
+              "height": 46,
+              "fill": "#DDF4E6",
+              "cornerRadius": 16,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "tYWyU",
+                  "x": 13,
+                  "y": 13,
+                  "name": "Icon",
+                  "width": 20,
+                  "height": 20,
+                  "icon": "target",
+                  "library": "lucide",
+                  "fill": "$primary"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "d2dLQ",
+              "name": "Text",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 3,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "t4emL",
+                  "name": "Title",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Tetap 4 Feb 2027, target 63,7 kg",
+                  "fontFamily": "$font",
+                  "fontSize": 16,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "tJ3Fe",
+                  "name": "Desc",
+                  "fill": "$muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Berat terdekat yang aman dicapai di tanggal itu.",
+                  "fontFamily": "$font",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "icon",
+              "id": "xIeFL",
+              "name": "Chevron",
+              "width": 22,
+              "height": 22,
+              "icon": "circle",
+              "library": "lucide",
+              "fill": "#9FB3A6"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "x64eJ",
+          "x": 22,
+          "y": 643,
+          "name": "Manual link",
+          "width": 346,
+          "height": 36,
+          "gap": 6,
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon",
+              "id": "f5a9Vl",
+              "name": "Icon",
+              "width": 16,
+              "height": 16,
+              "icon": "pencil",
+              "library": "lucide",
+              "fill": "#077A50"
+            },
+            {
+              "type": "text",
+              "id": "sXXCM",
+              "name": "Label",
+              "fill": "#077A50",
+              "content": "Atur sendiri",
+              "fontFamily": "$font",
+              "fontSize": 14,
+              "fontWeight": "600"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "w9XlT9",
+      "x": 3310,
+      "y": 5120,
+      "name": "25b · Target berat · rentang aman",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "$bg",
+      "layout": "none",
+      "children": [
+        {
+          "type": "ellipse",
+          "id": "gNP36",
+          "x": 230,
+          "y": -120,
+          "name": "Blob lime",
+          "opacity": 0.3,
+          "fill": "#B6ED6A",
+          "width": 300,
+          "height": 300,
+          "effect": {
+            "type": "blur",
+            "radius": 80
+          }
+        },
+        {
+          "type": "ellipse",
+          "id": "OIGHj",
+          "x": -130,
+          "y": 420,
+          "name": "Blob mint",
+          "opacity": 0.2,
+          "fill": "#3FD5A0",
+          "width": 300,
+          "height": 300,
+          "effect": {
+            "type": "blur",
+            "radius": 90
+          }
+        },
+        {
+          "type": "ellipse",
+          "id": "DwT5s",
+          "x": 180,
+          "y": 640,
+          "name": "Blob berry",
+          "opacity": 0.14,
+          "fill": "#6E8BFF",
+          "width": 320,
+          "height": 300,
+          "effect": {
+            "type": "blur",
+            "radius": 90
+          }
+        },
+        {
+          "type": "text",
+          "id": "khNxF",
+          "x": 24,
+          "y": 18,
+          "name": "Status time",
+          "fill": "$ink",
+          "content": "9:41",
+          "fontFamily": "$font",
+          "fontSize": 14,
+          "fontWeight": "bold"
+        },
+        {
+          "type": "icon",
+          "id": "i9OyTr",
+          "x": 306,
+          "y": 18,
+          "name": "signal",
+          "width": 18,
+          "height": 18,
+          "icon": "signal",
+          "library": "lucide",
+          "fill": "$ink"
+        },
+        {
+          "type": "icon",
+          "id": "uodKv",
+          "x": 329,
+          "y": 18,
+          "name": "wifi",
+          "width": 18,
+          "height": 18,
+          "icon": "wifi",
+          "library": "lucide",
+          "fill": "$ink"
+        },
+        {
+          "type": "icon",
+          "id": "KtxGu",
+          "x": 351,
+          "y": 18,
+          "name": "battery-full",
+          "width": 18,
+          "height": 18,
+          "icon": "battery-full",
+          "library": "lucide",
+          "fill": "$ink"
+        },
+        {
+          "type": "text",
+          "id": "rNqAL",
+          "x": 24,
+          "y": 64,
+          "name": "Step / context",
+          "fill": "$primary-deep",
+          "content": "PROGRAM · TURUN BERAT",
+          "fontFamily": "$font",
+          "fontSize": 10,
+          "fontWeight": "bold",
+          "letterSpacing": 1.4
+        },
+        {
+          "type": "text",
+          "id": "VxfLA",
+          "x": 24,
+          "y": 82,
+          "name": "Page title",
+          "fill": "$ink",
+          "textGrowth": "fixed-width",
+          "width": 342,
+          "content": "Atur target berat",
+          "fontFamily": "$font",
+          "fontSize": 27,
+          "fontWeight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "wN4Vu",
+          "x": 24,
+          "y": 120,
+          "name": "Page subtitle",
+          "fill": "$muted",
+          "textGrowth": "fixed-width",
+          "width": 342,
+          "content": "Laju perubahan berat dibatasi agar tetap aman.",
+          "fontFamily": "$font",
+          "fontSize": 13,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "fIpoG",
+          "x": 22,
+          "y": 160,
+          "name": "Weight program introduction",
+          "width": 346,
+          "height": 84,
+          "fill": "$glass",
+          "cornerRadius": 24,
+          "stroke": "#FFFFFFCC",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "effect": [
+            {
+              "type": "background_blur",
+              "radius": 20
+            },
+            {
+              "type": "shadow",
+              "shadowType": "outer",
+              "color": "#0B3A281A",
+              "offset": {
+                "x": 0,
+                "y": 14
+              },
+              "blur": 34
+            }
+          ],
+          "gap": 14,
+          "padding": [
+            0,
+            18
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "TqvgN",
+              "name": "Icon field",
+              "width": 46,
+              "height": 46,
+              "fill": "#E6EBFF",
+              "cornerRadius": 16,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "KD37u",
+                  "x": 13,
+                  "y": 13,
+                  "name": "Icon",
+                  "width": 20,
+                  "height": 20,
+                  "icon": "trending-down",
+                  "library": "lucide",
+                  "fill": "$berry"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "w9vWm",
+              "name": "Text",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 3,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Q0Hra",
+                  "name": "Title",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Turun Berat",
+                  "fontFamily": "$font",
+                  "fontSize": 17,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "N3NU8",
+                  "name": "Desc",
+                  "fill": "$muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Bukan target cepat atau janji hasil.",
+                  "fontFamily": "$font",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "p1k9Ry",
+          "x": 24,
+          "y": 266,
+          "name": "Berat awal label",
+          "fill": "$muted",
+          "content": "Berat awal",
+          "fontFamily": "$font",
+          "fontSize": 12,
+          "fontWeight": "600"
+        },
+        {
+          "type": "frame",
+          "id": "mLiIH",
+          "x": 22,
+          "y": 286,
+          "name": "Berat awal input",
+          "width": 346,
+          "height": 56,
+          "fill": "$glass",
+          "cornerRadius": 20,
+          "stroke": "#FFFFFFCC",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "effect": [
+            {
+              "type": "background_blur",
+              "radius": 20
+            },
+            {
+              "type": "shadow",
+              "shadowType": "outer",
+              "color": "#0B3A281A",
+              "offset": {
+                "x": 0,
+                "y": 14
+              },
+              "blur": 34
+            }
+          ],
+          "gap": 12,
+          "padding": [
+            0,
+            16
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "zMi70",
+              "name": "Icon field",
+              "width": 34,
+              "height": 34,
+              "fill": "#EAF5EC",
+              "cornerRadius": 12,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "QD5lI",
+                  "x": 8,
+                  "y": 8,
+                  "name": "Icon",
+                  "width": 18,
+                  "height": 18,
+                  "icon": "scale",
+                  "library": "lucide",
+                  "fill": "$primary-deep"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "rCSMy",
+              "name": "Value",
+              "fill": "$ink",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "70,0 kg",
+              "fontFamily": "$font",
+              "fontSize": 15,
+              "fontWeight": "600"
+            },
+            {
+              "type": "icon",
+              "id": "yZEeI",
+              "name": "Affordance",
+              "width": 18,
+              "height": 18,
+              "icon": "chevron-down",
+              "library": "lucide",
+              "fill": "#9FB3A6"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "QndsT",
+          "x": 24,
+          "y": 354,
+          "name": "Berat tujuan label",
+          "fill": "$muted",
+          "content": "Berat tujuan",
+          "fontFamily": "$font",
+          "fontSize": 12,
+          "fontWeight": "600"
+        },
+        {
+          "type": "frame",
+          "id": "WsDk3",
+          "x": 22,
+          "y": 374,
+          "name": "Berat tujuan input",
+          "width": 346,
+          "height": 56,
+          "fill": "$glass",
+          "cornerRadius": 20,
+          "stroke": "#FFFFFFCC",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "effect": [
+            {
+              "type": "background_blur",
+              "radius": 20
+            },
+            {
+              "type": "shadow",
+              "shadowType": "outer",
+              "color": "#0B3A281A",
+              "offset": {
+                "x": 0,
+                "y": 14
+              },
+              "blur": 34
+            }
+          ],
+          "gap": 12,
+          "padding": [
+            0,
+            16
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "FTQrE",
+              "name": "Icon field",
+              "width": 34,
+              "height": 34,
+              "fill": "#EAF5EC",
+              "cornerRadius": 12,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "TmBqD",
+                  "x": 8,
+                  "y": 8,
+                  "name": "Icon",
+                  "width": 18,
+                  "height": 18,
+                  "icon": "target",
+                  "library": "lucide",
+                  "fill": "$primary-deep"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "GjHbA",
+              "name": "Value",
+              "fill": "$ink",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "60,0 kg",
+              "fontFamily": "$font",
+              "fontSize": 15,
+              "fontWeight": "600"
+            },
+            {
+              "type": "icon",
+              "id": "H4s8cV",
+              "name": "Affordance",
+              "width": 18,
+              "height": 18,
+              "icon": "chevron-down",
+              "library": "lucide",
+              "fill": "#9FB3A6"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "WAeSc",
+          "x": 22,
+          "y": 450,
+          "name": "Note",
+          "enabled": false,
+          "width": 346,
+          "height": 84,
+          "fill": "#FFFFFFB8",
+          "cornerRadius": 20,
+          "stroke": "#FFFFFFB8",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "gap": 12,
+          "padding": [
+            0,
+            16
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon",
+              "id": "cOUF0",
+              "name": "Icon",
+              "width": 20,
+              "height": 20,
+              "icon": "calendar-days",
+              "library": "lucide",
+              "fill": "$primary-deep"
+            },
+            {
+              "type": "frame",
+              "id": "YhgFb",
+              "name": "Lines",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 3,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "OMkr2",
+                  "name": "Title",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Tanggal tujuan tidak wajib",
+                  "fontFamily": "$font",
+                  "fontSize": 14,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "w0oQvp",
+                  "name": "Body",
+                  "fill": "$muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Tanggal tidak pernah mengesampingkan aturan keselamatan.",
+                  "lineHeight": 1.45,
+                  "fontFamily": "$font",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "I1gh59",
+          "x": 22,
+          "y": 600,
+          "name": "Note",
+          "width": 346,
+          "height": 80,
+          "fill": "#FFF8E8CC",
+          "cornerRadius": 20,
+          "stroke": "#FFFFFFB8",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "gap": 12,
+          "padding": [
+            0,
+            16
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon",
+              "id": "N1NSAd",
+              "name": "Icon",
+              "width": 20,
+              "height": 20,
+              "icon": "shield-alert",
+              "library": "lucide",
+              "fill": "$citrus"
+            },
+            {
+              "type": "frame",
+              "id": "Uzttg",
+              "name": "Lines",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 3,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "OkvQm",
+                  "name": "Body",
+                  "fill": "$muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Sebagian kondisi membuat target otomatis tidak dibuat. Kamu akan diberi tahu alasannya.",
+                  "lineHeight": 1.45,
+                  "fontFamily": "$font",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "HKPat",
+          "x": 22,
+          "y": 762,
+          "name": "Main action",
+          "width": 346,
+          "height": 58,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 135,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#2BC46B",
+                "position": 0
+              },
+              {
+                "color": "#0C8B55",
+                "position": 1
+              }
+            ]
+          },
+          "cornerRadius": 20,
+          "effect": {
+            "type": "shadow",
+            "shadowType": "outer",
+            "color": "#0C8B5547",
+            "offset": {
+              "x": 0,
+              "y": 10
+            },
+            "blur": 24
+          },
+          "gap": 10,
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "B2mir",
+              "name": "Label",
+              "fill": "#FFFFFF",
+              "content": "Tinjau kelayakan",
+              "fontFamily": "$font",
+              "fontSize": 16,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "icon",
+              "id": "hgixm",
+              "name": "Arrow",
+              "width": 18,
+              "height": 18,
+              "icon": "arrow-right",
+              "library": "lucide",
+              "fill": "#FFFFFF"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "nIEkv",
+          "x": 24,
+          "y": 438,
+          "name": "Hint · Minimal aman untuk t",
+          "width": 342,
+          "gap": 6,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon",
+              "id": "h9llg",
+              "name": "Icon",
+              "width": 14,
+              "height": 14,
+              "icon": "shield-check",
+              "library": "lucide",
+              "fill": "#077A50"
+            },
+            {
+              "type": "text",
+              "id": "e0GDQ5",
+              "name": "Text",
+              "fill": "#0A6B4C",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Minimal aman untuk tinggimu: 50,4 kg",
+              "fontFamily": "$font",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "LjtSU",
+          "x": 24,
+          "y": 470,
+          "name": "Tanggal label",
+          "fill": "$muted",
+          "content": "Tanggal tujuan (opsional)",
+          "fontFamily": "$font",
+          "fontSize": 12,
+          "fontWeight": "600"
+        },
+        {
+          "type": "frame",
+          "id": "hoZaG",
+          "x": 22,
+          "y": 490,
+          "name": "Tanggal tujuan input",
+          "width": 346,
+          "height": 56,
+          "fill": "$glass",
+          "cornerRadius": 20,
+          "stroke": "#FFFFFFCC",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "effect": [
+            {
+              "type": "background_blur",
+              "radius": 20
+            },
+            {
+              "type": "shadow",
+              "shadowType": "outer",
+              "color": "#0B3A281A",
+              "offset": {
+                "x": 0,
+                "y": 14
+              },
+              "blur": 34
+            }
+          ],
+          "gap": 12,
+          "padding": [
+            0,
+            16
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "XqpdC",
+              "name": "Icon field",
+              "width": 34,
+              "height": 34,
+              "fill": "#EAF5EC",
+              "cornerRadius": 12,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "ycdzf",
+                  "x": 8,
+                  "y": 8,
+                  "name": "Icon",
+                  "width": 18,
+                  "height": 18,
+                  "icon": "calendar",
+                  "library": "lucide",
+                  "fill": "$primary-deep"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "eROET",
+              "name": "Value",
+              "fill": "$ink",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "26 Mar 2027",
+              "fontFamily": "$font",
+              "fontSize": 15,
+              "fontWeight": "600"
+            },
+            {
+              "type": "icon",
+              "id": "HqMvm",
+              "name": "Affordance",
+              "width": 18,
+              "height": 18,
+              "icon": "chevron-down",
+              "library": "lucide",
+              "fill": "#9FB3A6"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "xUV2x",
+          "x": 24,
+          "y": 554,
+          "name": "Hint · Untuk 60 kg, pilih a",
+          "width": 342,
+          "gap": 6,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon",
+              "id": "tuq1H",
+              "name": "Icon",
+              "width": 14,
+              "height": 14,
+              "icon": "info",
+              "library": "lucide",
+              "fill": "#077A50"
+            },
+            {
+              "type": "text",
+              "id": "HBWoW",
+              "name": "Text",
+              "fill": "#0A6B4C",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Untuk 60 kg, pilih antara 26 Mar 2027 dan 19 Agu 2027. Tanggal di luar rentang ini tidak bisa dipilih.",
+              "fontFamily": "$font",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "v34QAd",
+      "x": 3780,
+      "y": 5120,
+      "name": "26c · Berat tujuan terlalu rendah · saran",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "$bg",
+      "layout": "none",
+      "children": [
+        {
+          "type": "ellipse",
+          "id": "W1OdX4",
+          "x": 230,
+          "y": -120,
+          "name": "Blob lime",
+          "opacity": 0.3,
+          "fill": "#B6ED6A",
+          "width": 300,
+          "height": 300,
+          "effect": {
+            "type": "blur",
+            "radius": 80
+          }
+        },
+        {
+          "type": "ellipse",
+          "id": "Ak0eS",
+          "x": -130,
+          "y": 420,
+          "name": "Blob mint",
+          "opacity": 0.2,
+          "fill": "#3FD5A0",
+          "width": 300,
+          "height": 300,
+          "effect": {
+            "type": "blur",
+            "radius": 90
+          }
+        },
+        {
+          "type": "ellipse",
+          "id": "g1yyu",
+          "x": 180,
+          "y": 640,
+          "name": "Blob berry",
+          "opacity": 0.14,
+          "fill": "#6E8BFF",
+          "width": 320,
+          "height": 300,
+          "effect": {
+            "type": "blur",
+            "radius": 90
+          }
+        },
+        {
+          "type": "text",
+          "id": "LsZZ4",
+          "x": 24,
+          "y": 18,
+          "name": "Status time",
+          "fill": "$ink",
+          "content": "9:41",
+          "fontFamily": "$font",
+          "fontSize": 14,
+          "fontWeight": "bold"
+        },
+        {
+          "type": "icon",
+          "id": "VtzCU",
+          "x": 306,
+          "y": 18,
+          "name": "signal",
+          "width": 18,
+          "height": 18,
+          "icon": "signal",
+          "library": "lucide",
+          "fill": "$ink"
+        },
+        {
+          "type": "icon",
+          "id": "XvKjO",
+          "x": 329,
+          "y": 18,
+          "name": "wifi",
+          "width": 18,
+          "height": 18,
+          "icon": "wifi",
+          "library": "lucide",
+          "fill": "$ink"
+        },
+        {
+          "type": "icon",
+          "id": "yPsvK",
+          "x": 351,
+          "y": 18,
+          "name": "battery-full",
+          "width": 18,
+          "height": 18,
+          "icon": "battery-full",
+          "library": "lucide",
+          "fill": "$ink"
+        },
+        {
+          "type": "text",
+          "id": "QfKSy",
+          "x": 24,
+          "y": 64,
+          "name": "Step / context",
+          "fill": "$primary-deep",
+          "content": "STATUS · TARGET TIDAK DIBUAT",
+          "fontFamily": "$font",
+          "fontSize": 10,
+          "fontWeight": "bold",
+          "letterSpacing": 1.4
+        },
+        {
+          "type": "text",
+          "id": "AnJv2",
+          "x": 24,
+          "y": 82,
+          "name": "Page title",
+          "fill": "$ink",
+          "textGrowth": "fixed-width",
+          "width": 342,
+          "content": "Target tidak dibuat",
+          "fontFamily": "$font",
+          "fontSize": 27,
+          "fontWeight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "FTFHZ",
+          "x": 24,
+          "y": 120,
+          "name": "Page subtitle",
+          "fill": "$muted",
+          "textGrowth": "fixed-width",
+          "width": 342,
+          "content": "Kami tidak membuat target untuk kondisi ini.",
+          "fontFamily": "$font",
+          "fontSize": 13,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "xtDWi",
+          "x": 22,
+          "y": 164,
+          "name": "Refusal state",
+          "width": 346,
+          "fill": "#FFF1EBD1",
+          "cornerRadius": 28,
+          "stroke": "#FFFFFFCC",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "effect": [
+            {
+              "type": "background_blur",
+              "radius": 20
+            },
+            {
+              "type": "shadow",
+              "shadowType": "outer",
+              "color": "#5A1F0F1A",
+              "offset": {
+                "x": 0,
+                "y": 14
+              },
+              "blur": 34
+            }
+          ],
+          "layout": "vertical",
+          "gap": 10,
+          "padding": 22,
+          "children": [
+            {
+              "type": "frame",
+              "id": "r6846s",
+              "x": 22,
+              "y": 22,
+              "name": "Icon field",
+              "enabled": false,
+              "width": 48,
+              "height": 48,
+              "fill": "#FFE0D4",
+              "cornerRadius": 18,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "OUEyW",
+                  "x": 14,
+                  "y": 14,
+                  "name": "Icon",
+                  "width": 20,
+                  "height": 20,
+                  "icon": "gauge",
+                  "library": "lucide",
+                  "fill": "#B4452B"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "UO94l",
+              "name": "Heading",
+              "fill": "$ink",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Berat tujuan di bawah rentang yang didukung",
+              "lineHeight": 1.25,
+              "fontFamily": "$font",
+              "fontSize": 21,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "text",
+              "id": "c2rpw",
+              "name": "Body",
+              "fill": "$muted",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Untuk tinggi 165 cm, berat tujuan paling rendah yang bisa dihitung otomatis adalah 50,4 kg. Tidak ada target yang dibuat.",
+              "lineHeight": 1.5,
+              "fontFamily": "$font",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "V3nJ63",
+          "x": 22,
+          "y": 400,
+          "name": "Safe alternative",
+          "enabled": false,
+          "width": 346,
+          "height": 96,
+          "fill": "$glass",
+          "cornerRadius": 24,
+          "stroke": "#FFFFFFCC",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "effect": [
+            {
+              "type": "background_blur",
+              "radius": 20
+            },
+            {
+              "type": "shadow",
+              "shadowType": "outer",
+              "color": "#0B3A281A",
+              "offset": {
+                "x": 0,
+                "y": 14
+              },
+              "blur": 34
+            }
+          ],
+          "gap": 14,
+          "padding": [
+            0,
+            18
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "m0rqYy",
+              "name": "Icon field",
+              "width": 46,
+              "height": 46,
+              "fill": "#DDF4E6",
+              "cornerRadius": 16,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "yQmJ2",
+                  "x": 13,
+                  "y": 13,
+                  "name": "Icon",
+                  "width": 20,
+                  "height": 20,
+                  "icon": "utensils",
+                  "library": "lucide",
+                  "fill": "$primary"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "nDTwa",
+              "name": "Text",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 3,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "BmKbg",
+                  "name": "Title",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Coba Makan Sehat",
+                  "fontFamily": "$font",
+                  "fontSize": 16,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "npmnj",
+                  "name": "Desc",
+                  "fill": "$muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Catat makanan dan pahami kebiasaan tanpa target perubahan berat.",
+                  "fontFamily": "$font",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "icon",
+              "id": "A6HF7",
+              "name": "Chevron",
+              "width": 18,
+              "height": 18,
+              "icon": "chevron-right",
+              "library": "lucide",
+              "fill": "#9FB3A6"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "IsnjN",
+          "x": 24,
+          "y": 513,
+          "name": "Footnote",
+          "fill": "$muted",
+          "textGrowth": "fixed-width",
+          "width": 342,
+          "content": "Pilihanmu diperiksa ulang sebelum target dibuat. Data dan program sebelumnya tidak berubah.",
+          "fontFamily": "$font",
+          "fontSize": 12,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "jN4GB",
+          "x": 22,
+          "y": 762,
+          "name": "Main action",
+          "width": 346,
+          "height": 58,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 135,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#2BC46B",
+                "position": 0
+              },
+              {
+                "color": "#0C8B55",
+                "position": 1
+              }
+            ]
+          },
+          "cornerRadius": 20,
+          "effect": {
+            "type": "shadow",
+            "shadowType": "outer",
+            "color": "#0C8B5547",
+            "offset": {
+              "x": 0,
+              "y": 10
+            },
+            "blur": 24
+          },
+          "gap": 10,
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "M3gZo",
+              "name": "Label",
+              "fill": "#FFFFFF",
+              "content": "Terapkan dan tinjau ulang",
+              "fontFamily": "$font",
+              "fontSize": 16,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "icon",
+              "id": "kq4sg",
+              "name": "Arrow",
+              "width": 18,
+              "height": 18,
+              "icon": "arrow-right",
+              "library": "lucide",
+              "fill": "#FFFFFF"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "aO0Tx",
+          "x": 24,
+          "y": 350,
+          "name": "Suggestion label",
+          "fill": "$muted",
+          "content": "PILIH PENYESUAIAN",
+          "fontFamily": "$font",
+          "fontSize": 11,
+          "fontWeight": "bold",
+          "letterSpacing": 1
+        },
+        {
+          "type": "frame",
+          "id": "DwRQD",
+          "x": 22,
+          "y": 372,
+          "name": "Option · Tetap 60 kg, mundurkan tanggal",
+          "width": 346,
+          "fill": "$glass",
+          "cornerRadius": 24,
+          "stroke": "#077A50",
+          "strokeWidth": 2,
+          "strokeAlignment": "inner",
+          "effect": [
+            {
+              "type": "background_blur",
+              "radius": 20
+            },
+            {
+              "type": "shadow",
+              "shadowType": "outer",
+              "color": "#0B3A281A",
+              "offset": {
+                "x": 0,
+                "y": 14
+              },
+              "blur": 34
+            }
+          ],
+          "gap": 14,
+          "padding": [
+            16,
+            18
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "AVfQO",
+              "name": "Icon field",
+              "width": 46,
+              "height": 46,
+              "fill": "#DDF4E6",
+              "cornerRadius": 16,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "f3kHAk",
+                  "x": 13,
+                  "y": 13,
+                  "name": "Icon",
+                  "width": 20,
+                  "height": 20,
+                  "icon": "target",
+                  "library": "lucide",
+                  "fill": "$primary"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "YpMfH",
+              "name": "Text",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 3,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "NH0u2",
+                  "name": "Title",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Pakai 50,4 kg",
+                  "fontFamily": "$font",
+                  "fontSize": 16,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "KEEYt",
+                  "name": "Desc",
+                  "fill": "$muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Berat tujuan terendah yang aman untuk tinggimu.",
+                  "fontFamily": "$font",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "lQggN",
+                  "x": 0,
+                  "y": 76,
+                  "name": "Badge",
+                  "enabled": false,
+                  "fill": "#DDF4E6",
+                  "cornerRadius": 8,
+                  "padding": [
+                    3,
+                    8
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "XRupP",
+                      "name": "Badge label",
+                      "fill": "#0A6B4C",
+                      "content": "Disarankan",
+                      "fontFamily": "$font",
+                      "fontSize": 11,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "icon",
+              "id": "RbYqS",
+              "name": "Chevron",
+              "width": 22,
+              "height": 22,
+              "icon": "circle-check",
+              "library": "lucide",
+              "fill": "#077A50"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "eRi3P",
+          "x": 22,
+          "y": 530,
+          "name": "Option · Tetap 4 Feb 2027, target 63,7 kg",
+          "enabled": false,
+          "width": 346,
+          "fill": "$glass",
+          "cornerRadius": 24,
+          "stroke": "#FFFFFFCC",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "effect": [
+            {
+              "type": "background_blur",
+              "radius": 20
+            },
+            {
+              "type": "shadow",
+              "shadowType": "outer",
+              "color": "#0B3A281A",
+              "offset": {
+                "x": 0,
+                "y": 14
+              },
+              "blur": 34
+            }
+          ],
+          "gap": 14,
+          "padding": [
+            16,
+            18
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "U7qfvX",
+              "name": "Icon field",
+              "width": 46,
+              "height": 46,
+              "fill": "#DDF4E6",
+              "cornerRadius": 16,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "E4N5l",
+                  "x": 13,
+                  "y": 13,
+                  "name": "Icon",
+                  "width": 20,
+                  "height": 20,
+                  "icon": "target",
+                  "library": "lucide",
+                  "fill": "$primary"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "WbqUV",
+              "name": "Text",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 3,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "HgG3q",
+                  "name": "Title",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Tetap 4 Feb 2027, target 63,7 kg",
+                  "fontFamily": "$font",
+                  "fontSize": 16,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "lUce0",
+                  "name": "Desc",
+                  "fill": "$muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Berat terdekat yang aman dicapai di tanggal itu.",
+                  "fontFamily": "$font",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "icon",
+              "id": "HgtG1",
+              "name": "Chevron",
+              "width": 22,
+              "height": 22,
+              "icon": "circle",
+              "library": "lucide",
+              "fill": "#9FB3A6"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "oCExj",
+          "x": 22,
+          "y": 465,
+          "name": "Manual link",
+          "width": 346,
+          "height": 36,
+          "gap": 6,
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon",
+              "id": "E42y1",
+              "name": "Icon",
+              "width": 16,
+              "height": 16,
+              "icon": "pencil",
+              "library": "lucide",
+              "fill": "#077A50"
+            },
+            {
+              "type": "text",
+              "id": "fvKlp",
+              "name": "Label",
+              "fill": "#077A50",
+              "content": "Atur sendiri",
+              "fontFamily": "$font",
+              "fontSize": 14,
+              "fontWeight": "600"
+            }
+          ]
+        }
+      ]
     }
   ],
   "variables": {
