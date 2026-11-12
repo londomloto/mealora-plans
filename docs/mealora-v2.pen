@@ -46201,6 +46201,4036 @@
           "fontWeight": "normal"
         }
       ]
+    },
+    {
+      "type": "frame",
+      "id": "G6M6X",
+      "x": 0,
+      "y": 12670,
+      "name": "Section · 10 / Kurasi katalog & takaran",
+      "width": 2660,
+      "height": 70,
+      "fill": "#FFFFFF8F",
+      "cornerRadius": 22,
+      "stroke": "#FFFFFFCC",
+      "strokeWidth": 1,
+      "strokeAlignment": "inner",
+      "gap": 20,
+      "padding": [
+        0,
+        28
+      ],
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "frame",
+          "id": "e8Nsw",
+          "name": "Marker",
+          "width": 8,
+          "height": 30,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 200,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#0A6B4C",
+                "position": 0
+              },
+              {
+                "color": "#12A05C",
+                "position": 0.55
+              },
+              {
+                "color": "#35C97E",
+                "position": 1
+              }
+            ]
+          },
+          "cornerRadius": 4
+        },
+        {
+          "type": "text",
+          "id": "Y590QN",
+          "name": "Title",
+          "fill": "$ink",
+          "content": "10 / Kurasi katalog & takaran",
+          "fontFamily": "$font",
+          "fontSize": 22,
+          "fontWeight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "otmez",
+          "name": "Subtitle",
+          "fill": "$muted",
+          "textGrowth": "fixed-width",
+          "width": "fill_container",
+          "content": "Takaran sehari-hari + penanda perkiraan → catat dalam gram/ml → validasi jumlah → pencarian bentuk siap konsumsi & sinonim (change 015)",
+          "fontFamily": "$font",
+          "fontSize": 13,
+          "fontWeight": "normal"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "OnV1d",
+      "x": 0,
+      "y": 12800,
+      "name": "67 · Pilih takaran sehari-hari",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "$bg",
+      "layout": "none",
+      "children": [
+        {
+          "type": "ellipse",
+          "id": "KLNlc",
+          "x": 230,
+          "y": -120,
+          "name": "Blob lime",
+          "opacity": 0.3,
+          "fill": "#B6ED6A",
+          "width": 300,
+          "height": 300,
+          "effect": {
+            "type": "blur",
+            "radius": 80
+          }
+        },
+        {
+          "type": "ellipse",
+          "id": "eLIb9",
+          "x": -130,
+          "y": 420,
+          "name": "Blob mint",
+          "opacity": 0.2,
+          "fill": "#3FD5A0",
+          "width": 300,
+          "height": 300,
+          "effect": {
+            "type": "blur",
+            "radius": 90
+          }
+        },
+        {
+          "type": "ellipse",
+          "id": "z6j44",
+          "x": 180,
+          "y": 640,
+          "name": "Blob berry",
+          "opacity": 0.14,
+          "fill": "#6E8BFF",
+          "width": 320,
+          "height": 300,
+          "effect": {
+            "type": "blur",
+            "radius": 90
+          }
+        },
+        {
+          "type": "text",
+          "id": "waDH1",
+          "x": 24,
+          "y": 18,
+          "name": "Status time",
+          "fill": "$ink",
+          "content": "9:41",
+          "fontFamily": "$font",
+          "fontSize": 14,
+          "fontWeight": "bold"
+        },
+        {
+          "type": "icon",
+          "id": "a9fgM",
+          "x": 306,
+          "y": 18,
+          "name": "signal",
+          "width": 18,
+          "height": 18,
+          "icon": "signal",
+          "library": "lucide",
+          "fill": "$ink"
+        },
+        {
+          "type": "icon",
+          "id": "S6bZQu",
+          "x": 329,
+          "y": 18,
+          "name": "wifi",
+          "width": 18,
+          "height": 18,
+          "icon": "wifi",
+          "library": "lucide",
+          "fill": "$ink"
+        },
+        {
+          "type": "icon",
+          "id": "mb9Xo",
+          "x": 351,
+          "y": 18,
+          "name": "battery-full",
+          "width": 18,
+          "height": 18,
+          "icon": "battery-full",
+          "library": "lucide",
+          "fill": "$ink"
+        },
+        {
+          "type": "text",
+          "id": "HmNWz",
+          "x": 24,
+          "y": 64,
+          "name": "Step / context",
+          "fill": "$primary-deep",
+          "content": "TAMBAH KE BUKU HARIAN",
+          "fontFamily": "$font",
+          "fontSize": 10,
+          "fontWeight": "bold",
+          "letterSpacing": 1.4
+        },
+        {
+          "type": "text",
+          "id": "dalv5",
+          "x": 24,
+          "y": 82,
+          "name": "Page title",
+          "fill": "$ink",
+          "textGrowth": "fixed-width",
+          "width": 342,
+          "content": "Nasi putih",
+          "fontFamily": "$font",
+          "fontSize": 27,
+          "fontWeight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "Bkott",
+          "x": 24,
+          "y": 120,
+          "name": "Page subtitle",
+          "fill": "$muted",
+          "textGrowth": "fixed-width",
+          "width": 342,
+          "content": "Pilih sajian, jumlah, dan waktu makan.",
+          "fontFamily": "$font",
+          "fontSize": 13,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "sFxw0",
+          "x": 22,
+          "y": 160,
+          "name": "Food source chip",
+          "fill": "#DDF4E6CC",
+          "cornerRadius": 14,
+          "stroke": "#FFFFFFB8",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "padding": [
+            8,
+            14
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "HaFOb",
+              "name": "Label",
+              "fill": "$primary-deep",
+              "content": "Katalog lokal · TKPI 2017",
+              "fontFamily": "$font",
+              "fontSize": 11,
+              "fontWeight": "bold"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "oCMnq",
+          "x": 24,
+          "y": 212,
+          "name": "Sajian label",
+          "fill": "$muted",
+          "content": "Sajian",
+          "fontFamily": "$font",
+          "fontSize": 12,
+          "fontWeight": "600"
+        },
+        {
+          "type": "frame",
+          "id": "VM2MJ",
+          "x": 22,
+          "y": 232,
+          "name": "Sajian field",
+          "width": 346,
+          "height": 56,
+          "fill": "$glass",
+          "cornerRadius": 20,
+          "stroke": "#FFFFFFCC",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "effect": [
+            {
+              "type": "background_blur",
+              "radius": 20
+            },
+            {
+              "type": "shadow",
+              "shadowType": "outer",
+              "color": "#0B3A281A",
+              "offset": {
+                "x": 0,
+                "y": 14
+              },
+              "blur": 34
+            }
+          ],
+          "gap": 12,
+          "padding": [
+            0,
+            16
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "FwFzn",
+              "name": "Icon field",
+              "width": 34,
+              "height": 34,
+              "fill": "#EAF5EC",
+              "cornerRadius": 12,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "lLtqt",
+                  "x": 8,
+                  "y": 8,
+                  "name": "Icon",
+                  "width": 18,
+                  "height": 18,
+                  "icon": "utensils",
+                  "library": "lucide",
+                  "fill": "$primary-deep"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "bANQS",
+              "name": "Value",
+              "fill": "$ink",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "1 centong · 100 g",
+              "fontFamily": "$font",
+              "fontSize": 15,
+              "fontWeight": "600"
+            },
+            {
+              "type": "icon",
+              "id": "O7Nip",
+              "name": "Affordance",
+              "width": 18,
+              "height": 18,
+              "icon": "chevron-down",
+              "library": "lucide",
+              "fill": "#9FB3A6"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "q38U0",
+          "x": 24,
+          "y": 308,
+          "name": "Quantity label",
+          "fill": "$muted",
+          "content": "Jumlah sajian",
+          "fontFamily": "$font",
+          "fontSize": 12,
+          "fontWeight": "600"
+        },
+        {
+          "type": "frame",
+          "id": "URwyi",
+          "x": 22,
+          "y": 328,
+          "name": "Stepper",
+          "width": 346,
+          "height": 60,
+          "fill": "$glass",
+          "cornerRadius": 20,
+          "stroke": "#FFFFFFCC",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "effect": [
+            {
+              "type": "background_blur",
+              "radius": 20
+            },
+            {
+              "type": "shadow",
+              "shadowType": "outer",
+              "color": "#0B3A281A",
+              "offset": {
+                "x": 0,
+                "y": 14
+              },
+              "blur": 34
+            }
+          ],
+          "padding": [
+            0,
+            12
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "SZQxC",
+              "name": "minus",
+              "width": 40,
+              "height": 40,
+              "fill": "#DDF4E6",
+              "cornerRadius": 14,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "T4MwYj",
+                  "x": 11,
+                  "y": 11,
+                  "name": "Icon",
+                  "width": 18,
+                  "height": 18,
+                  "icon": "minus",
+                  "library": "lucide",
+                  "fill": "$primary-deep"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "fOlBI",
+              "name": "Value",
+              "fill": "$ink",
+              "content": "1,0",
+              "fontFamily": "$font",
+              "fontSize": 18,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "frame",
+              "id": "muI4b",
+              "name": "plus",
+              "width": 40,
+              "height": 40,
+              "fill": "#DDF4E6",
+              "cornerRadius": 14,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "bTknu",
+                  "x": 11,
+                  "y": 11,
+                  "name": "Icon",
+                  "width": 18,
+                  "height": 18,
+                  "icon": "plus",
+                  "library": "lucide",
+                  "fill": "$primary-deep"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "sS65O",
+          "x": 24,
+          "y": 412,
+          "name": "Waktu makan label",
+          "fill": "$muted",
+          "content": "Waktu makan",
+          "fontFamily": "$font",
+          "fontSize": 12,
+          "fontWeight": "600"
+        },
+        {
+          "type": "frame",
+          "id": "jIYwW",
+          "x": 22,
+          "y": 432,
+          "name": "Waktu makan field",
+          "width": 346,
+          "height": 56,
+          "fill": "$glass",
+          "cornerRadius": 20,
+          "stroke": "#FFFFFFCC",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "effect": [
+            {
+              "type": "background_blur",
+              "radius": 20
+            },
+            {
+              "type": "shadow",
+              "shadowType": "outer",
+              "color": "#0B3A281A",
+              "offset": {
+                "x": 0,
+                "y": 14
+              },
+              "blur": 34
+            }
+          ],
+          "gap": 12,
+          "padding": [
+            0,
+            16
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "nLeSu",
+              "name": "Icon field",
+              "width": 34,
+              "height": 34,
+              "fill": "#EAF5EC",
+              "cornerRadius": 12,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "S53YD",
+                  "x": 8,
+                  "y": 8,
+                  "name": "Icon",
+                  "width": 18,
+                  "height": 18,
+                  "icon": "sun",
+                  "library": "lucide",
+                  "fill": "$primary-deep"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "MUtAV",
+              "name": "Value",
+              "fill": "$ink",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Makan siang",
+              "fontFamily": "$font",
+              "fontSize": 15,
+              "fontWeight": "600"
+            },
+            {
+              "type": "icon",
+              "id": "IkeWd",
+              "name": "Affordance",
+              "width": 18,
+              "height": 18,
+              "icon": "chevron-down",
+              "library": "lucide",
+              "fill": "#9FB3A6"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "FUHvI",
+          "x": 22,
+          "y": 508,
+          "name": "Estimate card",
+          "width": 346,
+          "height": 92,
+          "fill": "$glass",
+          "cornerRadius": 24,
+          "stroke": "#FFFFFFCC",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "effect": [
+            {
+              "type": "background_blur",
+              "radius": 20
+            },
+            {
+              "type": "shadow",
+              "shadowType": "outer",
+              "color": "#0B3A281A",
+              "offset": {
+                "x": 0,
+                "y": 14
+              },
+              "blur": 34
+            }
+          ],
+          "layout": "vertical",
+          "gap": 4,
+          "padding": [
+            0,
+            20
+          ],
+          "justifyContent": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "HEl1v",
+              "name": "Label",
+              "fill": "$muted",
+              "content": "PERKIRAAN",
+              "fontFamily": "$font",
+              "fontSize": 10,
+              "fontWeight": "bold",
+              "letterSpacing": 1.2
+            },
+            {
+              "type": "text",
+              "id": "xKWP2",
+              "name": "Value",
+              "fill": "$primary-deep",
+              "content": "130 kkal",
+              "fontFamily": "$font",
+              "fontSize": 26,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "text",
+              "id": "is2uK",
+              "name": "Macros",
+              "fill": "$muted",
+              "content": "P 2,4 g · K 28,6 g · L 0,4 g",
+              "fontFamily": "$font",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "cUCzD",
+          "x": 22,
+          "y": 762,
+          "name": "Primary button",
+          "width": 346,
+          "height": 58,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 135,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#2BC46B",
+                "position": 0
+              },
+              {
+                "color": "#0C8B55",
+                "position": 1
+              }
+            ]
+          },
+          "cornerRadius": 20,
+          "effect": {
+            "type": "shadow",
+            "shadowType": "outer",
+            "color": "#0C8B5547",
+            "offset": {
+              "x": 0,
+              "y": 10
+            },
+            "blur": 24
+          },
+          "gap": 10,
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "Qkukc",
+              "name": "Label",
+              "fill": "#FFFFFF",
+              "content": "Tambahkan ke makan siang",
+              "fontFamily": "$font",
+              "fontSize": 16,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "icon",
+              "id": "LIMy5",
+              "name": "Arrow",
+              "width": 18,
+              "height": 18,
+              "icon": "arrow-right",
+              "library": "lucide",
+              "fill": "#FFFFFF"
+            }
+          ]
+        },
+        {
+          "type": "rectangle",
+          "id": "V6yVz",
+          "x": 0,
+          "y": 0,
+          "name": "Scrim",
+          "fill": "#0B2A1E96",
+          "width": 390,
+          "height": 844
+        },
+        {
+          "type": "frame",
+          "id": "g7ZC4I",
+          "x": 0,
+          "y": 300,
+          "name": "Sheet",
+          "width": 390,
+          "height": 544,
+          "fill": "#F7FBF8",
+          "cornerRadius": [
+            26,
+            26,
+            0,
+            0
+          ],
+          "effect": {
+            "type": "shadow",
+            "shadowType": "outer",
+            "color": "#0B3A2833",
+            "offset": {
+              "x": 0,
+              "y": -10
+            },
+            "blur": 40
+          },
+          "layout": "vertical",
+          "gap": 14,
+          "padding": [
+            10,
+            22,
+            28,
+            22
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "K23Rcr",
+              "name": "Grabber row",
+              "width": "fill_container",
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "b6joJ5",
+                  "name": "Grabber",
+                  "width": 44,
+                  "height": 5,
+                  "fill": "#D2E2D6",
+                  "cornerRadius": 3
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "oR232",
+              "name": "Header",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 4,
+              "padding": [
+                4,
+                2,
+                0,
+                2
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "u3by2",
+                  "name": "Sheet title",
+                  "fill": "$ink",
+                  "content": "Pilih takaran",
+                  "fontFamily": "$font",
+                  "fontSize": 20,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "A30ed",
+                  "name": "Sheet sub",
+                  "fill": "$muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Nasi putih · berat setiap takaran ditampilkan",
+                  "fontFamily": "$font",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "BNg2j",
+              "name": "Serving options",
+              "width": "fill_container",
+              "fill": "#FFFFFFCC",
+              "cornerRadius": 22,
+              "stroke": "#E6EFE7",
+              "strokeWidth": 1,
+              "strokeAlignment": "inner",
+              "layout": "vertical",
+              "padding": [
+                6,
+                14
+              ],
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "qgD8t",
+                  "name": "Option · 1 centong",
+                  "width": "fill_container",
+                  "height": 56,
+                  "gap": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Gq8Ls",
+                      "name": "Radio",
+                      "width": 20,
+                      "height": 20,
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 10,
+                      "stroke": "#0C8B55",
+                      "strokeWidth": 6,
+                      "strokeAlignment": "inner"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "P3dhD",
+                      "name": "Text",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 3,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "HjRsP",
+                          "name": "Label",
+                          "fill": "$ink",
+                          "content": "1 centong",
+                          "fontFamily": "$font",
+                          "fontSize": 15,
+                          "fontWeight": "bold"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "fwPSh",
+                          "name": "Meta",
+                          "gap": 6,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "yKVgT",
+                              "name": "Weight",
+                              "fill": "$muted",
+                              "content": "≈ 100 g",
+                              "fontFamily": "$font",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "XyBN2",
+                              "name": "Perkiraan pill",
+                              "fill": "#FFF4DD",
+                              "cornerRadius": 8,
+                              "gap": 4,
+                              "padding": [
+                                3,
+                                7
+                              ],
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "icon",
+                                  "id": "g13v6",
+                                  "name": "Icon",
+                                  "width": 11,
+                                  "height": 11,
+                                  "icon": "info",
+                                  "library": "lucide",
+                                  "fill": "#8A5A00"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "AL5Q0",
+                                  "name": "Label",
+                                  "fill": "#8A5A00",
+                                  "content": "perkiraan",
+                                  "fontFamily": "$font",
+                                  "fontSize": 10,
+                                  "fontWeight": "bold"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "YG5pY",
+                      "name": "Tag",
+                      "fill": "#EAF5EC",
+                      "cornerRadius": 8,
+                      "padding": [
+                        4,
+                        8
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "w9RKga",
+                          "name": "Label",
+                          "fill": "$primary-deep",
+                          "content": "Bawaan",
+                          "fontFamily": "$font",
+                          "fontSize": 10,
+                          "fontWeight": "bold"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "nzl4S",
+                  "name": "Divider",
+                  "width": "fill_container",
+                  "height": 1,
+                  "fill": "#E6EFE7"
+                },
+                {
+                  "type": "frame",
+                  "id": "cLtQY",
+                  "name": "Option · 1 piring",
+                  "width": "fill_container",
+                  "height": 56,
+                  "gap": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "XeQN5",
+                      "name": "Radio",
+                      "width": 20,
+                      "height": 20,
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 10,
+                      "stroke": "#B9CBBE",
+                      "strokeWidth": 1.5,
+                      "strokeAlignment": "inner"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "EC7cC",
+                      "name": "Text",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 3,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ThJy1",
+                          "name": "Label",
+                          "fill": "$ink",
+                          "content": "1 piring",
+                          "fontFamily": "$font",
+                          "fontSize": 15,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "pGgZu",
+                          "name": "Meta",
+                          "gap": 6,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "nH4Nq",
+                              "name": "Weight",
+                              "fill": "$muted",
+                              "content": "≈ 200 g",
+                              "fontFamily": "$font",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "TEMmE",
+                              "name": "Perkiraan pill",
+                              "fill": "#FFF4DD",
+                              "cornerRadius": 8,
+                              "gap": 4,
+                              "padding": [
+                                3,
+                                7
+                              ],
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "icon",
+                                  "id": "jbR0o",
+                                  "name": "Icon",
+                                  "width": 11,
+                                  "height": 11,
+                                  "icon": "info",
+                                  "library": "lucide",
+                                  "fill": "#8A5A00"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "Y8JfA",
+                                  "name": "Label",
+                                  "fill": "#8A5A00",
+                                  "content": "perkiraan",
+                                  "fontFamily": "$font",
+                                  "fontSize": 10,
+                                  "fontWeight": "bold"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "lIsuj",
+                  "name": "Divider",
+                  "width": "fill_container",
+                  "height": 1,
+                  "fill": "#E6EFE7"
+                },
+                {
+                  "type": "frame",
+                  "id": "f3PGZ",
+                  "name": "Option · 1 mangkuk",
+                  "width": "fill_container",
+                  "height": 56,
+                  "gap": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "RFHwE",
+                      "name": "Radio",
+                      "width": 20,
+                      "height": 20,
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 10,
+                      "stroke": "#B9CBBE",
+                      "strokeWidth": 1.5,
+                      "strokeAlignment": "inner"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "qZPrt",
+                      "name": "Text",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 3,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "a8vEiE",
+                          "name": "Label",
+                          "fill": "$ink",
+                          "content": "1 mangkuk",
+                          "fontFamily": "$font",
+                          "fontSize": 15,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "ztjUc",
+                          "name": "Meta",
+                          "gap": 6,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "XacLV",
+                              "name": "Weight",
+                              "fill": "$muted",
+                              "content": "≈ 150 g",
+                              "fontFamily": "$font",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "KVF9J",
+                              "name": "Tier",
+                              "fill": "$muted",
+                              "content": "· dihitung dari data terukur",
+                              "fontFamily": "$font",
+                              "fontSize": 11,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "z50i2D",
+                  "name": "Divider",
+                  "width": "fill_container",
+                  "height": 1,
+                  "fill": "#E6EFE7"
+                },
+                {
+                  "type": "frame",
+                  "id": "JMJVv",
+                  "name": "Option · 100 g",
+                  "width": "fill_container",
+                  "height": 56,
+                  "gap": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "SvRKP",
+                      "name": "Radio",
+                      "width": 20,
+                      "height": 20,
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 10,
+                      "stroke": "#B9CBBE",
+                      "strokeWidth": 1.5,
+                      "strokeAlignment": "inner"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Eemtf",
+                      "name": "Text",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 3,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "NBEap",
+                          "name": "Label",
+                          "fill": "$ink",
+                          "content": "100 g",
+                          "fontFamily": "$font",
+                          "fontSize": 15,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "mMi8S",
+                          "name": "Meta",
+                          "gap": 6,
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "ffWzC",
+                              "name": "Weight",
+                              "fill": "$muted",
+                              "content": "berat langsung",
+                              "fontFamily": "$font",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "V9152",
+                      "name": "Tag",
+                      "fill": "#EAF5EC",
+                      "cornerRadius": 8,
+                      "padding": [
+                        4,
+                        8
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "v2YTWu",
+                          "name": "Label",
+                          "fill": "$primary-deep",
+                          "content": "TKPI 2017",
+                          "fontFamily": "$font",
+                          "fontSize": 10,
+                          "fontWeight": "bold"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "yCuRB",
+              "name": "Gram entry row",
+              "width": "fill_container",
+              "height": 52,
+              "fill": "#FFFFFF",
+              "cornerRadius": 18,
+              "stroke": "#D7E7DB",
+              "strokeWidth": 1,
+              "strokeAlignment": "inner",
+              "gap": 12,
+              "padding": [
+                0,
+                16
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "yRKhz",
+                  "name": "Icon",
+                  "width": 18,
+                  "height": 18,
+                  "icon": "scale",
+                  "library": "lucide",
+                  "fill": "$primary-deep"
+                },
+                {
+                  "type": "text",
+                  "id": "t9DOdl",
+                  "name": "Label",
+                  "fill": "$primary-deep",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Masukkan berat sendiri (g)",
+                  "fontFamily": "$font",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "icon",
+                  "id": "ej9GS",
+                  "name": "Chevron",
+                  "width": 18,
+                  "height": 18,
+                  "icon": "chevron-right",
+                  "library": "lucide",
+                  "fill": "#9FB3A6"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "Be3X1",
+              "name": "Hint",
+              "fill": "$muted",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "\"Perkiraan\" berarti berat takaran diperkirakan dari ukuran umum, belum dari penimbangan resmi. Nilai gizi per 100 g tetap dari TKPI.",
+              "lineHeight": 1.45,
+              "fontFamily": "$font",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "jmNbE",
+      "x": 470,
+      "y": 12800,
+      "name": "68 · Catat dalam gram",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "$bg",
+      "layout": "none",
+      "children": [
+        {
+          "type": "ellipse",
+          "id": "C6Hw5A",
+          "x": 230,
+          "y": -120,
+          "name": "Blob lime",
+          "opacity": 0.3,
+          "fill": "#B6ED6A",
+          "width": 300,
+          "height": 300,
+          "effect": {
+            "type": "blur",
+            "radius": 80
+          }
+        },
+        {
+          "type": "ellipse",
+          "id": "p8yoJa",
+          "x": -130,
+          "y": 420,
+          "name": "Blob mint",
+          "opacity": 0.2,
+          "fill": "#3FD5A0",
+          "width": 300,
+          "height": 300,
+          "effect": {
+            "type": "blur",
+            "radius": 90
+          }
+        },
+        {
+          "type": "ellipse",
+          "id": "c9e0yn",
+          "x": 180,
+          "y": 640,
+          "name": "Blob berry",
+          "opacity": 0.14,
+          "fill": "#6E8BFF",
+          "width": 320,
+          "height": 300,
+          "effect": {
+            "type": "blur",
+            "radius": 90
+          }
+        },
+        {
+          "type": "text",
+          "id": "n5z9Gi",
+          "x": 24,
+          "y": 18,
+          "name": "Status time",
+          "fill": "$ink",
+          "content": "9:41",
+          "fontFamily": "$font",
+          "fontSize": 14,
+          "fontWeight": "bold"
+        },
+        {
+          "type": "icon",
+          "id": "hizcp",
+          "x": 306,
+          "y": 18,
+          "name": "signal",
+          "width": 18,
+          "height": 18,
+          "icon": "signal",
+          "library": "lucide",
+          "fill": "$ink"
+        },
+        {
+          "type": "icon",
+          "id": "d3ZT61",
+          "x": 329,
+          "y": 18,
+          "name": "wifi",
+          "width": 18,
+          "height": 18,
+          "icon": "wifi",
+          "library": "lucide",
+          "fill": "$ink"
+        },
+        {
+          "type": "icon",
+          "id": "E1vKJ",
+          "x": 351,
+          "y": 18,
+          "name": "battery-full",
+          "width": 18,
+          "height": 18,
+          "icon": "battery-full",
+          "library": "lucide",
+          "fill": "$ink"
+        },
+        {
+          "type": "text",
+          "id": "IzvZa",
+          "x": 24,
+          "y": 64,
+          "name": "Step / context",
+          "fill": "$primary-deep",
+          "content": "TAMBAH KE BUKU HARIAN",
+          "fontFamily": "$font",
+          "fontSize": 10,
+          "fontWeight": "bold",
+          "letterSpacing": 1.4
+        },
+        {
+          "type": "text",
+          "id": "B4TCT0",
+          "x": 24,
+          "y": 82,
+          "name": "Page title",
+          "fill": "$ink",
+          "textGrowth": "fixed-width",
+          "width": 342,
+          "content": "Nasi putih",
+          "fontFamily": "$font",
+          "fontSize": 27,
+          "fontWeight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "pvX7K",
+          "x": 24,
+          "y": 120,
+          "name": "Page subtitle",
+          "fill": "$muted",
+          "textGrowth": "fixed-width",
+          "width": 342,
+          "content": "Pilih sajian, jumlah, dan waktu makan.",
+          "fontFamily": "$font",
+          "fontSize": 13,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "x0qPro",
+          "x": 22,
+          "y": 160,
+          "name": "Food source chip",
+          "fill": "#DDF4E6CC",
+          "cornerRadius": 14,
+          "stroke": "#FFFFFFB8",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "padding": [
+            8,
+            14
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "A5lQs",
+              "name": "Label",
+              "fill": "$primary-deep",
+              "content": "Katalog lokal · TKPI 2017",
+              "fontFamily": "$font",
+              "fontSize": 11,
+              "fontWeight": "bold"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "ukinW",
+          "x": 24,
+          "y": 212,
+          "name": "Sajian label",
+          "fill": "$muted",
+          "content": "Sajian",
+          "fontFamily": "$font",
+          "fontSize": 12,
+          "fontWeight": "600"
+        },
+        {
+          "type": "frame",
+          "id": "muzVb",
+          "x": 22,
+          "y": 232,
+          "name": "Sajian field",
+          "width": 346,
+          "height": 56,
+          "fill": "$glass",
+          "cornerRadius": 20,
+          "stroke": "#FFFFFFCC",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "effect": [
+            {
+              "type": "background_blur",
+              "radius": 20
+            },
+            {
+              "type": "shadow",
+              "shadowType": "outer",
+              "color": "#0B3A281A",
+              "offset": {
+                "x": 0,
+                "y": 14
+              },
+              "blur": 34
+            }
+          ],
+          "gap": 12,
+          "padding": [
+            0,
+            16
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "h28Ir",
+              "name": "Icon field",
+              "width": 34,
+              "height": 34,
+              "fill": "#EAF5EC",
+              "cornerRadius": 12,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "AkzAg",
+                  "x": 8,
+                  "y": 8,
+                  "name": "Icon",
+                  "width": 18,
+                  "height": 18,
+                  "icon": "scale",
+                  "library": "lucide",
+                  "fill": "$primary-deep"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "CCC0r",
+              "name": "Value",
+              "fill": "$ink",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Berat sendiri (gram)",
+              "fontFamily": "$font",
+              "fontSize": 15,
+              "fontWeight": "600"
+            },
+            {
+              "type": "icon",
+              "id": "J6Gcen",
+              "name": "Affordance",
+              "width": 18,
+              "height": 18,
+              "icon": "chevron-down",
+              "library": "lucide",
+              "fill": "#9FB3A6"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "T97Ix",
+          "x": 24,
+          "y": 308,
+          "name": "Quantity label",
+          "fill": "$muted",
+          "content": "Berat yang dimakan",
+          "fontFamily": "$font",
+          "fontSize": 12,
+          "fontWeight": "600"
+        },
+        {
+          "type": "frame",
+          "id": "iNrvs",
+          "x": 22,
+          "y": 328,
+          "name": "Gram input",
+          "width": 346,
+          "height": 60,
+          "fill": "#FFFFFF",
+          "cornerRadius": 20,
+          "stroke": "#0C8B55",
+          "strokeWidth": 2,
+          "strokeAlignment": "inner",
+          "gap": 10,
+          "padding": [
+            0,
+            18
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "COz9D",
+              "name": "Value",
+              "fill": "$ink",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "150",
+              "fontFamily": "$font",
+              "fontSize": 22,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "text",
+              "id": "Y1xhIX",
+              "name": "Unit",
+              "fill": "$muted",
+              "content": "g",
+              "fontFamily": "$font",
+              "fontSize": 16,
+              "fontWeight": "600"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "DDJOh",
+          "x": 24,
+          "y": 412,
+          "name": "Waktu makan label",
+          "fill": "$muted",
+          "content": "Waktu makan",
+          "fontFamily": "$font",
+          "fontSize": 12,
+          "fontWeight": "600"
+        },
+        {
+          "type": "frame",
+          "id": "Co0aa",
+          "x": 22,
+          "y": 432,
+          "name": "Waktu makan field",
+          "width": 346,
+          "height": 56,
+          "fill": "$glass",
+          "cornerRadius": 20,
+          "stroke": "#FFFFFFCC",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "effect": [
+            {
+              "type": "background_blur",
+              "radius": 20
+            },
+            {
+              "type": "shadow",
+              "shadowType": "outer",
+              "color": "#0B3A281A",
+              "offset": {
+                "x": 0,
+                "y": 14
+              },
+              "blur": 34
+            }
+          ],
+          "gap": 12,
+          "padding": [
+            0,
+            16
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "x4Mn5k",
+              "name": "Icon field",
+              "width": 34,
+              "height": 34,
+              "fill": "#EAF5EC",
+              "cornerRadius": 12,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "zDEEy",
+                  "x": 8,
+                  "y": 8,
+                  "name": "Icon",
+                  "width": 18,
+                  "height": 18,
+                  "icon": "sun",
+                  "library": "lucide",
+                  "fill": "$primary-deep"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "Jd3Uj",
+              "name": "Value",
+              "fill": "$ink",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Makan siang",
+              "fontFamily": "$font",
+              "fontSize": 15,
+              "fontWeight": "600"
+            },
+            {
+              "type": "icon",
+              "id": "o2cZg",
+              "name": "Affordance",
+              "width": 18,
+              "height": 18,
+              "icon": "chevron-down",
+              "library": "lucide",
+              "fill": "#9FB3A6"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "S4ggb",
+          "x": 22,
+          "y": 508,
+          "name": "Estimate card",
+          "width": 346,
+          "height": 92,
+          "fill": "$glass",
+          "cornerRadius": 24,
+          "stroke": "#FFFFFFCC",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "effect": [
+            {
+              "type": "background_blur",
+              "radius": 20
+            },
+            {
+              "type": "shadow",
+              "shadowType": "outer",
+              "color": "#0B3A281A",
+              "offset": {
+                "x": 0,
+                "y": 14
+              },
+              "blur": 34
+            }
+          ],
+          "layout": "vertical",
+          "gap": 4,
+          "padding": [
+            0,
+            20
+          ],
+          "justifyContent": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "NTlcV",
+              "name": "Label",
+              "fill": "$muted",
+              "content": "PERKIRAAN",
+              "fontFamily": "$font",
+              "fontSize": 10,
+              "fontWeight": "bold",
+              "letterSpacing": 1.2
+            },
+            {
+              "type": "text",
+              "id": "fg4Ih",
+              "name": "Value",
+              "fill": "$primary-deep",
+              "content": "195 kkal",
+              "fontFamily": "$font",
+              "fontSize": 26,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "text",
+              "id": "xQ1aa",
+              "name": "Macros",
+              "fill": "$muted",
+              "content": "1,5 × nilai per 100 g · P 3,6 g · K 42,9 g · L 0,6 g",
+              "fontFamily": "$font",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "uBA6F",
+          "x": 22,
+          "y": 762,
+          "name": "Primary button",
+          "width": 346,
+          "height": 58,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 135,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#2BC46B",
+                "position": 0
+              },
+              {
+                "color": "#0C8B55",
+                "position": 1
+              }
+            ]
+          },
+          "cornerRadius": 20,
+          "effect": {
+            "type": "shadow",
+            "shadowType": "outer",
+            "color": "#0C8B5547",
+            "offset": {
+              "x": 0,
+              "y": 10
+            },
+            "blur": 24
+          },
+          "gap": 10,
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "gX3yW",
+              "name": "Label",
+              "fill": "#FFFFFF",
+              "content": "Tambahkan ke makan siang",
+              "fontFamily": "$font",
+              "fontSize": 16,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "icon",
+              "id": "bjEzo",
+              "name": "Arrow",
+              "width": 18,
+              "height": 18,
+              "icon": "arrow-right",
+              "library": "lucide",
+              "fill": "#FFFFFF"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "WHjME",
+          "x": 250,
+          "y": 304,
+          "name": "Switch to serving",
+          "gap": 4,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon",
+              "id": "R6Mc2",
+              "name": "Icon",
+              "width": 12,
+              "height": 12,
+              "icon": "repeat",
+              "library": "lucide",
+              "fill": "$primary-deep"
+            },
+            {
+              "type": "text",
+              "id": "xapmB",
+              "name": "Label",
+              "fill": "$primary-deep",
+              "content": "Pakai takaran",
+              "fontFamily": "$font",
+              "fontSize": 12,
+              "fontWeight": "bold"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "x6febH",
+      "x": 940,
+      "y": 12800,
+      "name": "69 · Berat 0 g ditolak",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "$bg",
+      "layout": "none",
+      "children": [
+        {
+          "type": "ellipse",
+          "id": "PWHW4",
+          "x": 230,
+          "y": -120,
+          "name": "Blob lime",
+          "opacity": 0.3,
+          "fill": "#B6ED6A",
+          "width": 300,
+          "height": 300,
+          "effect": {
+            "type": "blur",
+            "radius": 80
+          }
+        },
+        {
+          "type": "ellipse",
+          "id": "Z2x8w",
+          "x": -130,
+          "y": 420,
+          "name": "Blob mint",
+          "opacity": 0.2,
+          "fill": "#3FD5A0",
+          "width": 300,
+          "height": 300,
+          "effect": {
+            "type": "blur",
+            "radius": 90
+          }
+        },
+        {
+          "type": "ellipse",
+          "id": "TKiYV",
+          "x": 180,
+          "y": 640,
+          "name": "Blob berry",
+          "opacity": 0.14,
+          "fill": "#6E8BFF",
+          "width": 320,
+          "height": 300,
+          "effect": {
+            "type": "blur",
+            "radius": 90
+          }
+        },
+        {
+          "type": "text",
+          "id": "ZIjkV",
+          "x": 24,
+          "y": 18,
+          "name": "Status time",
+          "fill": "$ink",
+          "content": "9:41",
+          "fontFamily": "$font",
+          "fontSize": 14,
+          "fontWeight": "bold"
+        },
+        {
+          "type": "icon",
+          "id": "XEYDE",
+          "x": 306,
+          "y": 18,
+          "name": "signal",
+          "width": 18,
+          "height": 18,
+          "icon": "signal",
+          "library": "lucide",
+          "fill": "$ink"
+        },
+        {
+          "type": "icon",
+          "id": "fdwQn",
+          "x": 329,
+          "y": 18,
+          "name": "wifi",
+          "width": 18,
+          "height": 18,
+          "icon": "wifi",
+          "library": "lucide",
+          "fill": "$ink"
+        },
+        {
+          "type": "icon",
+          "id": "T8vX8j",
+          "x": 351,
+          "y": 18,
+          "name": "battery-full",
+          "width": 18,
+          "height": 18,
+          "icon": "battery-full",
+          "library": "lucide",
+          "fill": "$ink"
+        },
+        {
+          "type": "text",
+          "id": "ffHyG",
+          "x": 24,
+          "y": 64,
+          "name": "Step / context",
+          "fill": "$primary-deep",
+          "content": "TAMBAH KE BUKU HARIAN",
+          "fontFamily": "$font",
+          "fontSize": 10,
+          "fontWeight": "bold",
+          "letterSpacing": 1.4
+        },
+        {
+          "type": "text",
+          "id": "agly1",
+          "x": 24,
+          "y": 82,
+          "name": "Page title",
+          "fill": "$ink",
+          "textGrowth": "fixed-width",
+          "width": 342,
+          "content": "Nasi putih",
+          "fontFamily": "$font",
+          "fontSize": 27,
+          "fontWeight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "zZwj3",
+          "x": 24,
+          "y": 120,
+          "name": "Page subtitle",
+          "fill": "$muted",
+          "textGrowth": "fixed-width",
+          "width": 342,
+          "content": "Pilih sajian, jumlah, dan waktu makan.",
+          "fontFamily": "$font",
+          "fontSize": 13,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "Nghyn",
+          "x": 22,
+          "y": 160,
+          "name": "Food source chip",
+          "fill": "#DDF4E6CC",
+          "cornerRadius": 14,
+          "stroke": "#FFFFFFB8",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "padding": [
+            8,
+            14
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "ByGp0",
+              "name": "Label",
+              "fill": "$primary-deep",
+              "content": "Katalog lokal · TKPI 2017",
+              "fontFamily": "$font",
+              "fontSize": 11,
+              "fontWeight": "bold"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "neLLo",
+          "x": 24,
+          "y": 212,
+          "name": "Sajian label",
+          "fill": "$muted",
+          "content": "Sajian",
+          "fontFamily": "$font",
+          "fontSize": 12,
+          "fontWeight": "600"
+        },
+        {
+          "type": "frame",
+          "id": "lU2yY",
+          "x": 22,
+          "y": 232,
+          "name": "Sajian field",
+          "width": 346,
+          "height": 56,
+          "fill": "$glass",
+          "cornerRadius": 20,
+          "stroke": "#FFFFFFCC",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "effect": [
+            {
+              "type": "background_blur",
+              "radius": 20
+            },
+            {
+              "type": "shadow",
+              "shadowType": "outer",
+              "color": "#0B3A281A",
+              "offset": {
+                "x": 0,
+                "y": 14
+              },
+              "blur": 34
+            }
+          ],
+          "gap": 12,
+          "padding": [
+            0,
+            16
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "S01Mif",
+              "name": "Icon field",
+              "width": 34,
+              "height": 34,
+              "fill": "#EAF5EC",
+              "cornerRadius": 12,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "B4w9in",
+                  "x": 8,
+                  "y": 8,
+                  "name": "Icon",
+                  "width": 18,
+                  "height": 18,
+                  "icon": "scale",
+                  "library": "lucide",
+                  "fill": "$primary-deep"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "fefa5",
+              "name": "Value",
+              "fill": "$ink",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Berat sendiri (gram)",
+              "fontFamily": "$font",
+              "fontSize": 15,
+              "fontWeight": "600"
+            },
+            {
+              "type": "icon",
+              "id": "PEL1A",
+              "name": "Affordance",
+              "width": 18,
+              "height": 18,
+              "icon": "chevron-down",
+              "library": "lucide",
+              "fill": "#9FB3A6"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "YC8qG",
+          "x": 24,
+          "y": 308,
+          "name": "Quantity label",
+          "fill": "$muted",
+          "content": "Berat yang dimakan",
+          "fontFamily": "$font",
+          "fontSize": 12,
+          "fontWeight": "600"
+        },
+        {
+          "type": "frame",
+          "id": "k9Sigf",
+          "x": 22,
+          "y": 328,
+          "name": "Gram input",
+          "width": 346,
+          "height": 60,
+          "fill": "#FFFFFF",
+          "cornerRadius": 20,
+          "stroke": "#D64545",
+          "strokeWidth": 1.5,
+          "strokeAlignment": "inner",
+          "gap": 10,
+          "padding": [
+            0,
+            18
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "MwQDL",
+              "name": "Value",
+              "fill": "$ink",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "0",
+              "fontFamily": "$font",
+              "fontSize": 22,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "text",
+              "id": "ajmKG",
+              "name": "Unit",
+              "fill": "$muted",
+              "content": "g",
+              "fontFamily": "$font",
+              "fontSize": 16,
+              "fontWeight": "600"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "t1WSm",
+          "x": 24,
+          "y": 438,
+          "name": "Waktu makan label",
+          "fill": "$muted",
+          "content": "Waktu makan",
+          "fontFamily": "$font",
+          "fontSize": 12,
+          "fontWeight": "600"
+        },
+        {
+          "type": "frame",
+          "id": "nAk0l",
+          "x": 22,
+          "y": 458,
+          "name": "Waktu makan field",
+          "width": 346,
+          "height": 56,
+          "fill": "$glass",
+          "cornerRadius": 20,
+          "stroke": "#FFFFFFCC",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "effect": [
+            {
+              "type": "background_blur",
+              "radius": 20
+            },
+            {
+              "type": "shadow",
+              "shadowType": "outer",
+              "color": "#0B3A281A",
+              "offset": {
+                "x": 0,
+                "y": 14
+              },
+              "blur": 34
+            }
+          ],
+          "gap": 12,
+          "padding": [
+            0,
+            16
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "JqHVW",
+              "name": "Icon field",
+              "width": 34,
+              "height": 34,
+              "fill": "#EAF5EC",
+              "cornerRadius": 12,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "E53EN",
+                  "x": 8,
+                  "y": 8,
+                  "name": "Icon",
+                  "width": 18,
+                  "height": 18,
+                  "icon": "sun",
+                  "library": "lucide",
+                  "fill": "$primary-deep"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "wuTyN",
+              "name": "Value",
+              "fill": "$ink",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Makan siang",
+              "fontFamily": "$font",
+              "fontSize": 15,
+              "fontWeight": "600"
+            },
+            {
+              "type": "icon",
+              "id": "hk6is",
+              "name": "Affordance",
+              "width": 18,
+              "height": 18,
+              "icon": "chevron-down",
+              "library": "lucide",
+              "fill": "#9FB3A6"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "C081mA",
+          "x": 22,
+          "y": 534,
+          "name": "Estimate card",
+          "width": 346,
+          "height": 92,
+          "fill": "$glass",
+          "cornerRadius": 24,
+          "stroke": "#FFFFFFCC",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "effect": [
+            {
+              "type": "background_blur",
+              "radius": 20
+            },
+            {
+              "type": "shadow",
+              "shadowType": "outer",
+              "color": "#0B3A281A",
+              "offset": {
+                "x": 0,
+                "y": 14
+              },
+              "blur": 34
+            }
+          ],
+          "layout": "vertical",
+          "gap": 4,
+          "padding": [
+            0,
+            20
+          ],
+          "justifyContent": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "JjrAn",
+              "name": "Label",
+              "fill": "$muted",
+              "content": "PERKIRAAN",
+              "fontFamily": "$font",
+              "fontSize": 10,
+              "fontWeight": "bold",
+              "letterSpacing": 1.2
+            },
+            {
+              "type": "text",
+              "id": "PpNOV",
+              "name": "Value",
+              "fill": "$primary-deep",
+              "content": "—",
+              "fontFamily": "$font",
+              "fontSize": 26,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "text",
+              "id": "culmA",
+              "name": "Macros",
+              "fill": "$muted",
+              "content": "Isi berat lebih dari 0 g",
+              "fontFamily": "$font",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "LuAUK",
+          "x": 22,
+          "y": 762,
+          "name": "Primary button",
+          "opacity": 0.45,
+          "width": 346,
+          "height": 58,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 135,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#2BC46B",
+                "position": 0
+              },
+              {
+                "color": "#0C8B55",
+                "position": 1
+              }
+            ]
+          },
+          "cornerRadius": 20,
+          "effect": {
+            "type": "shadow",
+            "shadowType": "outer",
+            "color": "#0C8B5547",
+            "offset": {
+              "x": 0,
+              "y": 10
+            },
+            "blur": 24
+          },
+          "gap": 10,
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "Zi7jO",
+              "name": "Label",
+              "fill": "#FFFFFF",
+              "content": "Tambahkan ke makan siang",
+              "fontFamily": "$font",
+              "fontSize": 16,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "icon",
+              "id": "SQg5f",
+              "name": "Arrow",
+              "width": 18,
+              "height": 18,
+              "icon": "arrow-right",
+              "library": "lucide",
+              "fill": "#FFFFFF"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "kGsna",
+          "x": 250,
+          "y": 304,
+          "name": "Switch to serving",
+          "gap": 4,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon",
+              "id": "cvcrE",
+              "name": "Icon",
+              "width": 12,
+              "height": 12,
+              "icon": "repeat",
+              "library": "lucide",
+              "fill": "$primary-deep"
+            },
+            {
+              "type": "text",
+              "id": "veOLZ",
+              "name": "Label",
+              "fill": "$primary-deep",
+              "content": "Pakai takaran",
+              "fontFamily": "$font",
+              "fontSize": 12,
+              "fontWeight": "bold"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "gGETD",
+          "x": 24,
+          "y": 396,
+          "name": "Error message",
+          "width": 342,
+          "gap": 6,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon",
+              "id": "FXIsY",
+              "name": "Icon",
+              "width": 14,
+              "height": 14,
+              "icon": "circle-alert",
+              "library": "lucide",
+              "fill": "#B83232"
+            },
+            {
+              "type": "text",
+              "id": "Bri4X",
+              "name": "Text",
+              "fill": "#B83232",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Berat harus lebih dari 0 g. Catatan belum disimpan.",
+              "fontFamily": "$font",
+              "fontSize": 12,
+              "fontWeight": "600"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "v8gzO2",
+      "x": 1410,
+      "y": 12800,
+      "name": "70 · Cari \"teh\" · siap minum dulu",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "$bg",
+      "layout": "none",
+      "children": [
+        {
+          "type": "ellipse",
+          "id": "qvO9I",
+          "x": 230,
+          "y": -120,
+          "name": "Blob lime",
+          "opacity": 0.3,
+          "fill": "#B6ED6A",
+          "width": 300,
+          "height": 300,
+          "effect": {
+            "type": "blur",
+            "radius": 80
+          }
+        },
+        {
+          "type": "ellipse",
+          "id": "n5EBK0",
+          "x": -130,
+          "y": 420,
+          "name": "Blob mint",
+          "opacity": 0.2,
+          "fill": "#3FD5A0",
+          "width": 300,
+          "height": 300,
+          "effect": {
+            "type": "blur",
+            "radius": 90
+          }
+        },
+        {
+          "type": "ellipse",
+          "id": "RPa4g",
+          "x": 180,
+          "y": 640,
+          "name": "Blob berry",
+          "opacity": 0.14,
+          "fill": "#6E8BFF",
+          "width": 320,
+          "height": 300,
+          "effect": {
+            "type": "blur",
+            "radius": 90
+          }
+        },
+        {
+          "type": "text",
+          "id": "m63uh",
+          "x": 24,
+          "y": 18,
+          "name": "Status time",
+          "fill": "$ink",
+          "content": "9:41",
+          "fontFamily": "$font",
+          "fontSize": 14,
+          "fontWeight": "bold"
+        },
+        {
+          "type": "icon",
+          "id": "gMDA1",
+          "x": 306,
+          "y": 18,
+          "name": "signal",
+          "width": 18,
+          "height": 18,
+          "icon": "signal",
+          "library": "lucide",
+          "fill": "$ink"
+        },
+        {
+          "type": "icon",
+          "id": "zoRNQ",
+          "x": 329,
+          "y": 18,
+          "name": "wifi",
+          "width": 18,
+          "height": 18,
+          "icon": "wifi",
+          "library": "lucide",
+          "fill": "$ink"
+        },
+        {
+          "type": "icon",
+          "id": "cTmAQ",
+          "x": 351,
+          "y": 18,
+          "name": "battery-full",
+          "width": 18,
+          "height": 18,
+          "icon": "battery-full",
+          "library": "lucide",
+          "fill": "$ink"
+        },
+        {
+          "type": "text",
+          "id": "YnjaY",
+          "x": 24,
+          "y": 64,
+          "name": "Step / context",
+          "fill": "$primary-deep",
+          "content": "CATAT MAKANAN",
+          "fontFamily": "$font",
+          "fontSize": 10,
+          "fontWeight": "bold",
+          "letterSpacing": 1.4
+        },
+        {
+          "type": "text",
+          "id": "wwoSv",
+          "x": 24,
+          "y": 82,
+          "name": "Page title",
+          "fill": "$ink",
+          "textGrowth": "fixed-width",
+          "width": 342,
+          "content": "Cari makanan",
+          "fontFamily": "$font",
+          "fontSize": 27,
+          "fontWeight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "AxDAu",
+          "x": 24,
+          "y": 120,
+          "name": "Page subtitle",
+          "fill": "$muted",
+          "textGrowth": "fixed-width",
+          "width": 342,
+          "content": "Katalog lokal · tersedia tanpa internet",
+          "fontFamily": "$font",
+          "fontSize": 13,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "s5xew",
+          "x": 22,
+          "y": 160,
+          "name": "Search input",
+          "width": 346,
+          "height": 56,
+          "fill": "$glass",
+          "cornerRadius": 20,
+          "stroke": "#FFFFFFCC",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "effect": [
+            {
+              "type": "background_blur",
+              "radius": 20
+            },
+            {
+              "type": "shadow",
+              "shadowType": "outer",
+              "color": "#0B3A281A",
+              "offset": {
+                "x": 0,
+                "y": 14
+              },
+              "blur": 34
+            }
+          ],
+          "gap": 12,
+          "padding": [
+            0,
+            18
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon",
+              "id": "F7L9D",
+              "name": "Search",
+              "width": 18,
+              "height": 18,
+              "icon": "search",
+              "library": "lucide",
+              "fill": "$primary-deep"
+            },
+            {
+              "type": "text",
+              "id": "OPXJe",
+              "name": "Query",
+              "fill": "$ink",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "teh",
+              "fontFamily": "$font",
+              "fontSize": 15,
+              "fontWeight": "600"
+            },
+            {
+              "type": "icon",
+              "id": "MhLVf",
+              "name": "Clear",
+              "width": 16,
+              "height": 16,
+              "icon": "x",
+              "library": "lucide",
+              "fill": "#9FB3A6"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "l0yabM",
+          "x": 24,
+          "y": 238,
+          "name": "Recent heading",
+          "fill": "$ink",
+          "content": "Terakhir dicatat",
+          "fontFamily": "$font",
+          "fontSize": 17,
+          "fontWeight": "bold"
+        },
+        {
+          "type": "frame",
+          "id": "y9AvId",
+          "x": 22,
+          "y": 266,
+          "name": "Recent list",
+          "width": 346,
+          "height": 130,
+          "fill": "$glass",
+          "cornerRadius": 24,
+          "stroke": "#FFFFFFCC",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "effect": [
+            {
+              "type": "background_blur",
+              "radius": 20
+            },
+            {
+              "type": "shadow",
+              "shadowType": "outer",
+              "color": "#0B3A281A",
+              "offset": {
+                "x": 0,
+                "y": 14
+              },
+              "blur": 34
+            }
+          ],
+          "layout": "vertical",
+          "padding": [
+            10,
+            16
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "p74zFd",
+              "name": "Nasi putih",
+              "width": "fill_container",
+              "height": 54,
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "m3a6u",
+                  "name": "Icon field",
+                  "width": 34,
+                  "height": 34,
+                  "fill": "#FFF4DA",
+                  "cornerRadius": 12,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "ThXkk",
+                      "x": 8,
+                      "y": 8,
+                      "name": "Icon",
+                      "width": 18,
+                      "height": 18,
+                      "icon": "clock-3",
+                      "library": "lucide",
+                      "fill": "$citrus"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "ljbi7",
+                  "name": "Text",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 2,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "YXZdQ",
+                      "name": "Name",
+                      "fill": "$ink",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Nasi putih",
+                      "fontFamily": "$font",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "NmCiP",
+                      "name": "Detail",
+                      "fill": "$muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "130 kkal / 100 g · takaran terakhir",
+                      "fontFamily": "$font",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "MQLFa",
+                  "name": "Add",
+                  "width": 32,
+                  "height": 32,
+                  "fill": "#DDF4E6",
+                  "cornerRadius": 12,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "jPahW",
+                      "x": 7,
+                      "y": 7,
+                      "name": "Icon",
+                      "width": 18,
+                      "height": 18,
+                      "icon": "plus",
+                      "library": "lucide",
+                      "fill": "$primary-deep"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "fNEVd",
+              "name": "Divider",
+              "width": "fill_container",
+              "height": 1,
+              "fill": "#E6EFE7"
+            },
+            {
+              "type": "frame",
+              "id": "XKQD1",
+              "name": "Telur rebus",
+              "width": "fill_container",
+              "height": 54,
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "J2mMRz",
+                  "name": "Icon field",
+                  "width": 34,
+                  "height": 34,
+                  "fill": "#FFF4DA",
+                  "cornerRadius": 12,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "yh08m",
+                      "x": 8,
+                      "y": 8,
+                      "name": "Icon",
+                      "width": 18,
+                      "height": 18,
+                      "icon": "clock-3",
+                      "library": "lucide",
+                      "fill": "$citrus"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "EOqBo",
+                  "name": "Text",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 2,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "wcgEk",
+                      "name": "Name",
+                      "fill": "$ink",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Telur ceplok",
+                      "fontFamily": "$font",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "aSt32",
+                      "name": "Detail",
+                      "fill": "$muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "± 92 kkal / 1 butir",
+                      "fontFamily": "$font",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Wq4t5",
+                  "name": "Add",
+                  "width": 32,
+                  "height": 32,
+                  "fill": "#DDF4E6",
+                  "cornerRadius": 12,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "kY9u6",
+                      "x": 7,
+                      "y": 7,
+                      "name": "Icon",
+                      "width": 18,
+                      "height": 18,
+                      "icon": "plus",
+                      "library": "lucide",
+                      "fill": "$primary-deep"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "I3okM",
+          "x": 24,
+          "y": 418,
+          "name": "Results heading",
+          "fill": "$ink",
+          "content": "Hasil “teh”",
+          "fontFamily": "$font",
+          "fontSize": 17,
+          "fontWeight": "bold"
+        },
+        {
+          "type": "frame",
+          "id": "GcU4x",
+          "x": 22,
+          "y": 446,
+          "name": "Results list",
+          "width": 346,
+          "height": 182,
+          "fill": "$glass",
+          "cornerRadius": 24,
+          "stroke": "#FFFFFFCC",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "effect": [
+            {
+              "type": "background_blur",
+              "radius": 20
+            },
+            {
+              "type": "shadow",
+              "shadowType": "outer",
+              "color": "#0B3A281A",
+              "offset": {
+                "x": 0,
+                "y": 14
+              },
+              "blur": 34
+            }
+          ],
+          "layout": "vertical",
+          "padding": [
+            10,
+            16
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "E95Yg",
+              "name": "Nasi putih",
+              "width": "fill_container",
+              "height": 52,
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "pxQ2U",
+                  "name": "Text",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 2,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Ejsf8",
+                      "name": "Name",
+                      "fill": "$ink",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Teh manis (seduh)",
+                      "fontFamily": "$font",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "pLF3I",
+                      "name": "Detail",
+                      "fill": "$muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Siap minum · 1 gelas ≈ 250 ml",
+                      "fontFamily": "$font",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "icon",
+                  "id": "tFqlq",
+                  "name": "Chevron",
+                  "width": 18,
+                  "height": 18,
+                  "icon": "chevron-right",
+                  "library": "lucide",
+                  "fill": "#9FB3A6"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "pcImR",
+              "name": "Divider",
+              "width": "fill_container",
+              "height": 1,
+              "fill": "#E6EFE7"
+            },
+            {
+              "type": "frame",
+              "id": "xAB1u",
+              "name": "Nasi merah",
+              "width": "fill_container",
+              "height": 52,
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "CxRiD",
+                  "name": "Text",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 2,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "LO7Gj",
+                      "name": "Name",
+                      "fill": "$ink",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Teh tawar (seduh)",
+                      "fontFamily": "$font",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "DEETt",
+                      "name": "Detail",
+                      "fill": "$muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Siap minum · 1 gelas ≈ 250 ml",
+                      "fontFamily": "$font",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "icon",
+                  "id": "Jnppg",
+                  "name": "Chevron",
+                  "width": 18,
+                  "height": 18,
+                  "icon": "chevron-right",
+                  "library": "lucide",
+                  "fill": "#9FB3A6"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "hhOme",
+              "name": "Divider",
+              "width": "fill_container",
+              "height": 1,
+              "fill": "#E6EFE7"
+            },
+            {
+              "type": "frame",
+              "id": "a5xN0",
+              "name": "Nasi goreng",
+              "width": "fill_container",
+              "height": 52,
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Gicdn",
+                  "name": "Text",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 2,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "LRYrd",
+                      "name": "Name",
+                      "fill": "$ink",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Teh (daun kering)",
+                      "fontFamily": "$font",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "lhzrj",
+                      "name": "Detail",
+                      "fill": "$muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Bahan kering · 100 g",
+                      "fontFamily": "$font",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "icon",
+                  "id": "H1hiLE",
+                  "name": "Chevron",
+                  "width": 18,
+                  "height": 18,
+                  "icon": "chevron-right",
+                  "library": "lucide",
+                  "fill": "#9FB3A6"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "o0GRH",
+          "x": 24,
+          "y": 650,
+          "name": "Create link",
+          "fill": "$primary-deep",
+          "content": "Tidak ada?  + Buat makanan sendiri",
+          "fontFamily": "$font",
+          "fontSize": 13,
+          "fontWeight": "600"
+        },
+        {
+          "type": "frame",
+          "id": "iNXkB",
+          "x": 254,
+          "y": 700,
+          "name": "Favorites shortcut",
+          "width": 114,
+          "height": 48,
+          "fill": "$glass",
+          "cornerRadius": 18,
+          "stroke": "#FFFFFFCC",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "effect": [
+            {
+              "type": "background_blur",
+              "radius": 20
+            },
+            {
+              "type": "shadow",
+              "shadowType": "outer",
+              "color": "#0B3A281A",
+              "offset": {
+                "x": 0,
+                "y": 14
+              },
+              "blur": 34
+            }
+          ],
+          "gap": 8,
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon",
+              "id": "iEFwA",
+              "name": "Icon",
+              "width": 16,
+              "height": 16,
+              "icon": "star",
+              "library": "lucide",
+              "fill": "$citrus"
+            },
+            {
+              "type": "text",
+              "id": "Lz7LC",
+              "name": "Label",
+              "fill": "$ink",
+              "content": "Favorit",
+              "fontFamily": "$font",
+              "fontSize": 12,
+              "fontWeight": "bold"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "xLYa3",
+          "x": 22,
+          "y": 700,
+          "name": "Synonym note",
+          "width": 220,
+          "layout": "vertical",
+          "gap": 2,
+          "children": [
+            {
+              "type": "text",
+              "id": "A7k6H",
+              "name": "Line 1",
+              "fill": "$muted",
+              "content": "“telor” juga mencari telur,",
+              "fontFamily": "$font",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "FWMxZ",
+              "name": "Line 2",
+              "fill": "$muted",
+              "content": "“mie” juga mencari mi.",
+              "fontFamily": "$font",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "ffZrz",
+      "x": 1880,
+      "y": 12800,
+      "name": "71 · Ubah catatan · takaran perkiraan",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "$bg",
+      "layout": "none",
+      "children": [
+        {
+          "type": "ellipse",
+          "id": "gH18N",
+          "x": 230,
+          "y": -120,
+          "name": "Blob lime",
+          "opacity": 0.3,
+          "fill": "#B6ED6A",
+          "width": 300,
+          "height": 300,
+          "effect": {
+            "type": "blur",
+            "radius": 80
+          }
+        },
+        {
+          "type": "ellipse",
+          "id": "X8s7Zu",
+          "x": -130,
+          "y": 420,
+          "name": "Blob mint",
+          "opacity": 0.2,
+          "fill": "#3FD5A0",
+          "width": 300,
+          "height": 300,
+          "effect": {
+            "type": "blur",
+            "radius": 90
+          }
+        },
+        {
+          "type": "ellipse",
+          "id": "G2l96e",
+          "x": 180,
+          "y": 640,
+          "name": "Blob berry",
+          "opacity": 0.14,
+          "fill": "#6E8BFF",
+          "width": 320,
+          "height": 300,
+          "effect": {
+            "type": "blur",
+            "radius": 90
+          }
+        },
+        {
+          "type": "text",
+          "id": "MbGkJ",
+          "x": 24,
+          "y": 18,
+          "name": "Status time",
+          "fill": "$ink",
+          "content": "9:41",
+          "fontFamily": "$font",
+          "fontSize": 14,
+          "fontWeight": "bold"
+        },
+        {
+          "type": "icon",
+          "id": "eB8ec",
+          "x": 306,
+          "y": 18,
+          "name": "signal",
+          "width": 18,
+          "height": 18,
+          "icon": "signal",
+          "library": "lucide",
+          "fill": "$ink"
+        },
+        {
+          "type": "icon",
+          "id": "xclw2",
+          "x": 329,
+          "y": 18,
+          "name": "wifi",
+          "width": 18,
+          "height": 18,
+          "icon": "wifi",
+          "library": "lucide",
+          "fill": "$ink"
+        },
+        {
+          "type": "icon",
+          "id": "CoTS4",
+          "x": 351,
+          "y": 18,
+          "name": "battery-full",
+          "width": 18,
+          "height": 18,
+          "icon": "battery-full",
+          "library": "lucide",
+          "fill": "$ink"
+        },
+        {
+          "type": "text",
+          "id": "cL6RL",
+          "x": 24,
+          "y": 64,
+          "name": "Step / context",
+          "fill": "$primary-deep",
+          "content": "MAKAN SIANG · 8 NOV",
+          "fontFamily": "$font",
+          "fontSize": 10,
+          "fontWeight": "bold",
+          "letterSpacing": 1.4
+        },
+        {
+          "type": "text",
+          "id": "Z9MyNe",
+          "x": 24,
+          "y": 82,
+          "name": "Page title",
+          "fill": "$ink",
+          "textGrowth": "fixed-width",
+          "width": 342,
+          "content": "Ubah catatan",
+          "fontFamily": "$font",
+          "fontSize": 27,
+          "fontWeight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "O1aHaN",
+          "x": 24,
+          "y": 120,
+          "name": "Page subtitle",
+          "fill": "$muted",
+          "textGrowth": "fixed-width",
+          "width": 342,
+          "content": "Perubahan hanya berlaku untuk catatan ini.",
+          "fontFamily": "$font",
+          "fontSize": 13,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "fd3iP",
+          "x": 22,
+          "y": 160,
+          "name": "Logged food snapshot",
+          "width": 346,
+          "height": 84,
+          "fill": "$glass",
+          "cornerRadius": 24,
+          "stroke": "#FFFFFFCC",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "effect": [
+            {
+              "type": "background_blur",
+              "radius": 20
+            },
+            {
+              "type": "shadow",
+              "shadowType": "outer",
+              "color": "#0B3A281A",
+              "offset": {
+                "x": 0,
+                "y": 14
+              },
+              "blur": 34
+            }
+          ],
+          "gap": 14,
+          "padding": [
+            0,
+            18
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "pR0ag",
+              "name": "Icon field",
+              "width": 44,
+              "height": 44,
+              "fill": "#DDF4E6",
+              "cornerRadius": 16,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "YVA4O",
+                  "x": 12,
+                  "y": 12,
+                  "name": "Icon",
+                  "width": 20,
+                  "height": 20,
+                  "icon": "utensils",
+                  "library": "lucide",
+                  "fill": "$primary-deep"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "s4CNh",
+              "name": "Text",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 3,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "x4Uq4",
+                  "name": "Name",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Nasi putih",
+                  "fontFamily": "$font",
+                  "fontSize": 17,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "rpjFo",
+                  "name": "Detail",
+                  "fill": "$muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Sajian saat dicatat · 150 g",
+                  "fontFamily": "$font",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "PFOUx",
+              "name": "Calories",
+              "fill": "$primary-deep",
+              "content": "130 kkal",
+              "fontFamily": "$font",
+              "fontSize": 12,
+              "fontWeight": "bold"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "Z3cYFZ",
+          "x": 24,
+          "y": 266,
+          "name": "Sajian label",
+          "fill": "$muted",
+          "content": "Sajian",
+          "fontFamily": "$font",
+          "fontSize": 12,
+          "fontWeight": "600"
+        },
+        {
+          "type": "frame",
+          "id": "CMUaP",
+          "x": 22,
+          "y": 286,
+          "name": "Sajian field",
+          "width": 346,
+          "height": 56,
+          "fill": "$glass",
+          "cornerRadius": 20,
+          "stroke": "#FFFFFFCC",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "effect": [
+            {
+              "type": "background_blur",
+              "radius": 20
+            },
+            {
+              "type": "shadow",
+              "shadowType": "outer",
+              "color": "#0B3A281A",
+              "offset": {
+                "x": 0,
+                "y": 14
+              },
+              "blur": 34
+            }
+          ],
+          "gap": 12,
+          "padding": [
+            0,
+            16
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "ecLPD",
+              "name": "Icon field",
+              "width": 34,
+              "height": 34,
+              "fill": "#EAF5EC",
+              "cornerRadius": 12,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "zoJiI",
+                  "x": 8,
+                  "y": 8,
+                  "name": "Icon",
+                  "width": 18,
+                  "height": 18,
+                  "icon": "utensils",
+                  "library": "lucide",
+                  "fill": "$primary-deep"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "BuVuJ",
+              "name": "Value group",
+              "width": "fill_container",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "AnCNk",
+                  "name": "Value",
+                  "fill": "$ink",
+                  "content": "1 centong · 100 g",
+                  "fontFamily": "$font",
+                  "fontSize": 15,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "frame",
+                  "id": "c9LoIi",
+                  "name": "Perkiraan pill",
+                  "fill": "#FFF4DD",
+                  "cornerRadius": 8,
+                  "gap": 4,
+                  "padding": [
+                    3,
+                    7
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "cWSq2",
+                      "name": "Icon",
+                      "width": 11,
+                      "height": 11,
+                      "icon": "info",
+                      "library": "lucide",
+                      "fill": "#8A5A00"
+                    },
+                    {
+                      "type": "text",
+                      "id": "dB7WT",
+                      "name": "Label",
+                      "fill": "#8A5A00",
+                      "content": "perkiraan",
+                      "fontFamily": "$font",
+                      "fontSize": 10,
+                      "fontWeight": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "icon",
+              "id": "c6Yosb",
+              "name": "Affordance",
+              "width": 18,
+              "height": 18,
+              "icon": "chevron-down",
+              "library": "lucide",
+              "fill": "#9FB3A6"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "gBQf1",
+          "x": 24,
+          "y": 362,
+          "name": "Quantity label",
+          "fill": "$muted",
+          "content": "Jumlah yang dimakan",
+          "fontFamily": "$font",
+          "fontSize": 12,
+          "fontWeight": "600"
+        },
+        {
+          "type": "frame",
+          "id": "ZLNCS",
+          "x": 22,
+          "y": 382,
+          "name": "Edit quantity control",
+          "width": 346,
+          "height": 60,
+          "fill": "$glass",
+          "cornerRadius": 20,
+          "stroke": "#FFFFFFCC",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "effect": [
+            {
+              "type": "background_blur",
+              "radius": 20
+            },
+            {
+              "type": "shadow",
+              "shadowType": "outer",
+              "color": "#0B3A281A",
+              "offset": {
+                "x": 0,
+                "y": 14
+              },
+              "blur": 34
+            }
+          ],
+          "padding": [
+            0,
+            12
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "o1sf1",
+              "name": "minus",
+              "width": 40,
+              "height": 40,
+              "fill": "#DDF4E6",
+              "cornerRadius": 14,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "jIYc8",
+                  "x": 11,
+                  "y": 11,
+                  "name": "Icon",
+                  "width": 18,
+                  "height": 18,
+                  "icon": "minus",
+                  "library": "lucide",
+                  "fill": "$primary-deep"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "Foruw",
+              "name": "Value",
+              "fill": "$ink",
+              "content": "1 centong",
+              "fontFamily": "$font",
+              "fontSize": 17,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "frame",
+              "id": "PeEAe",
+              "name": "plus",
+              "width": 40,
+              "height": 40,
+              "fill": "#DDF4E6",
+              "cornerRadius": 14,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "W5SFj",
+                  "x": 11,
+                  "y": 11,
+                  "name": "Icon",
+                  "width": 18,
+                  "height": 18,
+                  "icon": "plus",
+                  "library": "lucide",
+                  "fill": "$primary-deep"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "r3Hjq",
+          "x": 24,
+          "y": 462,
+          "name": "Waktu makan label",
+          "fill": "$muted",
+          "content": "Waktu makan",
+          "fontFamily": "$font",
+          "fontSize": 12,
+          "fontWeight": "600"
+        },
+        {
+          "type": "frame",
+          "id": "cdMop",
+          "x": 22,
+          "y": 482,
+          "name": "Waktu makan field",
+          "width": 346,
+          "height": 56,
+          "fill": "$glass",
+          "cornerRadius": 20,
+          "stroke": "#FFFFFFCC",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "effect": [
+            {
+              "type": "background_blur",
+              "radius": 20
+            },
+            {
+              "type": "shadow",
+              "shadowType": "outer",
+              "color": "#0B3A281A",
+              "offset": {
+                "x": 0,
+                "y": 14
+              },
+              "blur": 34
+            }
+          ],
+          "gap": 12,
+          "padding": [
+            0,
+            16
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "o1uid",
+              "name": "Icon field",
+              "width": 34,
+              "height": 34,
+              "fill": "#EAF5EC",
+              "cornerRadius": 12,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "C1XZe",
+                  "x": 8,
+                  "y": 8,
+                  "name": "Icon",
+                  "width": 18,
+                  "height": 18,
+                  "icon": "sun",
+                  "library": "lucide",
+                  "fill": "$primary-deep"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "vo8rs",
+              "name": "Value",
+              "fill": "$ink",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Makan siang",
+              "fontFamily": "$font",
+              "fontSize": 15,
+              "fontWeight": "600"
+            },
+            {
+              "type": "icon",
+              "id": "Gk6A9",
+              "name": "Affordance",
+              "width": 18,
+              "height": 18,
+              "icon": "chevron-down",
+              "library": "lucide",
+              "fill": "#9FB3A6"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Rsjmf",
+          "x": 22,
+          "y": 558,
+          "name": "Updated estimate",
+          "width": 346,
+          "height": 76,
+          "fill": "$glass",
+          "cornerRadius": 24,
+          "stroke": "#FFFFFFCC",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "effect": [
+            {
+              "type": "background_blur",
+              "radius": 20
+            },
+            {
+              "type": "shadow",
+              "shadowType": "outer",
+              "color": "#0B3A281A",
+              "offset": {
+                "x": 0,
+                "y": 14
+              },
+              "blur": 34
+            }
+          ],
+          "padding": [
+            0,
+            20
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "e3DjD",
+              "name": "Label",
+              "fill": "$muted",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Perkiraan setelah diubah",
+              "fontFamily": "$font",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "lpvaH",
+              "name": "Value",
+              "fill": "$primary-deep",
+              "content": "130 kkal",
+              "fontFamily": "$font",
+              "fontSize": 19,
+              "fontWeight": "bold"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "nt0Hz",
+          "x": 22,
+          "y": 656,
+          "name": "Delete link",
+          "width": 346,
+          "height": 52,
+          "fill": "#FFE9E2A6",
+          "cornerRadius": 18,
+          "stroke": "#FFFFFFB8",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "gap": 8,
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon",
+              "id": "ybOa1",
+              "name": "Icon",
+              "width": 16,
+              "height": 16,
+              "icon": "trash-2",
+              "library": "lucide",
+              "fill": "#B4452B"
+            },
+            {
+              "type": "text",
+              "id": "p7rkXa",
+              "name": "Label",
+              "fill": "#B4452B",
+              "content": "Hapus catatan ini",
+              "fontFamily": "$font",
+              "fontSize": 13,
+              "fontWeight": "bold"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "cV43K",
+          "x": 22,
+          "y": 762,
+          "name": "Main action",
+          "width": 346,
+          "height": 58,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 135,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#2BC46B",
+                "position": 0
+              },
+              {
+                "color": "#0C8B55",
+                "position": 1
+              }
+            ]
+          },
+          "cornerRadius": 20,
+          "effect": {
+            "type": "shadow",
+            "shadowType": "outer",
+            "color": "#0C8B5547",
+            "offset": {
+              "x": 0,
+              "y": 10
+            },
+            "blur": 24
+          },
+          "gap": 10,
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "rcPqG",
+              "name": "Label",
+              "fill": "#FFFFFF",
+              "content": "Simpan perubahan",
+              "fontFamily": "$font",
+              "fontSize": 16,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "icon",
+              "id": "i2fG6H",
+              "name": "Arrow",
+              "width": 18,
+              "height": 18,
+              "icon": "arrow-right",
+              "library": "lucide",
+              "fill": "#FFFFFF"
+            }
+          ]
+        }
+      ]
     }
   ],
   "variables": {
