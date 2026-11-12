@@ -51322,9 +51322,9 @@
               "id": "e67nVI",
               "name": "Cara isi gizi",
               "width": "fill_container",
-              "fill": "#FFFFFF8F",
+              "fill": "#0B3A2814",
               "cornerRadius": 18,
-              "stroke": "#FFFFFFCC",
+              "stroke": "#FFFFFFB8",
               "strokeWidth": 1,
               "strokeAlignment": "inner",
               "gap": 4,
@@ -51371,15 +51371,18 @@
                   "height": 40,
                   "fill": "#FFFFFF",
                   "cornerRadius": 14,
+                  "stroke": "#0B3A2814",
+                  "strokeWidth": 1,
+                  "strokeAlignment": "inner",
                   "effect": {
                     "type": "shadow",
                     "shadowType": "outer",
-                    "color": "#0B3A281F",
+                    "color": "#0B3A2824",
                     "offset": {
                       "x": 0,
-                      "y": 4
+                      "y": 2
                     },
-                    "blur": 12
+                    "blur": 8
                   },
                   "gap": 6,
                   "justifyContent": "center",
@@ -52047,11 +52050,27 @@
                       "name": "Porsi stepper",
                       "width": "fill_container",
                       "height": 52,
-                      "fill": "#FFFFFF",
-                      "cornerRadius": 16,
-                      "stroke": "#0B3A2833",
-                      "strokeWidth": 1.5,
+                      "fill": "$glass",
+                      "cornerRadius": 20,
+                      "stroke": "#FFFFFFCC",
+                      "strokeWidth": 1,
                       "strokeAlignment": "inner",
+                      "effect": [
+                        {
+                          "type": "background_blur",
+                          "radius": 20
+                        },
+                        {
+                          "type": "shadow",
+                          "shadowType": "outer",
+                          "color": "#0B3A281A",
+                          "offset": {
+                            "x": 0,
+                            "y": 14
+                          },
+                          "blur": 34
+                        }
+                      ],
                       "gap": 4,
                       "padding": [
                         0,
@@ -52154,11 +52173,27 @@
                       "name": "Gram input",
                       "width": "fill_container",
                       "height": 52,
-                      "fill": "#FFFFFF",
-                      "cornerRadius": 16,
-                      "stroke": "#0B3A2833",
-                      "strokeWidth": 1.5,
+                      "fill": "$glass",
+                      "cornerRadius": 20,
+                      "stroke": "#FFFFFFCC",
+                      "strokeWidth": 1,
                       "strokeAlignment": "inner",
+                      "effect": [
+                        {
+                          "type": "background_blur",
+                          "radius": 20
+                        },
+                        {
+                          "type": "shadow",
+                          "shadowType": "outer",
+                          "color": "#0B3A281A",
+                          "offset": {
+                            "x": 0,
+                            "y": 14
+                          },
+                          "blur": 34
+                        }
+                      ],
                       "gap": 6,
                       "padding": [
                         0,
@@ -55672,6 +55707,1810 @@
               "icon": "arrow-right",
               "library": "lucide",
               "fill": "#FFFFFF"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "e7pQK",
+      "x": 0,
+      "y": 15360,
+      "name": "Section · 12 / Update aplikasi",
+      "width": 1400,
+      "height": 70,
+      "fill": "#FFFFFF8F",
+      "cornerRadius": 22,
+      "stroke": "#FFFFFFCC",
+      "strokeWidth": 1,
+      "strokeAlignment": "inner",
+      "gap": 20,
+      "padding": [
+        0,
+        28
+      ],
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "frame",
+          "id": "f71As",
+          "name": "Marker",
+          "width": 8,
+          "height": 30,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 200,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#0A6B4C",
+                "position": 0
+              },
+              {
+                "color": "#12A05C",
+                "position": 0.55
+              },
+              {
+                "color": "#35C97E",
+                "position": 1
+              }
+            ]
+          },
+          "cornerRadius": 4
+        },
+        {
+          "type": "text",
+          "id": "BJPoV",
+          "name": "Title",
+          "fill": "$ink",
+          "content": "12 / Update aplikasi",
+          "fontFamily": "$font",
+          "fontSize": 22,
+          "fontWeight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "ioC2U",
+          "name": "Subtitle",
+          "fill": "$muted",
+          "textGrowth": "fixed-width",
+          "width": "fill_container",
+          "content": "Wajib update menutupi app (tidak bisa ditutup) → update tersedia sebagai sheet, sekali per versi (change 017)",
+          "fontFamily": "$font",
+          "fontSize": 13,
+          "fontWeight": "normal"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "m7dj2",
+      "x": 0,
+      "y": 15490,
+      "name": "78 · Wajib update",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "$bg",
+      "layout": "none",
+      "children": [
+        {
+          "type": "ellipse",
+          "id": "oYP9Z",
+          "x": 230,
+          "y": -120,
+          "name": "Blob lime",
+          "opacity": 0.3,
+          "fill": "#B6ED6A",
+          "width": 300,
+          "height": 300,
+          "effect": {
+            "type": "blur",
+            "radius": 80
+          }
+        },
+        {
+          "type": "ellipse",
+          "id": "H84riX",
+          "x": -130,
+          "y": 420,
+          "name": "Blob mint",
+          "opacity": 0.2,
+          "fill": "#3FD5A0",
+          "width": 300,
+          "height": 300,
+          "effect": {
+            "type": "blur",
+            "radius": 90
+          }
+        },
+        {
+          "type": "ellipse",
+          "id": "q2IeKS",
+          "x": 180,
+          "y": 640,
+          "name": "Blob berry",
+          "opacity": 0.14,
+          "fill": "#6E8BFF",
+          "width": 320,
+          "height": 300,
+          "effect": {
+            "type": "blur",
+            "radius": 90
+          }
+        },
+        {
+          "type": "text",
+          "id": "tgsMz",
+          "x": 24,
+          "y": 18,
+          "name": "Status time",
+          "fill": "$ink",
+          "content": "9:41",
+          "fontFamily": "$font",
+          "fontSize": 14,
+          "fontWeight": "bold"
+        },
+        {
+          "type": "icon",
+          "id": "o0OvxM",
+          "x": 306,
+          "y": 18,
+          "name": "signal",
+          "width": 18,
+          "height": 18,
+          "icon": "signal",
+          "library": "lucide",
+          "fill": "$ink"
+        },
+        {
+          "type": "icon",
+          "id": "UiLvR",
+          "x": 329,
+          "y": 18,
+          "name": "wifi",
+          "width": 18,
+          "height": 18,
+          "icon": "wifi",
+          "library": "lucide",
+          "fill": "$ink"
+        },
+        {
+          "type": "icon",
+          "id": "fACMB",
+          "x": 351,
+          "y": 18,
+          "name": "battery-full",
+          "width": 18,
+          "height": 18,
+          "icon": "battery-full",
+          "library": "lucide",
+          "fill": "$ink"
+        },
+        {
+          "type": "text",
+          "id": "bTDzw",
+          "x": 24,
+          "y": 64,
+          "name": "Step / context",
+          "fill": "$primary-deep",
+          "content": "UPDATE DIPERLUKAN",
+          "fontFamily": "$font",
+          "fontSize": 10,
+          "fontWeight": "bold",
+          "letterSpacing": 1.4
+        },
+        {
+          "type": "text",
+          "id": "x2HTAi",
+          "x": 24,
+          "y": 82,
+          "name": "Page title",
+          "fill": "$ink",
+          "textGrowth": "fixed-width",
+          "width": 342,
+          "content": "Perbarui Mealora dulu",
+          "fontFamily": "$font",
+          "fontSize": 27,
+          "fontWeight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "qIdB0",
+          "x": 24,
+          "y": 120,
+          "name": "Page subtitle",
+          "fill": "$muted",
+          "textGrowth": "fixed-width",
+          "width": 342,
+          "content": "Versi yang terpasang sudah tidak didukung. Update sebentar, lalu lanjutkan seperti biasa.",
+          "lineHeight": 1.4,
+          "fontFamily": "$font",
+          "fontSize": 13,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "F0QI2l",
+          "x": 22,
+          "y": 168,
+          "name": "Unavailable state",
+          "width": 346,
+          "fill": "#FFF8E8D1",
+          "cornerRadius": 28,
+          "stroke": "#FFFFFFCC",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "effect": [
+            {
+              "type": "background_blur",
+              "radius": 20
+            },
+            {
+              "type": "shadow",
+              "shadowType": "outer",
+              "color": "#5A451F1A",
+              "offset": {
+                "x": 0,
+                "y": 14
+              },
+              "blur": 34
+            }
+          ],
+          "layout": "vertical",
+          "gap": 8,
+          "padding": [
+            20,
+            22
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "iP9NG",
+              "name": "Icon field",
+              "width": 46,
+              "height": 46,
+              "fill": "#FDEBC6",
+              "cornerRadius": 16,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "YGSCu",
+                  "x": 13,
+                  "y": 13,
+                  "name": "Icon",
+                  "width": 20,
+                  "height": 20,
+                  "icon": "refresh-cw",
+                  "library": "lucide",
+                  "fill": "#A96B00"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "IBc7m",
+              "name": "Heading",
+              "fill": "$ink",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Versi 1.0.0 tidak didukung lagi",
+              "fontFamily": "$font",
+              "fontSize": 15,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "text",
+              "id": "E5Keq",
+              "name": "Body",
+              "fill": "$muted",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Beberapa fitur butuh versi terbaru agar tetap berjalan dengan benar.",
+              "lineHeight": 1.45,
+              "fontFamily": "$font",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "Qvnwe",
+              "x": 22,
+              "y": 141,
+              "name": "Settings link",
+              "enabled": false,
+              "fill": "#A96B00",
+              "content": "Buka pengaturan izin →",
+              "fontFamily": "$font",
+              "fontSize": 12,
+              "fontWeight": "bold"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "ZCkfR",
+          "x": 24,
+          "y": 345,
+          "name": "Type heading",
+          "fill": "$ink",
+          "content": "Yang baru",
+          "fontFamily": "$font",
+          "fontSize": 16,
+          "fontWeight": "bold"
+        },
+        {
+          "type": "frame",
+          "id": "hJngW",
+          "x": 22,
+          "y": 375,
+          "name": "Sentence field",
+          "width": 346,
+          "fill": "$glass",
+          "cornerRadius": 24,
+          "stroke": "#FFFFFFCC",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "effect": [
+            {
+              "type": "background_blur",
+              "radius": 20
+            },
+            {
+              "type": "shadow",
+              "shadowType": "outer",
+              "color": "#0B3A281A",
+              "offset": {
+                "x": 0,
+                "y": 14
+              },
+              "blur": 34
+            }
+          ],
+          "layout": "vertical",
+          "gap": 6,
+          "padding": [
+            18,
+            20
+          ],
+          "justifyContent": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "qckTm",
+              "name": "Sentence",
+              "fill": "$ink",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "• Pencatatan suara lebih akurat\n• Perbaikan perhitungan resep\n• Perbaikan bug kecil",
+              "lineHeight": 1.6,
+              "fontFamily": "$font",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "cCmEm",
+              "name": "Hint",
+              "fill": "$muted",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Versi 1.2.0",
+              "fontFamily": "$font",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Roj67",
+          "x": 22,
+          "y": 510,
+          "name": "Scope note",
+          "width": 346,
+          "fill": "#FFFFFFB8",
+          "cornerRadius": 20,
+          "stroke": "#FFFFFFB8",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "gap": 12,
+          "padding": 16,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon",
+              "id": "X0o8j",
+              "name": "Icon",
+              "width": 20,
+              "height": 20,
+              "icon": "info",
+              "library": "lucide",
+              "fill": "$primary-deep"
+            },
+            {
+              "type": "frame",
+              "id": "oEF7R",
+              "name": "Lines",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 3,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "ldHdS",
+                  "name": "Title",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Data kamu tetap aman",
+                  "fontFamily": "$font",
+                  "fontSize": 13,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "r11PA7",
+                  "name": "Body",
+                  "fill": "$muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Catatan makan, berat, dan program tersimpan di HP ini dan tidak hilang saat update.",
+                  "lineHeight": 1.45,
+                  "fontFamily": "$font",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "RxzFC",
+          "x": 0,
+          "y": 630,
+          "name": "Catalog link",
+          "enabled": false,
+          "fill": "$primary-deep",
+          "textGrowth": "fixed-width",
+          "width": 390,
+          "content": "Tanpa internet? Cari di katalog →",
+          "textAlign": "center",
+          "fontFamily": "$font",
+          "fontSize": 12,
+          "fontWeight": "600"
+        },
+        {
+          "type": "frame",
+          "id": "gaZ7L",
+          "x": 22,
+          "y": 762,
+          "name": "Main action",
+          "width": 346,
+          "height": 58,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 135,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#2BC46B",
+                "position": 0
+              },
+              {
+                "color": "#0C8B55",
+                "position": 1
+              }
+            ]
+          },
+          "cornerRadius": 20,
+          "effect": {
+            "type": "shadow",
+            "shadowType": "outer",
+            "color": "#0C8B5547",
+            "offset": {
+              "x": 0,
+              "y": 10
+            },
+            "blur": 24
+          },
+          "gap": 10,
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "E8tiyo",
+              "name": "Label",
+              "fill": "#FFFFFF",
+              "content": "Update di Play Store",
+              "fontFamily": "$font",
+              "fontSize": 16,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "icon",
+              "id": "H089J",
+              "name": "Arrow",
+              "width": 18,
+              "height": 18,
+              "icon": "external-link",
+              "library": "lucide",
+              "fill": "#FFFFFF"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "C2rhS",
+      "x": 470,
+      "y": 15490,
+      "name": "79 · Update tersedia",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "$bg",
+      "layout": "none",
+      "children": [
+        {
+          "type": "frame",
+          "id": "LVb2k",
+          "x": 0,
+          "y": 0,
+          "name": "Hero field",
+          "clip": true,
+          "width": 390,
+          "height": 268,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 200,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#0A6B4C",
+                "position": 0
+              },
+              {
+                "color": "#12A05C",
+                "position": 0.55
+              },
+              {
+                "color": "#35C97E",
+                "position": 1
+              }
+            ]
+          },
+          "cornerRadius": [
+            0,
+            0,
+            38,
+            38
+          ],
+          "layout": "none",
+          "children": [
+            {
+              "type": "ellipse",
+              "id": "wdo1v",
+              "x": 230,
+              "y": -70,
+              "name": "Blob lime",
+              "opacity": 0.38,
+              "fill": "#B6ED6A",
+              "width": 260,
+              "height": 260,
+              "effect": {
+                "type": "blur",
+                "radius": 60
+              }
+            },
+            {
+              "type": "ellipse",
+              "id": "C2Gv7",
+              "x": -90,
+              "y": 80,
+              "name": "Blob mint",
+              "opacity": 0.45,
+              "fill": "#3FD5A0",
+              "width": 260,
+              "height": 240,
+              "effect": {
+                "type": "blur",
+                "radius": 70
+              }
+            },
+            {
+              "type": "ellipse",
+              "id": "VCZuj",
+              "x": 120,
+              "y": 150,
+              "name": "Blob citrus",
+              "opacity": 0.22,
+              "fill": "#FFB020",
+              "width": 200,
+              "height": 180,
+              "effect": {
+                "type": "blur",
+                "radius": 70
+              }
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "WpkN1",
+          "x": 24,
+          "y": 18,
+          "name": "Status time",
+          "fill": "#FFFFFF",
+          "content": "9:41",
+          "fontFamily": "$font",
+          "fontSize": 14,
+          "fontWeight": "bold"
+        },
+        {
+          "type": "icon",
+          "id": "c3w14",
+          "x": 306,
+          "y": 18,
+          "name": "signal",
+          "width": 18,
+          "height": 18,
+          "icon": "signal",
+          "library": "lucide",
+          "fill": "#FFFFFF"
+        },
+        {
+          "type": "icon",
+          "id": "vuCWq",
+          "x": 329,
+          "y": 18,
+          "name": "wifi",
+          "width": 18,
+          "height": 18,
+          "icon": "wifi",
+          "library": "lucide",
+          "fill": "#FFFFFF"
+        },
+        {
+          "type": "icon",
+          "id": "R1E6Ej",
+          "x": 351,
+          "y": 18,
+          "name": "battery-full",
+          "width": 18,
+          "height": 18,
+          "icon": "battery-full",
+          "library": "lucide",
+          "fill": "#FFFFFF"
+        },
+        {
+          "type": "text",
+          "id": "E50Zo",
+          "x": 24,
+          "y": 66,
+          "name": "Greeting",
+          "fill": "$on-dark",
+          "content": "Hai, Naya!",
+          "fontFamily": "$font",
+          "fontSize": 30,
+          "fontWeight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "hxRmg",
+          "x": 24,
+          "y": 104,
+          "name": "Date",
+          "fill": "$on-dark-soft",
+          "content": "Sabtu, 8 November 2026",
+          "fontFamily": "$font",
+          "fontSize": 13,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "BB0W9",
+          "x": 326,
+          "y": 68,
+          "name": "Brand mark",
+          "width": 40,
+          "height": 40,
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "brand-assets/mealora-open-bowl-app-icon-1024.png",
+            "mode": "contain"
+          },
+          "cornerRadius": 14,
+          "layout": "none"
+        },
+        {
+          "type": "frame",
+          "id": "J2iue",
+          "x": 24,
+          "y": 146,
+          "name": "Active program chip",
+          "width": 342,
+          "height": 52,
+          "fill": "#FFFFFF2E",
+          "cornerRadius": 18,
+          "stroke": "#FFFFFF52",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "effect": {
+            "type": "background_blur",
+            "radius": 16
+          },
+          "gap": 12,
+          "padding": [
+            0,
+            16
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "qBiq5",
+              "name": "Chip icon field",
+              "width": 30,
+              "height": 30,
+              "fill": "#FFFFFF33",
+              "cornerRadius": 11,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "RaSKe",
+                  "x": 7,
+                  "y": 7,
+                  "name": "Icon",
+                  "width": 16,
+                  "height": 16,
+                  "icon": "sprout",
+                  "library": "lucide",
+                  "fill": "#DFFFE9"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "KlvRO",
+              "name": "Chip label",
+              "fill": "$on-dark",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Program aktif · Makan Sehat",
+              "fontFamily": "$font",
+              "fontSize": 13,
+              "fontWeight": "600"
+            },
+            {
+              "type": "icon",
+              "id": "COmx1",
+              "name": "Chevron",
+              "width": 18,
+              "height": 18,
+              "icon": "chevron-right",
+              "library": "lucide",
+              "fill": "#CDEEDA"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "otb0n",
+          "x": 22,
+          "y": 232,
+          "name": "Calorie glass card",
+          "width": 346,
+          "height": 192,
+          "fill": "$glass",
+          "cornerRadius": "$r",
+          "stroke": "#FFFFFFCC",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "effect": [
+            {
+              "type": "background_blur",
+              "radius": 20
+            },
+            {
+              "type": "shadow",
+              "shadowType": "outer",
+              "color": "#0B3A281A",
+              "offset": {
+                "x": 0,
+                "y": 14
+              },
+              "blur": 34
+            }
+          ],
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "Zv3w6",
+              "x": 20,
+              "y": 32,
+              "name": "Calorie ring",
+              "width": 128,
+              "height": 128,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "ellipse",
+                  "id": "ZiPbq",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Track",
+                  "innerRadius": 0.78,
+                  "fill": "#E1EDE4",
+                  "width": 128,
+                  "height": 128
+                },
+                {
+                  "type": "ellipse",
+                  "id": "S4GRP",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Progress",
+                  "innerRadius": 0.78,
+                  "startAngle": 90,
+                  "sweepAngle": -243,
+                  "fill": "$primary",
+                  "width": 128,
+                  "height": 128
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "vFUYC",
+              "x": 20,
+              "y": 74,
+              "name": "Ring value",
+              "fill": "$ink",
+              "textGrowth": "fixed-width",
+              "width": 128,
+              "content": "1.420",
+              "textAlign": "center",
+              "fontFamily": "$font",
+              "fontSize": 28,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "text",
+              "id": "kZruG",
+              "x": 20,
+              "y": 106,
+              "name": "Ring unit",
+              "fill": "$muted",
+              "textGrowth": "fixed-width",
+              "width": 128,
+              "content": "dari 2.100 kkal",
+              "textAlign": "center",
+              "fontFamily": "$font",
+              "fontSize": 10,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "bIWnX",
+              "x": 166,
+              "y": 26,
+              "name": "Eyebrow",
+              "fill": "$primary-deep",
+              "content": "PERKIRAAN HARI INI",
+              "fontFamily": "$font",
+              "fontSize": 10,
+              "fontWeight": "bold",
+              "letterSpacing": 1.1
+            },
+            {
+              "type": "text",
+              "id": "pLp5r",
+              "x": 166,
+              "y": 48,
+              "name": "Remaining label",
+              "fill": "$muted",
+              "content": "Sisa perkiraan",
+              "fontFamily": "$font",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "BIh0q",
+              "x": 166,
+              "y": 64,
+              "name": "Remaining value",
+              "fill": "$primary-deep",
+              "content": "680 kkal",
+              "fontFamily": "$font",
+              "fontSize": 30,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "frame",
+              "id": "jHEzo",
+              "x": 166,
+              "y": 110,
+              "name": "Mini stats",
+              "width": 158,
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "wWK1l",
+                  "name": "Tercatat",
+                  "width": "fill_container",
+                  "height": 32,
+                  "fill": "#FFFFFFB8",
+                  "cornerRadius": 12,
+                  "gap": 8,
+                  "padding": [
+                    0,
+                    10
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "r5UA6J",
+                      "name": "Icon",
+                      "width": 14,
+                      "height": 14,
+                      "icon": "flame",
+                      "library": "lucide",
+                      "fill": "$citrus"
+                    },
+                    {
+                      "type": "text",
+                      "id": "fjFWa",
+                      "name": "Label",
+                      "fill": "$muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Tercatat",
+                      "fontFamily": "$font",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "lMtON",
+                      "name": "Value",
+                      "fill": "$ink",
+                      "content": "1.420 kkal",
+                      "fontFamily": "$font",
+                      "fontSize": 11,
+                      "fontWeight": "bold"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "nHJyH",
+                  "name": "Aktivitas",
+                  "width": "fill_container",
+                  "height": 32,
+                  "fill": "#FFFFFFB8",
+                  "cornerRadius": 12,
+                  "gap": 8,
+                  "padding": [
+                    0,
+                    10
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "PVrvb",
+                      "name": "Icon",
+                      "width": 14,
+                      "height": 14,
+                      "icon": "footprints",
+                      "library": "lucide",
+                      "fill": "$berry"
+                    },
+                    {
+                      "type": "text",
+                      "id": "kb8Jl",
+                      "name": "Label",
+                      "fill": "$muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Aktivitas",
+                      "fontFamily": "$font",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "KUl1u",
+                      "name": "Value",
+                      "fill": "$ink",
+                      "content": "sedang",
+                      "fontFamily": "$font",
+                      "fontSize": 11,
+                      "fontWeight": "bold"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "dznOx",
+          "x": 22,
+          "y": 436,
+          "name": "Macro glass card",
+          "width": 346,
+          "height": 98,
+          "fill": "$glass",
+          "cornerRadius": 22,
+          "stroke": "#FFFFFFCC",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "effect": [
+            {
+              "type": "background_blur",
+              "radius": 20
+            },
+            {
+              "type": "shadow",
+              "shadowType": "outer",
+              "color": "#0B3A281A",
+              "offset": {
+                "x": 0,
+                "y": 14
+              },
+              "blur": 34
+            }
+          ],
+          "gap": 16,
+          "padding": [
+            18,
+            20
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "NoOjc",
+              "name": "Protein",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 6,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "kp2Bc",
+                  "name": "Label",
+                  "fill": "$muted",
+                  "content": "Protein",
+                  "fontFamily": "$font",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "q42mX",
+                  "name": "Value",
+                  "fill": "$ink",
+                  "content": "72 / 110 g",
+                  "fontFamily": "$font",
+                  "fontSize": 13,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "frame",
+                  "id": "CTAN0",
+                  "name": "Track",
+                  "width": "fill_container",
+                  "height": 7,
+                  "fill": "#DFEAE1",
+                  "cornerRadius": 4,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "eRiTF",
+                      "x": 0,
+                      "y": 0,
+                      "name": "Fill",
+                      "width": 59,
+                      "height": 7,
+                      "fill": "$primary",
+                      "cornerRadius": 4
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "wrC46",
+              "name": "Karbo",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 6,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "ac1RL",
+                  "name": "Label",
+                  "fill": "$muted",
+                  "content": "Karbo",
+                  "fontFamily": "$font",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "N6ShUb",
+                  "name": "Value",
+                  "fill": "$ink",
+                  "content": "180 / 250 g",
+                  "fontFamily": "$font",
+                  "fontSize": 13,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "frame",
+                  "id": "d50USd",
+                  "name": "Track",
+                  "width": "fill_container",
+                  "height": 7,
+                  "fill": "#DFEAE1",
+                  "cornerRadius": 4,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "lVSRb",
+                      "x": 0,
+                      "y": 0,
+                      "name": "Fill",
+                      "width": 65,
+                      "height": 7,
+                      "fill": "$citrus",
+                      "cornerRadius": 4
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "o8FMEN",
+              "name": "Lemak",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 6,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "GjxJj",
+                  "name": "Label",
+                  "fill": "$muted",
+                  "content": "Lemak",
+                  "fontFamily": "$font",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "rZNZJ",
+                  "name": "Value",
+                  "fill": "$ink",
+                  "content": "48 / 70 g",
+                  "fontFamily": "$font",
+                  "fontSize": 13,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "frame",
+                  "id": "c240w",
+                  "name": "Track",
+                  "width": "fill_container",
+                  "height": 7,
+                  "fill": "#DFEAE1",
+                  "cornerRadius": 4,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "NxNLg",
+                      "x": 0,
+                      "y": 0,
+                      "name": "Fill",
+                      "width": 62,
+                      "height": 7,
+                      "fill": "$coral",
+                      "cornerRadius": 4
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "PlExz",
+          "x": 24,
+          "y": 552,
+          "name": "Meals heading",
+          "fill": "$ink",
+          "content": "Makanan hari ini",
+          "fontFamily": "$font",
+          "fontSize": 19,
+          "fontWeight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "O2xNfK",
+          "x": 24,
+          "y": 578,
+          "name": "Meals count",
+          "fill": "$muted",
+          "content": "4 waktu makan tercatat",
+          "fontFamily": "$font",
+          "fontSize": 12,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "n6Aj2I",
+          "x": 22,
+          "y": 604,
+          "name": "Meal list card",
+          "width": 346,
+          "height": 150,
+          "fill": "$glass",
+          "cornerRadius": 22,
+          "stroke": "#FFFFFFCC",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "effect": [
+            {
+              "type": "background_blur",
+              "radius": 20
+            },
+            {
+              "type": "shadow",
+              "shadowType": "outer",
+              "color": "#0B3A281A",
+              "offset": {
+                "x": 0,
+                "y": 14
+              },
+              "blur": 34
+            }
+          ],
+          "layout": "vertical",
+          "padding": [
+            10,
+            14
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "Wm3OQ",
+              "name": "Sarapan",
+              "width": "fill_container",
+              "height": 32,
+              "gap": 10,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Nol8r",
+                  "name": "Icon field",
+                  "width": 24,
+                  "height": 24,
+                  "fill": "#FFFFFFD9",
+                  "cornerRadius": 9,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "pLvB0",
+                      "x": 5,
+                      "y": 5,
+                      "name": "Icon",
+                      "width": 14,
+                      "height": 14,
+                      "icon": "sunrise",
+                      "library": "lucide",
+                      "fill": "$citrus"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "b5V1X2",
+                  "name": "Name",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Sarapan",
+                  "fontFamily": "$font",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "N0OVX",
+                  "name": "Kcal",
+                  "fill": "$muted",
+                  "content": "420 kkal",
+                  "fontFamily": "$font",
+                  "fontSize": 12,
+                  "fontWeight": "bold"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ne4bA",
+              "name": "Divider",
+              "width": "fill_container",
+              "height": 1,
+              "fill": "#E6EFE7"
+            },
+            {
+              "type": "frame",
+              "id": "S3mDo",
+              "name": "Makan siang",
+              "width": "fill_container",
+              "height": 32,
+              "gap": 10,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "bmxP7",
+                  "name": "Icon field",
+                  "width": 24,
+                  "height": 24,
+                  "fill": "#FFFFFFD9",
+                  "cornerRadius": 9,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "g7bwhw",
+                      "x": 5,
+                      "y": 5,
+                      "name": "Icon",
+                      "width": 14,
+                      "height": 14,
+                      "icon": "sun",
+                      "library": "lucide",
+                      "fill": "$primary"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "M6M552",
+                  "name": "Name",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Makan siang",
+                  "fontFamily": "$font",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "o1cEg",
+                  "name": "Kcal",
+                  "fill": "$muted",
+                  "content": "650 kkal",
+                  "fontFamily": "$font",
+                  "fontSize": 12,
+                  "fontWeight": "bold"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "RKY12",
+              "name": "Divider",
+              "width": "fill_container",
+              "height": 1,
+              "fill": "#E6EFE7"
+            },
+            {
+              "type": "frame",
+              "id": "Ve8ti",
+              "name": "Camilan",
+              "width": "fill_container",
+              "height": 32,
+              "gap": 10,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "p0WOJ",
+                  "name": "Icon field",
+                  "width": 24,
+                  "height": 24,
+                  "fill": "#FFFFFFD9",
+                  "cornerRadius": 9,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "SqGdw",
+                      "x": 5,
+                      "y": 5,
+                      "name": "Icon",
+                      "width": 14,
+                      "height": 14,
+                      "icon": "cookie",
+                      "library": "lucide",
+                      "fill": "$coral"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "o2pgE",
+                  "name": "Name",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Camilan",
+                  "fontFamily": "$font",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "ShfUL",
+                  "name": "Kcal",
+                  "fill": "$muted",
+                  "content": "150 kkal",
+                  "fontFamily": "$font",
+                  "fontSize": 12,
+                  "fontWeight": "bold"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "a6HPpL",
+              "name": "Divider",
+              "width": "fill_container",
+              "height": 1,
+              "fill": "#E6EFE7"
+            },
+            {
+              "type": "frame",
+              "id": "XpdFh",
+              "name": "Makan malam",
+              "width": "fill_container",
+              "height": 32,
+              "gap": 10,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "yiYjj",
+                  "name": "Icon field",
+                  "width": 24,
+                  "height": 24,
+                  "fill": "#FFFFFFD9",
+                  "cornerRadius": 9,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "y2U7PE",
+                      "x": 5,
+                      "y": 5,
+                      "name": "Icon",
+                      "width": 14,
+                      "height": 14,
+                      "icon": "moon",
+                      "library": "lucide",
+                      "fill": "$berry"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "TQU0h",
+                  "name": "Name",
+                  "fill": "$ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Makan malam",
+                  "fontFamily": "$font",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "xspFZ",
+                  "name": "Kcal",
+                  "fill": "$muted",
+                  "content": "200 kkal",
+                  "fontFamily": "$font",
+                  "fontSize": 12,
+                  "fontWeight": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "T4myQH",
+          "type": "ref",
+          "ref": "m2ivdI",
+          "name": "Navigation · Hari ini",
+          "x": 0,
+          "y": 772
+        },
+        {
+          "type": "rectangle",
+          "id": "S3KGk",
+          "x": 0,
+          "y": 0,
+          "name": "Scrim",
+          "fill": "#0B2A1E96",
+          "width": 390,
+          "height": 844
+        },
+        {
+          "type": "frame",
+          "id": "LjfSb",
+          "x": 0,
+          "y": 492,
+          "name": "Sheet",
+          "width": 390,
+          "height": 352,
+          "fill": "#F7FBF8",
+          "cornerRadius": [
+            26,
+            26,
+            0,
+            0
+          ],
+          "effect": {
+            "type": "shadow",
+            "shadowType": "outer",
+            "color": "#0B3A2833",
+            "offset": {
+              "x": 0,
+              "y": -10
+            },
+            "blur": 40
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "mXoWY",
+              "x": 173,
+              "y": 10,
+              "name": "Grabber",
+              "width": 44,
+              "height": 5,
+              "fill": "#D2E2D6",
+              "cornerRadius": 3
+            },
+            {
+              "type": "text",
+              "id": "iLx3U",
+              "x": 24,
+              "y": 30,
+              "name": "Sheet title",
+              "fill": "$ink",
+              "textGrowth": "fixed-width",
+              "width": 342,
+              "content": "Versi baru tersedia",
+              "fontFamily": "$font",
+              "fontSize": 20,
+              "fontWeight": "bold"
+            },
+            {
+              "type": "text",
+              "id": "KKIRd",
+              "x": 24,
+              "y": 60,
+              "name": "Sheet sub",
+              "fill": "$muted",
+              "textGrowth": "fixed-width",
+              "width": 342,
+              "content": "Mealora 1.2.0 sudah bisa diunduh. Update sekarang atau nanti, kamu tetap bisa memakai app.",
+              "lineHeight": 1.45,
+              "fontFamily": "$font",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "mCxcH",
+              "x": 24,
+              "y": 132,
+              "name": "Icon field",
+              "width": 64,
+              "height": 64,
+              "fill": "#EAF5EC",
+              "cornerRadius": 22,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "vSEQy",
+                  "x": 20,
+                  "y": 20,
+                  "name": "Icon",
+                  "width": 24,
+                  "height": 24,
+                  "icon": "sparkles",
+                  "library": "lucide",
+                  "fill": "$primary-deep"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "JvIM5",
+              "x": 22,
+              "y": 212,
+              "name": "Note",
+              "width": 346,
+              "height": 60,
+              "fill": "#DDF4E6CC",
+              "cornerRadius": 20,
+              "stroke": "#FFFFFFB8",
+              "strokeWidth": 1,
+              "strokeAlignment": "inner",
+              "gap": 12,
+              "padding": [
+                0,
+                16
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "u9NMMM",
+                  "name": "Icon",
+                  "width": 20,
+                  "height": 20,
+                  "icon": "list-checks",
+                  "library": "lucide",
+                  "fill": "$primary-deep"
+                },
+                {
+                  "type": "text",
+                  "id": "fkGG9",
+                  "name": "Body",
+                  "fill": "$muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Pencatatan suara lebih akurat, perbaikan perhitungan resep, dan perbaikan bug kecil.",
+                  "lineHeight": 1.45,
+                  "fontFamily": "$font",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "gdS0G",
+              "x": 22,
+              "y": 286,
+              "name": "Actions",
+              "width": 346,
+              "gap": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "OJDv4",
+                  "name": "Secondary button",
+                  "width": "fill_container",
+                  "height": 56,
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 20,
+                  "stroke": "#D7E7DB",
+                  "strokeWidth": 1,
+                  "strokeAlignment": "inner",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "QP3om",
+                      "name": "Label",
+                      "fill": "$primary-deep",
+                      "content": "Nanti",
+                      "fontFamily": "$font",
+                      "fontSize": 15,
+                      "fontWeight": "bold"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Nn6QT",
+                  "name": "Primary button",
+                  "width": "fill_container",
+                  "height": 56,
+                  "fill": {
+                    "type": "gradient",
+                    "gradientType": "linear",
+                    "enabled": true,
+                    "rotation": 135,
+                    "size": {
+                      "height": 1
+                    },
+                    "colors": [
+                      {
+                        "color": "#2BC46B",
+                        "position": 0
+                      },
+                      {
+                        "color": "#0C8B55",
+                        "position": 1
+                      }
+                    ]
+                  },
+                  "cornerRadius": 20,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#0C8B5547",
+                    "offset": {
+                      "x": 0,
+                      "y": 10
+                    },
+                    "blur": 24
+                  },
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "G3g1s",
+                      "name": "Label",
+                      "fill": "#FFFFFF",
+                      "content": "Update",
+                      "fontFamily": "$font",
+                      "fontSize": 15,
+                      "fontWeight": "bold"
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
