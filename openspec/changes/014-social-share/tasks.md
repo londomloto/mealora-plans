@@ -26,6 +26,6 @@
 
 ## 5. Verifikasi
 
-- [ ] 5.1 `flutter analyze` dan `flutter test` hijau
+- [x] 5.1 `flutter analyze` dan `flutter test` hijau
 - [ ] 5.2 Uji manual di emulator: share ringkasan (online/offline), batal di lembar berbagi, `share-cards/` bersih
 - [ ] 5.3 Uji manual alur foto end-to-end + share, serta matikan aplikasi saat layar "Tersimpan" (setelah kuota Gemini tersedia atau dengan mock)
