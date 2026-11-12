@@ -2,7 +2,7 @@
 
 | | |
 |---|---|
-| Versi | v0.2 — **lihat §5, revisi keputusan 2026-11-11** |
+| Versi | v0.3 — **lihat §6, kurasi change 015 (2026-11-12)**; §5 revisi keputusan 2026-11-11 |
 | Status | v0.1 (§1–4) diterima untuk MVP 1 dengan hak pakai USDA dipastikan; **v0.2 (§5) mengganti katalog dengan data TKPI yang hak pakainya BELUM dipastikan — keputusan sadar pemilik produk, bukan karena haknya sudah clear** |
 | Tanggal | 2026-11-10 (v0.1), 2026-11-11 (v0.2) |
 | Change asal | `007-food-catalog-diary` |
@@ -199,3 +199,109 @@ Pangan Indonesia (TKPI) ... published by the Ministry of Health").
 **Tindak lanjut yang disarankan (belum dikerjakan):** ajukan izin
 tertulis ke Kemenkes/Balitbangkes; sambil menunggu, kurasi takaran saji
 untuk item yang paling sering dicari, dan audit ulang kategori `other`.
+
+> Status 2026-11-12: kurasi takaran dan koreksi nilai dikerjakan di §6.
+> Izin tertulis dan audit kategori masih terbuka.
+
+## 6. Kurasi 2026-11-12 — change `015-food-catalog-curation`
+
+Change 015 mengoreksi nilai gizi katalog terhadap TKPI 2017 dan menambah
+takaran sehari-hari. Catatan di §5 soal hak pakai tetap berlaku.
+
+### 6.1 Lokasi dataset kurasi
+
+Sumber kebenaran katalog bawaan sekarang adalah CSV di
+`mealora-apps/mealora-mobile/tool/food_catalog/`, bukan tabel di dokumen ini
+(§4 langkah 7 tidak berlaku lagi untuk katalog TKPI):
+
+| File | Isi |
+|---|---|
+| `foods.csv` | Gizi per 100 g, `form` (ready/raw/dry), `active`, `tkpi2017_ref` (kode + halaman PDF), `verified`, `energy_exception` |
+| `servings.csv` | Takaran per makanan dengan `tier`, `ref`, `note` |
+| `unit_ranges.csv` | Rentang gram wajar per satuan, beserta dasarnya |
+| `synonyms.csv` | Sinonim pencarian per kata (telor → telur) dan per frasa (nasi putih → nasi) |
+| `priority_foods.csv` | Daftar prioritas 606 makanan dalam 12 batch tinjauan |
+| `review_batch*.csv` | Lembar tinjauan pemilik produk per batch |
+| `tkpi2017_review.csv` | Item yang tidak ditemukan, kandidat, dikoreksi, galat sumber, atau salah cocok |
+| `duplicates.csv` | Makanan yang dinonaktifkan sebagai duplikat |
+| `missing_common_foods.csv` | Makanan umum yang belum ada dan statusnya |
+
+Alurnya: ubah CSV, jalankan `dart run tool/generate_food_catalog.dart`
+(menulis `lib/database/seeds/food_catalog_data.dart`), naikkan
+`kFoodCatalogSeedVersion`, lalu `dart run tool/check_food_catalog.dart` dan
+`flutter test`. Pemeriksa mutu memeriksa energi terhadap makro (±25%),
+rentang gram per satuan, nama ganda, satu takaran bawaan per makanan, dan
+kelengkapan asal-usul. Test mutu gagal untuk setiap pelanggaran baru, jadi
+rilis tertahan sampai diperbaiki.
+
+### 6.2 Status TKPI 2017
+
+- Nilai per 100 g dicocokkan ke TKPI 2017 (`docs/tkpi.md`, konversi dari
+  `docs/tkpi.pdf` yang sudah diverifikasi terhadap PDF). Nomor halaman diambil
+  dari PDF.
+- 975 dari 1.310 makanan aktif punya kode TKPI 2017; 961 bertanda `verified`.
+  Sisanya tidak ditemukan di TKPI 2017 dan tetap memakai nilai dataset Kaggle,
+  dengan alasan di `energy_exception` bila energinya menyimpang.
+- 49 makanan dinonaktifkan: duplikat, kode TKPI ganda, atau tidak ada di TKPI
+  dengan energi menyimpang lebih dari 50%. Baris tidak dihapus, karena catatan
+  makan lama mereferensikannya.
+- TKPI sendiri punya galat, misalnya Mie kering AP022 (KH 6,3 g) dan Andewi
+  DR004 (226 kkal). Nilai dipertahankan sesuai sumber dan dicatat di
+  `tkpi2017_review.csv`.
+- 13 makanan siap konsumsi baru (ID `racik-*`, mis. teh manis, lontong,
+  perkedel) dan 3 baris yang dipulihkan (pisang goreng, bubur nasi, ubi jalar
+  rebus) memakai gizi **turunan resep**: jumlah gizi bahan TKPI 2017 dibagi
+  berat jadi. Resep dan susut masak adalah perkiraan dan tercatat di `note`
+  takaran 100 g. Pengganti bahan: nila memakai mujair (GR048), tenggiri memakai
+  tongkol (GR070).
+
+### 6.3 Tingkat sumber per takaran
+
+Setiap takaran punya tingkat (`provenance_tier`), dan aplikasi menandai
+takaran perkiraan di layar pilih takaran.
+
+| Tingkat | Arti | Syarat | Jumlah (takaran sehari-hari) |
+|---|---|---|---|
+| `official` | Angka tabel resmi apa adanya | `ref` wajib (mis. Permenkes 41/2014 Lampiran hlm. 9) | 157 |
+| `derived` | Dihitung dari angka resmi (bagi, kali, nilai tengah rentang, atau angka bahan sejenis) | `ref` wajib, berisi rumusnya | 263 |
+| `estimate` | Perkiraan tanpa tabel resmi | `note` wajib, berisi dasar perkiraan | 381 |
+
+Takaran asal 100 g (1.359 baris) tetap ada untuk setiap makanan. Takaran asal
+makanan `racik-*` dan baris yang dipulihkan bertingkat `derived`.
+
+Sumber yang dipakai:
+
+- **Permenkes 41/2014 (Pedoman Gizi Seimbang), Lampiran hlm. 9–16 dan 41**:
+  tabel penukar berisi URT + gram (berat bersih) untuk makanan pokok, lauk,
+  sayur (1 porsi = 100 g ≈ 1 gelas matang), buah, dan minyak.
+- **Buku Foto SKMI 2014**: hanya contoh di bagian petunjuk yang terbaca
+  (mie bakso 400 g, ikan mas goreng 120 g, sup 1 mangkuk 250 g, kue apem
+  40 g). Angka per foto berupa gambar dan belum didapat.
+- **Sumber tidak resmi yang masuk akal**, atas keputusan pemilik produk
+  (2026-11-12): bahan ajar kampus, mis. nasi 1 centong plastik = 60 g
+  (Panduan Praktikum Gizi Univ. Alma Ata 2023 hlm. 12). Tetap bertingkat
+  `estimate` dengan rujukan di `note`.
+
+767 makanan aktif punya takaran bawaan sehari-hari: seluruh 606 makanan
+prioritas dan 161 lainnya (hasil 4.4 dan 4.5). Sisanya memakai 100 g, umumnya
+bahan mentah atau bahan langka yang lazim ditimbang.
+
+### 6.4 Keterbatasan yang tersisa
+
+- **Izin pakai TKPI belum ada.** Draf surat permohonan ada di
+  `docs/surat-permohonan-izin-tkpi.md` dan belum dikirim. `docs/tkpi.md` dan
+  `docs/tkpi.pdf` sudah ter-commit di repo ini, jadi pertimbangkan kembali
+  apakah keduanya boleh disimpan di repo sebelum izin keluar.
+- **Sumber URT resmi belum lengkap.** DBMP dan Buku Foto Makanan SKMI versi
+  resmi belum didapat. Takaran `estimate` bisa diganti begitu sumber itu
+  tersedia, cukup lewat CSV.
+- **Tinjauan pemilik produk baru selesai untuk batch 1.** Batch 2–12 dan
+  entri 4.4 sudah terisi tapi belum ditinjau.
+- **Kategori sebagian masih salah sejak change 007**, misalnya ikan mujair dan
+  tales kukus masuk `drink`. Di luar cakupan 015.
+- **Berat buah Permenkes adalah berat bersih per porsi penukar**, sehingga
+  "1 buah" bisa terasa kecil dibanding buah utuh di pasaran (mis. pisang
+  ambon 50 g).
+- **Pemeriksa mutu tidak memeriksa panjang kolom.** Skema membatasi
+  `source_ref` 64 karakter, `ref` takaran 160, dan `note` 240; pelanggaran baru
+  ketahuan saat seed berjalan di test.

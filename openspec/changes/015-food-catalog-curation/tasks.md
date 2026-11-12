@@ -29,8 +29,8 @@
 - [x] 4.1 Susun daftar makanan prioritas (`tool/food_catalog/priority_foods.csv`): ~260 paling lazim dicatat (nasi, lauk, sayur, gorengan, minuman sehari-hari) ditambah seluruh entri siap konsumsi dan lauk hewani segar, ±600 item dalam 12 batch, dan minta persetujuan pemilik produk atas daftarnya
 - [x] 4.2 Isi takaran sehari-hari untuk batch 1 (50 item) dengan tingkat dan rujukan atau catatan. Gunakan sumber `official` bila tersedia; `estimate` hanya bila tidak ada, dan wajib dalam rentang `unit_ranges.csv`
 - [ ] 4.3 Tinjauan pemilik produk batch 1. Ulangi 4.2–4.3 untuk batch 2–12
-- [ ] 4.4 Tambah entri bentuk siap konsumsi yang belum ada (mis. "Teh manis (seduh)", "Kopi hitam (seduh)") dengan gizi turunan dari sumber terukur
-- [ ] 4.5 Isi takaran sehari-hari untuk sisa katalog bila satuannya wajar. Bahan yang tidak lazim dicatat per takaran tetap memakai 100 g
+- [x] 4.4 Tambah entri bentuk siap konsumsi yang belum ada (mis. "Teh manis (seduh)", "Kopi hitam (seduh)") dengan gizi turunan dari sumber terukur
+- [x] 4.5 Isi takaran sehari-hari untuk sisa katalog bila satuannya wajar. Bahan yang tidak lazim dicatat per takaran tetap memakai 100 g
 - [x] 4.6 Selaraskan label satuan dengan `_unitAliases` di `voice_draft_builder.dart` dan tambahkan alias yang kurang
 - [x] 4.7 Draf foto makanan: cocokkan satuan hasil pengenalan ke takaran (logika sama dengan input suara). Gram/ml → takaran 100 g/100 ml × (jumlah/100); satuan tak dikenali → takaran bawaan dengan porsi ditandai perlu dicek. Tambah test unit untuk "150 g", "1 piring", dan satuan tak dikenali
 
@@ -44,11 +44,11 @@
 
 ## 6. mealora-mobile — Verifikasi
 
-- [ ] 6.1 Uji pembaruan di emulator Android (`flutter run -d emulator-5554`) dari build v9 berisi catatan: catatan lama tidak berubah, seed baru diterapkan, durasi seed pertama dicatat
-- [ ] 6.2 Jalankan skenario uji FRS 1–8 di emulator
-- [ ] 6.3 Gate verifikasi repo: `flutter analyze`, `dart format --set-exit-if-changed .`, `flutter test`; laporkan hasil dan risiko tersisa
+- [x] 6.1 Uji pembaruan di emulator Android (`flutter run -d emulator-5554`) dari build v9 berisi catatan: catatan lama tidak berubah, seed baru diterapkan, durasi seed pertama dicatat
+- [x] 6.2 Jalankan skenario uji FRS 1–8 di emulator
+- [x] 6.3 Gate verifikasi repo: `flutter analyze`, `dart format --set-exit-if-changed .`, `flutter test`; laporkan hasil dan risiko tersisa
 
 ## 7. mealora-plans — Dokumentasi
 
-- [ ] 7.1 Perbarui `docs/food-data-sources.md`: tingkat sumber per takaran, lokasi dataset kurasi, status TKPI 2017, keterbatasan yang tersisa (sumber URT resmi, izin TKPI)
-- [ ] 7.2 Gate verifikasi: `openspec validate 015-food-catalog-curation --strict` lolos
+- [x] 7.1 Perbarui `docs/food-data-sources.md`: tingkat sumber per takaran, lokasi dataset kurasi, status TKPI 2017, keterbatasan yang tersisa (sumber URT resmi, izin TKPI)
+- [x] 7.2 Gate verifikasi: `openspec validate 015-food-catalog-curation --strict` lolos
