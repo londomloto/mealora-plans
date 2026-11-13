@@ -76794,6 +76794,497 @@
           }
         }
       ]
+    },
+    {
+      "type": "frame",
+      "id": "L5RTaS",
+      "x": 3740,
+      "y": 3840,
+      "name": "19c · Foto makanan + pilih dari galeri",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "#0D2B20",
+      "layout": "none",
+      "children": [
+        {
+          "type": "frame",
+          "id": "m4CqL",
+          "x": 0,
+          "y": 0,
+          "name": "Camera feed",
+          "metadata": {
+            "type": "unsplash",
+            "username": "nasik",
+            "link": "https://unsplash.com/@nasik",
+            "author": "Nasik Lababan"
+          },
+          "width": 390,
+          "height": 844,
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "https://images.unsplash.com/photo-1791800935942-72ce26ebc0b2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTQ0Nzg1NDZ8&ixlib=rb-4.1.0&q=80&w=1080",
+            "mode": "cover"
+          },
+          "layout": "none"
+        },
+        {
+          "type": "frame",
+          "id": "tJKtJ",
+          "x": 0,
+          "y": 0,
+          "name": "Top scrim",
+          "width": 390,
+          "height": 190,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 180,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#0A2A1DCC",
+                "position": 0
+              },
+              {
+                "color": "#0A2A1D00",
+                "position": 1
+              }
+            ]
+          },
+          "layout": "none"
+        },
+        {
+          "type": "frame",
+          "id": "wcOLt",
+          "x": 0,
+          "y": 520,
+          "name": "Bottom scrim",
+          "width": 390,
+          "height": 324,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 0,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#0A2A1DE6",
+                "position": 0
+              },
+              {
+                "color": "#0A2A1D00",
+                "position": 1
+              }
+            ]
+          },
+          "layout": "none"
+        },
+        {
+          "type": "text",
+          "id": "CgKN9",
+          "x": 24,
+          "y": 18,
+          "name": "Status time",
+          "fill": "#FFFFFF",
+          "content": "9:41",
+          "fontFamily": "$font",
+          "fontSize": 14,
+          "fontWeight": "bold"
+        },
+        {
+          "type": "icon",
+          "id": "q3CEL5",
+          "x": 306,
+          "y": 18,
+          "name": "signal",
+          "width": 18,
+          "height": 18,
+          "icon": "signal",
+          "library": "lucide",
+          "fill": "#FFFFFF"
+        },
+        {
+          "type": "icon",
+          "id": "yb5IH",
+          "x": 329,
+          "y": 18,
+          "name": "wifi",
+          "width": 18,
+          "height": 18,
+          "icon": "wifi",
+          "library": "lucide",
+          "fill": "#FFFFFF"
+        },
+        {
+          "type": "icon",
+          "id": "wNclH",
+          "x": 351,
+          "y": 18,
+          "name": "battery-full",
+          "width": 18,
+          "height": 18,
+          "icon": "battery-full",
+          "library": "lucide",
+          "fill": "#FFFFFF"
+        },
+        {
+          "type": "frame",
+          "id": "NbAkL",
+          "x": 22,
+          "y": 56,
+          "name": "Close photo",
+          "width": 44,
+          "height": 44,
+          "fill": "#0A2A1D59",
+          "cornerRadius": 16,
+          "stroke": "#FFFFFF59",
+          "strokeWidth": 1,
+          "strokeAlignment": "inner",
+          "effect": {
+            "type": "background_blur",
+            "radius": 14
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "icon",
+              "id": "cS3ek",
+              "x": 13,
+              "y": 13,
+              "name": "Icon",
+              "width": 18,
+              "height": 18,
+              "icon": "x",
+              "library": "lucide",
+              "fill": "#FFFFFF"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "cVc0B",
+          "x": 78,
+          "y": 56,
+          "name": "Header",
+          "width": 290,
+          "height": 44,
+          "layout": "vertical",
+          "gap": 2,
+          "justifyContent": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "e3I5Av",
+              "name": "Eyebrow",
+              "fill": "#B6ED6A",
+              "content": "FOTO MAKANAN",
+              "fontFamily": "$font",
+              "fontSize": 11,
+              "fontWeight": "600",
+              "letterSpacing": 1.2
+            },
+            {
+              "type": "text",
+              "id": "L29x6Y",
+              "name": "Title",
+              "fill": "#FFFFFF",
+              "content": "Ambil foto makanan",
+              "fontFamily": "$font",
+              "fontSize": 20,
+              "fontWeight": "700"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "h42h5l",
+          "x": 40,
+          "y": 210,
+          "name": "Corner 0",
+          "width": 52,
+          "height": 52,
+          "cornerRadius": [
+            14,
+            0,
+            0,
+            0
+          ],
+          "stroke": "#B6ED6A",
+          "strokeWidth": {
+            "top": 3,
+            "left": 3
+          },
+          "strokeAlignment": "inner",
+          "layout": "none"
+        },
+        {
+          "type": "frame",
+          "id": "s4qfyw",
+          "x": 298,
+          "y": 210,
+          "name": "Corner 1",
+          "width": 52,
+          "height": 52,
+          "cornerRadius": [
+            0,
+            14,
+            0,
+            0
+          ],
+          "stroke": "#B6ED6A",
+          "strokeWidth": {
+            "top": 3,
+            "right": 3
+          },
+          "strokeAlignment": "inner",
+          "layout": "none"
+        },
+        {
+          "type": "frame",
+          "id": "qtMaE",
+          "x": 298,
+          "y": 458,
+          "name": "Corner 2",
+          "width": 52,
+          "height": 52,
+          "cornerRadius": [
+            0,
+            0,
+            14,
+            0
+          ],
+          "stroke": "#B6ED6A",
+          "strokeWidth": {
+            "right": 3,
+            "bottom": 3
+          },
+          "strokeAlignment": "inner",
+          "layout": "none"
+        },
+        {
+          "type": "frame",
+          "id": "gn8hF",
+          "x": 40,
+          "y": 458,
+          "name": "Corner 3",
+          "width": 52,
+          "height": 52,
+          "cornerRadius": [
+            0,
+            0,
+            0,
+            14
+          ],
+          "stroke": "#B6ED6A",
+          "strokeWidth": {
+            "bottom": 3,
+            "left": 3
+          },
+          "strokeAlignment": "inner",
+          "layout": "none"
+        },
+        {
+          "type": "frame",
+          "id": "A2QWC9",
+          "x": 126,
+          "y": 524,
+          "name": "Hint pill",
+          "fill": "#0A2A1D99",
+          "cornerRadius": 999,
+          "effect": {
+            "type": "background_blur",
+            "radius": 14
+          },
+          "padding": [
+            6,
+            12
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "q5WIg0",
+              "name": "Hint",
+              "fill": "#FFFFFF",
+              "content": "Arahkan ke piringmu",
+              "fontFamily": "$font",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Zsybs",
+          "x": 16,
+          "y": 659,
+          "name": "Controls",
+          "width": 358,
+          "fill": "#FFFFFFEB",
+          "cornerRadius": 24,
+          "effect": {
+            "type": "background_blur",
+            "radius": 20
+          },
+          "layout": "vertical",
+          "gap": 12,
+          "padding": 16,
+          "children": [
+            {
+              "type": "frame",
+              "id": "fAJwt",
+              "name": "Consent row",
+              "width": "fill_container",
+              "gap": 10,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Axh35",
+                  "name": "Checkbox",
+                  "width": 20,
+                  "height": 20,
+                  "cornerRadius": 6,
+                  "stroke": "#1D4436",
+                  "strokeWidth": 2,
+                  "strokeAlignment": "inner"
+                },
+                {
+                  "type": "text",
+                  "id": "nsZjU",
+                  "name": "Consent label",
+                  "fill": "#1D4436",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Izinkan foto diunggah untuk dianalisis AI. Foto tetap tersimpan lokal.",
+                  "lineHeight": 1.35,
+                  "fontFamily": "$font",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "owByA",
+              "name": "Action row",
+              "width": "fill_container",
+              "gap": 10,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Lzmel",
+                  "name": "Main action",
+                  "width": "fill_container",
+                  "height": 58,
+                  "fill": {
+                    "type": "gradient",
+                    "gradientType": "linear",
+                    "enabled": true,
+                    "rotation": 135,
+                    "size": {
+                      "height": 1
+                    },
+                    "colors": [
+                      {
+                        "color": "#2BC46B",
+                        "position": 0
+                      },
+                      {
+                        "color": "#0C8B55",
+                        "position": 1
+                      }
+                    ]
+                  },
+                  "cornerRadius": 20,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#0C8B5547",
+                    "offset": {
+                      "x": 0,
+                      "y": 10
+                    },
+                    "blur": 24
+                  },
+                  "gap": 10,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "t1W6f",
+                      "name": "Label",
+                      "fill": "#FFFFFF",
+                      "content": "Ambil foto & lanjutkan",
+                      "fontFamily": "$font",
+                      "fontSize": 16,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "icon",
+                      "id": "RMBG2",
+                      "name": "Arrow",
+                      "width": 18,
+                      "height": 18,
+                      "icon": "arrow-right",
+                      "library": "lucide",
+                      "fill": "#FFFFFF"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "kZlX8",
+                  "name": "Gallery button",
+                  "width": 58,
+                  "height": 58,
+                  "fill": "#E6F6EC",
+                  "cornerRadius": 20,
+                  "stroke": "#0C8B5533",
+                  "strokeWidth": 1,
+                  "strokeAlignment": "inner",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "hVIRT",
+                      "name": "Gallery icon",
+                      "width": 24,
+                      "height": 24,
+                      "icon": "images",
+                      "library": "lucide",
+                      "fill": "$primary-deep"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "vbIF1",
+              "name": "Manual link",
+              "fill": "$primary-deep",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Tanpa internet? Pilih makanan secara manual",
+              "textAlign": "center",
+              "fontFamily": "$font",
+              "fontSize": 12,
+              "fontWeight": "600"
+            }
+          ]
+        }
+      ]
     }
   ],
   "variables": {
